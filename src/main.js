@@ -10,15 +10,15 @@ async function main() {
   /** scrape every data */
   const categories = await categories_.getCollectiblesCategories();
   const oldCategories = JSON.parse(await fs.readFile(
-    "./data/collectibleS/categories.json",
+    "./data/collectibles/categories.json",
     { encoding: "utf-8" }
   ));
   const oldprofileEffects =  JSON.parse(await fs.readFile(
-    "./data/collectibleS/profile-effects.json",
+    "./data/collectibles/profile-effects.json",
     { encoding: "utf-8" }
   ));
   const oldassets = JSON.parse(await fs.readFile(
-    "./data/collectibleS/assets.json",
+    "./data/collectibles/assets.json",
     { encoding: "utf-8" }
   ));
 
