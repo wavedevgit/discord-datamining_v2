@@ -48,7 +48,7 @@ function diff(a, b) {
   const diff = { removed: [], added: [] };
 
   /** a is before */
-  for (let asset in a) {
+  for (let profileEffect in a) {
     /** removed type */
     if (a[profileEffect].sku_id !== b[profileEffect].sku_id) {
       diff.removed.push(a[profileEffect]);
