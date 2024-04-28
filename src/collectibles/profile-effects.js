@@ -33,7 +33,7 @@ function getFieldsForProfileEffect(profileEffect) {
     },
     {
       "name": "Snippet",
-      "value": `\`\`\`js\nfindByProps("getUserProfile").profileEffectId = "${ProfileEffect.sku_id}"\n\`\`\``,
+      "value": `\`\`\`js\nfindByProps("getUserProfile").profileEffectId = "${profileEffect.sku_id}"\n\`\`\``,
       "inline": true
     }
   ]
