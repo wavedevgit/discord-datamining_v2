@@ -25,7 +25,7 @@ function diff(a, b) {
   /** a is before */
   for (let asset in a) {
     /** removed type */
-    if (a[asset].id !== b[asset].id) {
+    if (a[asset]?.id !== b[asset]?.id) {
       diff.removed.push(a[asset]);
     }
   }
