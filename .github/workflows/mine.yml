@@ -29,10 +29,10 @@ jobs:
           node ./src/main.js
         env:
           ALT_TOKEN: ${{ secrets.ALT_TOKEN }}
-          categories: ${{ secrets.CATEGORIES }}
-          profileEffects: ${{ secrets.PROFILEEFFECTS }}
-          assets: ${{ secrets.ASSETS }}
-          token: ${{ secrets.TOKEN }}
+          CATEGORIES: ${{ secrets.CATEGORIES }}
+          PROFILEEFFECTS: ${{ secrets.PROFILEEFFECTS }}
+          ASSETS: ${{ secrets.ASSETS }}
+          TOKEN: ${{ secrets.TOKEN }}
 
       - name: set email
         run: |
