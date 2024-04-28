@@ -50,7 +50,7 @@ function diff(a, b) {
   /** a is before */
   for (let profileEffect in a) {
     /** removed type */
-    if (a[profileEffect].sku_id !== b[profileEffect].sku_id) {
+    if (a[profileEffect]?.sku_id !== b[profileEffect]?.sku_id) {
       diff.removed.push(a[profileEffect]);
     }
   }
