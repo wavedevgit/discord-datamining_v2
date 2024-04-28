@@ -1,4 +1,6 @@
 import sendReq from "../utils/RestApi.js";
+import { PINGS, WEBHOOKS_URLS } from "../config.js";
+import sendToWebhook from "../utils/sendToWebhook.js";
 
 async function getProfileEffects() {
   const profileEffects = await (await sendReq({
@@ -83,7 +85,7 @@ function diff(a, b) {
 
   if (result.length) {
     sendToWebhook(WEBHOOKS_URLS.collectibles.assets, {
-      content: PINGS.collectibles.assets,
+      content: PINGS.collectibles.profileEffects,
       embeds: result,
     });  
   }
