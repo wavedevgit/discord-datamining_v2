@@ -1,8 +1,9 @@
 import { PINGS, WEBHOOKS_URLS } from "../config.js";
-import { formatAssetUrl } from "./assets.js";
+import  assets from "./assets.js";
 import sendReq from "../utils/RestApi.js";
 import sendToWebhook from "../utils/sendToWebhook.js";
 
+const { formatAssetUrl } = assets
 async function getCollectiblesCategories() {
   const categories = await (
     await sendReq({
