@@ -35,7 +35,6 @@ async function main() {
     ).json();
     return;
   }
-  console.log(process.env)
 
   const profileEffects = await profileEffects_.getProfileEffects();
   const assets = await assets_.getCollectiblesAssets();
