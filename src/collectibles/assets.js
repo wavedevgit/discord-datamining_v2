@@ -70,4 +70,4 @@ function diff(a, b) {
 
 
 
-export { getCollectiblesAssets, formatAssetUrl,diff };
+export default { getCollectiblesAssets, formatAssetUrl,diff };
