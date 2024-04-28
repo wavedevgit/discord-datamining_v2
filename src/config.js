@@ -5,15 +5,15 @@ const API_BASE_URL = "https://canary.discord.com/api/v10/";
 const WEBHOOKS_URLS = {
   collectibles: {
     categories:
-     process.env.categories,
+     process.env.CATEGORIES,
     profileEffects:
-      process.env.profileEffects,
+      process.env.PROFILEEFFECTS,
     assets:
-      process.env.assets,
+      process.env.ASSETS,
   },
   status: {
     token:
-      process.env.token,
+      process.env.TOKEN,
   },
 };
 
