@@ -16,6 +16,7 @@ const WEBHOOKS_URLS = {
       process.env.TOKEN,
   },
 };
+console.log(WEBHOOKS_URLS)
 
 const PINGS = {
   collectibles: {
