@@ -103,4 +103,4 @@ function diff(a, b) {
 }
 
 
-export { getCollectiblesCategories, diff };
+export default { getCollectiblesCategories, diff };
