@@ -3,9 +3,10 @@ import sendReq from "../utils/RestApi.js";
 async function getProfileEffects() {
   const profileEffects = await (await sendReq({
     url: "user-profile-effects",
-  })).json().profile_effect_configs;
+  })).json();
 
-  return profileEffects
+  console.log(profileEffects)
+  return profileEffects?.profile_effect_configs || ""
 }
 
 function getFieldsForProfileEffect(profileEffect) {
