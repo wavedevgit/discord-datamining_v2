@@ -24,16 +24,18 @@ function diff(a, b) {
 
   /** a is before */
   for (let asset in a) {
+    const a_id = a[asset].id
     /** removed type */
-    if (a[asset]?.id !== b[asset]?.id) {
+    if (!b.find(asset=>asset.id === a_id)) {
       diff.removed.push(a[asset]);
     }
   }
 
   /** b is after */
   for (let asset in b) {
+    const b_id = b[asset].id
     /** added type */
-    if (typeof a[asset] === "undefined" || a[asset]?.id !== b[asset].id) {
+    if (!a.find(asset=>asset.id === b_id)) {
       diff.added.push(b[asset]);
     }
   }
@@ -67,7 +69,6 @@ function diff(a, b) {
     });  
   }
 }
-
 
 
 export default { getCollectiblesAssets, formatAssetUrl,diff };
