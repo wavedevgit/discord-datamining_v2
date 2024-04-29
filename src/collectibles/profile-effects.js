@@ -85,8 +85,8 @@ function diff(a, b) {
   }
 
   if (result.length) {
-    sendToWebhook(WEBHOOKS_URLS.collectibles.assets, {
-      content: PINGS.collectibles.assets,
+    sendToWebhook(WEBHOOKS_URLS.collectibles.profileEffects, {
+      content: PINGS.collectibles.profileEffects,
       embeds: result,
     });  
   }
