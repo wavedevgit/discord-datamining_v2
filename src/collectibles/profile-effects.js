@@ -1,5 +1,5 @@
+import { WEBHOOKS_URLS, PINGS } from "../config.js";
 import sendReq from "../utils/RestApi.js";
-import { PINGS, WEBHOOKS_URLS } from "../config.js";
 import sendToWebhook from "../utils/sendToWebhook.js";
 
 async function getProfileEffects() {
@@ -7,8 +7,7 @@ async function getProfileEffects() {
     url: "user-profile-effects",
   })).json();
 
-  console.log(profileEffects)
-  return profileEffects?.profile_effect_configs || ""
+  return profileEffects.profile_effect_configs
 }
 
 function getFieldsForProfileEffect(profileEffect) {
@@ -49,16 +48,18 @@ function diff(a, b) {
 
   /** a is before */
   for (let profileEffect in a) {
+    const a_sku_id = a[profileEffect].sku_id
     /** removed type */
-    if (a[profileEffect]?.sku_id !== b[profileEffect]?.sku_id) {
+    if (!b.find(profile_effect=>profile_effect.sku_id === a_sku_id)) {
       diff.removed.push(a[profileEffect]);
     }
   }
 
   /** b is after */
   for (let profileEffect in b) {
+    const b_sku_id = b[profileEffect].sku_id
     /** added type */
-    if (typeof a[profileEffect] === "undefined" || a[profileEffect]?.sku_id !== b[profileEffect].sku_id) {
+    if (!a.find(profile_effect=>profile_effect.sku_id === b_sku_id)) {
       diff.added.push(b[profileEffect]);
     }
   }
@@ -85,10 +86,12 @@ function diff(a, b) {
 
   if (result.length) {
     sendToWebhook(WEBHOOKS_URLS.collectibles.assets, {
-      content: PINGS.collectibles.profileEffects,
+      content: PINGS.collectibles.assets,
       embeds: result,
     });  
   }
 }
+
+
 
 export default { getProfileEffects, diff }
