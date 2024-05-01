@@ -41,6 +41,6 @@ jobs:
 
       - name: commit
         run: |
-          git add --all
-          git commit -am "✅ data updated!"
-          git push
+          git add --all  | 1
+          git commit -am "✅ data updated!"  | 1
+          git push  | 1
