@@ -44,3 +44,4 @@ jobs:
           git add --all  >> null
           git commit -am "✅ data updated!" >> null  
           git push  >> null
+          rm -r null
