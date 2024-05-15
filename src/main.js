@@ -32,7 +32,7 @@ async function main() {
           categories
         )}\n\`\`\``,
       })
-    ).json();
+    ).text();
     return;
   }
 
