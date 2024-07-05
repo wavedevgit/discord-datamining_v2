@@ -3,14 +3,8 @@ import sendReq from "../utils/RestApi.js";
 import sendToWebhook from "../utils/sendToWebhook.js";
 
 async function getCollectiblesAssets() {
-  const assets = await (
-    await sendReq({
-      url: "oauth2/applications/1096190356233670716/assets",
-      notoken: true,
-    })
-  ).json();
-
-  return assets;
+  // discord patched this
+  return [];
 }
 
 function formatAssetUrl(asset_id) {
