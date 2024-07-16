@@ -33,6 +33,7 @@ jobs:
           PROFILEEFFECTS: ${{ secrets.PROFILEEFFECTS }}
           ASSETS: ${{ secrets.ASSETS }}
           TOKEN: ${{ secrets.TOKEN }}
+          ACTIVITIES: ${{ secrets.ACTIVITIES }}
 
       - name: set email
         run: |
