@@ -11,6 +11,7 @@ const WEBHOOKS_URLS = {
     assets:
       process.env.ASSETS,
   },
+  activities: process.env.ACTIVITIES
   status: {
     token:
       process.env.TOKEN,
@@ -27,6 +28,7 @@ const PINGS = {
     assets:
       "<@&1234231704109977710>",
   },
+  activities: "<@&1262808781608452107>"
   status: {
     token:
       "<@1083437693347827764>",
