@@ -38,6 +38,6 @@ async function main() {
     await save('./data/collectibles/categories.json', categories);
     await save('./data/collectibles/profile-effects.json', profileEffects);
     await save('./data/collectibles/assets.json', assets);
-    await save('./data/activties.json', activties);
+    await save('./data/activities.json', activities);
 }
 main();
