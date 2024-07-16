@@ -37,7 +37,7 @@ async function main() {
     activities_.diff(oldActivities, activities);
     await save('./data/collectibles/categories.json', categories);
     await save('./data/collectibles/profile-effects.json', profileEffects);
-    await save('./data/collectibles/assets.json', assets);
+    //await save('./data/collectibles/assets.json', assets);
     await save('./data/activities.json', activities);
 }
 main();
