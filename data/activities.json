@@ -935,6 +935,42 @@
             "application_id": "1196535986226745437"
         },
         {
+            "activity_preview_video_asset_id": "1253039614327783504",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                }
+            },
+            "shelf_rank": 27,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1214629548377768066"
+        },
+        {
             "activity_preview_video_asset_id": "1253788185360863396",
             "supported_platforms": [
                 "web",
@@ -2773,6 +2809,70 @@
             ]
         },
         {
+            "id": "1214629548377768066",
+            "name": "Amazon Music",
+            "icon": "9ba1bd6109617a4b32ef4b986793e578",
+            "description": "Invite friends to listen along to your favorite music and podcasts with Amazon Music Listening Party. Plus, get access to millions of songs, ad-free podcasts and create shared playlists.",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "cover_image": "9ba1bd6109617a4b32ef4b986793e578",
+            "hook": true,
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://music-api.amazon.com/tou",
+            "privacy_policy_url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+            "integration_types_config": {
+                "0": {},
+                "1": {}
+            },
+            "verify_key": "ffae06b50410a717e4320d5687f74b2827cac77040027c7a3a143e19aa96f348",
+            "flags": 2228234,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1253039614327783504",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    }
+                },
+                "shelf_rank": 27,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Listen",
+                "Music",
+                "Party",
+                "Podcast",
+                "Together"
+            ]
+        },
+        {
             "id": "1119539298128105484",
             "name": "TREBEL Music",
             "icon": "ea47bec37f1bcfbf64ca82f6b436f320",
@@ -3148,6 +3248,48 @@
         }
     ],
     "assets": {
+        "1106787098452832296": [
+            {
+                "id": "1179134514799321208",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1179134666901553204",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1207909073262223440",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207909390489882644",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207909887292743690",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207912301416423466",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207926203437158460",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1238295820151947394",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "902271654783242291": [
             {
                 "id": "1170035280183558316",
@@ -3177,6 +3319,18 @@
                 "name": "embedded_background"
             }
         ],
+        "1187013846746005515": [
+            {
+                "id": "1250123981105922149",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1250123987254640731",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1107689944685748377": [
             {
                 "id": "1119359403494223872",
@@ -3190,18 +3344,6 @@
             },
             {
                 "id": "1133154500509704224",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1187013846746005515": [
-            {
-                "id": "1250123981105922149",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1250123987254640731",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -3742,44 +3884,14 @@
                 "name": "embedded_cover2"
             }
         ],
-        "1106787098452832296": [
+        "1119539298128105484": [
             {
-                "id": "1179134514799321208",
+                "id": "1232379275441864784",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1179134666901553204",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1207909073262223440",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207909390489882644",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207909887292743690",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207912301416423466",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207926203437158460",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1238295820151947394",
+                "id": "1258858900346765313",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -3835,16 +3947,21 @@
                 "name": "embedded_cover"
             }
         ],
-        "1119539298128105484": [
+        "1214629548377768066": [
             {
-                "id": "1232379275441864784",
+                "id": "1235622957402030132",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "server_icon"
             },
             {
-                "id": "1258858900346765313",
+                "id": "1253039475752173668",
                 "type": 1,
                 "name": "embedded_cover"
+            },
+            {
+                "id": "1253039476070940792",
+                "type": 1,
+                "name": "embedded_background"
             }
         ],
         "1037680572660727838": [
@@ -3919,6 +4036,23 @@
                 "name": "embedded_cover"
             }
         ],
+        "755827207812677713": [
+            {
+                "id": "839608726894018561",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1070451415220232292",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1121240234714202242",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1194351737264406548": [
             {
                 "id": "1249958375014273125",
@@ -3957,23 +4091,6 @@
             },
             {
                 "id": "1259772101259427920",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "755827207812677713": [
-            {
-                "id": "839608726894018561",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1070451415220232292",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1121240234714202242",
                 "type": 1,
                 "name": "embedded_cover"
             }
