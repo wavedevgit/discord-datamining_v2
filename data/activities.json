@@ -361,42 +361,6 @@
             "application_id": "832012774040141894"
         },
         {
-            "activity_preview_video_asset_id": "951327865570467880",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 3,
-            "tablet_default_orientation_lock_state": 3,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch"
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch"
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch"
-                }
-            },
-            "shelf_rank": 11,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "832025144389533716"
-        },
-        {
             "activity_preview_video_asset_id": "1250119434442637383",
             "supported_platforms": [
                 "web"
@@ -465,6 +429,42 @@
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1037680572660727838"
+        },
+        {
+            "activity_preview_video_asset_id": "951327865570467880",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 3,
+            "tablet_default_orientation_lock_state": 3,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                }
+            },
+            "shelf_rank": 13,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "832025144389533716"
         },
         {
             "activity_preview_video_asset_id": "1217242587786645514",
@@ -863,42 +863,6 @@
             "application_id": "832013003968348200"
         },
         {
-            "activity_preview_video_asset_id": "1257403544542117952",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 2,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 1,
-                    "label_until": "2024-06-18T08:30:00+00:00",
-                    "release_phase": "global_launch"
-                },
-                "android": {
-                    "label_type": 1,
-                    "label_until": "2024-06-18T08:30:00+00:00",
-                    "release_phase": "global_launch"
-                },
-                "ios": {
-                    "label_type": 1,
-                    "label_until": "2024-06-18T08:30:00+00:00",
-                    "release_phase": "global_launch"
-                }
-            },
-            "shelf_rank": 25,
-            "has_csp_exception": true,
-            "displays_advertisements": true,
-            "application_id": "1196535986226745437"
-        },
-        {
             "activity_preview_video_asset_id": "1133150946034196510",
             "supported_platforms": [
                 "web",
@@ -929,10 +893,46 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 26,
+            "shelf_rank": 25,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1107689944685748377"
+        },
+        {
+            "activity_preview_video_asset_id": "1257403544542117952",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 2,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 1,
+                    "label_until": "2024-06-18T08:30:00+00:00",
+                    "release_phase": "global_launch"
+                },
+                "android": {
+                    "label_type": 1,
+                    "label_until": "2024-06-18T08:30:00+00:00",
+                    "release_phase": "global_launch"
+                },
+                "ios": {
+                    "label_type": 1,
+                    "label_until": "2024-06-18T08:30:00+00:00",
+                    "release_phase": "global_launch"
+                }
+            },
+            "shelf_rank": 26,
+            "has_csp_exception": true,
+            "displays_advertisements": true,
+            "application_id": "1196535986226745437"
         },
         {
             "activity_preview_video_asset_id": "1253788185360863396",
@@ -965,7 +965,7 @@
                     "release_phase": "employee_release"
                 }
             },
-            "shelf_rank": 27,
+            "shelf_rank": 28,
             "has_csp_exception": true,
             "displays_advertisements": true,
             "application_id": "1119539298128105484"
@@ -1001,7 +1001,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 28,
+            "shelf_rank": 29,
             "has_csp_exception": true,
             "displays_advertisements": false,
             "application_id": "1120784239546347531"
@@ -1788,68 +1788,6 @@
             ]
         },
         {
-            "id": "832025144389533716",
-            "name": "Blazing 8s",
-            "icon": "6fe6e3dda7657b83758693205a833aa1",
-            "description": "Be the first to zero cards by swapping hands, skipping players, and reversing turns in this Crazy Eights inspired card game!",
-            "summary": "",
-            "type": null,
-            "is_monetized": false,
-            "cover_image": "6fe6e3dda7657b83758693205a833aa1",
-            "hook": true,
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://discord.com/terms",
-            "privacy_policy_url": "https://discord.com/privacy",
-            "integration_types_config": {
-                "0": {},
-                "1": {}
-            },
-            "verify_key": "138631e02cf2de499ebfcba54a724ddeb99957274ee9a3db967376666cffdc5e",
-            "flags": 3276802,
-            "max_participants": 8,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "951327865570467880",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 3,
-                "tablet_default_orientation_lock_state": 3,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch"
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch"
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch"
-                    }
-                },
-                "shelf_rank": 11,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Card Game",
-                "Classic",
-                "Crazy Eights"
-            ]
-        },
-        {
             "id": "1199817737728442569",
             "name": "BOPZ.io",
             "icon": "a2eed700e6d2b625fff9147c54e2ef86",
@@ -1970,6 +1908,68 @@
                 "Co-op",
                 "Competitive",
                 "Cooking"
+            ]
+        },
+        {
+            "id": "832025144389533716",
+            "name": "Blazing 8s",
+            "icon": "6fe6e3dda7657b83758693205a833aa1",
+            "description": "Be the first to zero cards by swapping hands, skipping players, and reversing turns in this Crazy Eights inspired card game!",
+            "summary": "",
+            "type": null,
+            "is_monetized": false,
+            "cover_image": "6fe6e3dda7657b83758693205a833aa1",
+            "hook": true,
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://discord.com/terms",
+            "privacy_policy_url": "https://discord.com/privacy",
+            "integration_types_config": {
+                "0": {},
+                "1": {}
+            },
+            "verify_key": "138631e02cf2de499ebfcba54a724ddeb99957274ee9a3db967376666cffdc5e",
+            "flags": 3276802,
+            "max_participants": 8,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "951327865570467880",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 3,
+                "tablet_default_orientation_lock_state": 3,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    }
+                },
+                "shelf_rank": 13,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Card Game",
+                "Classic",
+                "Crazy Eights"
             ]
         },
         {
@@ -2651,67 +2651,6 @@
             ]
         },
         {
-            "id": "1196535986226745437",
-            "name": "TuneIn Radio & Podcasts",
-            "icon": "dc0e398eabc17c23b36961825851ed91",
-            "description": "Free live streaming radio & podcasts on Discord that you can enjoy with others in your channel. Everyone in the activity can listen to the same audio simultaneously so everyone can join in on the fun. ",
-            "summary": "",
-            "type": null,
-            "is_monetized": false,
-            "hook": true,
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://tunein.com/policies/",
-            "privacy_policy_url": "https://tunein.com/policies/privacy/",
-            "integration_types_config": {
-                "0": {},
-                "1": {}
-            },
-            "verify_key": "6eb41c514cb13933df7c441c4352b7f86739f3804b45ae94d84d7ea0eea5ceef",
-            "flags": 2228226,
-            "max_participants": null,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1257403544542117952",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 2,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 1,
-                        "label_until": "2024-06-18T08:30:00+00:00",
-                        "release_phase": "global_launch"
-                    },
-                    "android": {
-                        "label_type": 1,
-                        "label_until": "2024-06-18T08:30:00+00:00",
-                        "release_phase": "global_launch"
-                    },
-                    "ios": {
-                        "label_type": 1,
-                        "label_until": "2024-06-18T08:30:00+00:00",
-                        "release_phase": "global_launch"
-                    }
-                },
-                "shelf_rank": 25,
-                "has_csp_exception": true,
-                "displays_advertisements": true
-            },
-            "tags": [
-                "music",
-                "podcasts",
-                "radio"
-            ]
-        },
-        {
             "id": "1107689944685748377",
             "name": "Bobble Bash",
             "icon": "fa0a41650eec35aae523f02ea818ab0e",
@@ -2762,7 +2701,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 26,
+                "shelf_rank": 25,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2770,6 +2709,67 @@
                 "Arcade",
                 "Competitive",
                 "Frenzy"
+            ]
+        },
+        {
+            "id": "1196535986226745437",
+            "name": "TuneIn Radio & Podcasts",
+            "icon": "dc0e398eabc17c23b36961825851ed91",
+            "description": "Free live streaming radio & podcasts on Discord that you can enjoy with others in your channel. Everyone in the activity can listen to the same audio simultaneously so everyone can join in on the fun. ",
+            "summary": "",
+            "type": null,
+            "is_monetized": false,
+            "hook": true,
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://tunein.com/policies/",
+            "privacy_policy_url": "https://tunein.com/policies/privacy/",
+            "integration_types_config": {
+                "0": {},
+                "1": {}
+            },
+            "verify_key": "6eb41c514cb13933df7c441c4352b7f86739f3804b45ae94d84d7ea0eea5ceef",
+            "flags": 2228226,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1257403544542117952",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 2,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 1,
+                        "label_until": "2024-06-18T08:30:00+00:00",
+                        "release_phase": "global_launch"
+                    },
+                    "android": {
+                        "label_type": 1,
+                        "label_until": "2024-06-18T08:30:00+00:00",
+                        "release_phase": "global_launch"
+                    },
+                    "ios": {
+                        "label_type": 1,
+                        "label_until": "2024-06-18T08:30:00+00:00",
+                        "release_phase": "global_launch"
+                    }
+                },
+                "shelf_rank": 26,
+                "has_csp_exception": true,
+                "displays_advertisements": true
+            },
+            "tags": [
+                "music",
+                "podcasts",
+                "radio"
             ]
         },
         {
@@ -2847,7 +2847,7 @@
                         "release_phase": "employee_release"
                     }
                 },
-                "shelf_rank": 27,
+                "shelf_rank": 28,
                 "has_csp_exception": true,
                 "displays_advertisements": true
             },
@@ -2909,7 +2909,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 28,
+                "shelf_rank": 29,
                 "has_csp_exception": true,
                 "displays_advertisements": false
             },
@@ -3148,74 +3148,19 @@
         }
     ],
     "assets": {
-        "1037680572660727838": [
+        "902271654783242291": [
             {
-                "id": "1080081340097110046",
+                "id": "1170035280183558316",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1192153348909056121",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1080081501036757093",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080081763394650192",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080081976494661762",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080082418263924776",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080082544592171058",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080088584553496605",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080088919988772904",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080088969548681268",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080089596777467935",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080090416390602783",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1153290373498667090",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1153290380192792637",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1159482793533911132",
+                "id": "1192153358342049882",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -3232,18 +3177,6 @@
                 "name": "embedded_background"
             }
         ],
-        "1187013846746005515": [
-            {
-                "id": "1250123981105922149",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1250123987254640731",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1107689944685748377": [
             {
                 "id": "1119359403494223872",
@@ -3257,6 +3190,18 @@
             },
             {
                 "id": "1133154500509704224",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1187013846746005515": [
+            {
+                "id": "1250123981105922149",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1250123987254640731",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -3797,14 +3742,44 @@
                 "name": "embedded_cover2"
             }
         ],
-        "1119539298128105484": [
+        "1106787098452832296": [
             {
-                "id": "1232379275441864784",
+                "id": "1179134514799321208",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1258858900346765313",
+                "id": "1179134666901553204",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1207909073262223440",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207909390489882644",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207909887292743690",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207912301416423466",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207926203437158460",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1238295820151947394",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -3860,78 +3835,86 @@
                 "name": "embedded_cover"
             }
         ],
-        "1106787098452832296": [
+        "1119539298128105484": [
             {
-                "id": "1179134514799321208",
+                "id": "1232379275441864784",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1179134666901553204",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1207909073262223440",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207909390489882644",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207909887292743690",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207912301416423466",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207926203437158460",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1238295820151947394",
+                "id": "1258858900346765313",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "902271654783242291": [
+        "1037680572660727838": [
             {
-                "id": "1170035280183558316",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1192153348909056121",
+                "id": "1080081340097110046",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1192153358342049882",
+                "id": "1080081501036757093",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080081763394650192",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080081976494661762",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080082418263924776",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080082544592171058",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080088584553496605",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080088919988772904",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080088969548681268",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080089596777467935",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080090416390602783",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1153290373498667090",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1153290380192792637",
                 "type": 1,
                 "name": "embedded_cover"
-            }
-        ],
-        "755827207812677713": [
-            {
-                "id": "839608726894018561",
-                "type": 1,
-                "name": "servericon"
             },
             {
-                "id": "1070451415220232292",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1121240234714202242",
+                "id": "1159482793533911132",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -3974,6 +3957,23 @@
             },
             {
                 "id": "1259772101259427920",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "755827207812677713": [
+            {
+                "id": "839608726894018561",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1070451415220232292",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1121240234714202242",
                 "type": 1,
                 "name": "embedded_cover"
             }
