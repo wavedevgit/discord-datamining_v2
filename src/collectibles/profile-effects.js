@@ -28,13 +28,8 @@ function getFieldsForProfileEffect(profileEffect) {
       "inline": true
     },
     {
-      "name": "Frames Count",
+      "name": "Effects Count",
       "value": `${profileEffect.effects.length}`,
-      "inline": true
-    },
-    {
-      "name": "Snippet",
-      "value": `\`\`\`js\nfindByProps("getUserProfile").profileEffectId = "${profileEffect.sku_id}"\n\`\`\``,
       "inline": true
     }
   ]
