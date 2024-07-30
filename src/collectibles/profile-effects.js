@@ -84,6 +84,10 @@ function diff(a, b) {
       content: PINGS.collectibles.profileEffects,
       embeds: result,
     });  
+    sendToWebhook(process.env.EXPCENTRALWEBHOOK, {
+      content: "<@&1234231661550370928>",
+      embeds: result,
+    });  
   }
 }
 
