@@ -34,7 +34,7 @@ jobs:
           ASSETS: ${{ secrets.ASSETS }}
           TOKEN: ${{ secrets.TOKEN }}
           ACTIVITIES: ${{ secrets.ACTIVITIES }}
-
+          EXPCENTRALWEBHOOK: ${{ secrets.EXPCENTRALWEBHOOK }}
       - name: set email
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
