@@ -1111,6 +1111,40 @@
             "application_id": "1217877285923979415"
         },
         {
+            "activity_preview_video_asset_id": "1235373633602457671",
+            "supported_platforms": [
+                "web"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": true,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "employee_release"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "employee_release"
+                }
+            },
+            "shelf_rank": 128,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1227719606223765687"
+        },
+        {
             "activity_preview_video_asset_id": "1268141277711695943",
             "supported_platforms": [
                 "web",
@@ -1166,8 +1200,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "1"
             },
@@ -1175,8 +1209,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "1"
                     }
@@ -1903,8 +1937,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "2048"
             },
@@ -1912,8 +1946,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "2048"
                     }
@@ -2973,8 +3007,8 @@
             "privacy_policy_url": "https://trebel.io/web/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "141770902792"
             },
@@ -2982,8 +3016,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "141770902792"
                     }
@@ -3185,6 +3219,67 @@
             ]
         },
         {
+            "id": "1227719606223765687",
+            "name": "Magic Circle",
+            "icon": "06134ccd90f90c65b2fe3880dbe6a901",
+            "description": "Play hilarious party games!",
+            "summary": "",
+            "type": null,
+            "is_monetized": false,
+            "cover_image": "a7924d511c493c458ff2074b75320ebe",
+            "hook": true,
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://magiccircle.gg/docs/terms",
+            "privacy_policy_url": "https://magiccircle.gg/docs/privacy",
+            "integration_types_config": {
+                "0": {},
+                "1": {}
+            },
+            "verify_key": "8e12e3038b5199095f121b666b81dd1c970798dbbbb1b9fbaf1f142dabbc511f",
+            "flags": 2228226,
+            "max_participants": 9,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1235373633602457671",
+                "supported_platforms": [
+                    "web"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": true,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "employee_release"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "employee_release"
+                    }
+                },
+                "shelf_rank": 128,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Icebreaker",
+                "Jokes",
+                "Party",
+                "Trivia"
+            ]
+        },
+        {
             "id": "1244625526606401658",
             "name": "Meme Builder",
             "icon": "c33ccf23293e099e7a0b9eaac305eff7",
@@ -3267,19 +3362,44 @@
         }
     ],
     "assets": {
-        "755827207812677713": [
+        "1194351737264406548": [
             {
-                "id": "839608726894018561",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1070451415220232292",
+                "id": "1249958375014273125",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1121240234714202242",
+                "id": "1249958561723973633",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1259769194703224884",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1259769947152846951",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1259770093852950588",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1259771952114040909",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1259772101259427920",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1268448240404140042",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -3780,6 +3900,18 @@
                 "name": "icon_1024"
             }
         ],
+        "1227719606223765687": [
+            {
+                "id": "1270524636932608063",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1270524644407115846",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1186796615432937584": [
             {
                 "id": "1192885818491150469",
@@ -3998,65 +4130,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "902271654783242291": [
-            {
-                "id": "1170035280183558316",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1192153348909056121",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1192153358342049882",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1194351737264406548": [
-            {
-                "id": "1249958375014273125",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1249958561723973633",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1259769194703224884",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1259769947152846951",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1259770093852950588",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1259771952114040909",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1259772101259427920",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1268448240404140042",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1037680572660727838": [
             {
                 "id": "1080081340097110046",
@@ -4125,6 +4198,40 @@
             },
             {
                 "id": "1159482793533911132",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "755827207812677713": [
+            {
+                "id": "839608726894018561",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1070451415220232292",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1121240234714202242",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "902271654783242291": [
+            {
+                "id": "1170035280183558316",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1192153348909056121",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1192153358342049882",
                 "type": 1,
                 "name": "embedded_cover"
             }
