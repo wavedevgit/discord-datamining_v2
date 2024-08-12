@@ -1270,8 +1270,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1"
             },
@@ -1279,8 +1279,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1"
                     }
@@ -1944,8 +1944,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "2048"
             },
@@ -1953,8 +1953,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "2048"
                     }
@@ -4125,18 +4125,6 @@
                 "name": "icon_1024"
             }
         ],
-        "1186796615432937584": [
-            {
-                "id": "1192885818491150469",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1192885823868248144",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1227719606223765687": [
             {
                 "id": "1270524636932608063",
@@ -4145,6 +4133,18 @@
             },
             {
                 "id": "1270524644407115846",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1186796615432937584": [
+            {
+                "id": "1192885818491150469",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1192885823868248144",
                 "type": 1,
                 "name": "embedded_cover"
             }
