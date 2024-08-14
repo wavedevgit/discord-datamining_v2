@@ -62,6 +62,10 @@ function diff(a, b) {
             content: PINGS.activities,
             embeds: result,
         });
+        sendToWebhook(process.env.ACTIVIESWC, {
+            content: PINGS.activities,
+            embeds: result,
+        });
     }
 }
 
