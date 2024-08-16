@@ -1250,6 +1250,40 @@
             "application_id": "1220052815590723654"
         },
         {
+            "activity_preview_video_asset_id": "1273119672728031326",
+            "supported_platforms": [
+                "web"
+            ],
+            "default_orientation_lock_state": 1,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "activities_team"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "activities_team"
+                }
+            },
+            "shelf_rank": 2147483647,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1245937701136633866"
+        },
+        {
             "activity_preview_video_asset_id": "1270672580918906890",
             "supported_platforms": [
                 "web",
@@ -1284,40 +1318,6 @@
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1258330015917936700"
-        },
-        {
-            "activity_preview_video_asset_id": "1273119672728031326",
-            "supported_platforms": [
-                "web"
-            ],
-            "default_orientation_lock_state": 1,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch"
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "activities_team"
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "activities_team"
-                }
-            },
-            "shelf_rank": 2147483647,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1245937701136633866"
         }
     ],
     "applications": [
@@ -1365,7 +1365,7 @@
                 }
             },
             "verify_key": "afa476c2dd3808944c36a95bd1b939e7bd8ecf86c37f65e6e5eac275ad33ac5d",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": null,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1266477391379959915",
@@ -1426,7 +1426,7 @@
                 "1": {}
             },
             "verify_key": "94099ad6774d9b5653dad433f26534a892a976bce72b76815a69eef9593629e0",
-            "flags": 2228226,
+            "flags": 131074,
             "max_participants": null,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1228081931762139208",
@@ -1510,7 +1510,7 @@
                 }
             },
             "verify_key": "29e81e92f05d7c35d1fde0f32fe424efb2d3a2ecadb994461de3117942afd678",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": null,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1232355776870223923",
@@ -1575,7 +1575,7 @@
                 "1": {}
             },
             "verify_key": "e2aaf50fbe2fd9d025ac669035f5efb89099931690fba9dc28efb7eaade7f96d",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": -1,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1271215801436995646",
@@ -1638,7 +1638,7 @@
                 "1": {}
             },
             "verify_key": "8ffdc7b099a299d592e43b258dfa4f47c058f2752003c28972ad83c78e544c27",
-            "flags": 2228226,
+            "flags": 131074,
             "max_participants": 16,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1240733893318152293",
@@ -1701,7 +1701,7 @@
                 "1": {}
             },
             "verify_key": "75e97499e54bb5489bd7e217e95cf3061fde7731a7c6b18257f827abaad3d8bf",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 12,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1241037451925913801",
@@ -1766,7 +1766,7 @@
                 "1": {}
             },
             "verify_key": "36f01e074697b6ee09b15a922cd7aaa5d2dcdb42a89c0e1e523bdb900e2695ba",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 10,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1214732144103137300",
@@ -1834,7 +1834,7 @@
                 "1": {}
             },
             "verify_key": "850c5aa3928877c6cbcdae524d0fafd4a9b7fe013b1e7fe4eaf350d53853ac42",
-            "flags": 3276810,
+            "flags": 1179658,
             "max_participants": 7,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1073351701312053359",
@@ -1897,7 +1897,7 @@
                 "1": {}
             },
             "verify_key": "6f5e042d9c27b4e9f48db12fafc29886288b81012fbef0aa470d2b6106490ccb",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": -1,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1146495383174926457",
@@ -1960,7 +1960,7 @@
                 "1": {}
             },
             "verify_key": "bc758e51403b1374ea262c8412b91bcdc53349a337037d10921cbf6c39bc696f",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": -1,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1199472403294720111",
@@ -2110,7 +2110,7 @@
                 "1": {}
             },
             "verify_key": "679ebae8119e80eb7ec38f3daf096b2cc84cd274072a2da3d839366507f5a71e",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 10,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1250119434442637383",
@@ -2173,7 +2173,7 @@
                 "1": {}
             },
             "verify_key": "4d5a3828fc5d736a95db616004e9de3a5a6d1a1c2c123356452487edabbe3f65",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 24,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1192885829241151498",
@@ -2236,7 +2236,7 @@
                 "1": {}
             },
             "verify_key": "65cadf28285c80d8caf20499091260d3b1b01f538d6be3585f67e1b532688b0d",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 15,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1156987260890259467",
@@ -2299,7 +2299,7 @@
                 "1": {}
             },
             "verify_key": "138631e02cf2de499ebfcba54a724ddeb99957274ee9a3db967376666cffdc5e",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": 8,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "951327865570467880",
@@ -2362,7 +2362,7 @@
                 "1": {}
             },
             "verify_key": "62c87eb718eb2c06232b2e7b1e14d8a63ca76add1a00c290e8e09669e5aed916",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": 8,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1217242587786645514",
@@ -2424,7 +2424,7 @@
                 "1": {}
             },
             "verify_key": "35334d24152b346fa751dafbbc4d3ac14f9b6ff9501c975c75fe3072e2c8226f",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": 8,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1206675158241382461",
@@ -2487,7 +2487,7 @@
                 "1": {}
             },
             "verify_key": "ca8bc346be26ff608ac8f3b55ca79a428ace85f3c9fdbb4a08ab84646121fe89",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 32,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1192896791792853032",
@@ -2550,7 +2550,7 @@
                 "1": {}
             },
             "verify_key": "864918885639ea54d153abdd48270f659456e02ca7cead6a512fe26e56002eeb",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": 9,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1078738117185515581",
@@ -2613,7 +2613,7 @@
                 "1": {}
             },
             "verify_key": "82c2ef51c10e534207dee215fd1cbffc13708f8245a2d5e1e3e233099b30403e",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": 16,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "956935500910956584",
@@ -2676,7 +2676,7 @@
                 "1": {}
             },
             "verify_key": "31c42a3c9317409819db8c40cd0d6993d11b3f9c11abb2e3276c71efc02a3307",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": 8,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1192153362918035567",
@@ -2799,7 +2799,7 @@
                 "1": {}
             },
             "verify_key": "3dec42617bd0e2d2f7c316330cf99eb949a168c9b93a6aee6d1525946a9c3f1a",
-            "flags": 2228226,
+            "flags": 131074,
             "max_participants": 6,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "951492843522895872",
@@ -2861,7 +2861,7 @@
                 "1": {}
             },
             "verify_key": "c282d4b2693092a1f657cc699ddbcc26b83b7d7a1bfd0eae1697583ee04e1bef",
-            "flags": 11665410,
+            "flags": 9568258,
             "max_participants": 8,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "951327524460310568",
@@ -2925,7 +2925,7 @@
                 "1": {}
             },
             "verify_key": "8f650231a584d520f89d79b198eb31c9da83b103af35945cf08fd6f1ac7dd2a3",
-            "flags": 2752522,
+            "flags": 655370,
             "max_participants": 8,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1181999168764514315",
@@ -2988,7 +2988,7 @@
                 "1": {}
             },
             "verify_key": "f5b322fcb0baf39974eed3c04b81f590b9e584fbdf8d6189cfe07d19eaeb57f8",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": -1,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1199472410844479568",
@@ -3050,7 +3050,7 @@
                 "1": {}
             },
             "verify_key": "02d8085d37f47bf6848b3845e72005779cfdce35e5be73967ef6c67ec4d45929",
-            "flags": 3276802,
+            "flags": 1179650,
             "max_participants": 8,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1133150946034196510",
@@ -3112,7 +3112,7 @@
                 "1": {}
             },
             "verify_key": "6eb41c514cb13933df7c441c4352b7f86739f3804b45ae94d84d7ea0eea5ceef",
-            "flags": 2228226,
+            "flags": 131074,
             "max_participants": null,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1257403544542117952",
@@ -3261,7 +3261,7 @@
                 "1": {}
             },
             "verify_key": "d15f24c84daa9f0e37c2f478f7636f08c25e3810c2e2d9525bc213a622e13c73",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 10,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1261350225382084638",
@@ -3345,7 +3345,7 @@
                 }
             },
             "verify_key": "f15d0bebe98ec4df7e7814d4514313ea24dbc622269ca0753f5508a13f08591f",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 24,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1230159847761121280",
@@ -3426,7 +3426,7 @@
                 }
             },
             "verify_key": "9ce5c78e138b0a170a475b81cda7ad877ac0946a2845cc6ba665dffcb02aec5c",
-            "flags": 2228226,
+            "flags": 131074,
             "max_participants": null,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1268141277711695943",
@@ -3488,7 +3488,7 @@
                 "1": {}
             },
             "verify_key": "8e12e3038b5199095f121b666b81dd1c970798dbbbb1b9fbaf1f142dabbc511f",
-            "flags": 2228226,
+            "flags": 131074,
             "max_participants": 9,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1235373633602457671",
@@ -3573,7 +3573,7 @@
                 }
             },
             "verify_key": "ef152f419d22dd784846d255856aeedf776ca50a56816992b58ad8b3098839bd",
-            "flags": 2228234,
+            "flags": 131082,
             "max_participants": 20,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1254699590603505695",
@@ -3657,7 +3657,7 @@
                 }
             },
             "verify_key": "a5ac68c1692cd3180db3ce42f40f862dd98cc836848943a9bd34cbc55f7c55eb",
-            "flags": 2228226,
+            "flags": 131074,
             "max_participants": 8,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1231058431922671636",
@@ -3696,6 +3696,67 @@
                 "Arcade",
                 "Competitive",
                 "Platformer"
+            ]
+        },
+        {
+            "id": "1245937701136633866",
+            "name": "Idle Mafia",
+            "icon": "272882c86f430ed29ab7124eef43aafd",
+            "description": "Manage insidious businesses, gather talented Capos to carry out your bidding, and occupy new territory through any means necessary.\n",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": false,
+            "cover_image": "272882c86f430ed29ab7124eef43aafd",
+            "hook": true,
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://www.centurygame.com/terms-of-service/",
+            "privacy_policy_url": "https://www.centurygame.com/privacy-policy/",
+            "integration_types_config": {
+                "0": {},
+                "1": {}
+            },
+            "verify_key": "8b75d3063a8c1c976ac4245bfb8d20a2c1433a628d589032e34f1f1bd2ad2ae4",
+            "flags": 131082,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1273119672728031326",
+                "supported_platforms": [
+                    "web"
+                ],
+                "default_orientation_lock_state": 1,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "activities_team"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "activities_team"
+                    }
+                },
+                "shelf_rank": 2147483647,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Casual",
+                "Simulation",
+                "Tycoon"
             ]
         },
         {
@@ -3738,7 +3799,7 @@
                 }
             },
             "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
-            "flags": 2228226,
+            "flags": 131074,
             "max_participants": 100,
             "embedded_activity_config": {
                 "activity_preview_video_asset_id": "1270672580918906890",
@@ -3780,108 +3841,22 @@
                 "Quiz",
                 "Trivia"
             ]
-        },
-        {
-            "id": "1245937701136633866",
-            "name": "Idle Mafia",
-            "icon": "272882c86f430ed29ab7124eef43aafd",
-            "description": "Manage insidious businesses, gather talented Capos to carry out your bidding, and occupy new territory through any means necessary.\n",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": false,
-            "cover_image": "272882c86f430ed29ab7124eef43aafd",
-            "hook": true,
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://www.centurygame.com/terms-of-service/",
-            "privacy_policy_url": "https://www.centurygame.com/privacy-policy/",
-            "integration_types_config": {
-                "0": {},
-                "1": {}
-            },
-            "verify_key": "8b75d3063a8c1c976ac4245bfb8d20a2c1433a628d589032e34f1f1bd2ad2ae4",
-            "flags": 2228234,
-            "max_participants": null,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1273119672728031326",
-                "supported_platforms": [
-                    "web"
-                ],
-                "default_orientation_lock_state": 1,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch"
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "activities_team"
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "activities_team"
-                    }
-                },
-                "shelf_rank": 2147483647,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Casual",
-                "Simulation",
-                "Tycoon"
-            ]
         }
     ],
     "assets": {
-        "1194351737264406548": [
+        "902271654783242291": [
             {
-                "id": "1249958375014273125",
+                "id": "1170035280183558316",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1192153348909056121",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1249958561723973633",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1259770093852950588",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1259771952114040909",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1259772101259427920",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1268448240404140042",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1271709230839103549",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1272423920791715840",
+                "id": "1192153358342049882",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -3964,33 +3939,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "879863686565621790": [
-            {
-                "id": "933441342128918588",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "933441669255274497",
-                "type": 1,
-                "name": "servericon-small"
-            },
-            {
-                "id": "951327458051883018",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1027619860538208318",
-                "type": 1,
-                "name": "embedded_splash"
-            },
-            {
-                "id": "1075145073018290196",
-                "type": 1,
-                "name": "embedded_background"
-            }
-        ],
         "1007373802981822582": [
             {
                 "id": "1103415181293408326",
@@ -4014,6 +3962,33 @@
             },
             {
                 "id": "1103765118791192696",
+                "type": 1,
+                "name": "embedded_background"
+            }
+        ],
+        "879863686565621790": [
+            {
+                "id": "933441342128918588",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "933441669255274497",
+                "type": 1,
+                "name": "servericon-small"
+            },
+            {
+                "id": "951327458051883018",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1027619860538208318",
+                "type": 1,
+                "name": "embedded_splash"
+            },
+            {
+                "id": "1075145073018290196",
                 "type": 1,
                 "name": "embedded_background"
             }
@@ -4528,6 +4503,69 @@
                 "name": "embedded_cover"
             }
         ],
+        "235088799074484224": [
+            {
+                "id": "1245127397347688518",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1245127685076816004",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1248697055904534610",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1248697061977751635",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1119539298128105484": [
+            {
+                "id": "1232379275441864784",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1258858900346765313",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1205582362897809492": [
+            {
+                "id": "1245429879487467715",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1245429887204855888",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1078728822972764312": [
+            {
+                "id": "1078737214168629288",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1078737439792832682",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1111037441697140848",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1011683823555199066": [
             {
                 "id": "1105808955357265954",
@@ -4622,69 +4660,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1205582362897809492": [
-            {
-                "id": "1245429879487467715",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1245429887204855888",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1078728822972764312": [
-            {
-                "id": "1078737214168629288",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1078737439792832682",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1111037441697140848",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1119539298128105484": [
-            {
-                "id": "1232379275441864784",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1258858900346765313",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "235088799074484224": [
-            {
-                "id": "1245127397347688518",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1245127685076816004",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1248697055904534610",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1248697061977751635",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1037680572660727838": [
             {
                 "id": "1080081340097110046",
@@ -4757,6 +4732,48 @@
                 "name": "embedded_cover"
             }
         ],
+        "1194351737264406548": [
+            {
+                "id": "1249958375014273125",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1249958561723973633",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1259770093852950588",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1259771952114040909",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1259772101259427920",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1268448240404140042",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1271709230839103549",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1272423920791715840",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "755827207812677713": [
             {
                 "id": "839608726894018561",
@@ -4770,23 +4787,6 @@
             },
             {
                 "id": "1121240234714202242",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "902271654783242291": [
-            {
-                "id": "1170035280183558316",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1192153348909056121",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1192153358342049882",
                 "type": 1,
                 "name": "embedded_cover"
             }
