@@ -1777,8 +1777,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1"
             },
@@ -1786,8 +1786,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1"
                     }
@@ -2184,8 +2184,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "2048"
             },
@@ -2193,8 +2193,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "2048"
                     }
@@ -3375,8 +3375,8 @@
             "privacy_policy_url": "https://trebel.io/web/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "141770902792"
             },
@@ -3384,8 +3384,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "141770902792"
                     }
@@ -4150,23 +4150,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1107689944685748377": [
-            {
-                "id": "1119359403494223872",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1133154492901245048",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1133154500509704224",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1245041113882955918": [
             {
                 "id": "1273050322264260724",
@@ -4180,6 +4163,23 @@
             },
             {
                 "id": "1273051418726498399",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1107689944685748377": [
+            {
+                "id": "1119359403494223872",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1133154492901245048",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1133154500509704224",
                 "type": 1,
                 "name": "embedded_cover"
             }
