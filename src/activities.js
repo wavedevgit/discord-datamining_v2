@@ -18,7 +18,8 @@ function diff(a, b) {
     const diff = { removed: [], added: [] };
     const aIds = a.activities.map((activity) => activity.application_id);
     const bIds = b.activities.map((activity) => activity.application_id);
-
+    const names = {}
+    
     for (let activityId of aIds) {
         // removed
         if (!bIds.includes(activityId)) {
@@ -30,8 +31,18 @@ function diff(a, b) {
         // added
         if (!aIds.includes(activityId)) {
             diff.added.push(b.activities.find((activity) => activity.application_id == activityId));
+        
         }
     }
+
+    
+    for (let app of b.applications) {
+     names[app.id] = app.name
+    }
+    for (let app of a.applications) {
+     names[app.id] = app.name
+    }
+    
 
     if (diff.added.length)
         result.push({
@@ -40,7 +51,7 @@ function diff(a, b) {
             description: diff.added
                 .map(
                     (activity) =>
-                        `${activity.application_id} - ${activity.name} - https://${activity.application_id}.discordsays.com`,
+                        `${activity.application_id} - ${names[activity.application_id]} - https://${activity.application_id}.discordsays.com`,
                 )
                 .join('\n'),
         });
@@ -52,7 +63,7 @@ function diff(a, b) {
             description: diff.removed
                 .map(
                     (activity) =>
-                        `${activity.application_id} - ${activity.name} - https://${activity.application_id}.discordsays.com`,
+                        `${activity.application_id} - ${names[activity.application_id]} - https://${activity.application_id}.discordsays.com`,
                 )
                 .join('\n'),
         });
