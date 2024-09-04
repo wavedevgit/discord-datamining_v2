@@ -18,8 +18,8 @@ function diff(a, b) {
     const diff = { removed: [], added: [] };
     const aIds = a.activities.map((activity) => activity.application_id);
     const bIds = b.activities.map((activity) => activity.application_id);
-    const names = {}
-    
+    const names = {};
+
     for (let activityId of aIds) {
         // removed
         if (!bIds.includes(activityId)) {
@@ -31,51 +31,33 @@ function diff(a, b) {
         // added
         if (!aIds.includes(activityId)) {
             diff.added.push(b.activities.find((activity) => activity.application_id == activityId));
-        
         }
     }
 
-    
-    for (let app of b.applications) {
-     names[app.id] = app.name
-    }
-    for (let app of a.applications) {
-     names[app.id] = app.name
-    }
-    
-
     if (diff.added.length)
-        result.push({
-            title: 'Activities - Added',
-            color: 0x008000,
-            description: diff.added
-                .map(
-                    (activity) =>
-                        `${activity.application_id} - ${names[activity.application_id]} - https://${activity.application_id}.discordsays.com`,
-                )
-                .join('\n'),
-        });
+        result.push(
+            '## Activites - Added\n',
+            ...diff.added.map(
+                (activity) =>
+                    `https://discord.com/activities/${activity.application_id} - \`https://${activity.application_id}.discordsays.com\`\n`,
+            ),
+        );
 
     if (diff.removed.length)
-        result.push({
-            title: 'Activities - Removed',
-            color: 0xff0000,
-            description: diff.removed
-                .map(
-                    (activity) =>
-                        `${activity.application_id} - ${names[activity.application_id]} - https://${activity.application_id}.discordsays.com`,
-                )
-                .join('\n'),
-        });
+        result.push(
+            '## Activites - Removed',
+            ...diff.removed.map(
+                (activity) =>
+                    `https://discord.com/activities/${activity.application_id} - \`https://${activity.application_id}.discordsays.com\``,
+            ),
+        );
 
     if (result.length) {
         sendToWebhook(WEBHOOKS_URLS.activities, {
-            content: PINGS.activities,
-            embeds: result,
+            content: PINGS.activities + '\n' + result.join('\n'),
         });
         sendToWebhook(process.env.ACTIVIESWC, {
-            content: PINGS.activities,
-            embeds: result,
+            content: PINGS.activities + '\n' + result.join('\n'),
         });
     }
 }
