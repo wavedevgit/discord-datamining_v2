@@ -1183,42 +1183,6 @@
             "application_id": "1244625526606401658"
         },
         {
-            "activity_preview_video_asset_id": "1254699590603505695",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch"
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch"
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch"
-                }
-            },
-            "shelf_rank": 35,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1222462865345351760"
-        },
-        {
             "activity_preview_video_asset_id": "1231058431922671636",
             "supported_platforms": [
                 "web"
@@ -1247,7 +1211,7 @@
                     "release_phase": "activities_team"
                 }
             },
-            "shelf_rank": 36,
+            "shelf_rank": 35,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1220052815590723654"
@@ -1283,7 +1247,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 37,
+            "shelf_rank": 36,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1258330015917936700"
@@ -1319,7 +1283,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 38,
+            "shelf_rank": 37,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1245937701136633866"
@@ -1353,7 +1317,7 @@
                     "release_phase": "in_development"
                 }
             },
-            "shelf_rank": 39,
+            "shelf_rank": 38,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1253407354087542866"
@@ -1389,7 +1353,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 40,
+            "shelf_rank": 39,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1245041113882955918"
@@ -1425,7 +1389,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 41,
+            "shelf_rank": 40,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1277095289626431488"
@@ -1459,7 +1423,7 @@
                     "release_phase": "in_development"
                 }
             },
-            "shelf_rank": 42,
+            "shelf_rank": 41,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1230610135274225734"
@@ -1493,7 +1457,7 @@
                     "release_phase": "in_development"
                 }
             },
-            "shelf_rank": 43,
+            "shelf_rank": 42,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1247866565723160596"
@@ -1527,10 +1491,46 @@
                     "release_phase": "in_development"
                 }
             },
-            "shelf_rank": 44,
+            "shelf_rank": 43,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1043607583119917136"
+        },
+        {
+            "activity_preview_video_asset_id": "1254699590603505695",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                }
+            },
+            "shelf_rank": 44,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1222462865345351760"
         }
     ],
     "applications": [
@@ -3830,93 +3830,6 @@
             ]
         },
         {
-            "id": "1222462865345351760",
-            "name": "BattleTabs",
-            "icon": "89240deaf785cc1c91eaccc94d05a845",
-            "description": "Viking Ship Battles! BattleTabs is a turn-based PVP strategy game full of nautical nonsense! Effortlessly easy to play but only the best will be able to master the strategies! Play PVP in short battles for intense action or take it easy and play long battles with 24 hour turn times.",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": false,
-            "cover_image": "9215bd779a472b9b51edd1ff8a833cab",
-            "primary_sku_id": "1262279078979829791",
-            "hook": true,
-            "slug": "battletabs",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://battletabs.com/terms",
-            "privacy_policy_url": "https://battletabs.com/privacy-policy",
-            "install_params": {
-                "scopes": [
-                    "applications.commands"
-                ],
-                "permissions": "0"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "ef152f419d22dd784846d255856aeedf776ca50a56816992b58ad8b3098839bd",
-            "flags": 131082,
-            "max_participants": 20,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1254699590603505695",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch"
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch"
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch"
-                    }
-                },
-                "shelf_rank": 35,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "battleship",
-                "casual",
-                "pvp",
-                "strategy",
-                "turn-based"
-            ]
-        },
-        {
             "id": "1220052815590723654",
             "name": "Exoracer",
             "icon": "1c2764319d77452a14e79eb4dae4594a",
@@ -3986,7 +3899,7 @@
                         "release_phase": "activities_team"
                     }
                 },
-                "shelf_rank": 36,
+                "shelf_rank": 35,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4069,7 +3982,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 37,
+                "shelf_rank": 36,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4132,7 +4045,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 38,
+                "shelf_rank": 37,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4214,7 +4127,7 @@
                         "release_phase": "in_development"
                     }
                 },
-                "shelf_rank": 39,
+                "shelf_rank": 38,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4277,7 +4190,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 40,
+                "shelf_rank": 39,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4363,7 +4276,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 41,
+                "shelf_rank": 40,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4445,7 +4358,7 @@
                         "release_phase": "in_development"
                     }
                 },
-                "shelf_rank": 42,
+                "shelf_rank": 41,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4529,7 +4442,7 @@
                         "release_phase": "in_development"
                     }
                 },
-                "shelf_rank": 43,
+                "shelf_rank": 42,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4609,7 +4522,7 @@
                         "release_phase": "in_development"
                     }
                 },
-                "shelf_rank": 44,
+                "shelf_rank": 43,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4618,47 +4531,109 @@
                 "MMO",
                 "Multiplayer"
             ]
+        },
+        {
+            "id": "1222462865345351760",
+            "name": "BattleTabs",
+            "icon": "89240deaf785cc1c91eaccc94d05a845",
+            "description": "Viking Ship Battles! BattleTabs is a turn-based PVP strategy game full of nautical nonsense! Effortlessly easy to play but only the best will be able to master the strategies! Play PVP in short battles for intense action or take it easy and play long battles with 24 hour turn times.",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": false,
+            "cover_image": "9215bd779a472b9b51edd1ff8a833cab",
+            "primary_sku_id": "1262279078979829791",
+            "hook": true,
+            "slug": "battletabs",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://battletabs.com/terms",
+            "privacy_policy_url": "https://battletabs.com/privacy-policy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "ef152f419d22dd784846d255856aeedf776ca50a56816992b58ad8b3098839bd",
+            "flags": 131082,
+            "max_participants": 20,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1254699590603505695",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    }
+                },
+                "shelf_rank": 44,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "battleship",
+                "casual",
+                "pvp",
+                "strategy",
+                "turn-based"
+            ]
         }
     ],
     "assets": {
-        "1194351737264406548": [
+        "755827207812677713": [
             {
-                "id": "1249958375014273125",
+                "id": "839608726894018561",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1070451415220232292",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1249958561723973633",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1259770093852950588",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1259771952114040909",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1259772101259427920",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1268448240404140042",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1271709230839103549",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1272423920791715840",
+                "id": "1121240234714202242",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -4673,23 +4648,6 @@
                 "id": "1233446126120603709",
                 "type": 1,
                 "name": "embedded_background"
-            }
-        ],
-        "1245041113882955918": [
-            {
-                "id": "1273050322264260724",
-                "type": 1,
-                "name": "tro_square1024x1024"
-            },
-            {
-                "id": "1273051413324234903",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1273051418726498399",
-                "type": 1,
-                "name": "embedded_cover"
             }
         ],
         "1187013846746005515": [
@@ -4717,6 +4675,23 @@
             },
             {
                 "id": "1133154500509704224",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1245041113882955918": [
+            {
+                "id": "1273050322264260724",
+                "type": 1,
+                "name": "tro_square1024x1024"
+            },
+            {
+                "id": "1273051413324234903",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1273051418726498399",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -4935,24 +4910,19 @@
                 "name": "embedded_background"
             }
         ],
-        "1220052815590723654": [
+        "1222462865345351760": [
             {
-                "id": "1236833383447924869",
+                "id": "1234780800977862737",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1254699571586531338",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1236833407674351728",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1236833561970086000",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1236835375088140288",
+                "id": "1254699582282010734",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -4991,33 +4961,43 @@
                 "name": "servericon"
             }
         ],
-        "1222462865345351760": [
+        "1220052815590723654": [
             {
-                "id": "1234780800977862737",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1254699571586531338",
+                "id": "1236833383447924869",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1254699582282010734",
+                "id": "1236833407674351728",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236833561970086000",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236835375088140288",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1247866565723160596": [
+        "1258330015917936700": [
             {
-                "id": "1248676596051738654",
+                "id": "1258330382580056064",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1258330388267401226",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1249723259751239754",
+                "id": "1270625086797385738",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "qp-icon"
             }
         ],
         "1039835161136746497": [
@@ -5104,21 +5084,16 @@
                 "name": "embedded_cover"
             }
         ],
-        "1258330015917936700": [
+        "1247866565723160596": [
             {
-                "id": "1258330382580056064",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1258330388267401226",
+                "id": "1248676596051738654",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1270625086797385738",
+                "id": "1249723259751239754",
                 "type": 1,
-                "name": "qp-icon"
+                "name": "embedded_background"
             }
         ],
         "832025144389533716": [
@@ -5290,14 +5265,14 @@
                 "name": "icon_1024"
             }
         ],
-        "1186796615432937584": [
+        "1227719606223765687": [
             {
-                "id": "1192885818491150469",
+                "id": "1270524636932608063",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1192885823868248144",
+                "id": "1270524644407115846",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5341,14 +5316,14 @@
                 "name": "embedded_cover"
             }
         ],
-        "1227719606223765687": [
+        "1186796615432937584": [
             {
-                "id": "1270524636932608063",
+                "id": "1192885818491150469",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1270524644407115846",
+                "id": "1192885823868248144",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5449,14 +5424,44 @@
                 "name": "embedded_cover2"
             }
         ],
-        "1119539298128105484": [
+        "1106787098452832296": [
             {
-                "id": "1278009272772333611",
+                "id": "1179134514799321208",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1278009276983676968",
+                "id": "1179134666901553204",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1207909073262223440",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207909390489882644",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207909887292743690",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207912301416423466",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207926203437158460",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1238295820151947394",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5512,44 +5517,73 @@
                 "name": "embedded_cover"
             }
         ],
-        "1106787098452832296": [
+        "1119539298128105484": [
             {
-                "id": "1179134514799321208",
+                "id": "1278009272772333611",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1179134666901553204",
+                "id": "1278009276983676968",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "902271654783242291": [
+            {
+                "id": "1170035280183558316",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1192153348909056121",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1207909073262223440",
+                "id": "1192153358342049882",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1194351737264406548": [
+            {
+                "id": "1249958375014273125",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1249958561723973633",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1259770093852950588",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1207909390489882644",
+                "id": "1259771952114040909",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1207909887292743690",
+                "id": "1259772101259427920",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1207912301416423466",
+                "id": "1268448240404140042",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1207926203437158460",
+                "id": "1271709230839103549",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1238295820151947394",
+                "id": "1272423920791715840",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5622,40 +5656,6 @@
             },
             {
                 "id": "1159482793533911132",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "755827207812677713": [
-            {
-                "id": "839608726894018561",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1070451415220232292",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1121240234714202242",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "902271654783242291": [
-            {
-                "id": "1170035280183558316",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1192153348909056121",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1192153358342049882",
                 "type": 1,
                 "name": "embedded_cover"
             }
