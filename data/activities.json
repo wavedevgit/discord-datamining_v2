@@ -1,6 +1,41 @@
 {
     "activities": [
         {
+            "activity_preview_video_asset_id": "1274075715846930605",
+            "supported_platforms": [
+                "web",
+                "android"
+            ],
+            "default_orientation_lock_state": 3,
+            "tablet_default_orientation_lock_state": 3,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "in_development"
+                }
+            },
+            "shelf_rank": 1,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1253407354087542866"
+        },
+        {
             "activity_preview_video_asset_id": "1232355776870223923",
             "supported_platforms": [
                 "web",
@@ -31,7 +66,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 1,
+            "shelf_rank": 2,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1187013846746005515"
@@ -67,7 +102,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 2,
+            "shelf_rank": 3,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "880218394199220334"
@@ -103,46 +138,10 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 3,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1007373802981822582"
-        },
-        {
-            "activity_preview_video_asset_id": "1288280948680429651",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch"
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch"
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch"
-                }
-            },
             "shelf_rank": 4,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1277095289626431488"
+            "application_id": "1007373802981822582"
         },
         {
             "activity_preview_video_asset_id": "1254699590603505695",
@@ -181,42 +180,6 @@
             "application_id": "1222462865345351760"
         },
         {
-            "activity_preview_video_asset_id": "1214732144103137300",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 1,
-                    "label_until": "2024-05-24T23:30:00+00:00",
-                    "release_phase": "global_launch"
-                },
-                "android": {
-                    "label_type": 1,
-                    "label_until": "2024-05-24T23:30:00+00:00",
-                    "release_phase": "global_launch"
-                },
-                "ios": {
-                    "label_type": 1,
-                    "label_until": "2024-05-24T23:30:00+00:00",
-                    "release_phase": "global_launch"
-                }
-            },
-            "shelf_rank": 6,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1194351737264406548"
-        },
-        {
             "activity_preview_video_asset_id": "1073351701312053359",
             "supported_platforms": [
                 "web",
@@ -247,7 +210,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 7,
+            "shelf_rank": 6,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "755827207812677713"
@@ -283,7 +246,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 8,
+            "shelf_rank": 7,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1276646101914615872"
@@ -319,10 +282,82 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 9,
+            "shelf_rank": 8,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1011683823555199066"
+        },
+        {
+            "activity_preview_video_asset_id": "1214732144103137300",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 1,
+                    "label_until": "2024-05-24T23:30:00+00:00",
+                    "release_phase": "global_launch"
+                },
+                "android": {
+                    "label_type": 1,
+                    "label_until": "2024-05-24T23:30:00+00:00",
+                    "release_phase": "global_launch"
+                },
+                "ios": {
+                    "label_type": 1,
+                    "label_until": "2024-05-24T23:30:00+00:00",
+                    "release_phase": "global_launch"
+                }
+            },
+            "shelf_rank": 9,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1194351737264406548"
+        },
+        {
+            "activity_preview_video_asset_id": "1288280948680429651",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch"
+                }
+            },
+            "shelf_rank": 10,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1277095289626431488"
         },
         {
             "activity_preview_video_asset_id": "1146495383174926457",
@@ -355,7 +390,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 10,
+            "shelf_rank": 11,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1070087967294631976"
@@ -389,7 +424,7 @@
                     "release_phase": "employee_release"
                 }
             },
-            "shelf_rank": 11,
+            "shelf_rank": 12,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1199271093882589195"
@@ -425,7 +460,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 12,
+            "shelf_rank": 13,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "832012774040141894"
@@ -461,7 +496,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 13,
+            "shelf_rank": 14,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1227719606223765687"
@@ -497,7 +532,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 14,
+            "shelf_rank": 15,
             "has_csp_exception": true,
             "displays_advertisements": false,
             "application_id": "235088799074484224"
@@ -531,7 +566,7 @@
                     "release_phase": "in_development"
                 }
             },
-            "shelf_rank": 15,
+            "shelf_rank": 16,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1199817737728442569"
@@ -567,7 +602,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 16,
+            "shelf_rank": 17,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1186796615432937584"
@@ -603,7 +638,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 17,
+            "shelf_rank": 18,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1037680572660727838"
@@ -639,7 +674,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 18,
+            "shelf_rank": 19,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "832025144389533716"
@@ -675,7 +710,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 19,
+            "shelf_rank": 20,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "945737671223947305"
@@ -711,7 +746,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 20,
+            "shelf_rank": 21,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "947957217959759964"
@@ -747,7 +782,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 21,
+            "shelf_rank": 22,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1186785228182798556"
@@ -783,7 +818,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 22,
+            "shelf_rank": 23,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1078728822972764312"
@@ -819,7 +854,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 23,
+            "shelf_rank": 24,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "903769130790969345"
@@ -855,7 +890,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 24,
+            "shelf_rank": 25,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "902271654783242291"
@@ -891,7 +926,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 25,
+            "shelf_rank": 26,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1039835161136746497"
@@ -927,7 +962,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 26,
+            "shelf_rank": 27,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "879863686565621790"
@@ -963,7 +998,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 27,
+            "shelf_rank": 28,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "852509694341283871"
@@ -999,7 +1034,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 28,
+            "shelf_rank": 29,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1106787098452832296"
@@ -1035,7 +1070,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 29,
+            "shelf_rank": 30,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "832013003968348200"
@@ -1071,7 +1106,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 30,
+            "shelf_rank": 31,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1107689944685748377"
@@ -1107,7 +1142,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 31,
+            "shelf_rank": 32,
             "has_csp_exception": true,
             "displays_advertisements": false,
             "application_id": "1120784239546347531"
@@ -1143,7 +1178,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 33,
+            "shelf_rank": 34,
             "has_csp_exception": true,
             "displays_advertisements": true,
             "application_id": "1196535986226745437"
@@ -1179,7 +1214,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 34,
+            "shelf_rank": 35,
             "has_csp_exception": true,
             "displays_advertisements": true,
             "application_id": "1119539298128105484"
@@ -1215,7 +1250,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 35,
+            "shelf_rank": 36,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1205582362897809492"
@@ -1249,7 +1284,7 @@
                     "release_phase": "in_development"
                 }
             },
-            "shelf_rank": 36,
+            "shelf_rank": 37,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1217877285923979415"
@@ -1285,7 +1320,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 37,
+            "shelf_rank": 38,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1244625526606401658"
@@ -1321,7 +1356,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 38,
+            "shelf_rank": 39,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1258330015917936700"
@@ -1355,7 +1390,7 @@
                     "release_phase": "activities_team"
                 }
             },
-            "shelf_rank": 39,
+            "shelf_rank": 40,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1220052815590723654"
@@ -1391,7 +1426,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 40,
+            "shelf_rank": 41,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1245041113882955918"
@@ -1427,7 +1462,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 41,
+            "shelf_rank": 42,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1245937701136633866"
@@ -1463,7 +1498,7 @@
                     "release_phase": "employee_release"
                 }
             },
-            "shelf_rank": 42,
+            "shelf_rank": 43,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1230610135274225734"
@@ -1499,7 +1534,7 @@
                     "release_phase": "employee_release"
                 }
             },
-            "shelf_rank": 43,
+            "shelf_rank": 44,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1247866565723160596"
@@ -1535,7 +1570,7 @@
                     "release_phase": "soft_launch"
                 }
             },
-            "shelf_rank": 44,
+            "shelf_rank": 45,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1219647973806571553"
@@ -1569,48 +1604,98 @@
                     "release_phase": "in_development"
                 }
             },
-            "shelf_rank": 45,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1043607583119917136"
-        },
-        {
-            "activity_preview_video_asset_id": "1274075715846930605",
-            "supported_platforms": [
-                "web",
-                "android"
-            ],
-            "default_orientation_lock_state": 3,
-            "tablet_default_orientation_lock_state": 3,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch"
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch"
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "in_development"
-                }
-            },
             "shelf_rank": 46,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1253407354087542866"
+            "application_id": "1043607583119917136"
         }
     ],
     "applications": [
+        {
+            "id": "1253407354087542866",
+            "name": "Arena Kingdoms",
+            "icon": "0b6467315daab4cb487c4de4f8751b13",
+            "description": "Train, battle, and win with your community! Arena Kingdoms is a community battle game where servers play together, compete, and represent their server in weekly Tournaments! \n\nIn Arena Kingdoms, you will lead heroes to form powerful parties 🛡️, train in the community gauntlet 🏹, and fight your way to the ARENA for epic rewards 🏆, exclusive prizes, and everlasting glory 👑! ",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "cover_image": "02eddbb2c6b1399e3b6501c7915c1a38",
+            "hook": true,
+            "guild_id": "1152321743667605684",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://captain.tv/terms",
+            "privacy_policy_url": "https://captain.tv/privacy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands",
+                    "bot"
+                ],
+                "permissions": "274877910032"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands",
+                            "bot"
+                        ],
+                        "permissions": "274877910032"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "12ad9347239585ccafa9e6dc71546a137fe6f97c131fead3a9c175025ce688a6",
+            "flags": 9076746,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1274075715846930605",
+                "supported_platforms": [
+                    "web",
+                    "android"
+                ],
+                "default_orientation_lock_state": 3,
+                "tablet_default_orientation_lock_state": 3,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "in_development"
+                    }
+                },
+                "shelf_rank": 1,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Battle",
+                "PVP",
+                "RPG"
+            ]
+        },
         {
             "id": "1187013846746005515",
             "name": "Farm Merge Valley",
@@ -1685,7 +1770,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 1,
+                "shelf_rank": 2,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -1750,7 +1835,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 2,
+                "shelf_rank": 3,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -1813,7 +1898,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 3,
+                "shelf_rank": 4,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -1821,94 +1906,6 @@
                 "Drawing",
                 "Party",
                 "Telephone Game"
-            ]
-        },
-        {
-            "id": "1277095289626431488",
-            "name": "Echo Chess Daily",
-            "icon": "090493fb6a00cdb88725b6eaf0fc6ffd",
-            "description": "Chess, but you are what you eat. Can you clear the board to win? New daily puzzles every 24 hours.",
-            "summary": "",
-            "type": null,
-            "is_monetized": false,
-            "is_verified": true,
-            "cover_image": "baac0e9d2447c778d6503e18bda10b52",
-            "hook": true,
-            "guild_id": "1201916133297623141",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://echochess.com/terms-of-service",
-            "privacy_policy_url": "https://echochess.com/privacy-policy",
-            "install_params": {
-                "scopes": [
-                    "bot",
-                    "applications.commands"
-                ],
-                "permissions": "1126449696212992"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "bot",
-                            "applications.commands"
-                        ],
-                        "permissions": "1126449696212992"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "a5699249b4e1aff1d2a29104e7aded23f127c2773075239ab03044926caa7042",
-            "flags": 10616834,
-            "max_participants": null,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1288280948680429651",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch"
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch"
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch"
-                    }
-                },
-                "shelf_rank": 4,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Board Game",
-                "Chess",
-                "Daily Game",
-                "Puzzle",
-                "Strategy"
             ]
         },
         {
@@ -2000,71 +1997,6 @@
             ]
         },
         {
-            "id": "1194351737264406548",
-            "name": "Death by AI",
-            "icon": "b8d3b3bd913ea4b4f41420809de73e06",
-            "description": "Death by AI is a prompt based survival multiplayer game to play with your friends and family. Step into a world where AI holds all the cards. Will it be your ally, or will it pull the plug? Choose wisely, because it's not programmed to care! ",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": true,
-            "cover_image": "8b9927c8c2ee042e5967c451f57c76be",
-            "primary_sku_id": "1225878725757894857",
-            "hook": true,
-            "slug": "death-by-ai",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://joinplayroom.com/games/terms/tos-dbai.txt",
-            "privacy_policy_url": "https://joinplayroom.com/games/terms/privacy.txt",
-            "integration_types_config": {
-                "0": {},
-                "1": {}
-            },
-            "verify_key": "36f01e074697b6ee09b15a922cd7aaa5d2dcdb42a89c0e1e523bdb900e2695ba",
-            "flags": 131082,
-            "max_participants": 10,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1214732144103137300",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 1,
-                        "label_until": "2024-05-24T23:30:00+00:00",
-                        "release_phase": "global_launch"
-                    },
-                    "android": {
-                        "label_type": 1,
-                        "label_until": "2024-05-24T23:30:00+00:00",
-                        "release_phase": "global_launch"
-                    },
-                    "ios": {
-                        "label_type": 1,
-                        "label_until": "2024-05-24T23:30:00+00:00",
-                        "release_phase": "global_launch"
-                    }
-                },
-                "shelf_rank": 6,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "AI",
-                "Party",
-                "Survival"
-            ]
-        },
-        {
             "id": "755827207812677713",
             "name": "Poker Night",
             "icon": "e594da3ca4520c7edde5b59948e97cdc",
@@ -2143,7 +2075,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 7,
+                "shelf_rank": 6,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2212,7 +2144,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 8,
+                "shelf_rank": 7,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2275,7 +2207,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 9,
+                "shelf_rank": 8,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2283,6 +2215,159 @@
                 "Arcade",
                 "FPS",
                 "Shooter"
+            ]
+        },
+        {
+            "id": "1194351737264406548",
+            "name": "Death by AI",
+            "icon": "b8d3b3bd913ea4b4f41420809de73e06",
+            "description": "Death by AI is a prompt based survival multiplayer game to play with your friends and family. Step into a world where AI holds all the cards. Will it be your ally, or will it pull the plug? Choose wisely, because it's not programmed to care! ",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "cover_image": "8b9927c8c2ee042e5967c451f57c76be",
+            "primary_sku_id": "1225878725757894857",
+            "hook": true,
+            "slug": "death-by-ai",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://joinplayroom.com/games/terms/tos-dbai.txt",
+            "privacy_policy_url": "https://joinplayroom.com/games/terms/privacy.txt",
+            "integration_types_config": {
+                "0": {},
+                "1": {}
+            },
+            "verify_key": "36f01e074697b6ee09b15a922cd7aaa5d2dcdb42a89c0e1e523bdb900e2695ba",
+            "flags": 131082,
+            "max_participants": 10,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1214732144103137300",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 1,
+                        "label_until": "2024-05-24T23:30:00+00:00",
+                        "release_phase": "global_launch"
+                    },
+                    "android": {
+                        "label_type": 1,
+                        "label_until": "2024-05-24T23:30:00+00:00",
+                        "release_phase": "global_launch"
+                    },
+                    "ios": {
+                        "label_type": 1,
+                        "label_until": "2024-05-24T23:30:00+00:00",
+                        "release_phase": "global_launch"
+                    }
+                },
+                "shelf_rank": 9,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "AI",
+                "Party",
+                "Survival"
+            ]
+        },
+        {
+            "id": "1277095289626431488",
+            "name": "Echo Chess Daily",
+            "icon": "090493fb6a00cdb88725b6eaf0fc6ffd",
+            "description": "Chess, but you are what you eat. Can you clear the board to win? New daily puzzles every 24 hours.",
+            "summary": "",
+            "type": null,
+            "is_monetized": false,
+            "is_verified": true,
+            "cover_image": "baac0e9d2447c778d6503e18bda10b52",
+            "hook": true,
+            "guild_id": "1201916133297623141",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://echochess.com/terms-of-service",
+            "privacy_policy_url": "https://echochess.com/privacy-policy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands",
+                    "bot"
+                ],
+                "permissions": "1126449696212992"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands",
+                            "bot"
+                        ],
+                        "permissions": "1126449696212992"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "a5699249b4e1aff1d2a29104e7aded23f127c2773075239ab03044926caa7042",
+            "flags": 10616834,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1288280948680429651",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch"
+                    }
+                },
+                "shelf_rank": 10,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Board Game",
+                "Chess",
+                "Daily Game",
+                "Puzzle",
+                "Strategy"
             ]
         },
         {
@@ -2338,7 +2423,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 10,
+                "shelf_rank": 11,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2367,8 +2452,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "1"
             },
@@ -2376,8 +2461,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "1"
                     }
@@ -2423,7 +2508,7 @@
                         "release_phase": "employee_release"
                     }
                 },
-                "shelf_rank": 11,
+                "shelf_rank": 12,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2507,7 +2592,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 12,
+                "shelf_rank": 13,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2591,7 +2676,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 13,
+                "shelf_rank": 14,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2621,8 +2706,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "2048"
             },
@@ -2630,8 +2715,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "2048"
                     }
@@ -2679,7 +2764,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 14,
+                "shelf_rank": 15,
                 "has_csp_exception": true,
                 "displays_advertisements": false
             },
@@ -2740,7 +2825,7 @@
                         "release_phase": "in_development"
                     }
                 },
-                "shelf_rank": 15,
+                "shelf_rank": 16,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2805,7 +2890,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 16,
+                "shelf_rank": 17,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2868,7 +2953,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 17,
+                "shelf_rank": 18,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2952,7 +3037,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 18,
+                "shelf_rank": 19,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3036,7 +3121,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 19,
+                "shelf_rank": 20,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3119,7 +3204,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 20,
+                "shelf_rank": 21,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3182,7 +3267,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 21,
+                "shelf_rank": 22,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3265,7 +3350,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 22,
+                "shelf_rank": 23,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3328,7 +3413,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 23,
+                "shelf_rank": 24,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3411,7 +3496,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 24,
+                "shelf_rank": 25,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3474,7 +3559,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 25,
+                "shelf_rank": 26,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3536,7 +3621,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 26,
+                "shelf_rank": 27,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3598,7 +3683,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 27,
+                "shelf_rank": 28,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3662,7 +3747,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 28,
+                "shelf_rank": 29,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3746,7 +3831,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 29,
+                "shelf_rank": 30,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3829,7 +3914,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 30,
+                "shelf_rank": 31,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -3913,7 +3998,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 31,
+                "shelf_rank": 32,
                 "has_csp_exception": true,
                 "displays_advertisements": false
             },
@@ -3977,7 +4062,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 33,
+                "shelf_rank": 34,
                 "has_csp_exception": true,
                 "displays_advertisements": true
             },
@@ -4005,8 +4090,8 @@
             "privacy_policy_url": "https://trebel.io/web/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "141770902792"
             },
@@ -4014,8 +4099,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "141770902792"
                     }
@@ -4063,7 +4148,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 34,
+                "shelf_rank": 35,
                 "has_csp_exception": true,
                 "displays_advertisements": true
             },
@@ -4126,7 +4211,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 35,
+                "shelf_rank": 36,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4208,7 +4293,7 @@
                         "release_phase": "in_development"
                     }
                 },
-                "shelf_rank": 36,
+                "shelf_rank": 37,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4291,7 +4376,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 37,
+                "shelf_rank": 38,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4373,7 +4458,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 38,
+                "shelf_rank": 39,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4453,7 +4538,7 @@
                         "release_phase": "activities_team"
                     }
                 },
-                "shelf_rank": 39,
+                "shelf_rank": 40,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4516,7 +4601,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 40,
+                "shelf_rank": 41,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4579,7 +4664,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 41,
+                "shelf_rank": 42,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4663,7 +4748,7 @@
                         "release_phase": "employee_release"
                     }
                 },
-                "shelf_rank": 42,
+                "shelf_rank": 43,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4691,8 +4776,8 @@
             "privacy_policy_url": "https://www.squadblast.com/privacy-policy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "1126449662658560"
             },
@@ -4700,8 +4785,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "1126449662658560"
                     }
@@ -4749,7 +4834,7 @@
                         "release_phase": "employee_release"
                     }
                 },
-                "shelf_rank": 43,
+                "shelf_rank": 44,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4833,7 +4918,7 @@
                         "release_phase": "soft_launch"
                     }
                 },
-                "shelf_rank": 44,
+                "shelf_rank": 45,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4914,7 +4999,7 @@
                         "release_phase": "in_development"
                     }
                 },
-                "shelf_rank": 45,
+                "shelf_rank": 46,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4923,149 +5008,34 @@
                 "MMO",
                 "Multiplayer"
             ]
-        },
-        {
-            "id": "1253407354087542866",
-            "name": "Arena Kingdoms",
-            "icon": "0b6467315daab4cb487c4de4f8751b13",
-            "description": "Train, battle, and win with your community! Arena Kingdoms is a community battle game where servers play together, compete, and represent their server in weekly Tournaments! \n\nIn Arena Kingdoms, you will lead heroes to form powerful parties 🛡️, train in the community gauntlet 🏹, and fight your way to the ARENA for epic rewards 🏆, exclusive prizes, and everlasting glory 👑! ",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": true,
-            "cover_image": "02eddbb2c6b1399e3b6501c7915c1a38",
-            "hook": true,
-            "guild_id": "1152321743667605684",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://captain.tv/terms",
-            "privacy_policy_url": "https://captain.tv/privacy",
-            "install_params": {
-                "scopes": [
-                    "bot",
-                    "applications.commands"
-                ],
-                "permissions": "274877910032"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "bot",
-                            "applications.commands"
-                        ],
-                        "permissions": "274877910032"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "12ad9347239585ccafa9e6dc71546a137fe6f97c131fead3a9c175025ce688a6",
-            "flags": 9076746,
-            "max_participants": null,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1274075715846930605",
-                "supported_platforms": [
-                    "web",
-                    "android"
-                ],
-                "default_orientation_lock_state": 3,
-                "tablet_default_orientation_lock_state": 3,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch"
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch"
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "in_development"
-                    }
-                },
-                "shelf_rank": 46,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Battle",
-                "PVP",
-                "RPG"
-            ]
         }
     ],
     "assets": {
-        "1078728822972764312": [
+        "755827207812677713": [
             {
-                "id": "1078737214168629288",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1078737439792832682",
+                "id": "839608726894018561",
                 "type": 1,
                 "name": "servericon"
             },
             {
-                "id": "1111037441697140848",
+                "id": "1070451415220232292",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1121240234714202242",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1194351737264406548": [
+        "1119539298128105484": [
             {
-                "id": "1249958375014273125",
+                "id": "1278009272772333611",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1249958561723973633",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1268448240404140042",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1271709230839103549",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1272423920791715840",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1285782328957734952",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1286563923872710706",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1287652791992586260",
+                "id": "1278009276983676968",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5080,23 +5050,6 @@
                 "id": "1233446126120603709",
                 "type": 1,
                 "name": "embedded_background"
-            }
-        ],
-        "1107689944685748377": [
-            {
-                "id": "1119359403494223872",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1133154492901245048",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1133154500509704224",
-                "type": 1,
-                "name": "embedded_cover"
             }
         ],
         "1187013846746005515": [
@@ -5124,6 +5077,23 @@
             },
             {
                 "id": "1273051418726498399",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1107689944685748377": [
+            {
+                "id": "1119359403494223872",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1133154492901245048",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1133154500509704224",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5427,21 +5397,16 @@
                 "name": "embedded_cover"
             }
         ],
-        "1258330015917936700": [
+        "1247866565723160596": [
             {
-                "id": "1258330382580056064",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1258330388267401226",
+                "id": "1248676596051738654",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1270625086797385738",
+                "id": "1249723259751239754",
                 "type": 1,
-                "name": "qp-icon"
+                "name": "embedded_background"
             }
         ],
         "1039835161136746497": [
@@ -5528,16 +5493,21 @@
                 "name": "embedded_cover"
             }
         ],
-        "1247866565723160596": [
+        "1258330015917936700": [
             {
-                "id": "1248676596051738654",
+                "id": "1258330382580056064",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1258330388267401226",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1249723259751239754",
+                "id": "1270625086797385738",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "qp-icon"
             }
         ],
         "832025144389533716": [
@@ -5724,14 +5694,14 @@
                 "name": "icon_1024"
             }
         ],
-        "1227719606223765687": [
+        "1186796615432937584": [
             {
-                "id": "1270524636932608063",
+                "id": "1192885818491150469",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1270524644407115846",
+                "id": "1192885823868248144",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5780,14 +5750,14 @@
                 "name": "embedded_cover"
             }
         ],
-        "1186796615432937584": [
+        "1227719606223765687": [
             {
-                "id": "1192885818491150469",
+                "id": "1270524636932608063",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1192885823868248144",
+                "id": "1270524644407115846",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5851,56 +5821,26 @@
                 "name": "embedded_cover"
             }
         ],
-        "1011683823555199066": [
+        "235088799074484224": [
             {
-                "id": "1105808955357265954",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1163894211813318746",
-                "type": 1,
-                "name": "embedded_background2"
-            },
-            {
-                "id": "1163894219384029254",
-                "type": 1,
-                "name": "embedded_cover2"
-            },
-            {
-                "id": "1163894429271195659",
-                "type": 1,
-                "name": "embedded_background2"
-            },
-            {
-                "id": "1163894437483647037",
-                "type": 1,
-                "name": "embedded_cover2"
-            },
-            {
-                "id": "1220762378312880188",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1241035004436414527",
+                "id": "1245127397347688518",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1241035012111859802",
+                "id": "1245127685076816004",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1248697055904534610",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1248697061977751635",
                 "type": 1,
                 "name": "embedded_cover"
-            },
-            {
-                "id": "1241038474782445689",
-                "type": 1,
-                "name": "servericon3"
-            },
-            {
-                "id": "1241038475239882842",
-                "type": 1,
-                "name": "embedded_cover2"
             }
         ],
         "1106787098452832296": [
@@ -5979,36 +5919,130 @@
                 "name": "icon"
             }
         ],
-        "235088799074484224": [
+        "1078728822972764312": [
             {
-                "id": "1245127397347688518",
+                "id": "1078737214168629288",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1245127685076816004",
+                "id": "1078737439792832682",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "servericon"
             },
             {
-                "id": "1248697055904534610",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1248697061977751635",
+                "id": "1111037441697140848",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1119539298128105484": [
+        "1011683823555199066": [
             {
-                "id": "1278009272772333611",
+                "id": "1105808955357265954",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1163894211813318746",
+                "type": 1,
+                "name": "embedded_background2"
+            },
+            {
+                "id": "1163894219384029254",
+                "type": 1,
+                "name": "embedded_cover2"
+            },
+            {
+                "id": "1163894429271195659",
+                "type": 1,
+                "name": "embedded_background2"
+            },
+            {
+                "id": "1163894437483647037",
+                "type": 1,
+                "name": "embedded_cover2"
+            },
+            {
+                "id": "1220762378312880188",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1241035004436414527",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1278009276983676968",
+                "id": "1241035012111859802",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1241038474782445689",
+                "type": 1,
+                "name": "servericon3"
+            },
+            {
+                "id": "1241038475239882842",
+                "type": 1,
+                "name": "embedded_cover2"
+            }
+        ],
+        "902271654783242291": [
+            {
+                "id": "1170035280183558316",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1192153348909056121",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1192153358342049882",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1194351737264406548": [
+            {
+                "id": "1249958375014273125",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1249958561723973633",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1268448240404140042",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1271709230839103549",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1272423920791715840",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1285782328957734952",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1286563923872710706",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1287652791992586260",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6081,40 +6115,6 @@
             },
             {
                 "id": "1159482793533911132",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "755827207812677713": [
-            {
-                "id": "839608726894018561",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1070451415220232292",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1121240234714202242",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "902271654783242291": [
-            {
-                "id": "1170035280183558316",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1192153348909056121",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1192153358342049882",
                 "type": 1,
                 "name": "embedded_cover"
             }
