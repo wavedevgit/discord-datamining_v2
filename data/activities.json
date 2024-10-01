@@ -72,6 +72,42 @@
             "application_id": "1187013846746005515"
         },
         {
+            "activity_preview_video_asset_id": "1277558958516600853",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 3,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                }
+            },
+            "shelf_rank": 3,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1276646101914615872"
+        },
+        {
             "activity_preview_video_asset_id": "1271215801436995646",
             "supported_platforms": [
                 "web",
@@ -102,7 +138,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 3,
+            "shelf_rank": 4,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "880218394199220334"
@@ -138,7 +174,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 4,
+            "shelf_rank": 5,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1007373802981822582"
@@ -174,7 +210,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 5,
+            "shelf_rank": 6,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1222462865345351760"
@@ -210,7 +246,7 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 6,
+            "shelf_rank": 7,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1277095289626431488"
@@ -246,46 +282,10 @@
                     "release_phase": "global_launch"
                 }
             },
-            "shelf_rank": 7,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "755827207812677713"
-        },
-        {
-            "activity_preview_video_asset_id": "1277558958516600853",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 3,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch"
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch"
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch"
-                }
-            },
             "shelf_rank": 8,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1276646101914615872"
+            "application_id": "755827207812677713"
         },
         {
             "activity_preview_video_asset_id": "1241037451925913801",
@@ -1783,6 +1783,75 @@
             ]
         },
         {
+            "id": "1276646101914615872",
+            "name": "Mergest Kingdom",
+            "icon": "a7d7c37b7516ad88967261c8a2e3fae1",
+            "description": "Merge together hundreds of objects in a land full of challenging quests, collect and harvest resources, design your own island by making it look the way YOU want it! Find the best ways to match and merge various pieces to erect the biggest buildings and cultivate the most fruitful plants! Help rebuild the Mergest Kingdom and make it the most magical one in the Seventh Realm!",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "cover_image": "a7d7c37b7516ad88967261c8a2e3fae1",
+            "hook": true,
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://cleverappssg.com/terms",
+            "privacy_policy_url": "https://cleverappssg.com/privacy",
+            "integration_types_config": {
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "117c347331603544d64271fa3a7e1e443ef213c152268ef2594683bf41ab5a31",
+            "flags": 131082,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1277558958516600853",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 3,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    }
+                },
+                "shelf_rank": 3,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "farm",
+                "merge",
+                "simulation"
+            ]
+        },
+        {
             "id": "880218394199220334",
             "name": "Watch Together",
             "icon": "ec48acbad4c32efab4275cb9f3ca3a58",
@@ -1855,7 +1924,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 3,
+                "shelf_rank": 4,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -1918,7 +1987,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 4,
+                "shelf_rank": 5,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2004,7 +2073,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 5,
+                "shelf_rank": 6,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2092,7 +2161,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 6,
+                "shelf_rank": 7,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2182,7 +2251,7 @@
                         "release_phase": "global_launch"
                     }
                 },
-                "shelf_rank": 7,
+                "shelf_rank": 8,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -2190,75 +2259,6 @@
                 "Card Game",
                 "Classic",
                 "IAP"
-            ]
-        },
-        {
-            "id": "1276646101914615872",
-            "name": "Mergest Kingdom",
-            "icon": "a7d7c37b7516ad88967261c8a2e3fae1",
-            "description": "Merge together hundreds of objects in a land full of challenging quests, collect and harvest resources, design your own island by making it look the way YOU want it! Find the best ways to match and merge various pieces to erect the biggest buildings and cultivate the most fruitful plants! Help rebuild the Mergest Kingdom and make it the most magical one in the Seventh Realm!",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": true,
-            "cover_image": "a7d7c37b7516ad88967261c8a2e3fae1",
-            "hook": true,
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://cleverappssg.com/terms",
-            "privacy_policy_url": "https://cleverappssg.com/privacy",
-            "integration_types_config": {
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "117c347331603544d64271fa3a7e1e443ef213c152268ef2594683bf41ab5a31",
-            "flags": 131082,
-            "max_participants": null,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1277558958516600853",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 3,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch"
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch"
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch"
-                    }
-                },
-                "shelf_rank": 8,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "farm",
-                "merge",
-                "simulation"
             ]
         },
         {
@@ -5293,18 +5293,6 @@
                 "name": "embedded_background"
             }
         ],
-        "1187013846746005515": [
-            {
-                "id": "1250123981105922149",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1250123987254640731",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1245041113882955918": [
             {
                 "id": "1273050322264260724",
@@ -5318,6 +5306,18 @@
             },
             {
                 "id": "1273051418726498399",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1187013846746005515": [
+            {
+                "id": "1250123981105922149",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1250123987254640731",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5467,35 +5467,6 @@
                 "name": "embedded_background"
             }
         ],
-        "1276646101914615872": [
-            {
-                "id": "1277590538585112678",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1285515597664354304",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1070087967294631976": [
-            {
-                "id": "1095430989985091645",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1096553638022885476",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1143973128469499915",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1199817737728442569": [
             {
                 "id": "1247698110239473687",
@@ -5548,6 +5519,35 @@
                 "name": "embedded_cover"
             }
         ],
+        "1070087967294631976": [
+            {
+                "id": "1095430989985091645",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1096553638022885476",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1143973128469499915",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1276646101914615872": [
+            {
+                "id": "1277590538585112678",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1285515597664354304",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "852509694341283871": [
             {
                 "id": "897822164445700166",
@@ -5565,24 +5565,19 @@
                 "name": "embedded_background"
             }
         ],
-        "1220052815590723654": [
+        "1222462865345351760": [
             {
-                "id": "1236833383447924869",
+                "id": "1234780800977862737",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1254699571586531338",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1236833407674351728",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1236833561970086000",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1236835375088140288",
+                "id": "1254699582282010734",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5621,33 +5616,43 @@
                 "name": "servericon"
             }
         ],
-        "1222462865345351760": [
+        "1220052815590723654": [
             {
-                "id": "1234780800977862737",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1254699571586531338",
+                "id": "1236833383447924869",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1254699582282010734",
+                "id": "1236833407674351728",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236833561970086000",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236835375088140288",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1247866565723160596": [
+        "1258330015917936700": [
             {
-                "id": "1248676596051738654",
+                "id": "1258330382580056064",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1258330388267401226",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1249723259751239754",
+                "id": "1270625086797385738",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "qp-icon"
             }
         ],
         "1039835161136746497": [
@@ -5734,21 +5739,16 @@
                 "name": "embedded_cover"
             }
         ],
-        "1258330015917936700": [
+        "1247866565723160596": [
             {
-                "id": "1258330382580056064",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1258330388267401226",
+                "id": "1248676596051738654",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1270625086797385738",
+                "id": "1249723259751239754",
                 "type": 1,
-                "name": "qp-icon"
+                "name": "embedded_background"
             }
         ],
         "832025144389533716": [
@@ -6143,6 +6143,23 @@
                 "name": "embedded_cover"
             }
         ],
+        "1078728822972764312": [
+            {
+                "id": "1078737214168629288",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1078737439792832682",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1111037441697140848",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1219647973806571553": [
             {
                 "id": "1219651774323888239",
@@ -6173,23 +6190,6 @@
             },
             {
                 "id": "1278009276983676968",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1078728822972764312": [
-            {
-                "id": "1078737214168629288",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1078737439792832682",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1111037441697140848",
                 "type": 1,
                 "name": "embedded_cover"
             }
