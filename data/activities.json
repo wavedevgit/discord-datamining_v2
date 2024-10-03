@@ -5027,7 +5027,7 @@
             "id": "1219647973806571553",
             "name": "bloxd.io",
             "icon": "8b07244e103590b56cd6d53162b1ab0e",
-            "description": "Build, explore, and compete in bloxd.io, a multiplayer sandbox game. Play with friends via Discord in mini-games like bedwars and skywars, or create your own worlds. ",
+            "description": "A multiplayer sandbox game where you can build, explore, and compete in minecraft-like voxel worlds. Connect with friends via Discord to play mini-games such as bedwars, skywars and more or unleash your creativity by designing your own worlds.",
             "summary": "",
             "type": null,
             "is_monetized": false,
@@ -5102,11 +5102,11 @@
                 "displays_advertisements": false
             },
             "tags": [
-                "Blox",
                 "Game",
+                "Minigames",
                 "Multiplayer",
-                "Party",
-                "minecraft"
+                "Sandbox",
+                "Voxel"
             ]
         },
         {
@@ -5190,43 +5190,63 @@
         }
     ],
     "assets": {
-        "755827207812677713": [
+        "902271654783242291": [
             {
-                "id": "839608726894018561",
+                "id": "1170035280183558316",
                 "type": 1,
-                "name": "servericon"
+                "name": "server_icon"
             },
             {
-                "id": "1070451415220232292",
+                "id": "1192153348909056121",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1121240234714202242",
+                "id": "1192153358342049882",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1219647973806571553": [
+        "1106787098452832296": [
             {
-                "id": "1219651774323888239",
+                "id": "1179134514799321208",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1179134666901553204",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1207909073262223440",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1219662631179260027",
+                "id": "1207909390489882644",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "embedded_cover"
             },
             {
-                "id": "1219662740629618819",
+                "id": "1207909887292743690",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "embedded_cover"
             },
             {
-                "id": "1282691503541715096",
+                "id": "1207912301416423466",
                 "type": 1,
-                "name": "icon"
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207926203437158460",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1238295820151947394",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "1199271093882589195": [
@@ -5241,19 +5261,19 @@
                 "name": "embedded_background"
             }
         ],
-        "1245041113882955918": [
+        "1107689944685748377": [
             {
-                "id": "1273050322264260724",
-                "type": 1,
-                "name": "tro_square1024x1024"
-            },
-            {
-                "id": "1273051413324234903",
+                "id": "1119359403494223872",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1273051418726498399",
+                "id": "1133154492901245048",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1133154500509704224",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5270,19 +5290,19 @@
                 "name": "embedded_cover"
             }
         ],
-        "1107689944685748377": [
+        "1245041113882955918": [
             {
-                "id": "1119359403494223872",
+                "id": "1273050322264260724",
+                "type": 1,
+                "name": "tro_square1024x1024"
+            },
+            {
+                "id": "1273051413324234903",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1133154492901245048",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1133154500509704224",
+                "id": "1273051418726498399",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5324,33 +5344,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1007373802981822582": [
-            {
-                "id": "1103415181293408326",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1103415435128483950",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1103764917384925184",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1103764924582334599",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1103765118791192696",
-                "type": 1,
-                "name": "embedded_background"
-            }
-        ],
         "879863686565621790": [
             {
                 "id": "933441342128918588",
@@ -5374,6 +5367,33 @@
             },
             {
                 "id": "1075145073018290196",
+                "type": 1,
+                "name": "embedded_background"
+            }
+        ],
+        "1007373802981822582": [
+            {
+                "id": "1103415181293408326",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1103415435128483950",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1103764917384925184",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1103764924582334599",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1103765118791192696",
                 "type": 1,
                 "name": "embedded_background"
             }
@@ -6061,63 +6081,26 @@
                 "name": "embedded_cover"
             }
         ],
-        "1078728822972764312": [
+        "1219647973806571553": [
             {
-                "id": "1078737214168629288",
+                "id": "1219651774323888239",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1219662631179260027",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1078737439792832682",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1111037441697140848",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1106787098452832296": [
-            {
-                "id": "1179134514799321208",
+                "id": "1219662740629618819",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1179134666901553204",
+                "id": "1282691503541715096",
                 "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1207909073262223440",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207909390489882644",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207909887292743690",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207912301416423466",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207926203437158460",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1238295820151947394",
-                "type": 1,
-                "name": "embedded_cover"
+                "name": "icon"
             }
         ],
         "1011683823555199066": [
@@ -6170,6 +6153,23 @@
                 "id": "1241038475239882842",
                 "type": 1,
                 "name": "embedded_cover2"
+            }
+        ],
+        "1078728822972764312": [
+            {
+                "id": "1078737214168629288",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1078737439792832682",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1111037441697140848",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "1037680572660727838": [
@@ -6244,6 +6244,23 @@
                 "name": "embedded_cover"
             }
         ],
+        "755827207812677713": [
+            {
+                "id": "839608726894018561",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1070451415220232292",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1121240234714202242",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1194351737264406548": [
             {
                 "id": "1249958375014273125",
@@ -6282,23 +6299,6 @@
             },
             {
                 "id": "1287652791992586260",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "902271654783242291": [
-            {
-                "id": "1170035280183558316",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1192153348909056121",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1192153358342049882",
                 "type": 1,
                 "name": "embedded_cover"
             }
