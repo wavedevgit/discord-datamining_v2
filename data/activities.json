@@ -1692,6 +1692,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "196d815a732720d0c502697bb29d9582",
             "hook": true,
             "guild_id": "1158408201344135258",
@@ -1778,6 +1779,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "3cc9446876ae9eec6e06ff565703c292",
             "hook": true,
             "bot_public": true,
@@ -1860,6 +1862,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "7293b549efff3c5a809999d883f09202",
             "hook": true,
             "guild_id": "469229972641284097",
@@ -1944,6 +1947,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "02eddbb2c6b1399e3b6501c7915c1a38",
             "hook": true,
             "guild_id": "1152321743667605684",
@@ -1953,8 +1957,8 @@
             "privacy_policy_url": "https://captain.tv/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "274877910032"
             },
@@ -1962,8 +1966,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "274877910032"
                     }
@@ -2029,6 +2033,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "9215bd779a472b9b51edd1ff8a833cab",
             "primary_sku_id": "1262279078979829791",
             "hook": true,
@@ -2117,6 +2122,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "e70dcb600e0b0fccf90ba90ed1021ff4",
             "splash": "b511208e677d7c07358c480a14ab2f98",
             "hook": true,
@@ -2205,6 +2211,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": false,
             "cover_image": "6ed44e27aadafd1897c633c49cf9e111",
             "hook": true,
             "bot_public": true,
@@ -2288,6 +2295,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "9a04eab3b9f50302006577b769354520",
             "hook": true,
             "bot_public": true,
@@ -2371,6 +2379,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "f2cb55658299b878fabafc28f2fb9e2d",
             "primary_sku_id": "1225878725757894857",
             "hook": true,
@@ -2457,6 +2466,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "3b3981ddf67c8702920fae10b5f123ed",
             "hook": true,
             "bot_public": true,
@@ -2540,6 +2550,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "356b1f8d2778f4566c304b23902e0ff5",
             "hook": true,
             "bot_public": true,
@@ -2623,6 +2634,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "acb59b24e27848fd364a5d4de9ecad7e",
             "hook": true,
             "guild_id": "808935495543160852",
@@ -2708,6 +2720,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "primary_sku_id": "1240025819242299462",
             "hook": true,
             "slug": "rythm",
@@ -2718,8 +2731,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "2048"
             },
@@ -2727,8 +2740,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "2048"
                     }
@@ -2795,6 +2808,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "0ef6c0a5bc32f04dede1929a91c90d71",
             "primary_sku_id": "1247597836082876550",
             "hook": true,
@@ -2806,8 +2820,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1"
             },
@@ -2815,8 +2829,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1"
                     }
@@ -2881,6 +2895,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": false,
             "cover_image": "a2eed700e6d2b625fff9147c54e2ef86",
             "hook": true,
             "bot_public": true,
@@ -2943,6 +2958,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "5869d28aa762797184668eb711a3fbfc",
             "hook": true,
             "guild_id": "798957956573429811",
@@ -3027,6 +3043,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "6fe6e3dda7657b83758693205a833aa1",
             "hook": true,
             "bot_public": true,
@@ -3110,6 +3127,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "61847edf739aba25c08069b7df4ff191",
             "hook": true,
             "guild_id": "1051879185850835015",
@@ -3194,6 +3212,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "95c64853134eb048670d9cfbbe92853b",
             "hook": true,
             "bot_public": true,
@@ -3276,6 +3295,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "b485f75e95e6486a758a4aa5db3352f4",
             "hook": true,
             "bot_public": true,
@@ -3359,6 +3379,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "baac0e9d2447c778d6503e18bda10b52",
             "hook": true,
             "guild_id": "1201916133297623141",
@@ -3368,8 +3389,8 @@
             "privacy_policy_url": "https://echochess.com/privacy-policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1126449696212992"
             },
@@ -3377,8 +3398,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1126449696212992"
                     }
@@ -3447,6 +3468,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "b1b403f5664929b5dc3fbe643c242ab5",
             "hook": true,
             "guild_id": "798957956573429811",
@@ -3531,6 +3553,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "6f547114b2979b8bc83e4ba91b4d770d",
             "hook": true,
             "bot_public": true,
@@ -3614,6 +3637,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "0a6b8f4795c66ba12afbc766dd920bfb",
             "hook": true,
             "bot_public": true,
@@ -3697,6 +3721,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "800aeb4c6899941eb52a743abe773a0b",
             "hook": true,
             "guild_id": "1290635887528513566",
@@ -3780,6 +3805,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "0096355142a9b00bc2676ec09b9c8dbc",
             "hook": true,
             "bot_public": true,
@@ -3862,6 +3888,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "9a4a52c760994654a416740ae0b19fbb",
             "hook": true,
             "guild_id": "1290948197916872744",
@@ -3945,6 +3972,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "19afbe4b0494b686252b89856a6fe00e",
             "primary_sku_id": "1149379481883115550",
             "hook": true,
@@ -4031,6 +4059,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "97e50fed67f44802dbb4901d74a6f9a1",
             "hook": true,
             "bot_public": true,
@@ -4114,6 +4143,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "hook": true,
             "bot_public": true,
             "bot_require_code_grant": false,
@@ -4196,6 +4226,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "66b5bf3b1f3247e6586932b7a99a7416",
             "hook": true,
             "guild_id": "1207880515462369310",
@@ -4282,6 +4313,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "hook": true,
             "guild_id": "169256939211980800",
             "bot_public": true,
@@ -4365,6 +4397,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "a7d7c37b7516ad88967261c8a2e3fae1",
             "hook": true,
             "guild_id": "1297853940192514148",
@@ -4435,6 +4468,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "hook": true,
             "guild_id": "169256939211980800",
             "bot_public": true,
@@ -4518,6 +4552,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": false,
             "cover_image": "bfbc0435ea92297bd353784eda47dc19",
             "hook": true,
             "guild_id": "169256939211980800",
@@ -4602,6 +4637,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "e26e672caaf96db8c7db9751e8df535f",
             "hook": true,
             "guild_id": "1278783719708164118",
@@ -4688,6 +4724,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "a5e4f22906ad343af7cc63224c9581f3",
             "hook": true,
             "guild_id": "818969467710996521",
@@ -4697,8 +4734,8 @@
             "privacy_policy_url": "https://trebel.io/web/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "141770902792"
             },
@@ -4706,8 +4743,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "141770902792"
                     }
@@ -4774,6 +4811,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": false,
             "cover_image": "2205af14d9d6fcec1829a798cf22b3b1",
             "hook": true,
             "bot_public": true,
@@ -4837,6 +4875,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "1b0280bfdd9363486f21431d53021f82",
             "hook": true,
             "guild_id": "651719864473485313",
@@ -4919,6 +4958,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "f06ac94e3d4b307406a1c4008fc68741",
             "hook": true,
             "guild_id": "159962941502783488",
@@ -5002,6 +5042,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": false,
+            "is_discoverable": false,
             "hook": true,
             "bot_public": true,
             "bot_require_code_grant": false,
@@ -5082,6 +5123,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "a9c7e642093dae6a79e895da60869f9b",
             "hook": true,
             "guild_id": "1263824831061692467",
@@ -5166,6 +5208,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "272882c86f430ed29ab7124eef43aafd",
             "hook": true,
             "guild_id": "562104606474371074",
@@ -5250,6 +5293,7 @@
             "type": null,
             "is_monetized": true,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "6421f29701e48ec78980d3e58694e5de",
             "hook": true,
             "guild_id": "994556742467866714",
@@ -5259,8 +5303,8 @@
             "privacy_policy_url": "https://www.squadblast.com/privacy-policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1126449662658560"
             },
@@ -5268,8 +5312,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1126449662658560"
                     }
@@ -5337,6 +5381,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "eb26094c55cf57c0154632cbdf9411f8",
             "hook": true,
             "guild_id": "804347688946237472",
@@ -5423,6 +5468,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": false,
+            "is_discoverable": false,
             "cover_image": "549a4b4c85efa3ce32a96f92673b9a31",
             "hook": true,
             "bot_public": true,
@@ -5502,6 +5548,7 @@
             "type": null,
             "is_monetized": false,
             "is_verified": true,
+            "is_discoverable": true,
             "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
             "hook": true,
             "guild_id": "1275776456408043530",
@@ -5581,18 +5628,6 @@
         }
     ],
     "assets": {
-        "1119539298128105484": [
-            {
-                "id": "1278009272772333611",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1278009276983676968",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "755827207812677713": [
             {
                 "id": "839608726894018561",
@@ -5610,6 +5645,58 @@
                 "name": "embedded_cover"
             }
         ],
+        "1011683823555199066": [
+            {
+                "id": "1105808955357265954",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1163894211813318746",
+                "type": 1,
+                "name": "embedded_background2"
+            },
+            {
+                "id": "1163894219384029254",
+                "type": 1,
+                "name": "embedded_cover2"
+            },
+            {
+                "id": "1163894429271195659",
+                "type": 1,
+                "name": "embedded_background2"
+            },
+            {
+                "id": "1163894437483647037",
+                "type": 1,
+                "name": "embedded_cover2"
+            },
+            {
+                "id": "1220762378312880188",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1241035004436414527",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1241035012111859802",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1241038474782445689",
+                "type": 1,
+                "name": "servericon3"
+            },
+            {
+                "id": "1241038475239882842",
+                "type": 1,
+                "name": "embedded_cover2"
+            }
+        ],
         "1199271093882589195": [
             {
                 "id": "1233446126120603709",
@@ -5622,51 +5709,14 @@
                 "name": "embedded_cover"
             }
         ],
-        "1219647973806571553": [
+        "1119539298128105484": [
             {
-                "id": "1219651774323888239",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1219662631179260027",
+                "id": "1278009272772333611",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1219662740629618819",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1282691503541715096",
-                "type": 1,
-                "name": "icon"
-            }
-        ],
-        "1187013846746005515": [
-            {
-                "id": "1250123981105922149",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1296203541651783800",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1296203641098731591",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1296204317627256932",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1302974593279070342",
+                "id": "1278009276983676968",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5699,6 +5749,33 @@
             },
             {
                 "id": "1296184395249487925",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1187013846746005515": [
+            {
+                "id": "1250123981105922149",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1296203541651783800",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1296203641098731591",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1296204317627256932",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1302974593279070342",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5742,33 +5819,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1007373802981822582": [
-            {
-                "id": "1103415181293408326",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1103415435128483950",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1103764917384925184",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1103764924582334599",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1103765118791192696",
-                "type": 1,
-                "name": "embedded_background"
-            }
-        ],
         "879863686565621790": [
             {
                 "id": "933441342128918588",
@@ -5792,6 +5842,33 @@
             },
             {
                 "id": "1075145073018290196",
+                "type": 1,
+                "name": "embedded_background"
+            }
+        ],
+        "1007373802981822582": [
+            {
+                "id": "1103415181293408326",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1103415435128483950",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1103764917384925184",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1103764924582334599",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1103765118791192696",
                 "type": 1,
                 "name": "embedded_background"
             }
@@ -6455,99 +6532,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1011683823555199066": [
-            {
-                "id": "1105808955357265954",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1163894211813318746",
-                "type": 1,
-                "name": "embedded_background2"
-            },
-            {
-                "id": "1163894219384029254",
-                "type": 1,
-                "name": "embedded_cover2"
-            },
-            {
-                "id": "1163894429271195659",
-                "type": 1,
-                "name": "embedded_background2"
-            },
-            {
-                "id": "1163894437483647037",
-                "type": 1,
-                "name": "embedded_cover2"
-            },
-            {
-                "id": "1220762378312880188",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1241035004436414527",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1241035012111859802",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1241038474782445689",
-                "type": 1,
-                "name": "servericon3"
-            },
-            {
-                "id": "1241038475239882842",
-                "type": 1,
-                "name": "embedded_cover2"
-            }
-        ],
-        "1276239071764680926": [
-            {
-                "id": "1280972246390669382",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1280972256717045961",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1205582362897809492": [
-            {
-                "id": "1245429879487467715",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1245429887204855888",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1078728822972764312": [
-            {
-                "id": "1078737214168629288",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1078737439792832682",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1111037441697140848",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "235088799074484224": [
             {
                 "id": "1245127685076816004",
@@ -6578,6 +6562,52 @@
                 "id": "1296278080859541564",
                 "type": 1,
                 "name": "embedded_cover"
+            }
+        ],
+        "1276239071764680926": [
+            {
+                "id": "1280972246390669382",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1280972256717045961",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1205582362897809492": [
+            {
+                "id": "1245429879487467715",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1245429887204855888",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1219647973806571553": [
+            {
+                "id": "1219651774323888239",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1219662631179260027",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1219662740629618819",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1282691503541715096",
+                "type": 1,
+                "name": "icon"
             }
         ],
         "1106787098452832296": [
@@ -6618,6 +6648,92 @@
             },
             {
                 "id": "1238295820151947394",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1078728822972764312": [
+            {
+                "id": "1078737214168629288",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1078737439792832682",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1111037441697140848",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "902271654783242291": [
+            {
+                "id": "1301944988770238576",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1301944989789589625",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1301944999495209050",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1194351737264406548": [
+            {
+                "id": "1285782328957734952",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1286563923872710706",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1287652791992586260",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1293452778777346068",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455241693364244",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455823518830623",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455884579766393",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293456902071783424",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1294002089277653055",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1301579448520540300",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6690,75 +6806,6 @@
             },
             {
                 "id": "1159482793533911132",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1194351737264406548": [
-            {
-                "id": "1285782328957734952",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1286563923872710706",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1287652791992586260",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1293452778777346068",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455241693364244",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455823518830623",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455884579766393",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293456902071783424",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1294002089277653055",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1301579448520540300",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "902271654783242291": [
-            {
-                "id": "1301944988770238576",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1301944989789589625",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1301944999495209050",
                 "type": 1,
                 "name": "embedded_cover"
             }
