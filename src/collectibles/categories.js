@@ -57,7 +57,7 @@ function diff(a, b) {
   /** a is before */
   for (let category in a) {
     /** removed type */
-    if (b[category]?.sku_id !== a[category]?.sku_id) {
+    if (!b.map(category=>category.sku_id).includes(a[category]?.sku_id)) {
       diff.removed.push(a[category]);
     }
   }
@@ -66,11 +66,7 @@ function diff(a, b) {
   /** b is after */
   for (let category in b) {
     /** added type */
-    console.log(a[category]?.sku_id)
-    if (
-      a[category]?.sku_id !== b[category].sku_id ||
-      typeof a[category] === "undefined"
-    ) {
+    if (!a.map(category=>category.sku_id).includes(b[category]?.sku_id)) {
       diff.added.push(b[category]);
     }
   }
