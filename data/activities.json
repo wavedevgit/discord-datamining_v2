@@ -1992,8 +1992,8 @@
             "privacy_policy_url": "https://captain.tv/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "274877910032"
             },
@@ -2001,8 +2001,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "274877910032"
                     }
@@ -2770,8 +2770,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "2048"
             },
@@ -2779,8 +2779,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "2048"
                     }
@@ -2859,8 +2859,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1"
             },
@@ -2868,8 +2868,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1"
                     }
@@ -3431,8 +3431,8 @@
             "privacy_policy_url": "https://echochess.com/privacy-policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1126449696212992"
             },
@@ -3440,8 +3440,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1126449696212992"
                     }
@@ -4797,8 +4797,8 @@
             "privacy_policy_url": "https://trebel.io/web/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "35603168382216"
             },
@@ -4806,8 +4806,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "35603168382216"
                     }
@@ -5366,8 +5366,8 @@
             "privacy_policy_url": "https://www.squadblast.com/privacy-policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1126449662658560"
             },
@@ -5375,8 +5375,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1126449662658560"
                     }
@@ -5775,18 +5775,6 @@
         }
     ],
     "assets": {
-        "1276239071764680926": [
-            {
-                "id": "1280972246390669382",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1303798923722358874",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1194351737264406548": [
             {
                 "id": "1286563923872710706",
@@ -5839,18 +5827,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1199271093882589195": [
-            {
-                "id": "1233446126120603709",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1303037559042998384",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1106787098452832296": [
             {
                 "id": "1179134514799321208",
@@ -5889,6 +5865,30 @@
             },
             {
                 "id": "1238295820151947394",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1199271093882589195": [
+            {
+                "id": "1233446126120603709",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1303037559042998384",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1119539298128105484": [
+            {
+                "id": "1278009272772333611",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1278009276983676968",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5991,33 +5991,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "879863686565621790": [
-            {
-                "id": "933441342128918588",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "933441669255274497",
-                "type": 1,
-                "name": "servericon-small"
-            },
-            {
-                "id": "951327458051883018",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1027619860538208318",
-                "type": 1,
-                "name": "embedded_splash"
-            },
-            {
-                "id": "1075145073018290196",
-                "type": 1,
-                "name": "embedded_background"
-            }
-        ],
         "1007373802981822582": [
             {
                 "id": "1103415181293408326",
@@ -6041,6 +6014,33 @@
             },
             {
                 "id": "1103765118791192696",
+                "type": 1,
+                "name": "embedded_background"
+            }
+        ],
+        "879863686565621790": [
+            {
+                "id": "933441342128918588",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "933441669255274497",
+                "type": 1,
+                "name": "servericon-small"
+            },
+            {
+                "id": "951327458051883018",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1027619860538208318",
+                "type": 1,
+                "name": "embedded_splash"
+            },
+            {
+                "id": "1075145073018290196",
                 "type": 1,
                 "name": "embedded_background"
             }
@@ -6192,19 +6192,24 @@
                 "name": "embedded_background"
             }
         ],
-        "1222462865345351760": [
+        "1220052815590723654": [
             {
-                "id": "1234780800977862737",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1254699571586531338",
+                "id": "1236833383447924869",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1254699582282010734",
+                "id": "1236833407674351728",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236833561970086000",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236835375088140288",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6243,24 +6248,19 @@
                 "name": "servericon"
             }
         ],
-        "1220052815590723654": [
+        "1222462865345351760": [
             {
-                "id": "1236833383447924869",
+                "id": "1234780800977862737",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1254699571586531338",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1236833407674351728",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1236833561970086000",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1236835375088140288",
+                "id": "1254699582282010734",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6572,21 +6572,16 @@
                 "name": "icon_1024"
             }
         ],
-        "1227719606223765687": [
+        "1186796615432937584": [
             {
-                "id": "1292916327820038235",
+                "id": "1192885818491150469",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1292916335084572713",
+                "id": "1192885823868248144",
                 "type": 1,
                 "name": "embedded_cover"
-            },
-            {
-                "id": "1292943617463287808",
-                "type": 1,
-                "name": "embedded_background"
             }
         ],
         "1253407354087542866": [
@@ -6633,16 +6628,21 @@
                 "name": "embedded_cover"
             }
         ],
-        "1186796615432937584": [
+        "1227719606223765687": [
             {
-                "id": "1192885818491150469",
+                "id": "1292916327820038235",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1192885823868248144",
+                "id": "1292916335084572713",
                 "type": 1,
                 "name": "embedded_cover"
+            },
+            {
+                "id": "1292943617463287808",
+                "type": 1,
+                "name": "embedded_background"
             }
         ],
         "1156238457023238214": [
@@ -6763,14 +6763,14 @@
                 "name": "embedded_cover"
             }
         ],
-        "1119539298128105484": [
+        "1276239071764680926": [
             {
-                "id": "1278009272772333611",
+                "id": "1280972246390669382",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1278009276983676968",
+                "id": "1303798923722358874",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6807,6 +6807,23 @@
                 "id": "1282691503541715096",
                 "type": 1,
                 "name": "icon"
+            }
+        ],
+        "1078728822972764312": [
+            {
+                "id": "1078737214168629288",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1078737439792832682",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1111037441697140848",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "1011683823555199066": [
@@ -6861,19 +6878,36 @@
                 "name": "embedded_cover2"
             }
         ],
-        "1078728822972764312": [
+        "902271654783242291": [
             {
-                "id": "1078737214168629288",
+                "id": "1301944988770238576",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1301944989789589625",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1078737439792832682",
+                "id": "1301944999495209050",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "755827207812677713": [
+            {
+                "id": "839608726894018561",
                 "type": 1,
                 "name": "servericon"
             },
             {
-                "id": "1111037441697140848",
+                "id": "1070451415220232292",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1121240234714202242",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6946,40 +6980,6 @@
             },
             {
                 "id": "1159482793533911132",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "755827207812677713": [
-            {
-                "id": "839608726894018561",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1070451415220232292",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1121240234714202242",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "902271654783242291": [
-            {
-                "id": "1301944988770238576",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1301944989789589625",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1301944999495209050",
                 "type": 1,
                 "name": "embedded_cover"
             }
