@@ -1683,6 +1683,42 @@
             "application_id": "1247866565723160596"
         },
         {
+            "activity_preview_video_asset_id": "1286644732876947588",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 1,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                }
+            },
+            "shelf_rank": 2147483647,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1273616940451102832"
+        },
+        {
             "activity_preview_video_asset_id": "1308046421806546954",
             "supported_platforms": [
                 "web",
@@ -5713,6 +5749,93 @@
             ]
         },
         {
+            "id": "1273616940451102832",
+            "name": "Daily Sudoku Together",
+            "icon": "032e6526f260510b6366eda5e7c1b7e2",
+            "description": "Dive into Daily Sudoku Together on Discord—your ultimate Sudoku adventure! Enjoy unlimited puzzles across 14 difficulty levels, explore exciting variants like Killer, Chaos, and Mini Sudoku, and level up as you play. Powered by world-class puzzle generators, it’s perfect for beginners and pros alike. Challenge your mind, unlock rewards, and connect with a lively community. Ready to play? Join now!",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "is_discoverable": true,
+            "cover_image": "032e6526f260510b6366eda5e7c1b7e2",
+            "primary_sku_id": "1281264877515833385",
+            "hook": true,
+            "slug": "daily-sudoku-together",
+            "guild_id": "1300499527345770497",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://www.coolgames.com/terms-of-use/",
+            "privacy_policy_url": "https://www.coolgames.com/privacy-policy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "be83ff22674e781da0d8f68b0a1e7bf1d3ca1f43db192f8821e7b5a247e8e9b7",
+            "flags": 131082,
+            "max_participants": 99,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1286644732876947588",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 1,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    }
+                },
+                "shelf_rank": 2147483647,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Casual",
+                "Puzzle",
+                "Sudoku"
+            ]
+        },
+        {
             "id": "1227546263558422601",
             "name": "Krunker Royale",
             "icon": "b69206cb942bce58ca937ba94aa5553d",
@@ -5882,6 +6005,58 @@
         }
     ],
     "assets": {
+        "1194351737264406548": [
+            {
+                "id": "1286563923872710706",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1287652791992586260",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1293452778777346068",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455241693364244",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455823518830623",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455884579766393",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293456902071783424",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1294002089277653055",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1301579448520540300",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1304837388849119264",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1078728822972764312": [
             {
                 "id": "1078737214168629288",
@@ -5895,6 +6070,18 @@
             },
             {
                 "id": "1111037441697140848",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1199271093882589195": [
+            {
+                "id": "1233446126120603709",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1303037559042998384",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -5949,35 +6136,6 @@
                 "id": "1241038475239882842",
                 "type": 1,
                 "name": "embedded_cover2"
-            }
-        ],
-        "1199271093882589195": [
-            {
-                "id": "1233446126120603709",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1303037559042998384",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "902271654783242291": [
-            {
-                "id": "1301944988770238576",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1301944989789589625",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1301944999495209050",
-                "type": 1,
-                "name": "embedded_cover"
             }
         ],
         "1187013846746005515": [
@@ -6181,6 +6339,35 @@
                 "name": "embedded_background"
             }
         ],
+        "1276646101914615872": [
+            {
+                "id": "1277590538585112678",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1285515597664354304",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1070087967294631976": [
+            {
+                "id": "1095430989985091645",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1096553638022885476",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1143973128469499915",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1199817737728442569": [
             {
                 "id": "1247698110239473687",
@@ -6229,35 +6416,6 @@
             },
             {
                 "id": "1253814657987383359",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1070087967294631976": [
-            {
-                "id": "1095430989985091645",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1096553638022885476",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1143973128469499915",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1276646101914615872": [
-            {
-                "id": "1277590538585112678",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1285515597664354304",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6352,24 +6510,19 @@
                 "name": "embedded_cover"
             }
         ],
-        "1247866565723160596": [
+        "1258330015917936700": [
             {
-                "id": "1308394513278042142",
+                "id": "1258330382580056064",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1308394537156083752",
+                "id": "1270625086797385738",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "qp-icon"
             },
             {
-                "id": "1308394781872754778",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1308395226125176904",
+                "id": "1296489804673978488",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6541,19 +6694,14 @@
                 "name": "embedded_cover"
             }
         ],
-        "1258330015917936700": [
+        "1273616940451102832": [
             {
-                "id": "1258330382580056064",
+                "id": "1286644714325409894",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1270625086797385738",
-                "type": 1,
-                "name": "qp-icon"
-            },
-            {
-                "id": "1296489804673978488",
+                "id": "1286644721653125162",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -6620,6 +6768,28 @@
                 "name": "embedded_background"
             }
         ],
+        "1247866565723160596": [
+            {
+                "id": "1308394513278042142",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1308394537156083752",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1308394781872754778",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1308395226125176904",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1277095289626431488": [
             {
                 "id": "1277692914159456328",
@@ -6681,21 +6851,16 @@
                 "name": "icon_1024"
             }
         ],
-        "1227719606223765687": [
+        "1186796615432937584": [
             {
-                "id": "1292916327820038235",
+                "id": "1192885818491150469",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1292916335084572713",
+                "id": "1192885823868248144",
                 "type": 1,
                 "name": "embedded_cover"
-            },
-            {
-                "id": "1292943617463287808",
-                "type": 1,
-                "name": "embedded_background"
             }
         ],
         "1253407354087542866": [
@@ -6737,70 +6902,21 @@
                 "name": "embedded_cover"
             }
         ],
-        "1186796615432937584": [
+        "1227719606223765687": [
             {
-                "id": "1192885818491150469",
+                "id": "1292916327820038235",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1192885823868248144",
+                "id": "1292916335084572713",
                 "type": 1,
                 "name": "embedded_cover"
-            }
-        ],
-        "1156238457023238214": [
+            },
             {
-                "id": "1289277059461550080",
+                "id": "1292943617463287808",
                 "type": 1,
                 "name": "embedded_background"
-            },
-            {
-                "id": "1289277068437094460",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1289285450196058265",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1289285458416766986",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1289285548703486012",
-                "type": 1,
-                "name": "embedded_background"
-            }
-        ],
-        "1043607583119917136": [
-            {
-                "id": "1286661717367066696",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1286663367699992728",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1286671960960663604",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1286672284135985245",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1286673942282637414",
-                "type": 1,
-                "name": "embedded_cover"
             }
         ],
         "1244625526606401658": [
@@ -6833,6 +6949,60 @@
                 "id": "1290357336531275927",
                 "type": 1,
                 "name": "meme_doge"
+            }
+        ],
+        "1043607583119917136": [
+            {
+                "id": "1286661717367066696",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1286663367699992728",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1286671960960663604",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1286672284135985245",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1286673942282637414",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1156238457023238214": [
+            {
+                "id": "1289277059461550080",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1289277068437094460",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1289285450196058265",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1289285458416766986",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1289285548703486012",
+                "type": 1,
+                "name": "embedded_background"
             }
         ],
         "235088799074484224": [
@@ -6913,18 +7083,6 @@
                 "name": "icon"
             }
         ],
-        "1119539298128105484": [
-            {
-                "id": "1278009272772333611",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1278009276983676968",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1106787098452832296": [
             {
                 "id": "1179134514799321208",
@@ -6963,6 +7121,52 @@
             },
             {
                 "id": "1238295820151947394",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1119539298128105484": [
+            {
+                "id": "1278009272772333611",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1278009276983676968",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "902271654783242291": [
+            {
+                "id": "1301944988770238576",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1301944989789589625",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1301944999495209050",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "755827207812677713": [
+            {
+                "id": "839608726894018561",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1070451415220232292",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1121240234714202242",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -7035,75 +7239,6 @@
             },
             {
                 "id": "1159482793533911132",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "755827207812677713": [
-            {
-                "id": "839608726894018561",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1070451415220232292",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1121240234714202242",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1194351737264406548": [
-            {
-                "id": "1286563923872710706",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1287652791992586260",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1293452778777346068",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455241693364244",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455823518830623",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455884579766393",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293456902071783424",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1294002089277653055",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1301579448520540300",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1304837388849119264",
                 "type": 1,
                 "name": "embedded_cover"
             }
