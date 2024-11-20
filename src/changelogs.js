@@ -16,11 +16,7 @@ async function getChangelogs() {
     let resultMobile = [];
     let resultDesktop = [];
     for (let changelogId in changelogsDesktop) {
-        let content = await (
-            await sendReq({
-                url: `https://cdn.discordapp.com/changelogs/0/${changelogId}/en-US.json`,
-            })
-        ).json();
+        let content = await (await fetch(`https://cdn.discordapp.com/changelogs/0/${changelogId}/en-US.json`)).json();
         let obj = {
             ...changelogsDesktop[changelogId],
             ...content,
@@ -28,11 +24,7 @@ async function getChangelogs() {
         resultDesktop.push(obj);
     }
     for (let changelogId in changelogsMobile) {
-        let content = await (
-            await sendReq({
-                url: `https://cdn.discordapp.com/changelogs/1/${changelogId}/en-US.json`,
-            })
-        ).json();
+        let content = await (await fetch(`https://cdn.discordapp.com/changelogs/1/${changelogId}/en-US.json`)).json();
         let obj = {
             ...changelogsMobile[changelogId],
             ...content,
