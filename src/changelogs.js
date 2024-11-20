@@ -4,14 +4,10 @@ import sendToWebhook from './utils/sendToWebhook.js';
 
 async function getChangelogs() {
     const changelogsDesktop = await (
-        await sendReq({
-            url: 'https://cdn.discordapp.com/changelogs/config_0.json',
-        })
+        await fetch('https://cdn.discordapp.com/changelogs/config_0.json')
     ).json();
     const changelogsMobile = await (
-        await sendReq({
-            url: 'https://cdn.discordapp.com/changelogs/config_1.json',
-        })
+        await fetch('https://cdn.discordapp.com/changelogs/config_1.json')
     ).json();
     let resultMobile = [];
     let resultDesktop = [];
