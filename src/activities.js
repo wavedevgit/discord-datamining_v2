@@ -8,7 +8,7 @@ async function getActivities() {
             url: 'activities/shelf?guild_id=612443491770957833',
         })
     ).json();
-
+    delete activities.assets
     return activities;
 }
 
