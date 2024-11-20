@@ -83,7 +83,7 @@ function generateEmbed(changelog) {
     };
 }
 function diff(a, b, type) {
-    let diff = { added: {}, removed: [] };
+    let diff = { added: [], removed: [] };
     for (let changelog of a) {
         // removed
         if (b.filter((changelog_) => changelog_.changelog_id !== changelog.changelog_id)) diff.removed.push(changelog);
