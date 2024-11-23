@@ -23,10 +23,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
-      - run: npm init -y
+      - run: npm i 
       - name: Run script
         run: |
-          node ./src/main.js
+          npm run build && npm run start
         env:
           ALT_TOKEN: ${{ secrets.ALT_TOKEN }}
           CATEGORIES: ${{ secrets.CATEGORIES }}
