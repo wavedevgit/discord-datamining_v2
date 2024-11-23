@@ -1,6 +1,5 @@
-import { WEBHOOKS_URLS, PINGS } from './config.js';
-import sendReq from './utils/RestApi.js';
-import sendToWebhook from './utils/sendToWebhook.js';
+import { configExperimentCentral, configWumpusUniv } from '../config.js';
+import { sendReq, sendToWebhook } from '../utils.js';
 
 async function getActivities() {
     const activities = await (
@@ -8,7 +7,6 @@ async function getActivities() {
             url: 'activities/shelf?guild_id=612443491770957833',
         })
     ).json();
-    delete activities.assets
     return activities;
 }
 
@@ -53,11 +51,11 @@ function diff(a, b) {
         );
 
     if (result.length) {
-        sendToWebhook(WEBHOOKS_URLS.activities, {
-            content: PINGS.activities + '\n' + result.join('\n'),
+        sendToWebhook(configExperimentCentral.webhooks.activities, {
+            content: configExperimentCentral.pings.activities + '\n' + result.join('\n'),
         });
-        sendToWebhook(process.env.ACTIVIESWC, {
-            content: PINGS.activities + '\n' + result.join('\n'),
+        sendToWebhook(configWumpusUniv.webhooks.activities, {
+            content: configWumpusUniv.pings.activities + '\n' + result.join('\n'),
         });
     }
 }

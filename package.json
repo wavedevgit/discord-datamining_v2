@@ -1,13 +1,29 @@
 {
-  "name": "tracking-central",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "",
-  "main": "config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "lint": "tsc",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "prod": "node scripts/run.js --sync cleanup lint build start",
+        "dev:lint": "tsc --watch --preserveWatchOutput",
+        "dev:start": "node --watch dist/index.js",
+        "dev:build": "node scripts/build.js --watch",
+        "dev:pre": "node scripts/run.js --sync cleanup lint build",
+        "dev:scripts": "node scripts/run.js dev:lint dev:start dev:build",
+        "dev": "node scripts/run.js --sync dev:pre dev:scripts",
+        "cleanup": "node scripts/cleanup.js dist",
+        "prepare": "husky",
+        "setup": "node scripts/setup.js"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.6",
+        "@typescript-eslint/eslint-plugin": "^6.16.0",
+        "esbuild": "^0.23.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.2",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "eslint-plugin-unused-imports": "^3.0.0",
+        "husky": "^9.1.5"
+    }
 }

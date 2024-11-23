@@ -1,14 +1,9 @@
-import { WEBHOOKS_URLS, PINGS } from './config.js';
-import sendReq from './utils/RestApi.js';
-import sendToWebhook from './utils/sendToWebhook.js';
+import { configExperimentCentral } from '../config.js';
+import { sendToWebhook } from '../utils.js';
 
 async function getChangelogs() {
-    const changelogsDesktop = await (
-        await fetch('https://cdn.discordapp.com/changelogs/config_0.json')
-    ).json();
-    const changelogsMobile = await (
-        await fetch('https://cdn.discordapp.com/changelogs/config_1.json')
-    ).json();
+    const changelogsDesktop = await (await fetch('https://cdn.discordapp.com/changelogs/config_0.json')).json();
+    const changelogsMobile = await (await fetch('https://cdn.discordapp.com/changelogs/config_1.json')).json();
     let resultMobile = [];
     let resultDesktop = [];
     for (let changelogId in changelogsDesktop) {
@@ -97,8 +92,8 @@ function diff(a, b, type) {
         });
     }
     if (result.length)
-        sendToWebhook(WEBHOOKS_URLS.changelogs, {
-            content: PINGS.changelogs,
+        sendToWebhook(configExperimentCentral.webhooks.changelogs, {
+            content: configExperimentCentral.pings.changelogs,
             embeds: result,
         });
 }
