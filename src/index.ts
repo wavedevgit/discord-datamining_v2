@@ -29,6 +29,7 @@ async function main() {
     await saveFile('./data/changelogs_desktop.json', changelogsDesktop);
     await saveFile('./data/changelogs_mobile.json', changelogsMobile);
     await saveFile('./data/collectibles/profile-effects.json', profileEffectsData);
+    await saveFile('./data/collectibles/categories.json', collectiblesCategories);
 
     // start diff action
     activities.diff(oldActivities, activitiesData);
