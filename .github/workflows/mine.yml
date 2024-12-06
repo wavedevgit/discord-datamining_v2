@@ -26,7 +26,7 @@ jobs:
       - run: npm i 
       - name: Run script
         run: |
-          echo disabled for now, dont have time to fix it! will fix it later 
+          npm run build && npm run start
         env:
           ALT_TOKEN: ${{ secrets.ALT_TOKEN }}
           CATEGORIES: ${{ secrets.CATEGORIES }}
