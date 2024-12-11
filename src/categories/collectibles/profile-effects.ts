@@ -64,6 +64,7 @@ function diff(a, b) {
     for (let profileEffect of diff.removed) {
         result.push({
             title: 'Collectibles — Removed Profile Effect:',
+            description: `[Open intro.png](<${profileEffect.effects[0].src}>)`,
             fields: getFieldsForProfileEffect(profileEffect),
             image: { url: profileEffect.thumbnailPreviewSrc },
             color: 0xff0000,
@@ -73,6 +74,7 @@ function diff(a, b) {
     for (let profileEffect of diff.added) {
         result.push({
             title: 'Collectibles — Added Profile Effect:',
+            description: `[Open intro.png](<${profileEffect.effects[0].src}>)`,
             fields: getFieldsForProfileEffect(profileEffect),
             image: { url: profileEffect.thumbnailPreviewSrc },
             color: 0x008000,
