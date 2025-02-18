@@ -1791,6 +1791,41 @@
             "application_id": "1321374131245027399"
         },
         {
+            "activity_preview_video_asset_id": "1341386037796278413",
+            "supported_platforms": [
+                "web",
+                "android"
+            ],
+            "default_orientation_lock_state": 3,
+            "tablet_default_orientation_lock_state": 3,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch"
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "in_development"
+                }
+            },
+            "shelf_rank": 2147483647,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1333739472524939274"
+        },
+        {
             "activity_preview_video_asset_id": "1338644904209022976",
             "supported_platforms": [
                 "web",
@@ -6820,6 +6855,106 @@
             ]
         },
         {
+            "id": "1333739472524939274",
+            "name": "Autogun Heroes",
+            "icon": "7150a125a2508bfb69463429efbaf198",
+            "description": "Intense 3D action platformer overloaded with guns, unique heroes, and endless waves of aliens. Tournaments, leaderboards, and endless campaigns to conquer!",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "is_discoverable": true,
+            "cover_image": "7db23edaac2da2f1feb2156f3182b60c",
+            "bot": {
+                "id": "1333739472524939274",
+                "username": "Autogun Heroes",
+                "global_name": null,
+                "avatar": "7150a125a2508bfb69463429efbaf198",
+                "avatar_decoration_data": null,
+                "discriminator": "6410",
+                "public_flags": 65536,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": "654b68b22772dbe7482814497b61b8eb",
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "guild_id": "669201173697396747",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://www.nitrogames.com/terms-of-service/",
+            "privacy_policy_url": "https://www.nitrogames.com/privacy-policy/",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "58c7c7df2a8bfdc9285f3a506f84a13ce89736560649cb7ccbfc6cf77316a64d",
+            "flags": 663554,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1341386037796278413",
+                "supported_platforms": [
+                    "web",
+                    "android"
+                ],
+                "default_orientation_lock_state": 3,
+                "tablet_default_orientation_lock_state": 3,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch"
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "in_development"
+                    }
+                },
+                "shelf_rank": 2147483647,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "game",
+                "platformer",
+                "shooter",
+                "tournaments"
+            ]
+        },
+        {
             "id": "1301652913977823282",
             "name": "karaoke party battle",
             "icon": "a79c01220c57941b0fe0fbe9e19adc8b",
@@ -6984,58 +7119,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1194351737264406548": [
-            {
-                "id": "1293452778777346068",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455241693364244",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455823518830623",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455884579766393",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1301579448520540300",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1304837388849119264",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1318257447093403699",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1318621295033847879",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1319497874970644510",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1325192391275319316",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1119539298128105484": [
             {
                 "id": "1278009272772333611",
@@ -7044,6 +7127,23 @@
             },
             {
                 "id": "1278009276983676968",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "902271654783242291": [
+            {
+                "id": "1316132314480381992",
+                "type": 1,
+                "name": "server_icon"
+            },
+            {
+                "id": "1325917812031492136",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1325917821523329175",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -7330,6 +7430,58 @@
                 "name": "embedded_cover"
             }
         ],
+        "1333739472524939274": [
+            {
+                "id": "1341383769860477010",
+                "type": 1,
+                "name": "tourny"
+            },
+            {
+                "id": "1341383849795387412",
+                "type": 1,
+                "name": "mods"
+            },
+            {
+                "id": "1341383879885455390",
+                "type": 1,
+                "name": "auotgunslash"
+            },
+            {
+                "id": "1341383912932249651",
+                "type": 1,
+                "name": "agh_cover_1920x1080"
+            },
+            {
+                "id": "1341383939800956948",
+                "type": 1,
+                "name": "b59fcafa_0f19_4645_bddc_8474844f2073_autogun800l_800x800"
+            },
+            {
+                "id": "1341386216242675794",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1341386246793990225",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1341386253802672158",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1341386406135599154",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1341386493721051176",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1276646101914615872": [
             {
                 "id": "1277590538585112678",
@@ -7545,21 +7697,16 @@
                 "name": "embedded_cover"
             }
         ],
-        "832025144389533716": [
+        "1273616940451102832": [
             {
-                "id": "930194685023121459",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "974795361447211048",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1070457704012857406",
+                "id": "1286644714325409894",
                 "type": 1,
                 "name": "embedded_background"
+            },
+            {
+                "id": "1286644721653125162",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "1230610135274225734": [
@@ -7606,16 +7753,21 @@
                 "name": "embedded_cover"
             }
         ],
-        "1273616940451102832": [
+        "832025144389533716": [
             {
-                "id": "1286644714325409894",
+                "id": "930194685023121459",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "servericon"
             },
             {
-                "id": "1286644721653125162",
+                "id": "974795361447211048",
                 "type": 1,
                 "name": "embedded_cover"
+            },
+            {
+                "id": "1070457704012857406",
+                "type": 1,
+                "name": "embedded_background"
             }
         ],
         "1217877285923979415": [
@@ -7814,18 +7966,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1308386172719992954": [
-            {
-                "id": "1311308715441258527",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1311308735892951070",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1186796615432937584": [
             {
                 "id": "1192885818491150469",
@@ -7834,6 +7974,18 @@
             },
             {
                 "id": "1192885823868248144",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1308386172719992954": [
+            {
+                "id": "1311308715441258527",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1311308735892951070",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -7902,18 +8054,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1276239071764680926": [
-            {
-                "id": "1280972246390669382",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1303798923722358874",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1106787098452832296": [
             {
                 "id": "1179134514799321208",
@@ -7954,45 +8094,6 @@
                 "id": "1238295820151947394",
                 "type": 1,
                 "name": "embedded_cover"
-            }
-        ],
-        "1078728822972764312": [
-            {
-                "id": "1078737214168629288",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1078737439792832682",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1111037441697140848",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1219647973806571553": [
-            {
-                "id": "1219651774323888239",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1219662631179260027",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1219662740629618819",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1282691503541715096",
-                "type": 1,
-                "name": "icon"
             }
         ],
         "1011683823555199066": [
@@ -8047,36 +8148,53 @@
                 "name": "embedded_cover2"
             }
         ],
-        "902271654783242291": [
+        "1078728822972764312": [
             {
-                "id": "1316132314480381992",
-                "type": 1,
-                "name": "server_icon"
-            },
-            {
-                "id": "1325917812031492136",
+                "id": "1078737214168629288",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1325917821523329175",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "755827207812677713": [
-            {
-                "id": "839608726894018561",
+                "id": "1078737439792832682",
                 "type": 1,
                 "name": "servericon"
             },
             {
-                "id": "1070451415220232292",
+                "id": "1111037441697140848",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1219647973806571553": [
+            {
+                "id": "1219651774323888239",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1219662631179260027",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1121240234714202242",
+                "id": "1219662740629618819",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1282691503541715096",
+                "type": 1,
+                "name": "icon"
+            }
+        ],
+        "1276239071764680926": [
+            {
+                "id": "1280972246390669382",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1303798923722358874",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -8149,6 +8267,75 @@
             },
             {
                 "id": "1159482793533911132",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "755827207812677713": [
+            {
+                "id": "839608726894018561",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1070451415220232292",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1121240234714202242",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1194351737264406548": [
+            {
+                "id": "1293452778777346068",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455241693364244",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455823518830623",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455884579766393",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1301579448520540300",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1304837388849119264",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1318257447093403699",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1318621295033847879",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1319497874970644510",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1325192391275319316",
                 "type": 1,
                 "name": "embedded_cover"
             }
