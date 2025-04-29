@@ -464,14 +464,14 @@
             "application_id": "1278030957651431434"
         },
         {
-            "activity_preview_video_asset_id": "1192885829241151498",
+            "activity_preview_video_asset_id": "1286644732876947588",
             "supported_platforms": [
                 "web",
-                "android",
-                "ios"
+                "ios",
+                "android"
             ],
-            "default_orientation_lock_state": 3,
-            "tablet_default_orientation_lock_state": 3,
+            "default_orientation_lock_state": 1,
+            "tablet_default_orientation_lock_state": 1,
             "requires_age_gate": false,
             "legacy_responsive_aspect_ratio": false,
             "premium_tier_requirement": null,
@@ -479,28 +479,28 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 1,
-                    "label_until": "2024-07-24T16:00:00+00:00",
-                    "release_phase": "global_launch",
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 1,
-                    "label_until": "2024-07-24T16:00:00+00:00",
-                    "release_phase": "global_launch",
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 1,
-                    "label_until": "2024-07-24T16:00:00+00:00",
-                    "release_phase": "global_launch",
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
                     "omit_badge_from_surfaces": []
                 }
             },
             "shelf_rank": 13,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1186796615432937584"
+            "application_id": "1273616940451102832"
         },
         {
             "activity_preview_video_asset_id": "1181999168764514315",
@@ -813,45 +813,6 @@
             "application_id": "1351927748515467384"
         },
         {
-            "activity_preview_video_asset_id": "1286644732876947588",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 1,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
-                    "omit_badge_from_surfaces": []
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
-                    "omit_badge_from_surfaces": []
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
-                    "omit_badge_from_surfaces": []
-                }
-            },
-            "shelf_rank": 22,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1273616940451102832"
-        },
-        {
             "activity_preview_video_asset_id": "1156987260890259467",
             "supported_platforms": [
                 "web",
@@ -885,49 +846,10 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 23,
+            "shelf_rank": 22,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1037680572660727838"
-        },
-        {
-            "activity_preview_video_asset_id": "1293456653861130260",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 2,
-                    "label_until": "2024-10-17T23:30:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "android": {
-                    "label_type": 2,
-                    "label_until": "2024-10-17T23:30:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "ios": {
-                    "label_type": 2,
-                    "label_until": "2024-10-17T23:30:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                }
-            },
-            "shelf_rank": 24,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1194351737264406548"
         },
         {
             "activity_preview_video_asset_id": "1245126161550544949",
@@ -963,10 +885,49 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 25,
+            "shelf_rank": 23,
             "has_csp_exception": true,
             "displays_advertisements": false,
             "application_id": "235088799074484224"
+        },
+        {
+            "activity_preview_video_asset_id": "1230159847761121280",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 1,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                }
+            },
+            "shelf_rank": 24,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1217877285923979415"
         },
         {
             "activity_preview_video_asset_id": "1288280948680429651",
@@ -1008,7 +969,7 @@
                     ]
                 }
             },
-            "shelf_rank": 26,
+            "shelf_rank": 25,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1277095289626431488"
@@ -1047,7 +1008,7 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 27,
+            "shelf_rank": 26,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "945737671223947305"
@@ -1086,7 +1047,7 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 28,
+            "shelf_rank": 27,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1227719606223765687"
@@ -1125,7 +1086,7 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 29,
+            "shelf_rank": 28,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "880218394199220334"
@@ -1164,17 +1125,15 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 30,
+            "shelf_rank": 29,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "879863686565621790"
         },
         {
-            "activity_preview_video_asset_id": "1230159847761121280",
+            "activity_preview_video_asset_id": "1354866383598387210",
             "supported_platforms": [
-                "web",
-                "ios",
-                "android"
+                "web"
             ],
             "default_orientation_lock_state": 1,
             "tablet_default_orientation_lock_state": 1,
@@ -1193,20 +1152,20 @@
                 "android": {
                     "label_type": 0,
                     "label_until": null,
-                    "release_phase": "global_launch",
+                    "release_phase": "employee_release",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
                     "label_type": 0,
                     "label_until": null,
-                    "release_phase": "global_launch",
+                    "release_phase": "employee_release",
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 31,
+            "shelf_rank": 30,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1217877285923979415"
+            "application_id": "1199271093882589195"
         },
         {
             "activity_preview_video_asset_id": "1333922369907195924",
@@ -1242,20 +1201,20 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 32,
+            "shelf_rank": 31,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1296102202838093897"
         },
         {
-            "activity_preview_video_asset_id": "1319647680053379122",
+            "activity_preview_video_asset_id": "1298663472925638737",
             "supported_platforms": [
                 "web",
                 "ios",
                 "android"
             ],
-            "default_orientation_lock_state": 3,
-            "tablet_default_orientation_lock_state": 3,
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
             "requires_age_gate": false,
             "legacy_responsive_aspect_ratio": false,
             "premium_tier_requirement": null,
@@ -1263,28 +1222,28 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
+                    "label_type": 1,
+                    "label_until": "2024-11-29T00:00:00+00:00",
+                    "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
+                    "label_type": 1,
+                    "label_until": "2024-11-29T00:00:00+00:00",
+                    "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
+                    "label_type": 1,
+                    "label_until": "2024-11-29T00:00:00+00:00",
+                    "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 33,
+            "shelf_rank": 32,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1250331547320582157"
+            "application_id": "1258330015917936700"
         },
         {
             "activity_preview_video_asset_id": "1319791940924866623",
@@ -1320,7 +1279,7 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 34,
+            "shelf_rank": 33,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1296230469490180248"
@@ -1359,10 +1318,203 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 35,
+            "shelf_rank": 34,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1222462865345351760"
+        },
+        {
+            "activity_preview_video_asset_id": "1334849868723781705",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 3,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                }
+            },
+            "shelf_rank": 35,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1321374131245027399"
+        },
+        {
+            "activity_preview_video_asset_id": "1231058431922671636",
+            "supported_platforms": [
+                "web"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 2,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": true,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "activities_team",
+                    "omit_badge_from_surfaces": []
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "activities_team",
+                    "omit_badge_from_surfaces": []
+                }
+            },
+            "shelf_rank": 36,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1220052815590723654"
+        },
+        {
+            "activity_preview_video_asset_id": "1319647680053379122",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 3,
+            "tablet_default_orientation_lock_state": 3,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                }
+            },
+            "shelf_rank": 37,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1250331547320582157"
+        },
+        {
+            "activity_preview_video_asset_id": "1293456653861130260",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 2,
+                    "label_until": "2024-10-17T23:30:00+00:00",
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "android": {
+                    "label_type": 2,
+                    "label_until": "2024-10-17T23:30:00+00:00",
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "ios": {
+                    "label_type": 2,
+                    "label_until": "2024-10-17T23:30:00+00:00",
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                }
+            },
+            "shelf_rank": 38,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1194351737264406548"
+        },
+        {
+            "activity_preview_video_asset_id": "1219662344909619242",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 3,
+            "tablet_default_orientation_lock_state": 3,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 1,
+                    "label_until": "2024-12-31T00:00:00+00:00",
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "android": {
+                    "label_type": 1,
+                    "label_until": "2024-12-31T00:00:00+00:00",
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "ios": {
+                    "label_type": 1,
+                    "label_until": "2024-12-31T00:00:00+00:00",
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                }
+            },
+            "shelf_rank": 39,
+            "has_csp_exception": true,
+            "displays_advertisements": false,
+            "application_id": "1219647973806571553"
         },
         {
             "activity_preview_video_asset_id": "1228081931762139208",
@@ -1398,162 +1550,10 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 36,
+            "shelf_rank": 40,
             "has_csp_exception": true,
             "displays_advertisements": false,
             "application_id": "1120784239546347531"
-        },
-        {
-            "activity_preview_video_asset_id": "1231058431922671636",
-            "supported_platforms": [
-                "web"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 2,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": true,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "activities_team",
-                    "omit_badge_from_surfaces": []
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "activities_team",
-                    "omit_badge_from_surfaces": []
-                }
-            },
-            "shelf_rank": 37,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1220052815590723654"
-        },
-        {
-            "activity_preview_video_asset_id": "1354866383598387210",
-            "supported_platforms": [
-                "web"
-            ],
-            "default_orientation_lock_state": 1,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "employee_release",
-                    "omit_badge_from_surfaces": []
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "employee_release",
-                    "omit_badge_from_surfaces": []
-                }
-            },
-            "shelf_rank": 38,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1199271093882589195"
-        },
-        {
-            "activity_preview_video_asset_id": "1146495383174926457",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 2,
-                    "label_until": "2023-10-24T00:00:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "android": {
-                    "label_type": 2,
-                    "label_until": "2023-10-24T00:00:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "ios": {
-                    "label_type": 2,
-                    "label_until": "2023-10-24T00:00:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                }
-            },
-            "shelf_rank": 39,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1070087967294631976"
-        },
-        {
-            "activity_preview_video_asset_id": "1298663472925638737",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 1,
-                    "label_until": "2024-11-29T00:00:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "android": {
-                    "label_type": 1,
-                    "label_until": "2024-11-29T00:00:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "ios": {
-                    "label_type": 1,
-                    "label_until": "2024-11-29T00:00:00+00:00",
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                }
-            },
-            "shelf_rank": 40,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1258330015917936700"
         },
         {
             "activity_preview_video_asset_id": "951327865570467880",
@@ -1595,14 +1595,14 @@
             "application_id": "832025144389533716"
         },
         {
-            "activity_preview_video_asset_id": "1219662344909619242",
+            "activity_preview_video_asset_id": "1146495383174926457",
             "supported_platforms": [
                 "web",
                 "ios",
                 "android"
             ],
-            "default_orientation_lock_state": 3,
-            "tablet_default_orientation_lock_state": 3,
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
             "requires_age_gate": false,
             "legacy_responsive_aspect_ratio": false,
             "premium_tier_requirement": null,
@@ -1610,31 +1610,31 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 1,
-                    "label_until": "2024-12-31T00:00:00+00:00",
+                    "label_type": 2,
+                    "label_until": "2023-10-24T00:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 1,
-                    "label_until": "2024-12-31T00:00:00+00:00",
+                    "label_type": 2,
+                    "label_until": "2023-10-24T00:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 1,
-                    "label_until": "2024-12-31T00:00:00+00:00",
+                    "label_type": 2,
+                    "label_until": "2023-10-24T00:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 }
             },
             "shelf_rank": 42,
-            "has_csp_exception": true,
+            "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1219647973806571553"
+            "application_id": "1070087967294631976"
         },
         {
-            "activity_preview_video_asset_id": "1338644904209022976",
+            "activity_preview_video_asset_id": "1273119672728031326",
             "supported_platforms": [
                 "web",
                 "ios",
@@ -1651,33 +1651,33 @@
                 "web": {
                     "label_type": 0,
                     "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
+                    "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
                     "label_type": 0,
                     "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
+                    "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
                     "label_type": 0,
                     "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
+                    "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 }
             },
             "shelf_rank": 43,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1301652913977823282"
+            "application_id": "1245937701136633866"
         },
         {
-            "activity_preview_video_asset_id": "1317182882212610128",
+            "activity_preview_video_asset_id": "1192885829241151498",
             "supported_platforms": [
                 "web",
-                "ios",
-                "android"
+                "android",
+                "ios"
             ],
             "default_orientation_lock_state": 3,
             "tablet_default_orientation_lock_state": 3,
@@ -1688,28 +1688,28 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 0,
-                    "label_until": null,
+                    "label_type": 1,
+                    "label_until": "2024-07-24T16:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 0,
-                    "label_until": null,
+                    "label_type": 1,
+                    "label_until": "2024-07-24T16:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 0,
-                    "label_until": null,
+                    "label_type": 1,
+                    "label_until": "2024-07-24T16:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 }
             },
             "shelf_rank": 44,
-            "has_csp_exception": true,
+            "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1245041113882955918"
+            "application_id": "1186796615432937584"
         },
         {
             "activity_preview_video_asset_id": "1312253566794072114",
@@ -1751,6 +1751,45 @@
             "application_id": "1276646101914615872"
         },
         {
+            "activity_preview_video_asset_id": "1338644904209022976",
+            "supported_platforms": [
+                "web",
+                "ios",
+                "android"
+            ],
+            "default_orientation_lock_state": 1,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": false,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "soft_launch_multi_geo",
+                    "omit_badge_from_surfaces": []
+                }
+            },
+            "shelf_rank": 46,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "1301652913977823282"
+        },
+        {
             "activity_preview_video_asset_id": "1341581898362654801",
             "supported_platforms": [
                 "web",
@@ -1784,7 +1823,7 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 46,
+            "shelf_rank": 47,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1245013453329141861"
@@ -1823,61 +1862,22 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 47,
+            "shelf_rank": 48,
             "has_csp_exception": false,
             "displays_advertisements": false,
             "application_id": "1039835161136746497"
         },
         {
-            "activity_preview_video_asset_id": "1334849868723781705",
+            "activity_preview_video_asset_id": "1317182882212610128",
             "supported_platforms": [
                 "web",
                 "ios",
                 "android"
             ],
             "default_orientation_lock_state": 3,
-            "tablet_default_orientation_lock_state": 1,
+            "tablet_default_orientation_lock_state": 3,
             "requires_age_gate": false,
             "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
-                    "omit_badge_from_surfaces": []
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
-                    "omit_badge_from_surfaces": []
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "soft_launch_multi_geo",
-                    "omit_badge_from_surfaces": []
-                }
-            },
-            "shelf_rank": 48,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1321374131245027399"
-        },
-        {
-            "activity_preview_video_asset_id": "956935500910956584",
-            "supported_platforms": [
-                "ios",
-                "android",
-                "web"
-            ],
-            "default_orientation_lock_state": 2,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": true,
             "premium_tier_requirement": null,
             "free_period_starts_at": null,
             "free_period_ends_at": null,
@@ -1902,9 +1902,9 @@
                 }
             },
             "shelf_rank": 49,
-            "has_csp_exception": false,
+            "has_csp_exception": true,
             "displays_advertisements": false,
-            "application_id": "903769130790969345"
+            "application_id": "1245041113882955918"
         },
         {
             "activity_preview_video_asset_id": "1257403544542117952",
@@ -1946,6 +1946,45 @@
             "application_id": "1196535986226745437"
         },
         {
+            "activity_preview_video_asset_id": "956935500910956584",
+            "supported_platforms": [
+                "ios",
+                "android",
+                "web"
+            ],
+            "default_orientation_lock_state": 2,
+            "tablet_default_orientation_lock_state": 1,
+            "requires_age_gate": false,
+            "legacy_responsive_aspect_ratio": true,
+            "premium_tier_requirement": null,
+            "free_period_starts_at": null,
+            "free_period_ends_at": null,
+            "client_platform_config": {
+                "web": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "android": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                },
+                "ios": {
+                    "label_type": 0,
+                    "label_until": null,
+                    "release_phase": "global_launch",
+                    "omit_badge_from_surfaces": []
+                }
+            },
+            "shelf_rank": 51,
+            "has_csp_exception": false,
+            "displays_advertisements": false,
+            "application_id": "903769130790969345"
+        },
+        {
             "activity_preview_video_asset_id": "1078738117185515581",
             "supported_platforms": [
                 "web",
@@ -1979,49 +2018,10 @@
                     "omit_badge_from_surfaces": []
                 }
             },
-            "shelf_rank": 51,
-            "has_csp_exception": false,
-            "displays_advertisements": false,
-            "application_id": "1078728822972764312"
-        },
-        {
-            "activity_preview_video_asset_id": "1273119672728031326",
-            "supported_platforms": [
-                "web",
-                "ios",
-                "android"
-            ],
-            "default_orientation_lock_state": 1,
-            "tablet_default_orientation_lock_state": 1,
-            "requires_age_gate": false,
-            "legacy_responsive_aspect_ratio": false,
-            "premium_tier_requirement": null,
-            "free_period_starts_at": null,
-            "free_period_ends_at": null,
-            "client_platform_config": {
-                "web": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "android": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                },
-                "ios": {
-                    "label_type": 0,
-                    "label_until": null,
-                    "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
-                }
-            },
             "shelf_rank": 52,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1245937701136633866"
+            "application_id": "1078728822972764312"
         }
     ],
     "applications": [
@@ -3268,25 +3268,26 @@
             ]
         },
         {
-            "id": "1186796615432937584",
-            "name": "Rocket Bot Royale",
-            "icon": "5869d28aa762797184668eb711a3fbfc",
-            "description": "A frantic battle royale set on destructible, sinking islands. Fire rockets from your customizable robo-tank to eliminate the competition using advanced tactics and powerful weapons. ",
+            "id": "1273616940451102832",
+            "name": "Daily Sudoku Together",
+            "icon": "032e6526f260510b6366eda5e7c1b7e2",
+            "description": "Dive into Daily Sudoku Together on Discord—your ultimate Sudoku adventure! Enjoy unlimited puzzles across 14 difficulty levels, explore exciting variants like Killer, Chaos, and Mini Sudoku, and level up as you play. Powered by world-class puzzle generators, it’s perfect for beginners and pros alike. Challenge your mind, unlock rewards, and connect with a lively community. Ready to play? Join now!",
             "summary": "",
             "type": null,
             "is_monetized": true,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "5869d28aa762797184668eb711a3fbfc",
+            "cover_image": "032e6526f260510b6366eda5e7c1b7e2",
+            "primary_sku_id": "1281264877515833385",
             "bot": {
-                "id": "1186796615432937584",
-                "username": "Rocket Bot Royale",
+                "id": "1273616940451102832",
+                "username": "Daily Sudoku Together",
                 "global_name": null,
-                "avatar": "5869d28aa762797184668eb711a3fbfc",
+                "avatar": "032e6526f260510b6366eda5e7c1b7e2",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "2396",
-                "public_flags": 65536,
+                "discriminator": "4568",
+                "public_flags": 589824,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
@@ -3295,11 +3296,12 @@
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "798957956573429811",
+            "slug": "daily-sudoku-together",
+            "guild_id": "1300499527345770497",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://www.winterpixel.com/terms",
-            "privacy_policy_url": "https://www.winterpixel.com/privacy-policy",
+            "terms_of_service_url": "https://www.coolgames.com/terms-of-use/",
+            "privacy_policy_url": "https://www.coolgames.com/privacy-policy",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -3324,18 +3326,18 @@
                     }
                 }
             },
-            "verify_key": "4d5a3828fc5d736a95db616004e9de3a5a6d1a1c2c123356452487edabbe3f65",
+            "verify_key": "be83ff22674e781da0d8f68b0a1e7bf1d3ca1f43db192f8821e7b5a247e8e9b7",
             "flags": 131082,
-            "max_participants": 24,
+            "max_participants": 99,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1192885829241151498",
+                "activity_preview_video_asset_id": "1286644732876947588",
                 "supported_platforms": [
                     "web",
-                    "android",
-                    "ios"
+                    "ios",
+                    "android"
                 ],
-                "default_orientation_lock_state": 3,
-                "tablet_default_orientation_lock_state": 3,
+                "default_orientation_lock_state": 1,
+                "tablet_default_orientation_lock_state": 1,
                 "requires_age_gate": false,
                 "legacy_responsive_aspect_ratio": false,
                 "premium_tier_requirement": null,
@@ -3343,21 +3345,21 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 1,
-                        "label_until": "2024-07-24T16:00:00+00:00",
-                        "release_phase": "global_launch",
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 1,
-                        "label_until": "2024-07-24T16:00:00+00:00",
-                        "release_phase": "global_launch",
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 1,
-                        "label_until": "2024-07-24T16:00:00+00:00",
-                        "release_phase": "global_launch",
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
                         "omit_badge_from_surfaces": []
                     }
                 },
@@ -3366,9 +3368,9 @@
                 "displays_advertisements": false
             },
             "tags": [
-                "Battle Royale",
-                "PvP",
-                "Tanks"
+                "Casual",
+                "Puzzle",
+                "Sudoku"
             ]
         },
         {
@@ -4190,112 +4192,6 @@
             ]
         },
         {
-            "id": "1273616940451102832",
-            "name": "Daily Sudoku Together",
-            "icon": "032e6526f260510b6366eda5e7c1b7e2",
-            "description": "Dive into Daily Sudoku Together on Discord—your ultimate Sudoku adventure! Enjoy unlimited puzzles across 14 difficulty levels, explore exciting variants like Killer, Chaos, and Mini Sudoku, and level up as you play. Powered by world-class puzzle generators, it’s perfect for beginners and pros alike. Challenge your mind, unlock rewards, and connect with a lively community. Ready to play? Join now!",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": true,
-            "is_discoverable": true,
-            "cover_image": "032e6526f260510b6366eda5e7c1b7e2",
-            "primary_sku_id": "1281264877515833385",
-            "bot": {
-                "id": "1273616940451102832",
-                "username": "Daily Sudoku Together",
-                "global_name": null,
-                "avatar": "032e6526f260510b6366eda5e7c1b7e2",
-                "avatar_decoration_data": null,
-                "collectibles": null,
-                "discriminator": "4568",
-                "public_flags": 589824,
-                "primary_guild": null,
-                "clan": null,
-                "bot": true,
-                "banner": null,
-                "banner_color": null,
-                "accent_color": null
-            },
-            "hook": true,
-            "slug": "daily-sudoku-together",
-            "guild_id": "1300499527345770497",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://www.coolgames.com/terms-of-use/",
-            "privacy_policy_url": "https://www.coolgames.com/privacy-policy",
-            "install_params": {
-                "scopes": [
-                    "applications.commands"
-                ],
-                "permissions": "0"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "be83ff22674e781da0d8f68b0a1e7bf1d3ca1f43db192f8821e7b5a247e8e9b7",
-            "flags": 131082,
-            "max_participants": 99,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1286644732876947588",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 1,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
-                        "omit_badge_from_surfaces": []
-                    }
-                },
-                "shelf_rank": 22,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Casual",
-                "Puzzle",
-                "Sudoku"
-            ]
-        },
-        {
             "id": "1037680572660727838",
             "name": "Chef Showdown",
             "icon": "b27f11b43c0ebea952aa1ce60d9c9a8e",
@@ -4389,7 +4285,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 23,
+                "shelf_rank": 22,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4397,112 +4293,6 @@
                 "Co-op",
                 "Competitive",
                 "Cooking"
-            ]
-        },
-        {
-            "id": "1194351737264406548",
-            "name": "Death by AI",
-            "icon": "4ba6202e17a1d6565d4f2c4adfd774d6",
-            "description": "Death by AI is a prompt based survival multiplayer game to play with your friends and family. Step into a world where AI holds all the cards. Will it be your ally, or will it pull the plug? Choose wisely, because it's not programmed to care! ",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": true,
-            "is_discoverable": true,
-            "cover_image": "f2cb55658299b878fabafc28f2fb9e2d",
-            "primary_sku_id": "1225878725757894857",
-            "bot": {
-                "id": "1194351737264406548",
-                "username": "Death by AI",
-                "global_name": null,
-                "avatar": "4ba6202e17a1d6565d4f2c4adfd774d6",
-                "avatar_decoration_data": null,
-                "collectibles": null,
-                "discriminator": "9423",
-                "public_flags": 589824,
-                "primary_guild": null,
-                "clan": null,
-                "bot": true,
-                "banner": null,
-                "banner_color": null,
-                "accent_color": null
-            },
-            "hook": true,
-            "slug": "death-by-ai",
-            "guild_id": "997752993598419044",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://joinplayroom.com/games/terms/tos-dbai.txt",
-            "privacy_policy_url": "https://joinplayroom.com/games/terms/privacy.txt",
-            "install_params": {
-                "scopes": [
-                    "applications.commands"
-                ],
-                "permissions": "0"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "36f01e074697b6ee09b15a922cd7aaa5d2dcdb42a89c0e1e523bdb900e2695ba",
-            "flags": 131082,
-            "max_participants": 10,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1293456653861130260",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 2,
-                        "label_until": "2024-10-17T23:30:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "android": {
-                        "label_type": 2,
-                        "label_until": "2024-10-17T23:30:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "ios": {
-                        "label_type": 2,
-                        "label_until": "2024-10-17T23:30:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    }
-                },
-                "shelf_rank": 24,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "AI",
-                "Party",
-                "Survival"
             ]
         },
         {
@@ -4602,7 +4392,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 25,
+                "shelf_rank": 23,
                 "has_csp_exception": true,
                 "displays_advertisements": false
             },
@@ -4610,6 +4400,110 @@
                 "Music",
                 "Rythm",
                 "Together"
+            ]
+        },
+        {
+            "id": "1217877285923979415",
+            "name": "Smash Karts",
+            "icon": "d689de6feaa6e23f779f5c2bb0966020",
+            "description": "Smash Karts is a MOKBA (Multiplayer Online Kart Battle Arena) game. Drive fast. Fire rockets. Make big explosions.",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "is_discoverable": true,
+            "cover_image": "1b0280bfdd9363486f21431d53021f82",
+            "bot": {
+                "id": "1217877285923979415",
+                "username": "Smash Karts",
+                "global_name": null,
+                "avatar": "d689de6feaa6e23f779f5c2bb0966020",
+                "avatar_decoration_data": null,
+                "collectibles": null,
+                "discriminator": "4579",
+                "public_flags": 65536,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": null,
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "guild_id": "651719864473485313",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://tall.team/termsofservice",
+            "privacy_policy_url": "https://tall.team/privacy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "f15d0bebe98ec4df7e7814d4514313ea24dbc622269ca0753f5508a13f08591f",
+            "flags": 131082,
+            "max_participants": 24,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1230159847761121280",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 1,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    }
+                },
+                "shelf_rank": 24,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Action",
+                "Arcade",
+                "Multiplayer"
             ]
         },
         {
@@ -4714,7 +4608,7 @@
                         ]
                     }
                 },
-                "shelf_rank": 26,
+                "shelf_rank": 25,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4819,7 +4713,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 27,
+                "shelf_rank": 26,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -4924,7 +4818,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 28,
+                "shelf_rank": 27,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -5029,7 +4923,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 29,
+                "shelf_rank": 28,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -5131,7 +5025,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 30,
+                "shelf_rank": 29,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -5141,24 +5035,25 @@
             ]
         },
         {
-            "id": "1217877285923979415",
-            "name": "Smash Karts",
-            "icon": "d689de6feaa6e23f779f5c2bb0966020",
-            "description": "Smash Karts is a MOKBA (Multiplayer Online Kart Battle Arena) game. Drive fast. Fire rockets. Make big explosions.",
+            "id": "1199271093882589195",
+            "name": "Roll20",
+            "icon": "f1ebb68bd287353c32cc16fb40eb8e51",
+            "description": "Bring your story to life on the powerful, easy-to-use Roll20 Virtual Tabletop.",
             "summary": "",
             "type": null,
             "is_monetized": true,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "1b0280bfdd9363486f21431d53021f82",
+            "cover_image": "5767874591c85fc54a950ad9239c93df",
+            "primary_sku_id": "1247597836082876550",
             "bot": {
-                "id": "1217877285923979415",
-                "username": "Smash Karts",
+                "id": "1199271093882589195",
+                "username": "Roll20",
                 "global_name": null,
-                "avatar": "d689de6feaa6e23f779f5c2bb0966020",
+                "avatar": "f1ebb68bd287353c32cc16fb40eb8e51",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "4579",
+                "discriminator": "8895",
                 "public_flags": 65536,
                 "primary_guild": null,
                 "clan": null,
@@ -5168,24 +5063,27 @@
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "651719864473485313",
+            "slug": "roll20",
+            "guild_id": "1219360755892228146",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://tall.team/termsofservice",
-            "privacy_policy_url": "https://tall.team/privacy",
+            "terms_of_service_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
+            "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
+                    "bot",
                     "applications.commands"
                 ],
-                "permissions": "0"
+                "permissions": "1"
             },
             "integration_types_config": {
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
+                            "bot",
                             "applications.commands"
                         ],
-                        "permissions": "0"
+                        "permissions": "1"
                     }
                 },
                 "1": {
@@ -5197,15 +5095,13 @@
                     }
                 }
             },
-            "verify_key": "f15d0bebe98ec4df7e7814d4514313ea24dbc622269ca0753f5508a13f08591f",
+            "verify_key": "afa476c2dd3808944c36a95bd1b939e7bd8ecf86c37f65e6e5eac275ad33ac5d",
             "flags": 131082,
-            "max_participants": 24,
+            "max_participants": null,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1230159847761121280",
+                "activity_preview_video_asset_id": "1354866383598387210",
                 "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
+                    "web"
                 ],
                 "default_orientation_lock_state": 1,
                 "tablet_default_orientation_lock_state": 1,
@@ -5224,24 +5120,24 @@
                     "android": {
                         "label_type": 0,
                         "label_until": null,
-                        "release_phase": "global_launch",
+                        "release_phase": "employee_release",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
                         "label_type": 0,
                         "label_until": null,
-                        "release_phase": "global_launch",
+                        "release_phase": "employee_release",
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 31,
+                "shelf_rank": 30,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
             "tags": [
-                "Action",
-                "Arcade",
-                "Multiplayer"
+                "D&D",
+                "Role-Playing",
+                "VTT"
             ]
         },
         {
@@ -5338,7 +5234,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 32,
+                "shelf_rank": 31,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -5351,38 +5247,38 @@
             ]
         },
         {
-            "id": "1250331547320582157",
-            "name": "Autobattler Talisborn",
-            "icon": "2a789aeb36faa96edefe224665f13acb",
-            "description": "Talisborn is a faction based auto-battler! Choose your faction and use dice rolls to deploy your units to the battlefield, and equip powerful items to defeat your opponent.",
+            "id": "1258330015917936700",
+            "name": "Quiz Planet",
+            "icon": "006dc5ef871aacae1aadeb88e12afb6e",
+            "description": "How many correct answers can you get? Team up with your friends and test your trivia skills!\n\nChallenge yourselves with a massive collection of fascinating questions spanning games, movies, sports, and many more categories. Join forces, combine your knowledge, and hit the jackpot together!\n\nReady to show off your collective smarts? Jump in and play now!",
             "summary": "",
             "type": null,
-            "is_monetized": true,
+            "is_monetized": false,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "8a291f7bc047750e0b37297095169ec6",
+            "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
             "bot": {
-                "id": "1250331547320582157",
-                "username": "Talisborn",
+                "id": "1258330015917936700",
+                "username": "Quiz Planet",
                 "global_name": null,
-                "avatar": "2a789aeb36faa96edefe224665f13acb",
+                "avatar": "006dc5ef871aacae1aadeb88e12afb6e",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "4407",
+                "discriminator": "7366",
                 "public_flags": 589824,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
-                "banner": "04978992f8c9b6d4142b04ea96b0b34a",
+                "banner": "dc05bbea9f951ea02f030d7fda8018d2",
                 "banner_color": null,
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "1301560459920670800",
+            "guild_id": "1275776456408043530",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://firebirdgames.com/home/privacy-policy/",
-            "privacy_policy_url": "https://firebirdgames.com/home/privacy-policy/",
+            "terms_of_service_url": "https://lotum-legal.web.app/lotumone/en/terms.html",
+            "privacy_policy_url": "https://lotum-legal.web.app/lotumone/en/privacy-policy-discord-games.html",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -5407,18 +5303,18 @@
                     }
                 }
             },
-            "verify_key": "e4b17d35c49b32846c9b12f7f4bad5d60bd82a0377a8a2e850ae913cb8c34e2c",
+            "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
             "flags": 131074,
-            "max_participants": null,
+            "max_participants": 100,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1319647680053379122",
+                "activity_preview_video_asset_id": "1298663472925638737",
                 "supported_platforms": [
                     "web",
                     "ios",
                     "android"
                 ],
-                "default_orientation_lock_state": 3,
-                "tablet_default_orientation_lock_state": 3,
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
                 "requires_age_gate": false,
                 "legacy_responsive_aspect_ratio": false,
                 "premium_tier_requirement": null,
@@ -5426,32 +5322,34 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
+                        "label_type": 1,
+                        "label_until": "2024-11-29T00:00:00+00:00",
+                        "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
+                        "label_type": 1,
+                        "label_until": "2024-11-29T00:00:00+00:00",
+                        "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
+                        "label_type": 1,
+                        "label_until": "2024-11-29T00:00:00+00:00",
+                        "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 33,
+                "shelf_rank": 32,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
             "tags": [
-                "Battle",
-                "PVP",
-                "Strategy"
+                "Co-op",
+                "Competitive",
+                "Quiz",
+                "Trivia",
+                "Turn-based"
             ]
         },
         {
@@ -5548,7 +5446,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 34,
+                "shelf_rank": 33,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -5655,7 +5553,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 35,
+                "shelf_rank": 34,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -5665,6 +5563,526 @@
                 "pvp",
                 "strategy",
                 "turn-based"
+            ]
+        },
+        {
+            "id": "1321374131245027399",
+            "name": "Castle Craft",
+            "icon": "8aec54f5474d11f0c60044b861b220f7",
+            "description": "Embark on a mystical journey in Castle Craft, where you merge resources and unlock the secrets of time. Start in a land cloaked in fog, using ancient keys to reveal hidden territories and trace your lost family's steps across eras.",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "is_discoverable": true,
+            "bot": {
+                "id": "1321374131245027399",
+                "username": "Castle Craft",
+                "global_name": null,
+                "avatar": "8aec54f5474d11f0c60044b861b220f7",
+                "avatar_decoration_data": null,
+                "collectibles": null,
+                "discriminator": "3069",
+                "public_flags": 589824,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": null,
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "guild_id": "1334834688367525888",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://cleverappssg.com/terms",
+            "privacy_policy_url": "https://cleverappssg.com/privacy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "5f7f86d11ccfad81acb84483848eef25b518c61c7de491e24ad496d4d7308636",
+            "flags": 131074,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1334849868723781705",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 3,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    }
+                },
+                "shelf_rank": 35,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "farm",
+                "merge",
+                "simulation"
+            ]
+        },
+        {
+            "id": "1220052815590723654",
+            "name": "Exoracer",
+            "icon": "1c2764319d77452a14e79eb4dae4594a",
+            "description": "Exoracer is a fast-paced multiplayer platformer game",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "is_discoverable": true,
+            "bot": {
+                "id": "1220052815590723654",
+                "username": "Exoracer",
+                "global_name": null,
+                "avatar": "1c2764319d77452a14e79eb4dae4594a",
+                "avatar_decoration_data": null,
+                "collectibles": null,
+                "discriminator": "4153",
+                "public_flags": 65536,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": null,
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "guild_id": "952909728055427092",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://exoracer.io/terms-of-service",
+            "privacy_policy_url": "https://exoracer.io/privacy-policy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "a5ac68c1692cd3180db3ce42f40f862dd98cc836848943a9bd34cbc55f7c55eb",
+            "flags": 131082,
+            "max_participants": 8,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1231058431922671636",
+                "supported_platforms": [
+                    "web"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 2,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": true,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "activities_team",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "activities_team",
+                        "omit_badge_from_surfaces": []
+                    }
+                },
+                "shelf_rank": 36,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Arcade",
+                "Competitive",
+                "Platformer"
+            ]
+        },
+        {
+            "id": "1250331547320582157",
+            "name": "Autobattler Talisborn",
+            "icon": "2a789aeb36faa96edefe224665f13acb",
+            "description": "Talisborn is a faction based auto-battler! Choose your faction and use dice rolls to deploy your units to the battlefield, and equip powerful items to defeat your opponent.",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "is_discoverable": true,
+            "cover_image": "8a291f7bc047750e0b37297095169ec6",
+            "bot": {
+                "id": "1250331547320582157",
+                "username": "Talisborn",
+                "global_name": null,
+                "avatar": "2a789aeb36faa96edefe224665f13acb",
+                "avatar_decoration_data": null,
+                "collectibles": null,
+                "discriminator": "4407",
+                "public_flags": 589824,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": "04978992f8c9b6d4142b04ea96b0b34a",
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "guild_id": "1301560459920670800",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://firebirdgames.com/home/privacy-policy/",
+            "privacy_policy_url": "https://firebirdgames.com/home/privacy-policy/",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "e4b17d35c49b32846c9b12f7f4bad5d60bd82a0377a8a2e850ae913cb8c34e2c",
+            "flags": 131074,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1319647680053379122",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 3,
+                "tablet_default_orientation_lock_state": 3,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    }
+                },
+                "shelf_rank": 37,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Battle",
+                "PVP",
+                "Strategy"
+            ]
+        },
+        {
+            "id": "1194351737264406548",
+            "name": "Death by AI",
+            "icon": "4ba6202e17a1d6565d4f2c4adfd774d6",
+            "description": "Death by AI is a prompt based survival multiplayer game to play with your friends and family. Step into a world where AI holds all the cards. Will it be your ally, or will it pull the plug? Choose wisely, because it's not programmed to care! ",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "is_discoverable": true,
+            "cover_image": "f2cb55658299b878fabafc28f2fb9e2d",
+            "primary_sku_id": "1225878725757894857",
+            "bot": {
+                "id": "1194351737264406548",
+                "username": "Death by AI",
+                "global_name": null,
+                "avatar": "4ba6202e17a1d6565d4f2c4adfd774d6",
+                "avatar_decoration_data": null,
+                "collectibles": null,
+                "discriminator": "9423",
+                "public_flags": 589824,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": null,
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "slug": "death-by-ai",
+            "guild_id": "997752993598419044",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://joinplayroom.com/games/terms/tos-dbai.txt",
+            "privacy_policy_url": "https://joinplayroom.com/games/terms/privacy.txt",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "36f01e074697b6ee09b15a922cd7aaa5d2dcdb42a89c0e1e523bdb900e2695ba",
+            "flags": 131082,
+            "max_participants": 10,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1293456653861130260",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 2,
+                        "label_until": "2024-10-17T23:30:00+00:00",
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "android": {
+                        "label_type": 2,
+                        "label_until": "2024-10-17T23:30:00+00:00",
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "ios": {
+                        "label_type": 2,
+                        "label_until": "2024-10-17T23:30:00+00:00",
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    }
+                },
+                "shelf_rank": 38,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "AI",
+                "Party",
+                "Survival"
+            ]
+        },
+        {
+            "id": "1219647973806571553",
+            "name": "bloxd.io",
+            "icon": "8b07244e103590b56cd6d53162b1ab0e",
+            "description": "A multiplayer sandbox game where you can build, explore, and compete in voxel worlds. Connect with friends via Discord to play mini-games such as bedwars, skywars and more or unleash your creativity by designing your own worlds.",
+            "summary": "",
+            "type": null,
+            "is_monetized": true,
+            "is_verified": true,
+            "is_discoverable": true,
+            "cover_image": "eb26094c55cf57c0154632cbdf9411f8",
+            "bot": {
+                "id": "1219647973806571553",
+                "username": "Bloxd",
+                "global_name": null,
+                "avatar": "8b07244e103590b56cd6d53162b1ab0e",
+                "avatar_decoration_data": null,
+                "collectibles": null,
+                "discriminator": "8893",
+                "public_flags": 65536,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": "338cf80455ac50f4e7eae84422b8b180",
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "guild_id": "804347688946237472",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://bloxd.io/?terms",
+            "privacy_policy_url": "https://bloxd.io/?privacy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "0087aac00ed635ad30a07b38939c4ac49cb61fb3906d9c37261d26c2ab3f8879",
+            "flags": 8519682,
+            "max_participants": 40,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1219662344909619242",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 3,
+                "tablet_default_orientation_lock_state": 3,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 1,
+                        "label_until": "2024-12-31T00:00:00+00:00",
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "android": {
+                        "label_type": 1,
+                        "label_until": "2024-12-31T00:00:00+00:00",
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "ios": {
+                        "label_type": 1,
+                        "label_until": "2024-12-31T00:00:00+00:00",
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    }
+                },
+                "shelf_rank": 39,
+                "has_csp_exception": true,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "game",
+                "minecraft",
+                "multiplayer",
+                "sandbox",
+                "voxel"
             ]
         },
         {
@@ -5761,7 +6179,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 36,
+                "shelf_rank": 40,
                 "has_csp_exception": true,
                 "displays_advertisements": false
             },
@@ -5771,422 +6189,6 @@
                 "Music",
                 "Social",
                 "Together"
-            ]
-        },
-        {
-            "id": "1220052815590723654",
-            "name": "Exoracer",
-            "icon": "1c2764319d77452a14e79eb4dae4594a",
-            "description": "Exoracer is a fast-paced multiplayer platformer game",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": true,
-            "is_discoverable": true,
-            "bot": {
-                "id": "1220052815590723654",
-                "username": "Exoracer",
-                "global_name": null,
-                "avatar": "1c2764319d77452a14e79eb4dae4594a",
-                "avatar_decoration_data": null,
-                "collectibles": null,
-                "discriminator": "4153",
-                "public_flags": 65536,
-                "primary_guild": null,
-                "clan": null,
-                "bot": true,
-                "banner": null,
-                "banner_color": null,
-                "accent_color": null
-            },
-            "hook": true,
-            "guild_id": "952909728055427092",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://exoracer.io/terms-of-service",
-            "privacy_policy_url": "https://exoracer.io/privacy-policy",
-            "install_params": {
-                "scopes": [
-                    "applications.commands"
-                ],
-                "permissions": "0"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "a5ac68c1692cd3180db3ce42f40f862dd98cc836848943a9bd34cbc55f7c55eb",
-            "flags": 131082,
-            "max_participants": 8,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1231058431922671636",
-                "supported_platforms": [
-                    "web"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 2,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": true,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "activities_team",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "activities_team",
-                        "omit_badge_from_surfaces": []
-                    }
-                },
-                "shelf_rank": 37,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Arcade",
-                "Competitive",
-                "Platformer"
-            ]
-        },
-        {
-            "id": "1199271093882589195",
-            "name": "Roll20",
-            "icon": "f1ebb68bd287353c32cc16fb40eb8e51",
-            "description": "Bring your story to life on the powerful, easy-to-use Roll20 Virtual Tabletop.",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": true,
-            "is_discoverable": true,
-            "cover_image": "5767874591c85fc54a950ad9239c93df",
-            "primary_sku_id": "1247597836082876550",
-            "bot": {
-                "id": "1199271093882589195",
-                "username": "Roll20",
-                "global_name": null,
-                "avatar": "f1ebb68bd287353c32cc16fb40eb8e51",
-                "avatar_decoration_data": null,
-                "collectibles": null,
-                "discriminator": "8895",
-                "public_flags": 65536,
-                "primary_guild": null,
-                "clan": null,
-                "bot": true,
-                "banner": null,
-                "banner_color": null,
-                "accent_color": null
-            },
-            "hook": true,
-            "slug": "roll20",
-            "guild_id": "1219360755892228146",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
-            "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
-            "install_params": {
-                "scopes": [
-                    "bot",
-                    "applications.commands"
-                ],
-                "permissions": "1"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "bot",
-                            "applications.commands"
-                        ],
-                        "permissions": "1"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "afa476c2dd3808944c36a95bd1b939e7bd8ecf86c37f65e6e5eac275ad33ac5d",
-            "flags": 131082,
-            "max_participants": null,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1354866383598387210",
-                "supported_platforms": [
-                    "web"
-                ],
-                "default_orientation_lock_state": 1,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "employee_release",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "employee_release",
-                        "omit_badge_from_surfaces": []
-                    }
-                },
-                "shelf_rank": 38,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "D&D",
-                "Role-Playing",
-                "VTT"
-            ]
-        },
-        {
-            "id": "1070087967294631976",
-            "name": "Whiteboard",
-            "icon": "9a04eab3b9f50302006577b769354520",
-            "description": "Draw, upload images, write, and use GIFs to create virtually anything in this collaborative whiteboard. Boards are saved, so come back any time. It’s not just what you create, it’s the fun of creating it together!",
-            "summary": "",
-            "type": null,
-            "is_monetized": false,
-            "is_verified": true,
-            "is_discoverable": true,
-            "cover_image": "9a04eab3b9f50302006577b769354520",
-            "bot": {
-                "id": "1070087967294631976",
-                "username": "Whiteboard",
-                "global_name": null,
-                "avatar": "a57d315e721e49673f2ec1a0f89f9c03",
-                "avatar_decoration_data": null,
-                "collectibles": null,
-                "discriminator": "6557",
-                "public_flags": 65536,
-                "primary_guild": null,
-                "clan": null,
-                "bot": true,
-                "banner": "7117608cde7cd402e57f0f63fe2c9df6",
-                "banner_color": null,
-                "accent_color": null
-            },
-            "hook": true,
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://discord.com/terms",
-            "privacy_policy_url": "https://discord.com/privacy",
-            "install_params": {
-                "scopes": [
-                    "applications.commands"
-                ],
-                "permissions": "0"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "6f5e042d9c27b4e9f48db12fafc29886288b81012fbef0aa470d2b6106490ccb",
-            "flags": 9568258,
-            "max_participants": -1,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1146495383174926457",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 2,
-                        "label_until": "2023-10-24T00:00:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "android": {
-                        "label_type": 2,
-                        "label_until": "2023-10-24T00:00:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "ios": {
-                        "label_type": 2,
-                        "label_until": "2023-10-24T00:00:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    }
-                },
-                "shelf_rank": 39,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Collaborate",
-                "Productivity",
-                "Whiteboard"
-            ]
-        },
-        {
-            "id": "1258330015917936700",
-            "name": "Quiz Planet",
-            "icon": "006dc5ef871aacae1aadeb88e12afb6e",
-            "description": "How many correct answers can you get? Team up with your friends and test your trivia skills!\n\nChallenge yourselves with a massive collection of fascinating questions spanning games, movies, sports, and many more categories. Join forces, combine your knowledge, and hit the jackpot together!\n\nReady to show off your collective smarts? Jump in and play now!",
-            "summary": "",
-            "type": null,
-            "is_monetized": false,
-            "is_verified": true,
-            "is_discoverable": true,
-            "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
-            "bot": {
-                "id": "1258330015917936700",
-                "username": "Quiz Planet",
-                "global_name": null,
-                "avatar": "006dc5ef871aacae1aadeb88e12afb6e",
-                "avatar_decoration_data": null,
-                "collectibles": null,
-                "discriminator": "7366",
-                "public_flags": 589824,
-                "primary_guild": null,
-                "clan": null,
-                "bot": true,
-                "banner": "dc05bbea9f951ea02f030d7fda8018d2",
-                "banner_color": null,
-                "accent_color": null
-            },
-            "hook": true,
-            "guild_id": "1275776456408043530",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://lotum-legal.web.app/lotumone/en/terms.html",
-            "privacy_policy_url": "https://lotum-legal.web.app/lotumone/en/privacy-policy-discord-games.html",
-            "install_params": {
-                "scopes": [
-                    "applications.commands"
-                ],
-                "permissions": "0"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
-            "flags": 131074,
-            "max_participants": 100,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1298663472925638737",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 1,
-                        "label_until": "2024-11-29T00:00:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "android": {
-                        "label_type": 1,
-                        "label_until": "2024-11-29T00:00:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "ios": {
-                        "label_type": 1,
-                        "label_until": "2024-11-29T00:00:00+00:00",
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    }
-                },
-                "shelf_rank": 40,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Co-op",
-                "Competitive",
-                "Quiz",
-                "Trivia",
-                "Turn-based"
             ]
         },
         {
@@ -6293,38 +6295,37 @@
             ]
         },
         {
-            "id": "1219647973806571553",
-            "name": "bloxd.io",
-            "icon": "8b07244e103590b56cd6d53162b1ab0e",
-            "description": "A multiplayer sandbox game where you can build, explore, and compete in voxel worlds. Connect with friends via Discord to play mini-games such as bedwars, skywars and more or unleash your creativity by designing your own worlds.",
+            "id": "1070087967294631976",
+            "name": "Whiteboard",
+            "icon": "9a04eab3b9f50302006577b769354520",
+            "description": "Draw, upload images, write, and use GIFs to create virtually anything in this collaborative whiteboard. Boards are saved, so come back any time. It’s not just what you create, it’s the fun of creating it together!",
             "summary": "",
             "type": null,
-            "is_monetized": true,
+            "is_monetized": false,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "eb26094c55cf57c0154632cbdf9411f8",
+            "cover_image": "9a04eab3b9f50302006577b769354520",
             "bot": {
-                "id": "1219647973806571553",
-                "username": "Bloxd",
+                "id": "1070087967294631976",
+                "username": "Whiteboard",
                 "global_name": null,
-                "avatar": "8b07244e103590b56cd6d53162b1ab0e",
+                "avatar": "a57d315e721e49673f2ec1a0f89f9c03",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "8893",
+                "discriminator": "6557",
                 "public_flags": 65536,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
-                "banner": "338cf80455ac50f4e7eae84422b8b180",
+                "banner": "7117608cde7cd402e57f0f63fe2c9df6",
                 "banner_color": null,
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "804347688946237472",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://bloxd.io/?terms",
-            "privacy_policy_url": "https://bloxd.io/?privacy",
+            "terms_of_service_url": "https://discord.com/terms",
+            "privacy_policy_url": "https://discord.com/privacy",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -6349,18 +6350,18 @@
                     }
                 }
             },
-            "verify_key": "0087aac00ed635ad30a07b38939c4ac49cb61fb3906d9c37261d26c2ab3f8879",
-            "flags": 8519682,
-            "max_participants": 40,
+            "verify_key": "6f5e042d9c27b4e9f48db12fafc29886288b81012fbef0aa470d2b6106490ccb",
+            "flags": 9568258,
+            "max_participants": -1,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1219662344909619242",
+                "activity_preview_video_asset_id": "1146495383174926457",
                 "supported_platforms": [
                     "web",
                     "ios",
                     "android"
                 ],
-                "default_orientation_lock_state": 3,
-                "tablet_default_orientation_lock_state": 3,
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
                 "requires_age_gate": false,
                 "legacy_responsive_aspect_ratio": false,
                 "premium_tier_requirement": null,
@@ -6368,69 +6369,67 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 1,
-                        "label_until": "2024-12-31T00:00:00+00:00",
+                        "label_type": 2,
+                        "label_until": "2023-10-24T00:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 1,
-                        "label_until": "2024-12-31T00:00:00+00:00",
+                        "label_type": 2,
+                        "label_until": "2023-10-24T00:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 1,
-                        "label_until": "2024-12-31T00:00:00+00:00",
+                        "label_type": 2,
+                        "label_until": "2023-10-24T00:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     }
                 },
                 "shelf_rank": 42,
-                "has_csp_exception": true,
+                "has_csp_exception": false,
                 "displays_advertisements": false
             },
             "tags": [
-                "game",
-                "minecraft",
-                "multiplayer",
-                "sandbox",
-                "voxel"
+                "Collaborate",
+                "Productivity",
+                "Whiteboard"
             ]
         },
         {
-            "id": "1301652913977823282",
-            "name": "karaoke party battle",
-            "icon": "a79c01220c57941b0fe0fbe9e19adc8b",
-            "description": "Karaoke Party Battle is the 1st karaoke discord music game !\nThis is the ultimate way to have fun, react, hang with friends and battle each other on the mic. Who drops the mic first?\nIt comes in 2 modes: party mode, battle mode or single mode. If you like rhythm games, karaoke or ai covers, this is for you. \nMade by mayk.it in collaboration with stingray & covers.ai. 1st version, more coming soon!",
+            "id": "1245937701136633866",
+            "name": "Idle Mafia",
+            "icon": "272882c86f430ed29ab7124eef43aafd",
+            "description": "Manage insidious businesses, gather talented Capos to carry out your bidding, and occupy new territory through any means necessary.\n",
             "summary": "",
             "type": null,
-            "is_monetized": false,
+            "is_monetized": true,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "e0196860c6ae0ba7f667bd69766a6602",
+            "cover_image": "272882c86f430ed29ab7124eef43aafd",
             "bot": {
-                "id": "1301652913977823282",
-                "username": "karaoke party battle",
+                "id": "1245937701136633866",
+                "username": "Idle Mafia",
                 "global_name": null,
-                "avatar": "e0196860c6ae0ba7f667bd69766a6602",
+                "avatar": "272882c86f430ed29ab7124eef43aafd",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "5729",
+                "discriminator": "7366",
                 "public_flags": 65536,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
-                "banner": "86dfad5fd8529db360d1d8e3c0699c06",
+                "banner": "44590896860c8078b811b179c71c0c07",
                 "banner_color": null,
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "1100852998932005014",
+            "guild_id": "562104606474371074",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://www.mayk.it/lp/app-terms",
-            "privacy_policy_url": "https://www.mayk.it/privacy",
+            "terms_of_service_url": "https://www.centurygame.com/terms-of-service/",
+            "privacy_policy_url": "https://www.centurygame.com/privacy-policy/",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -6455,11 +6454,11 @@
                     }
                 }
             },
-            "verify_key": "5a1463c10acd581ce3143110af6e2c3086775b97af19c8eae6c295a88608730c",
-            "flags": 696322,
+            "verify_key": "8b75d3063a8c1c976ac4245bfb8d20a2c1433a628d589032e34f1f1bd2ad2ae4",
+            "flags": 131082,
             "max_participants": null,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1338644904209022976",
+                "activity_preview_video_asset_id": "1273119672728031326",
                 "supported_platforms": [
                     "web",
                     "ios",
@@ -6476,19 +6475,19 @@
                     "web": {
                         "label_type": 0,
                         "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
+                        "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
                         "label_type": 0,
                         "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
+                        "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
                         "label_type": 0,
                         "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
+                        "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     }
                 },
@@ -6497,46 +6496,44 @@
                 "displays_advertisements": false
             },
             "tags": [
-                "entertainment",
-                "fun social party",
-                "karaoke",
-                "music",
-                "music game"
+                "Casual",
+                "Simulation",
+                "Tycoon"
             ]
         },
         {
-            "id": "1245041113882955918",
-            "name": "Tiny Royale - Army of Boom",
-            "icon": "2f3c41097bf5e524db72836598e049ec",
-            "description": "Loot, shoot, and survive! Upgrade your Hero to stay alive!\nTeam up with friends in Squads of 4, or go Solo in a 30-Player\nBattle Royale! Climb the ranks in weekly Leaderboards!\nWill you come out on top?\n\nGame is free to download with in-game purchases and is governed by our Terms of Service. For questions see support page. For information about how Zynga uses personal data read our privacy policy.",
+            "id": "1186796615432937584",
+            "name": "Rocket Bot Royale",
+            "icon": "5869d28aa762797184668eb711a3fbfc",
+            "description": "A frantic battle royale set on destructible, sinking islands. Fire rockets from your customizable robo-tank to eliminate the competition using advanced tactics and powerful weapons. ",
             "summary": "",
             "type": null,
             "is_monetized": true,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "cf7adbc4578075bc740b6413aba3c775",
+            "cover_image": "5869d28aa762797184668eb711a3fbfc",
             "bot": {
-                "id": "1245041113882955918",
-                "username": "Tiny Royale - Army of Boom",
+                "id": "1186796615432937584",
+                "username": "Rocket Bot Royale",
                 "global_name": null,
-                "avatar": "2f3c41097bf5e524db72836598e049ec",
+                "avatar": "5869d28aa762797184668eb711a3fbfc",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "4215",
-                "public_flags": 589824,
+                "discriminator": "2396",
+                "public_flags": 65536,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
-                "banner": "c4bbfd01071069c4b78ec32dcfdc057e",
+                "banner": null,
                 "banner_color": null,
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "1263824831061692467",
+            "guild_id": "798957956573429811",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://www.zynga.com/legal/terms-of-service",
-            "privacy_policy_url": "https://www.take2games.com/privacy/en-US",
+            "terms_of_service_url": "https://www.winterpixel.com/terms",
+            "privacy_policy_url": "https://www.winterpixel.com/privacy-policy",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -6561,15 +6558,15 @@
                     }
                 }
             },
-            "verify_key": "94acd5a9e9337b574a7e454a4b11ac864869c8946eadea0eb2f9f2d3946589ec",
+            "verify_key": "4d5a3828fc5d736a95db616004e9de3a5a6d1a1c2c123356452487edabbe3f65",
             "flags": 131082,
-            "max_participants": null,
+            "max_participants": 24,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1317182882212610128",
+                "activity_preview_video_asset_id": "1192885829241151498",
                 "supported_platforms": [
                     "web",
-                    "ios",
-                    "android"
+                    "android",
+                    "ios"
                 ],
                 "default_orientation_lock_state": 3,
                 "tablet_default_orientation_lock_state": 3,
@@ -6580,32 +6577,32 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 0,
-                        "label_until": null,
+                        "label_type": 1,
+                        "label_until": "2024-07-24T16:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 0,
-                        "label_until": null,
+                        "label_type": 1,
+                        "label_until": "2024-07-24T16:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 0,
-                        "label_until": null,
+                        "label_type": 1,
+                        "label_until": "2024-07-24T16:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     }
                 },
                 "shelf_rank": 44,
-                "has_csp_exception": true,
+                "has_csp_exception": false,
                 "displays_advertisements": false
             },
             "tags": [
                 "Battle Royale",
-                "Co-op",
-                "Competitive"
+                "PvP",
+                "Tanks"
             ]
         },
         {
@@ -6713,6 +6710,112 @@
             ]
         },
         {
+            "id": "1301652913977823282",
+            "name": "karaoke party battle",
+            "icon": "a79c01220c57941b0fe0fbe9e19adc8b",
+            "description": "Karaoke Party Battle is the 1st karaoke discord music game !\nThis is the ultimate way to have fun, react, hang with friends and battle each other on the mic. Who drops the mic first?\nIt comes in 2 modes: party mode, battle mode or single mode. If you like rhythm games, karaoke or ai covers, this is for you. \nMade by mayk.it in collaboration with stingray & covers.ai. 1st version, more coming soon!",
+            "summary": "",
+            "type": null,
+            "is_monetized": false,
+            "is_verified": true,
+            "is_discoverable": true,
+            "cover_image": "e0196860c6ae0ba7f667bd69766a6602",
+            "bot": {
+                "id": "1301652913977823282",
+                "username": "karaoke party battle",
+                "global_name": null,
+                "avatar": "e0196860c6ae0ba7f667bd69766a6602",
+                "avatar_decoration_data": null,
+                "collectibles": null,
+                "discriminator": "5729",
+                "public_flags": 65536,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": "86dfad5fd8529db360d1d8e3c0699c06",
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "guild_id": "1100852998932005014",
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://www.mayk.it/lp/app-terms",
+            "privacy_policy_url": "https://www.mayk.it/privacy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "5a1463c10acd581ce3143110af6e2c3086775b97af19c8eae6c295a88608730c",
+            "flags": 696322,
+            "max_participants": null,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "1338644904209022976",
+                "supported_platforms": [
+                    "web",
+                    "ios",
+                    "android"
+                ],
+                "default_orientation_lock_state": 1,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": false,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "soft_launch_multi_geo",
+                        "omit_badge_from_surfaces": []
+                    }
+                },
+                "shelf_rank": 46,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "entertainment",
+                "fun social party",
+                "karaoke",
+                "music",
+                "music game"
+            ]
+        },
+        {
             "id": "1245013453329141861",
             "name": "Spark - Hero Tactics",
             "icon": "9c20c00537b280447d94201593b8683e",
@@ -6807,7 +6910,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 46,
+                "shelf_rank": 47,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -6912,7 +7015,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 47,
+                "shelf_rank": 48,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -6922,37 +7025,38 @@
             ]
         },
         {
-            "id": "1321374131245027399",
-            "name": "Castle Craft",
-            "icon": "8aec54f5474d11f0c60044b861b220f7",
-            "description": "Embark on a mystical journey in Castle Craft, where you merge resources and unlock the secrets of time. Start in a land cloaked in fog, using ancient keys to reveal hidden territories and trace your lost family's steps across eras.",
+            "id": "1245041113882955918",
+            "name": "Tiny Royale - Army of Boom",
+            "icon": "2f3c41097bf5e524db72836598e049ec",
+            "description": "Loot, shoot, and survive! Upgrade your Hero to stay alive!\nTeam up with friends in Squads of 4, or go Solo in a 30-Player\nBattle Royale! Climb the ranks in weekly Leaderboards!\nWill you come out on top?\n\nGame is free to download with in-game purchases and is governed by our Terms of Service. For questions see support page. For information about how Zynga uses personal data read our privacy policy.",
             "summary": "",
             "type": null,
             "is_monetized": true,
             "is_verified": true,
             "is_discoverable": true,
+            "cover_image": "cf7adbc4578075bc740b6413aba3c775",
             "bot": {
-                "id": "1321374131245027399",
-                "username": "Castle Craft",
+                "id": "1245041113882955918",
+                "username": "Tiny Royale - Army of Boom",
                 "global_name": null,
-                "avatar": "8aec54f5474d11f0c60044b861b220f7",
+                "avatar": "2f3c41097bf5e524db72836598e049ec",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "3069",
+                "discriminator": "4215",
                 "public_flags": 589824,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
-                "banner": null,
+                "banner": "c4bbfd01071069c4b78ec32dcfdc057e",
                 "banner_color": null,
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "1334834688367525888",
+            "guild_id": "1263824831061692467",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://cleverappssg.com/terms",
-            "privacy_policy_url": "https://cleverappssg.com/privacy",
+            "terms_of_service_url": "https://www.zynga.com/legal/terms-of-service",
+            "privacy_policy_url": "https://www.take2games.com/privacy/en-US",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -6977,123 +7081,20 @@
                     }
                 }
             },
-            "verify_key": "5f7f86d11ccfad81acb84483848eef25b518c61c7de491e24ad496d4d7308636",
-            "flags": 131074,
+            "verify_key": "94acd5a9e9337b574a7e454a4b11ac864869c8946eadea0eb2f9f2d3946589ec",
+            "flags": 131082,
             "max_participants": null,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1334849868723781705",
+                "activity_preview_video_asset_id": "1317182882212610128",
                 "supported_platforms": [
                     "web",
                     "ios",
                     "android"
                 ],
                 "default_orientation_lock_state": 3,
-                "tablet_default_orientation_lock_state": 1,
+                "tablet_default_orientation_lock_state": 3,
                 "requires_age_gate": false,
                 "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "soft_launch_multi_geo",
-                        "omit_badge_from_surfaces": []
-                    }
-                },
-                "shelf_rank": 48,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "farm",
-                "merge",
-                "simulation"
-            ]
-        },
-        {
-            "id": "903769130790969345",
-            "name": "Land-io",
-            "icon": "0a6b8f4795c66ba12afbc766dd920bfb",
-            "description": "Pick a character and encircle new territory. Run into trails to knock out foes - careful not to hit your own!",
-            "summary": "",
-            "type": null,
-            "is_monetized": false,
-            "is_verified": true,
-            "is_discoverable": true,
-            "cover_image": "0a6b8f4795c66ba12afbc766dd920bfb",
-            "bot": {
-                "id": "903769130790969345",
-                "username": "Land-io",
-                "global_name": null,
-                "avatar": "0a6b8f4795c66ba12afbc766dd920bfb",
-                "avatar_decoration_data": null,
-                "collectibles": null,
-                "discriminator": "1692",
-                "public_flags": 65536,
-                "primary_guild": null,
-                "clan": null,
-                "bot": true,
-                "banner": "83310ffc154ef7b234fe114d9edbb1f7",
-                "banner_color": null,
-                "accent_color": null
-            },
-            "hook": true,
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://discord.com/terms",
-            "privacy_policy_url": "https://discord.com/privacy",
-            "install_params": {
-                "scopes": [
-                    "applications.commands"
-                ],
-                "permissions": "0"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "82c2ef51c10e534207dee215fd1cbffc13708f8245a2d5e1e3e233099b30403e",
-            "flags": 9568258,
-            "max_participants": 16,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "956935500910956584",
-                "supported_platforms": [
-                    "ios",
-                    "android",
-                    "web"
-                ],
-                "default_orientation_lock_state": 2,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": true,
                 "premium_tier_requirement": null,
                 "free_period_starts_at": null,
                 "free_period_ends_at": null,
@@ -7118,13 +7119,13 @@
                     }
                 },
                 "shelf_rank": 49,
-                "has_csp_exception": false,
+                "has_csp_exception": true,
                 "displays_advertisements": false
             },
             "tags": [
-                "Arcade",
-                "Cross-Server",
-                "IO"
+                "Battle Royale",
+                "Co-op",
+                "Competitive"
             ]
         },
         {
@@ -7231,6 +7232,109 @@
             ]
         },
         {
+            "id": "903769130790969345",
+            "name": "Land-io",
+            "icon": "0a6b8f4795c66ba12afbc766dd920bfb",
+            "description": "Pick a character and encircle new territory. Run into trails to knock out foes - careful not to hit your own!",
+            "summary": "",
+            "type": null,
+            "is_monetized": false,
+            "is_verified": true,
+            "is_discoverable": true,
+            "cover_image": "0a6b8f4795c66ba12afbc766dd920bfb",
+            "bot": {
+                "id": "903769130790969345",
+                "username": "Land-io",
+                "global_name": null,
+                "avatar": "0a6b8f4795c66ba12afbc766dd920bfb",
+                "avatar_decoration_data": null,
+                "collectibles": null,
+                "discriminator": "1692",
+                "public_flags": 65536,
+                "primary_guild": null,
+                "clan": null,
+                "bot": true,
+                "banner": "83310ffc154ef7b234fe114d9edbb1f7",
+                "banner_color": null,
+                "accent_color": null
+            },
+            "hook": true,
+            "bot_public": true,
+            "bot_require_code_grant": false,
+            "terms_of_service_url": "https://discord.com/terms",
+            "privacy_policy_url": "https://discord.com/privacy",
+            "install_params": {
+                "scopes": [
+                    "applications.commands"
+                ],
+                "permissions": "0"
+            },
+            "integration_types_config": {
+                "0": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                },
+                "1": {
+                    "oauth2_install_params": {
+                        "scopes": [
+                            "applications.commands"
+                        ],
+                        "permissions": "0"
+                    }
+                }
+            },
+            "verify_key": "82c2ef51c10e534207dee215fd1cbffc13708f8245a2d5e1e3e233099b30403e",
+            "flags": 9568258,
+            "max_participants": 16,
+            "embedded_activity_config": {
+                "activity_preview_video_asset_id": "956935500910956584",
+                "supported_platforms": [
+                    "ios",
+                    "android",
+                    "web"
+                ],
+                "default_orientation_lock_state": 2,
+                "tablet_default_orientation_lock_state": 1,
+                "requires_age_gate": false,
+                "legacy_responsive_aspect_ratio": true,
+                "premium_tier_requirement": null,
+                "free_period_starts_at": null,
+                "free_period_ends_at": null,
+                "client_platform_config": {
+                    "web": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "android": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    },
+                    "ios": {
+                        "label_type": 0,
+                        "label_until": null,
+                        "release_phase": "global_launch",
+                        "omit_badge_from_surfaces": []
+                    }
+                },
+                "shelf_rank": 51,
+                "has_csp_exception": false,
+                "displays_advertisements": false
+            },
+            "tags": [
+                "Arcade",
+                "Cross-Server",
+                "IO"
+            ]
+        },
+        {
             "id": "1078728822972764312",
             "name": "Know What I Meme",
             "icon": "6f547114b2979b8bc83e4ba91b4d770d",
@@ -7323,7 +7427,7 @@
                         "omit_badge_from_surfaces": []
                     }
                 },
-                "shelf_rank": 51,
+                "shelf_rank": 52,
                 "has_csp_exception": false,
                 "displays_advertisements": false
             },
@@ -7331,110 +7435,6 @@
                 "GIFs",
                 "Memes",
                 "Party"
-            ]
-        },
-        {
-            "id": "1245937701136633866",
-            "name": "Idle Mafia",
-            "icon": "272882c86f430ed29ab7124eef43aafd",
-            "description": "Manage insidious businesses, gather talented Capos to carry out your bidding, and occupy new territory through any means necessary.\n",
-            "summary": "",
-            "type": null,
-            "is_monetized": true,
-            "is_verified": true,
-            "is_discoverable": true,
-            "cover_image": "272882c86f430ed29ab7124eef43aafd",
-            "bot": {
-                "id": "1245937701136633866",
-                "username": "Idle Mafia",
-                "global_name": null,
-                "avatar": "272882c86f430ed29ab7124eef43aafd",
-                "avatar_decoration_data": null,
-                "collectibles": null,
-                "discriminator": "7366",
-                "public_flags": 65536,
-                "primary_guild": null,
-                "clan": null,
-                "bot": true,
-                "banner": "44590896860c8078b811b179c71c0c07",
-                "banner_color": null,
-                "accent_color": null
-            },
-            "hook": true,
-            "guild_id": "562104606474371074",
-            "bot_public": true,
-            "bot_require_code_grant": false,
-            "terms_of_service_url": "https://www.centurygame.com/terms-of-service/",
-            "privacy_policy_url": "https://www.centurygame.com/privacy-policy/",
-            "install_params": {
-                "scopes": [
-                    "applications.commands"
-                ],
-                "permissions": "0"
-            },
-            "integration_types_config": {
-                "0": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                },
-                "1": {
-                    "oauth2_install_params": {
-                        "scopes": [
-                            "applications.commands"
-                        ],
-                        "permissions": "0"
-                    }
-                }
-            },
-            "verify_key": "8b75d3063a8c1c976ac4245bfb8d20a2c1433a628d589032e34f1f1bd2ad2ae4",
-            "flags": 131082,
-            "max_participants": null,
-            "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1273119672728031326",
-                "supported_platforms": [
-                    "web",
-                    "ios",
-                    "android"
-                ],
-                "default_orientation_lock_state": 1,
-                "tablet_default_orientation_lock_state": 1,
-                "requires_age_gate": false,
-                "legacy_responsive_aspect_ratio": false,
-                "premium_tier_requirement": null,
-                "free_period_starts_at": null,
-                "free_period_ends_at": null,
-                "client_platform_config": {
-                    "web": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "android": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    },
-                    "ios": {
-                        "label_type": 0,
-                        "label_until": null,
-                        "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
-                    }
-                },
-                "shelf_rank": 52,
-                "has_csp_exception": false,
-                "displays_advertisements": false
-            },
-            "tags": [
-                "Casual",
-                "Simulation",
-                "Tycoon"
             ]
         }
     ],
@@ -7512,81 +7512,74 @@
                 "name": "embedded_background"
             }
         ],
-        "1194351737264406548": [
+        "1037680572660727838": [
             {
-                "id": "1293455241693364244",
+                "id": "1080081340097110046",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1293455823518830623",
+                "id": "1080081501036757093",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1293455884579766393",
+                "id": "1080081763394650192",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1304837388849119264",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1318257447093403699",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1318621295033847879",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1319497874970644510",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1325192391275319316",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1349912582642860073",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1349912696388059187",
-                "type": 1,
-                "name": "embedded_background"
-            }
-        ],
-        "1245041113882955918": [
-            {
-                "id": "1273050322264260724",
-                "type": 1,
-                "name": "tro_square1024x1024"
-            },
-            {
-                "id": "1339309606576324678",
+                "id": "1080081976494661762",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1342201459961495612",
+                "id": "1080082418263924776",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1355236998436356196",
+                "id": "1080082544592171058",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080088584553496605",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080088919988772904",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080088969548681268",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080089596777467935",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1080090416390602783",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1153290373498667090",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1153290380192792637",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1364301202333892628",
+                "id": "1159482793533911132",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -7619,6 +7612,33 @@
             },
             {
                 "id": "1333543065717313626",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1245041113882955918": [
+            {
+                "id": "1273050322264260724",
+                "type": 1,
+                "name": "tro_square1024x1024"
+            },
+            {
+                "id": "1339309606576324678",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1342201459961495612",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1355236998436356196",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1364301202333892628",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -7716,23 +7736,6 @@
                 "name": "embedded_background"
             }
         ],
-        "1245013453329141861": [
-            {
-                "id": "1298073629694885890",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1337217088757956689",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1343981431948312606",
-                "type": 1,
-                "name": "appicon"
-            }
-        ],
         "1120784239546347531": [
             {
                 "id": "1220058603109482738",
@@ -7770,14 +7773,71 @@
                 "name": "embedded_background"
             }
         ],
-        "1276646101914615872": [
+        "1245013453329141861": [
             {
-                "id": "1277590538585112678",
+                "id": "1298073629694885890",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1335937648379957320",
+                "id": "1337217088757956689",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1343981431948312606",
+                "type": 1,
+                "name": "appicon"
+            }
+        ],
+        "1199817737728442569": [
+            {
+                "id": "1247698110239473687",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1247700773375311973",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1248339205092802590",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1250930942223319192",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1250939379564675122",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1252436091361951866",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1252728580551737414",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1253814610016993323",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1253814652438057001",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1253814657987383359",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -7851,76 +7911,31 @@
                 "name": "embedded_cover"
             }
         ],
-        "1199817737728442569": [
+        "1276646101914615872": [
             {
-                "id": "1247698110239473687",
+                "id": "1277590538585112678",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1247700773375311973",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1248339205092802590",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1250930942223319192",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1250939379564675122",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1252436091361951866",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1252728580551737414",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1253814610016993323",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1253814652438057001",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1253814657987383359",
+                "id": "1335937648379957320",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1220052815590723654": [
+        "1222462865345351760": [
             {
-                "id": "1236833383447924869",
+                "id": "1234780800977862737",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1254699571586531338",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1236833407674351728",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1236833561970086000",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1236835375088140288",
+                "id": "1254699582282010734",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -7942,23 +7957,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "903769130790969345": [
-            {
-                "id": "954118207319466014",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1070454187634212974",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1134198364146249828",
-                "type": 1,
-                "name": "servericon"
-            }
-        ],
         "1278030957651431434": [
             {
                 "id": "1289185011928535050",
@@ -7976,19 +7974,41 @@
                 "name": "embedded_cover"
             }
         ],
-        "1222462865345351760": [
+        "903769130790969345": [
             {
-                "id": "1234780800977862737",
+                "id": "954118207319466014",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1254699571586531338",
+                "id": "1070454187634212974",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1254699582282010734",
+                "id": "1134198364146249828",
+                "type": 1,
+                "name": "servericon"
+            }
+        ],
+        "1220052815590723654": [
+            {
+                "id": "1236833383447924869",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236833407674351728",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236833561970086000",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1236835375088140288",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -8106,14 +8126,14 @@
                 "name": "embedded_cover"
             }
         ],
-        "1273616940451102832": [
+        "1353680152814555229": [
             {
-                "id": "1286644714325409894",
+                "id": "1364227537286201395",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1286644721653125162",
+                "id": "1364227548866809926",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -8145,33 +8165,33 @@
                 "name": "embedded_background"
             }
         ],
-        "1353680152814555229": [
+        "1258330015917936700": [
             {
-                "id": "1364227537286201395",
+                "id": "1258330382580056064",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1364227548866809926",
+                "id": "1270625086797385738",
+                "type": 1,
+                "name": "qp-icon"
+            },
+            {
+                "id": "1296489804673978488",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "832025144389533716": [
+        "1273616940451102832": [
             {
-                "id": "930194685023121459",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "974795361447211048",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1070457704012857406",
+                "id": "1286644714325409894",
                 "type": 1,
                 "name": "embedded_background"
+            },
+            {
+                "id": "1286644721653125162",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "1217877285923979415": [
@@ -8236,21 +8256,21 @@
                 "name": "embedded_background"
             }
         ],
-        "1258330015917936700": [
+        "832025144389533716": [
             {
-                "id": "1258330382580056064",
+                "id": "930194685023121459",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "servericon"
             },
             {
-                "id": "1270625086797385738",
-                "type": 1,
-                "name": "qp-icon"
-            },
-            {
-                "id": "1296489804673978488",
+                "id": "974795361447211048",
                 "type": 1,
                 "name": "embedded_cover"
+            },
+            {
+                "id": "1070457704012857406",
+                "type": 1,
+                "name": "embedded_background"
             }
         ],
         "1277095289626431488": [
@@ -8266,23 +8286,6 @@
             },
             {
                 "id": "1298387609302863943",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1296102202838093897": [
-            {
-                "id": "1310963982898692156",
-                "type": 1,
-                "name": "037"
-            },
-            {
-                "id": "1310964443471151104",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1310964452090318848",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -8305,6 +8308,23 @@
             },
             {
                 "id": "1298049776431927376",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1296102202838093897": [
+            {
+                "id": "1310963982898692156",
+                "type": 1,
+                "name": "037"
+            },
+            {
+                "id": "1310964443471151104",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1310964452090318848",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -8343,18 +8363,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1186796615432937584": [
-            {
-                "id": "1192885818491150469",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1192885823868248144",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1227719606223765687": [
             {
                 "id": "1357787616992559136",
@@ -8370,6 +8378,18 @@
                 "id": "1360700453314105444",
                 "type": 1,
                 "name": "embedded_background"
+            }
+        ],
+        "1186796615432937584": [
+            {
+                "id": "1192885818491150469",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1192885823868248144",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "945737671223947305": [
@@ -8470,6 +8490,18 @@
                 "name": "embedded_cover2"
             }
         ],
+        "1276239071764680926": [
+            {
+                "id": "1280972246390669382",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1303798923722358874",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
         "1106787098452832296": [
             {
                 "id": "1179134514799321208",
@@ -8510,6 +8542,28 @@
                 "id": "1238295820151947394",
                 "type": 1,
                 "name": "embedded_cover"
+            }
+        ],
+        "1219647973806571553": [
+            {
+                "id": "1219651774323888239",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1219662631179260027",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1219662740629618819",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1282691503541715096",
+                "type": 1,
+                "name": "icon"
             }
         ],
         "235088799074484224": [
@@ -8561,40 +8615,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1276239071764680926": [
-            {
-                "id": "1280972246390669382",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1303798923722358874",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1219647973806571553": [
-            {
-                "id": "1219651774323888239",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1219662631179260027",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1219662740629618819",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1282691503541715096",
-                "type": 1,
-                "name": "icon"
-            }
-        ],
         "902271654783242291": [
             {
                 "id": "1316132314480381992",
@@ -8629,76 +8649,56 @@
                 "name": "embedded_cover"
             }
         ],
-        "1037680572660727838": [
+        "1194351737264406548": [
             {
-                "id": "1080081340097110046",
+                "id": "1293455241693364244",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1080081501036757093",
+                "id": "1293455823518830623",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1080081763394650192",
+                "id": "1293455884579766393",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1080081976494661762",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080082418263924776",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080082544592171058",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080088584553496605",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080088919988772904",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080088969548681268",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080089596777467935",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1080090416390602783",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1153290373498667090",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1153290380192792637",
+                "id": "1304837388849119264",
                 "type": 1,
                 "name": "embedded_cover"
             },
             {
-                "id": "1159482793533911132",
+                "id": "1318257447093403699",
                 "type": 1,
                 "name": "embedded_cover"
+            },
+            {
+                "id": "1318621295033847879",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1319497874970644510",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1325192391275319316",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1349912582642860073",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1349912696388059187",
+                "type": 1,
+                "name": "embedded_background"
             }
         ],
         "947957217959759964": [
