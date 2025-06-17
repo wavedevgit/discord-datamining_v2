@@ -1651,14 +1651,14 @@
             "application_id": "1296230469490180248"
         },
         {
-            "activity_preview_video_asset_id": "1241037451925913801",
+            "activity_preview_video_asset_id": "1230159847761121280",
             "supported_platforms": [
                 "web",
                 "ios",
                 "android"
             ],
-            "default_orientation_lock_state": 3,
-            "tablet_default_orientation_lock_state": 3,
+            "default_orientation_lock_state": 1,
+            "tablet_default_orientation_lock_state": 1,
             "requires_age_gate": false,
             "legacy_responsive_aspect_ratio": false,
             "premium_tier_requirement": null,
@@ -1666,20 +1666,20 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 2,
-                    "label_until": "2024-04-08T08:00:00+00:00",
+                    "label_type": 0,
+                    "label_until": null,
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 2,
-                    "label_until": "2024-04-08T08:00:00+00:00",
+                    "label_type": 0,
+                    "label_until": null,
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 2,
-                    "label_until": "2024-04-08T08:00:00+00:00",
+                    "label_type": 0,
+                    "label_until": null,
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 }
@@ -1687,7 +1687,7 @@
             "shelf_rank": 43,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1011683823555199066"
+            "application_id": "1217877285923979415"
         },
         {
             "activity_preview_video_asset_id": "1349980475216629852",
@@ -1963,14 +1963,14 @@
             "application_id": "1333739472524939274"
         },
         {
-            "activity_preview_video_asset_id": "1230159847761121280",
+            "activity_preview_video_asset_id": "1241037451925913801",
             "supported_platforms": [
                 "web",
                 "ios",
                 "android"
             ],
-            "default_orientation_lock_state": 1,
-            "tablet_default_orientation_lock_state": 1,
+            "default_orientation_lock_state": 3,
+            "tablet_default_orientation_lock_state": 3,
             "requires_age_gate": false,
             "legacy_responsive_aspect_ratio": false,
             "premium_tier_requirement": null,
@@ -1978,20 +1978,20 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 0,
-                    "label_until": null,
+                    "label_type": 2,
+                    "label_until": "2024-04-08T08:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 0,
-                    "label_until": null,
+                    "label_type": 2,
+                    "label_until": "2024-04-08T08:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 0,
-                    "label_until": null,
+                    "label_type": 2,
+                    "label_until": "2024-04-08T08:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 }
@@ -1999,7 +1999,7 @@
             "shelf_rank": 51,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1217877285923979415"
+            "application_id": "1011683823555199066"
         },
         {
             "activity_preview_video_asset_id": "1382851437016649839",
@@ -6671,25 +6671,25 @@
             ]
         },
         {
-            "id": "1011683823555199066",
-            "name": "Krunker Strike FRVR",
-            "icon": "6ed44e27aadafd1897c633c49cf9e111",
-            "description": "Enter the Krunker Strike FRVR universe and compete in a cross-platform shooter in REAL-TIME MULTIPLAYER BATTLES with a wide range of arsenal across scenic locations.",
+            "id": "1217877285923979415",
+            "name": "Smash Karts",
+            "icon": "d689de6feaa6e23f779f5c2bb0966020",
+            "description": "Smash Karts is a MOKBA (Multiplayer Online Kart Battle Arena) game. Drive fast. Fire rockets. Make big explosions.",
             "summary": "",
             "type": null,
             "is_monetized": true,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "6ed44e27aadafd1897c633c49cf9e111",
+            "cover_image": "1b0280bfdd9363486f21431d53021f82",
             "bot": {
-                "id": "1011683823555199066",
-                "username": "Krunker Strike FRVR",
+                "id": "1217877285923979415",
+                "username": "Smash Karts",
                 "global_name": null,
-                "avatar": "6ed44e27aadafd1897c633c49cf9e111",
+                "avatar": "d689de6feaa6e23f779f5c2bb0966020",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "6546",
-                "public_flags": 589824,
+                "discriminator": "4579",
+                "public_flags": 65536,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
@@ -6698,11 +6698,11 @@
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "448194623580667916",
+            "guild_id": "651719864473485313",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
-            "privacy_policy_url": "https://frvr.com/legal/krunker#PrivacyPolicy",
+            "terms_of_service_url": "https://tall.team/termsofservice",
+            "privacy_policy_url": "https://tall.team/privacy",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -6727,18 +6727,18 @@
                     }
                 }
             },
-            "verify_key": "75e97499e54bb5489bd7e217e95cf3061fde7731a7c6b18257f827abaad3d8bf",
+            "verify_key": "f15d0bebe98ec4df7e7814d4514313ea24dbc622269ca0753f5508a13f08591f",
             "flags": 131082,
-            "max_participants": 12,
+            "max_participants": 24,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1241037451925913801",
+                "activity_preview_video_asset_id": "1230159847761121280",
                 "supported_platforms": [
                     "web",
                     "ios",
                     "android"
                 ],
-                "default_orientation_lock_state": 3,
-                "tablet_default_orientation_lock_state": 3,
+                "default_orientation_lock_state": 1,
+                "tablet_default_orientation_lock_state": 1,
                 "requires_age_gate": false,
                 "legacy_responsive_aspect_ratio": false,
                 "premium_tier_requirement": null,
@@ -6746,20 +6746,20 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 2,
-                        "label_until": "2024-04-08T08:00:00+00:00",
+                        "label_type": 0,
+                        "label_until": null,
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 2,
-                        "label_until": "2024-04-08T08:00:00+00:00",
+                        "label_type": 0,
+                        "label_until": null,
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 2,
-                        "label_until": "2024-04-08T08:00:00+00:00",
+                        "label_type": 0,
+                        "label_until": null,
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     }
@@ -6769,9 +6769,9 @@
                 "displays_advertisements": false
             },
             "tags": [
+                "Action",
                 "Arcade",
-                "FPS",
-                "Shooter"
+                "Multiplayer"
             ]
         },
         {
@@ -7514,25 +7514,25 @@
             ]
         },
         {
-            "id": "1217877285923979415",
-            "name": "Smash Karts",
-            "icon": "d689de6feaa6e23f779f5c2bb0966020",
-            "description": "Smash Karts is a MOKBA (Multiplayer Online Kart Battle Arena) game. Drive fast. Fire rockets. Make big explosions.",
+            "id": "1011683823555199066",
+            "name": "Krunker Strike FRVR",
+            "icon": "6ed44e27aadafd1897c633c49cf9e111",
+            "description": "Enter the Krunker Strike FRVR universe and compete in a cross-platform shooter in REAL-TIME MULTIPLAYER BATTLES with a wide range of arsenal across scenic locations.",
             "summary": "",
             "type": null,
             "is_monetized": true,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "1b0280bfdd9363486f21431d53021f82",
+            "cover_image": "6ed44e27aadafd1897c633c49cf9e111",
             "bot": {
-                "id": "1217877285923979415",
-                "username": "Smash Karts",
+                "id": "1011683823555199066",
+                "username": "Krunker Strike FRVR",
                 "global_name": null,
-                "avatar": "d689de6feaa6e23f779f5c2bb0966020",
+                "avatar": "6ed44e27aadafd1897c633c49cf9e111",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "4579",
-                "public_flags": 65536,
+                "discriminator": "6546",
+                "public_flags": 589824,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
@@ -7541,11 +7541,11 @@
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "651719864473485313",
+            "guild_id": "448194623580667916",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://tall.team/termsofservice",
-            "privacy_policy_url": "https://tall.team/privacy",
+            "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
+            "privacy_policy_url": "https://frvr.com/legal/krunker#PrivacyPolicy",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -7570,18 +7570,18 @@
                     }
                 }
             },
-            "verify_key": "f15d0bebe98ec4df7e7814d4514313ea24dbc622269ca0753f5508a13f08591f",
+            "verify_key": "75e97499e54bb5489bd7e217e95cf3061fde7731a7c6b18257f827abaad3d8bf",
             "flags": 131082,
-            "max_participants": 24,
+            "max_participants": 12,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1230159847761121280",
+                "activity_preview_video_asset_id": "1241037451925913801",
                 "supported_platforms": [
                     "web",
                     "ios",
                     "android"
                 ],
-                "default_orientation_lock_state": 1,
-                "tablet_default_orientation_lock_state": 1,
+                "default_orientation_lock_state": 3,
+                "tablet_default_orientation_lock_state": 3,
                 "requires_age_gate": false,
                 "legacy_responsive_aspect_ratio": false,
                 "premium_tier_requirement": null,
@@ -7589,20 +7589,20 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 0,
-                        "label_until": null,
+                        "label_type": 2,
+                        "label_until": "2024-04-08T08:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 0,
-                        "label_until": null,
+                        "label_type": 2,
+                        "label_until": "2024-04-08T08:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 0,
-                        "label_until": null,
+                        "label_type": 2,
+                        "label_until": "2024-04-08T08:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     }
@@ -7612,9 +7612,9 @@
                 "displays_advertisements": false
             },
             "tags": [
-                "Action",
                 "Arcade",
-                "Multiplayer"
+                "FPS",
+                "Shooter"
             ]
         },
         {
@@ -8410,38 +8410,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1187013846746005515": [
-            {
-                "id": "1328288533533691935",
-                "type": 1,
-                "name": "background_1024x576"
-            },
-            {
-                "id": "1328288534808756256",
-                "type": 1,
-                "name": "coverart_1024x576"
-            },
-            {
-                "id": "1328288537858277416",
-                "type": 1,
-                "name": "richpresenceintiteimage_1024x1024"
-            },
-            {
-                "id": "1328288625821224981",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1333542026657927241",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1333543065717313626",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1355434427118780526": [
             {
                 "id": "1384300469781921934",
@@ -8477,6 +8445,38 @@
             },
             {
                 "id": "1382851430943162439",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1187013846746005515": [
+            {
+                "id": "1328288533533691935",
+                "type": 1,
+                "name": "background_1024x576"
+            },
+            {
+                "id": "1328288534808756256",
+                "type": 1,
+                "name": "coverart_1024x576"
+            },
+            {
+                "id": "1328288537858277416",
+                "type": 1,
+                "name": "richpresenceintiteimage_1024x1024"
+            },
+            {
+                "id": "1328288625821224981",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1333542026657927241",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1333543065717313626",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -9435,18 +9435,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1276239071764680926": [
-            {
-                "id": "1280972246390669382",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1303798923722358874",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1106787098452832296": [
             {
                 "id": "1179134514799321208",
@@ -9485,6 +9473,18 @@
             },
             {
                 "id": "1238295820151947394",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1276239071764680926": [
+            {
+                "id": "1280972246390669382",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1303798923722358874",
                 "type": 1,
                 "name": "embedded_cover"
             }
