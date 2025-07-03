@@ -4650,8 +4650,8 @@
             "privacy_policy_url": "https://www.play.co/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "2048"
             },
@@ -4659,8 +4659,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "2048"
                     }
@@ -4871,8 +4871,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1"
             },
@@ -4880,8 +4880,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1"
                     }
@@ -5945,8 +5945,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "8"
             },
@@ -5954,8 +5954,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "8"
                     }
@@ -7136,8 +7136,8 @@
             "privacy_policy_url": "https://echochess.com/privacy-policy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "1126844833262593"
             },
@@ -7145,8 +7145,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "1126844833262593"
                     }
@@ -7362,8 +7362,8 @@
             "privacy_policy_url": "https://magiccircle.gg/docs/privacy",
             "install_params": {
                 "scopes": [
-                    "applications.commands",
-                    "bot"
+                    "bot",
+                    "applications.commands"
                 ],
                 "permissions": "2048"
             },
@@ -7371,8 +7371,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "applications.commands",
-                            "bot"
+                            "bot",
+                            "applications.commands"
                         ],
                         "permissions": "2048"
                     }
@@ -9190,18 +9190,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1300612940486934591": [
-            {
-                "id": "1347686660963565588",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1368722693280497794",
-                "type": 1,
-                "name": "embedded_background"
-            }
-        ],
         "1384165242241552504": [
             {
                 "id": "1387395065151750216",
@@ -9227,6 +9215,60 @@
                 "id": "1389639570852679752",
                 "type": 1,
                 "name": "embedded_background"
+            }
+        ],
+        "1106787098452832296": [
+            {
+                "id": "1179134514799321208",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1179134666901553204",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1207909073262223440",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207909390489882644",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207909887292743690",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207912301416423466",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1207926203437158460",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1238295820151947394",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1355434427118780526": [
+            {
+                "id": "1384300469781921934",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1388240141604225219",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "1245041113882955918": [
@@ -9284,18 +9326,6 @@
             },
             {
                 "id": "1387703102651502723",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
-        "1355434427118780526": [
-            {
-                "id": "1384300469781921934",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1388240141604225219",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -9559,21 +9589,16 @@
                 "name": "embedded_cover"
             }
         ],
-        "832025144389533716": [
+        "1353680152814555229": [
             {
-                "id": "930194685023121459",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "974795361447211048",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1070457704012857406",
+                "id": "1364227537286201395",
                 "type": 1,
                 "name": "embedded_background"
+            },
+            {
+                "id": "1364227548866809926",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "1230610135274225734": [
@@ -9603,16 +9628,21 @@
                 "name": "embedded_background"
             }
         ],
-        "1353680152814555229": [
+        "832025144389533716": [
             {
-                "id": "1364227537286201395",
+                "id": "930194685023121459",
                 "type": 1,
-                "name": "embedded_background"
+                "name": "servericon"
             },
             {
-                "id": "1364227548866809926",
+                "id": "974795361447211048",
                 "type": 1,
                 "name": "embedded_cover"
+            },
+            {
+                "id": "1070457704012857406",
+                "type": 1,
+                "name": "embedded_background"
             }
         ],
         "1336043504379629640": [
@@ -10213,46 +10243,16 @@
                 "name": "embedded_cover"
             }
         ],
-        "1106787098452832296": [
+        "1300612940486934591": [
             {
-                "id": "1179134514799321208",
+                "id": "1347686660963565588",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1368722693280497794",
                 "type": 1,
                 "name": "embedded_background"
-            },
-            {
-                "id": "1179134666901553204",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1207909073262223440",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207909390489882644",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207909887292743690",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207912301416423466",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1207926203437158460",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1238295820151947394",
-                "type": 1,
-                "name": "embedded_cover"
             }
         ],
         "1276239071764680926": [
