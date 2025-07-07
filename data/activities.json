@@ -1,13 +1,13 @@
 {
     "activities": [
         {
-            "activity_preview_video_asset_id": "1334610713074864221",
+            "activity_preview_video_asset_id": "1199472403294720111",
             "supported_platforms": [
                 "web",
                 "ios",
                 "android"
             ],
-            "default_orientation_lock_state": 2,
+            "default_orientation_lock_state": 1,
             "tablet_default_orientation_lock_state": 1,
             "requires_age_gate": false,
             "legacy_responsive_aspect_ratio": false,
@@ -16,37 +16,31 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 1,
+                    "label_type": 0,
                     "label_from": null,
-                    "label_until": "2025-06-10T19:00:00+00:00",
+                    "label_until": null,
                     "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": [
-                        "voice_launcher"
-                    ]
+                    "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 1,
+                    "label_type": 0,
                     "label_from": null,
-                    "label_until": "2025-06-10T19:00:00+00:00",
+                    "label_until": null,
                     "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": [
-                        "voice_launcher"
-                    ]
+                    "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 1,
+                    "label_type": 0,
                     "label_from": null,
-                    "label_until": "2025-06-10T19:00:00+00:00",
+                    "label_until": null,
                     "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": [
-                        "voice_launcher"
-                    ]
+                    "omit_badge_from_surfaces": []
                 }
             },
             "shelf_rank": 1,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "1211781489931452447"
+            "application_id": "832012774040141894"
         },
         {
             "activity_preview_video_asset_id": "1312253566794072114",
@@ -898,13 +892,13 @@
             "application_id": "1230610135274225734"
         },
         {
-            "activity_preview_video_asset_id": "1199472403294720111",
+            "activity_preview_video_asset_id": "1334610713074864221",
             "supported_platforms": [
                 "web",
                 "ios",
                 "android"
             ],
-            "default_orientation_lock_state": 1,
+            "default_orientation_lock_state": 2,
             "tablet_default_orientation_lock_state": 1,
             "requires_age_gate": false,
             "legacy_responsive_aspect_ratio": false,
@@ -913,31 +907,37 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 0,
+                    "label_type": 1,
                     "label_from": null,
-                    "label_until": null,
+                    "label_until": "2025-06-10T19:00:00+00:00",
                     "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
+                    "omit_badge_from_surfaces": [
+                        "voice_launcher"
+                    ]
                 },
                 "android": {
-                    "label_type": 0,
+                    "label_type": 1,
                     "label_from": null,
-                    "label_until": null,
+                    "label_until": "2025-06-10T19:00:00+00:00",
                     "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
+                    "omit_badge_from_surfaces": [
+                        "voice_launcher"
+                    ]
                 },
                 "ios": {
-                    "label_type": 0,
+                    "label_type": 1,
                     "label_from": null,
-                    "label_until": null,
+                    "label_until": "2025-06-10T19:00:00+00:00",
                     "release_phase": "global_launch",
-                    "omit_badge_from_surfaces": []
+                    "omit_badge_from_surfaces": [
+                        "voice_launcher"
+                    ]
                 }
             },
             "shelf_rank": 22,
             "has_csp_exception": false,
             "displays_advertisements": false,
-            "application_id": "832012774040141894"
+            "application_id": "1211781489931452447"
         },
         {
             "activity_preview_video_asset_id": "1206675158241382461",
@@ -2570,29 +2570,29 @@
     ],
     "applications": [
         {
-            "id": "1211781489931452447",
-            "name": "Wordle",
-            "icon": "8904fec86de9bb7a71b2ae1e71a1adbc",
-            "description": "Play Wordle from New York Times Games. You have 6 chances to guess a 5-letter word. When you make a guess, the color of the tiles will change to show how close you are to the winning word. Can you solve today’s puzzle? Play now.",
+            "id": "832012774040141894",
+            "name": "Chess In The Park",
+            "icon": "3b3981ddf67c8702920fae10b5f123ed",
+            "description": "Unleash your inner Grandmaster by playing multiple games of Chess at once vs anybody on your server.",
             "summary": "",
             "type": null,
             "is_monetized": false,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "866e3bb1398f00f83f86c7b0bd667521",
+            "cover_image": "3b3981ddf67c8702920fae10b5f123ed",
             "bot": {
-                "id": "1211781489931452447",
-                "username": "Wordle",
+                "id": "832012774040141894",
+                "username": "Chess In The Park",
                 "global_name": null,
-                "avatar": "2b5cd2dc89eb963155f55520a6fa0495",
+                "avatar": "ed9496f7ae4d60a055bf8ddc7b418bd7",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "2092",
+                "discriminator": "9517",
                 "public_flags": 589824,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
-                "banner": "ac77ee6cc9026d701ec68aab26be1603",
+                "banner": "dd2ccb058a3dc59eb21670fb48e35609",
                 "banner_color": null,
                 "accent_color": null
             },
@@ -2625,17 +2625,17 @@
                     }
                 }
             },
-            "verify_key": "79c638c31d8c9f5da835e25cc077c911aa9458e41c5b39e9afe40c3c7377cb27",
+            "verify_key": "bc758e51403b1374ea262c8412b91bcdc53349a337037d10921cbf6c39bc696f",
             "flags": 11665410,
-            "max_participants": null,
+            "max_participants": -1,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1334610713074864221",
+                "activity_preview_video_asset_id": "1199472403294720111",
                 "supported_platforms": [
                     "web",
                     "ios",
                     "android"
                 ],
-                "default_orientation_lock_state": 2,
+                "default_orientation_lock_state": 1,
                 "tablet_default_orientation_lock_state": 1,
                 "requires_age_gate": false,
                 "legacy_responsive_aspect_ratio": false,
@@ -2644,31 +2644,25 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 1,
+                        "label_type": 0,
                         "label_from": null,
-                        "label_until": "2025-06-10T19:00:00+00:00",
+                        "label_until": null,
                         "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": [
-                            "voice_launcher"
-                        ]
+                        "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 1,
+                        "label_type": 0,
                         "label_from": null,
-                        "label_until": "2025-06-10T19:00:00+00:00",
+                        "label_until": null,
                         "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": [
-                            "voice_launcher"
-                        ]
+                        "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 1,
+                        "label_type": 0,
                         "label_from": null,
-                        "label_until": "2025-06-10T19:00:00+00:00",
+                        "label_until": null,
                         "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": [
-                            "voice_launcher"
-                        ]
+                        "omit_badge_from_surfaces": []
                     }
                 },
                 "shelf_rank": 1,
@@ -2676,9 +2670,9 @@
                 "displays_advertisements": false
             },
             "tags": [
-                "New York Times",
-                "Official Wordle",
-                "Word game"
+                "Board Game",
+                "Classic",
+                "Strategy"
             ]
         },
         {
@@ -4330,8 +4324,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "8"
             },
@@ -4339,8 +4333,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "8"
                     }
@@ -4849,29 +4843,29 @@
             ]
         },
         {
-            "id": "832012774040141894",
-            "name": "Chess In The Park",
-            "icon": "3b3981ddf67c8702920fae10b5f123ed",
-            "description": "Unleash your inner Grandmaster by playing multiple games of Chess at once vs anybody on your server.",
+            "id": "1211781489931452447",
+            "name": "Wordle",
+            "icon": "8904fec86de9bb7a71b2ae1e71a1adbc",
+            "description": "Play Wordle from New York Times Games. You have 6 chances to guess a 5-letter word. When you make a guess, the color of the tiles will change to show how close you are to the winning word. Can you solve today’s puzzle? Play now.",
             "summary": "",
             "type": null,
             "is_monetized": false,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "3b3981ddf67c8702920fae10b5f123ed",
+            "cover_image": "866e3bb1398f00f83f86c7b0bd667521",
             "bot": {
-                "id": "832012774040141894",
-                "username": "Chess In The Park",
+                "id": "1211781489931452447",
+                "username": "Wordle",
                 "global_name": null,
-                "avatar": "ed9496f7ae4d60a055bf8ddc7b418bd7",
+                "avatar": "2b5cd2dc89eb963155f55520a6fa0495",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "9517",
+                "discriminator": "2092",
                 "public_flags": 589824,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
-                "banner": "dd2ccb058a3dc59eb21670fb48e35609",
+                "banner": "ac77ee6cc9026d701ec68aab26be1603",
                 "banner_color": null,
                 "accent_color": null
             },
@@ -4904,17 +4898,17 @@
                     }
                 }
             },
-            "verify_key": "bc758e51403b1374ea262c8412b91bcdc53349a337037d10921cbf6c39bc696f",
+            "verify_key": "79c638c31d8c9f5da835e25cc077c911aa9458e41c5b39e9afe40c3c7377cb27",
             "flags": 11665410,
-            "max_participants": -1,
+            "max_participants": null,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1199472403294720111",
+                "activity_preview_video_asset_id": "1334610713074864221",
                 "supported_platforms": [
                     "web",
                     "ios",
                     "android"
                 ],
-                "default_orientation_lock_state": 1,
+                "default_orientation_lock_state": 2,
                 "tablet_default_orientation_lock_state": 1,
                 "requires_age_gate": false,
                 "legacy_responsive_aspect_ratio": false,
@@ -4923,25 +4917,31 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 0,
+                        "label_type": 1,
                         "label_from": null,
-                        "label_until": null,
+                        "label_until": "2025-06-10T19:00:00+00:00",
                         "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
+                        "omit_badge_from_surfaces": [
+                            "voice_launcher"
+                        ]
                     },
                     "android": {
-                        "label_type": 0,
+                        "label_type": 1,
                         "label_from": null,
-                        "label_until": null,
+                        "label_until": "2025-06-10T19:00:00+00:00",
                         "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
+                        "omit_badge_from_surfaces": [
+                            "voice_launcher"
+                        ]
                     },
                     "ios": {
-                        "label_type": 0,
+                        "label_type": 1,
                         "label_from": null,
-                        "label_until": null,
+                        "label_until": "2025-06-10T19:00:00+00:00",
                         "release_phase": "global_launch",
-                        "omit_badge_from_surfaces": []
+                        "omit_badge_from_surfaces": [
+                            "voice_launcher"
+                        ]
                     }
                 },
                 "shelf_rank": 22,
@@ -4949,9 +4949,9 @@
                 "displays_advertisements": false
             },
             "tags": [
-                "Board Game",
-                "Classic",
-                "Strategy"
+                "New York Times",
+                "Official Wordle",
+                "Word game"
             ]
         },
         {
@@ -5180,8 +5180,8 @@
             "privacy_policy_url": "https://www.play.co/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "2048"
             },
@@ -5189,8 +5189,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "2048"
                     }
@@ -6793,8 +6793,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "1"
             },
@@ -6802,8 +6802,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "1"
                     }
@@ -8286,8 +8286,8 @@
             "privacy_policy_url": "https://echochess.com/privacy-policy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "1126844833262593"
             },
@@ -8295,8 +8295,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "1126844833262593"
                     }
@@ -8512,8 +8512,8 @@
             "privacy_policy_url": "https://magiccircle.gg/docs/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "2048"
             },
@@ -8521,8 +8521,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "2048"
                     }
@@ -9190,108 +9190,48 @@
                 "name": "embedded_cover"
             }
         ],
-        "1384165242241552504": [
+        "1078728822972764312": [
             {
-                "id": "1387395065151750216",
-                "type": 1,
-                "name": "render_scnobj_decorgazebofriendship-512"
-            },
-            {
-                "id": "1387395128318099566",
-                "type": 1,
-                "name": "media_fb_banner1080_1080"
-            },
-            {
-                "id": "1387395320232677478",
-                "type": 1,
-                "name": "img_loadingscreen_1920x1080_cruiseship_en"
-            },
-            {
-                "id": "1389639570852679752",
+                "id": "1078737214168629288",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1391724392039448689",
+                "id": "1078737439792832682",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1111037441697140848",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1194351737264406548": [
+        "755827207812677713": [
             {
-                "id": "1293455241693364244",
+                "id": "839608726894018561",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1070451415220232292",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1293455823518830623",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1293455884579766393",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1318621295033847879",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1319497874970644510",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1325192391275319316",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1349912582642860073",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1349912696388059187",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1367154909123710976",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1367172420217081856",
+                "id": "1121240234714202242",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1245041113882955918": [
+        "1355434427118780526": [
             {
-                "id": "1273050322264260724",
-                "type": 1,
-                "name": "tro_square1024x1024"
-            },
-            {
-                "id": "1382850845212676198",
+                "id": "1384300469781921934",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1382850854205522105",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1382851422353358950",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1382851430943162439",
+                "id": "1388240141604225219",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -9328,14 +9268,29 @@
                 "name": "embedded_cover"
             }
         ],
-        "1355434427118780526": [
+        "1245041113882955918": [
             {
-                "id": "1384300469781921934",
+                "id": "1273050322264260724",
+                "type": 1,
+                "name": "tro_square1024x1024"
+            },
+            {
+                "id": "1382850845212676198",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1388240141604225219",
+                "id": "1382850854205522105",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1382851422353358950",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1382851430943162439",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -10253,18 +10208,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1300612940486934591": [
-            {
-                "id": "1347686660963565588",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1368722693280497794",
-                "type": 1,
-                "name": "embedded_background"
-            }
-        ],
         "1276239071764680926": [
             {
                 "id": "1280972246390669382",
@@ -10275,6 +10218,18 @@
                 "id": "1303798923722358874",
                 "type": 1,
                 "name": "embedded_cover"
+            }
+        ],
+        "1300612940486934591": [
+            {
+                "id": "1347686660963565588",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1368722693280497794",
+                "type": 1,
+                "name": "embedded_background"
             }
         ],
         "1219647973806571553": [
@@ -10370,36 +10325,81 @@
                 "name": "embedded_cover"
             }
         ],
-        "755827207812677713": [
+        "1194351737264406548": [
             {
-                "id": "839608726894018561",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1070451415220232292",
+                "id": "1293455241693364244",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1121240234714202242",
+                "id": "1293455823518830623",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1293455884579766393",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1318621295033847879",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1319497874970644510",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1325192391275319316",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1349912582642860073",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1349912696388059187",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1367154909123710976",
+                "type": 1,
+                "name": "embedded_cover"
+            },
+            {
+                "id": "1367172420217081856",
                 "type": 1,
                 "name": "embedded_cover"
             }
         ],
-        "1078728822972764312": [
+        "1384165242241552504": [
             {
-                "id": "1078737214168629288",
+                "id": "1387395065151750216",
+                "type": 1,
+                "name": "render_scnobj_decorgazebofriendship-512"
+            },
+            {
+                "id": "1387395128318099566",
+                "type": 1,
+                "name": "media_fb_banner1080_1080"
+            },
+            {
+                "id": "1387395320232677478",
+                "type": 1,
+                "name": "img_loadingscreen_1920x1080_cruiseship_en"
+            },
+            {
+                "id": "1389639570852679752",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1078737439792832682",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1111037441697140848",
+                "id": "1391724392039448689",
                 "type": 1,
                 "name": "embedded_cover"
             }
