@@ -16,7 +16,8 @@ async function getModules() {
   ).text();
   return content
     .match(/\.exports="(?<modules>\*.+)"/)
-    .groups?.modules?.replaceAll("* ", "- ");
+    .groups?.modules?.replaceAll("* ", "- ")
+    .replaceAll("\\n", "\n");
 }
 
 /** differ for our webhook, each module has to have a differ that generates an embed. */
