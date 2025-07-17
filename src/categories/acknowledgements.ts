@@ -1,5 +1,6 @@
 import { configExperimentCentral, configWumpusUniv } from "../config.js";
 import { sendReq, sendToWebhook } from "../utils.js";
+import { diffChars } from "diff";
 
 async function getModules() {
   const html = await (
@@ -22,55 +23,35 @@ async function getModules() {
 
 /** differ for our webhook, each module has to have a differ that generates an embed. */
 function diff(a, b) {
-  const result = [];
-  const diff = { removed: [], added: [] };
-  const aIds = a.activities.map((activity) => activity.application_id);
-  const bIds = b.activities.map((activity) => activity.application_id);
-  const names = {};
-
-  for (let activityId of aIds) {
+  let result = "";
+  const linesA = a.split("\n");
+  const linesB = b.split("\n");
+  for (let l = 0; l < linesA.length; l++) {
+    // updated
+    if (linesA[l] !== linesB[l] && linesB[l] !== undefined) {
+      if (result.length === 0) result += "```diff\n";
+      result += `# Updated\n- ${linesA[l]}\n+ ${linesB[l]}\n\nn`;
+    }
     // removed
-    if (!bIds.includes(activityId)) {
-      diff.removed.push(
-        a.activities.find((activity) => activity.application_id == activityId)
-      );
+    if (linesA[l] !== linesB[l] && linesB[l] === undefined) {
+      if (result.length === 0) result += "```diff\n";
+      result += `# Removed\n- ${linesA[l]}\n\n`;
     }
   }
-
-  for (let activityId of bIds) {
+  for (let l = 0; l < linesB.length; l++) {
     // added
-    if (!aIds.includes(activityId)) {
-      diff.added.push(
-        b.activities.find((activity) => activity.application_id == activityId)
-      );
+    if (linesA[l] !== linesB[l] && linesA[l] === undefined) {
+      if (result.length === 0) result += "```diff\n";
+      result += `# Added\n+ ${linesB[l]}\n`;
     }
   }
-
-  if (diff.added.length)
-    result.push(
-      "## Activites - Added\n",
-      ...diff.added.map(
-        (activity) =>
-          `https://discord.com/activities/${activity.application_id} - \`https://${activity.application_id}.discordsays.com\`\n`
-      )
-    );
-
-  if (diff.removed.length)
-    result.push(
-      "## Activites - Removed",
-      ...diff.removed.map(
-        (activity) =>
-          `https://discord.com/activities/${activity.application_id} - \`https://${activity.application_id}.discordsays.com\``
-      )
-    );
-
+  if (result.length !== 0) result += "\n```";
   if (result.length) {
-    sendToWebhook(configExperimentCentral.webhooks.activities, {
-      content:
-        configExperimentCentral.pings.activities + "\n" + result.join("\n"),
+    sendToWebhook(configExperimentCentral.webhooks.acknowledgements, {
+      content: configExperimentCentral.pings.acknowledgements + "\n" + result,
     });
-    sendToWebhook(configWumpusUniv.webhooks.activities, {
-      content: configWumpusUniv.pings.activities + "\n" + result.join("\n"),
+    sendToWebhook(configWumpusUniv.webhooks.acknowledgements, {
+      content: configWumpusUniv.pings.acknowledgements + "\n" + result,
     });
   }
 }

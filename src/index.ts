@@ -16,6 +16,7 @@ async function main() {
     "./data/collectibles/profile-effects.json"
   );
   const oldCategories = await readFile("./data/collectibles/categories.json");
+  const oldAcknowledgements = await readFile("./data/acknowledgements.md");
   // break, and notify me that i need update token
   if (collectiblesCategories?.message) {
     const res = await await sendToWebhook(
@@ -31,7 +32,9 @@ async function main() {
     return;
   }
   const activitiesData = await activities.getActivities();
-  const acknowledgementsData = await acknowledgements.getModules();
+  const acknowledgementsData =
+    "# Acknowledgements\n**Source:** https://canary.discord.com/acknowledgements\n\n" +
+    (await acknowledgements.getModules());
   const profileEffectsData = await profileEffects.getProfileEffects();
   const [changelogsDesktop, changelogsMobile] =
     await changelogs.getChangelogs();
@@ -41,8 +44,8 @@ async function main() {
   await saveFile("./data/changelogs_mobile.json", changelogsMobile);
   await saveFileText(
     "./data/acknowledgements.md",
-    "# Acknowledgements\n**Source:** https://canary.discord.com/acknowledgements\n\n" +
-      acknowledgementsData
+
+    acknowledgementsData
   );
   await saveFile(
     "./data/collectibles/profile-effects.json",
@@ -56,5 +59,6 @@ async function main() {
   changelogs.diff(oldChangeLogsMobile, changelogsMobile, "Mobile");
   profileEffects.diff(oldProfileEffects, profileEffectsData);
   categories.diff(oldCategories, collectiblesCategories);
+  acknowledgements.diff(oldAcknowledgements, acknowledgementsData);
 }
 main();
