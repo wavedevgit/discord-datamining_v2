@@ -16,7 +16,7 @@ async function main() {
     "./data/collectibles/profile-effects.json"
   );
   const oldCategories = await readFile("./data/collectibles/categories.json");
-  const oldAcknowledgements = await readFile("./data/acknowledgements.md");
+  const oldAcknowledgements = await readFile("./data/acknowledgements.md",false);
   // break, and notify me that i need update token
   if (collectiblesCategories?.message) {
     const res = await await sendToWebhook(
