@@ -5,6 +5,7 @@ import changelogs from "./categories/changelogs.js";
 import profileEffects from "./categories/collectibles/profile-effects.js";
 import categories from "./categories/collectibles/categories.js";
 import acknowledgements from "./categories/acknowledgements.js";
+import acknowledgements from "./categories/robots.js";
 
 async function main() {
   console.log("Tracker central - V1.0.0");
@@ -17,6 +18,7 @@ async function main() {
   );
   const oldCategories = await readFile("./data/collectibles/categories.json");
   const oldAcknowledgements = await readFile("./data/acknowledgements.md",false);
+  const oldRobots = await readFile("./data/robots.txt",false);
   // break, and notify me that i need update token
   if (collectiblesCategories?.message) {
     const res = await await sendToWebhook(
@@ -35,11 +37,13 @@ async function main() {
   const acknowledgementsData =
     "# Acknowledgements\n**Source:** https://canary.discord.com/acknowledgements\n\n" +
     (await acknowledgements.getModules());
+  const robots = await robots.getRobots();
   const profileEffectsData = await profileEffects.getProfileEffects();
   const [changelogsDesktop, changelogsMobile] =
     await changelogs.getChangelogs();
   if (oldActivities !== activitiesData)
     await saveFile("./data/activities.json", activitiesData);
+  await saveFile("./data/robots.txt", robots);
   await saveFile("./data/changelogs_desktop.json", changelogsDesktop);
   await saveFile("./data/changelogs_mobile.json", changelogsMobile);
   await saveFileText(
@@ -60,5 +64,6 @@ async function main() {
   profileEffects.diff(oldProfileEffects, profileEffectsData);
   categories.diff(oldCategories, collectiblesCategories);
   acknowledgements.diff(oldAcknowledgements, acknowledgementsData);
+  robots.diff(oldRobots,robots);
 }
 main();
