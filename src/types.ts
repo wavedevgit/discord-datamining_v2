@@ -30,6 +30,7 @@ interface ConfigCategoriesObject {
   };
   changelogs?: string;
   activities?: string;
+  robot: string;
   acknowledgements: string;
   status?: {
     token: string;
