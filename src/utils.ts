@@ -8,12 +8,12 @@ async function saveFile(file: string, data: JsonObject) {
 async function saveFileText(file: string, data: string) {
   return await fs.writeFile(file, data, "utf-8");
 }
-async function readFile(file: string, parseJson: boolean) {
+async function readFile(file: string, parseJson: boolean = true) {
   const content = await fs.readFile(file, "utf-8");
-  parseJson = [true, false].includes(parseJson) ? parseJson : true;
 
   return parseJson ? JSON.parse(content) : content;
 }
+
 async function sendReq(data: RestApiRequestData) {
   if (!data.url) throw Error("No url given");
 
