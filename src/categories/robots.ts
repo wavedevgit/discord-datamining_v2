@@ -47,4 +47,4 @@ function diff(oldContent: string, newContent: string) {
   }
 }
 
-export default { getRobots, diffRobots };
+export default { getRobots, diff };
