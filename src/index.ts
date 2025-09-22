@@ -43,7 +43,7 @@ async function main() {
     await changelogs.getChangelogs();
   if (oldActivities !== activitiesData)
     await saveFile("./data/activities.json", activitiesData);
-  await saveFile("./data/robots.txt", robots);
+  await saveFileText("./data/robots.txt", robots);
   await saveFile("./data/changelogs_desktop.json", changelogsDesktop);
   await saveFile("./data/changelogs_mobile.json", changelogsMobile);
   await saveFileText(
