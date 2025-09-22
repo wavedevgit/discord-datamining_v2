@@ -37,6 +37,7 @@ jobs:
           EXPCENTRALWEBHOOK: ${{ secrets.EXPCENTRALWEBHOOK }}
           ACTIVIESWC: ${{ secrets.ACTIVIESWC }}
           CHANGELOGS: ${{ secrets.CHANGELOGS }}
+          ROBOTS: ${{ secrets.ROBOTS }}
       - name: set email
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
