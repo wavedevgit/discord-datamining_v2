@@ -15,7 +15,7 @@ async function readFile(file: string, parseJson: boolean = true) {
 }
 
 async function sendReq(data: RestApiRequestData) {
-  if (!data.url) throw Error("No url given");
+  if (!data.url) console.log("No url given", data);
 
   console.log(`${ApiBaseUrl}${data.url}`);
   const reqData: FetchRequestInit = {
