@@ -5,7 +5,7 @@ import changelogs from "./categories/changelogs.js";
 import profileEffects from "./categories/collectibles/profile-effects.js";
 import categories from "./categories/collectibles/categories.js";
 import acknowledgements from "./categories/acknowledgements.js";
-import acknowledgements from "./categories/robots.js";
+import robots from "./categories/robots.js";
 
 async function main() {
   console.log("Tracker central - V1.0.0");
