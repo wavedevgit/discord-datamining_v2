@@ -5,7 +5,7 @@ import changelogs from "./categories/changelogs.js";
 import profileEffects from "./categories/collectibles/profile-effects.js";
 import categories from "./categories/collectibles/categories.js";
 import acknowledgements from "./categories/acknowledgements.js";
-import robots from "./categories/robots.js";
+import robots_ from "./categories/robots.js";
 
 async function main() {
   console.log("Tracker central - V1.0.0");
@@ -37,7 +37,7 @@ async function main() {
   const acknowledgementsData =
     "# Acknowledgements\n**Source:** https://canary.discord.com/acknowledgements\n\n" +
     (await acknowledgements.getModules());
-  const robots = await robots.getRobots();
+  const robots = await robots_.getRobots();
   const profileEffectsData = await profileEffects.getProfileEffects();
   const [changelogsDesktop, changelogsMobile] =
     await changelogs.getChangelogs();
@@ -64,6 +64,6 @@ async function main() {
   profileEffects.diff(oldProfileEffects, profileEffectsData);
   categories.diff(oldCategories, collectiblesCategories);
   acknowledgements.diff(oldAcknowledgements, acknowledgementsData);
-  robots.diff(oldRobots,robots);
+  robots_.diff(oldRobots,robots);
 }
 main();
