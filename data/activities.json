@@ -191,7 +191,7 @@
             "application_id": "1211781489931452447"
         },
         {
-            "activity_preview_video_asset_id": null,
+            "activity_preview_video_asset_id": "1298663472925638737",
             "supported_platforms": [
                 "web",
                 "ios",
@@ -206,23 +206,23 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 0,
+                    "label_type": 1,
                     "label_from": null,
-                    "label_until": null,
+                    "label_until": "2024-11-29T00:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 0,
+                    "label_type": 1,
                     "label_from": null,
-                    "label_until": null,
+                    "label_until": "2024-11-29T00:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 0,
+                    "label_type": 1,
                     "label_from": null,
-                    "label_until": null,
+                    "label_until": "2024-11-29T00:00:00+00:00",
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 }
@@ -232,7 +232,7 @@
             "displays_advertisements": false,
             "blocked_locales": [],
             "supported_locales": [],
-            "application_id": "1344229080668700763"
+            "application_id": "1258330015917936700"
         },
         {
             "activity_preview_video_asset_id": "1228081931762139208",
@@ -285,7 +285,7 @@
             "application_id": "1120784239546347531"
         },
         {
-            "activity_preview_video_asset_id": "1298663472925638737",
+            "activity_preview_video_asset_id": null,
             "supported_platforms": [
                 "web",
                 "ios",
@@ -300,23 +300,23 @@
             "free_period_ends_at": null,
             "client_platform_config": {
                 "web": {
-                    "label_type": 1,
+                    "label_type": 0,
                     "label_from": null,
-                    "label_until": "2024-11-29T00:00:00+00:00",
+                    "label_until": null,
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "android": {
-                    "label_type": 1,
+                    "label_type": 0,
                     "label_from": null,
-                    "label_until": "2024-11-29T00:00:00+00:00",
+                    "label_until": null,
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 },
                 "ios": {
-                    "label_type": 1,
+                    "label_type": 0,
                     "label_from": null,
-                    "label_until": "2024-11-29T00:00:00+00:00",
+                    "label_until": null,
                     "release_phase": "global_launch",
                     "omit_badge_from_surfaces": []
                 }
@@ -326,7 +326,7 @@
             "displays_advertisements": false,
             "blocked_locales": [],
             "supported_locales": [],
-            "application_id": "1258330015917936700"
+            "application_id": "1344229080668700763"
         },
         {
             "activity_preview_video_asset_id": "1382851437016649839",
@@ -3020,26 +3020,26 @@
             ]
         },
         {
-            "id": "1344229080668700763",
-            "name": "Codenames Online",
-            "icon": "97ee49ac8c51bf0ad4a081be513fd3ef",
-            "description": "Codenames is a hit party game for 4+ players, designed by Vlaada Chvátil and published by Czech Games Edition. Players split into two teams, each with a “Spymaster” who knows the secret identities of 25 code-named agents laid out as word cards. Spymasters give one-word clues and a number to help their teammates guess as many of their agents as possible—while avoiding the agents of the o",
+            "id": "1258330015917936700",
+            "name": "Quiz Planet",
+            "icon": "006dc5ef871aacae1aadeb88e12afb6e",
+            "description": "How many correct answers can you get? Team up with your friends and test your trivia skills!\n\nChallenge yourselves with a massive collection of fascinating questions spanning games, movies, sports, and many more categories. Join forces, combine your knowledge, and hit the jackpot together!\n\nReady to show off your collective smarts? Jump in and play now!",
             "summary": "",
             "type": null,
             "is_monetized": false,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "e61866614fc7a4fdd60f37113400101a",
+            "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
             "bot": {
-                "id": "1344229080668700763",
-                "username": "Codenames Online",
+                "id": "1258330015917936700",
+                "username": "Quiz Planet",
                 "global_name": null,
-                "avatar": "97ee49ac8c51bf0ad4a081be513fd3ef",
+                "avatar": "006dc5ef871aacae1aadeb88e12afb6e",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "5622",
+                "discriminator": "7366",
                 "display_name_styles": null,
-                "public_flags": 65536,
+                "public_flags": 589824,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
@@ -3048,11 +3048,11 @@
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "1085986331894743220",
+            "guild_id": "1275776456408043530",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://codenames.game/tac",
-            "privacy_policy_url": "https://www.czechgames.com/privacy-policy",
+            "terms_of_service_url": "https://lotum-legal.web.app/lotumone/en/terms.html",
+            "privacy_policy_url": "https://lotum-legal.web.app/lotumone/en/privacy-policy-discord-games.html",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -3077,11 +3077,11 @@
                     }
                 }
             },
-            "verify_key": "6f77219d49e52e687175ee439a6ea1bb10fb85ac4a35ceac29a9aea616e19933",
+            "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
             "flags": 131074,
-            "max_participants": null,
+            "max_participants": 100,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": null,
+                "activity_preview_video_asset_id": "1298663472925638737",
                 "supported_platforms": [
                     "web",
                     "ios",
@@ -3096,23 +3096,23 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 0,
+                        "label_type": 1,
                         "label_from": null,
-                        "label_until": null,
+                        "label_until": "2024-11-29T00:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 0,
+                        "label_type": 1,
                         "label_from": null,
-                        "label_until": null,
+                        "label_until": "2024-11-29T00:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 0,
+                        "label_type": 1,
                         "label_from": null,
-                        "label_until": null,
+                        "label_until": "2024-11-29T00:00:00+00:00",
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     }
@@ -3124,9 +3124,11 @@
                 "supported_locales": []
             },
             "tags": [
-                "award winning",
-                "top secret",
-                "word game"
+                "Co-op",
+                "Competitive",
+                "Quiz",
+                "Trivia",
+                "Turn-based"
             ]
         },
         {
@@ -3248,26 +3250,26 @@
             ]
         },
         {
-            "id": "1258330015917936700",
-            "name": "Quiz Planet",
-            "icon": "006dc5ef871aacae1aadeb88e12afb6e",
-            "description": "How many correct answers can you get? Team up with your friends and test your trivia skills!\n\nChallenge yourselves with a massive collection of fascinating questions spanning games, movies, sports, and many more categories. Join forces, combine your knowledge, and hit the jackpot together!\n\nReady to show off your collective smarts? Jump in and play now!",
+            "id": "1344229080668700763",
+            "name": "Codenames Online",
+            "icon": "97ee49ac8c51bf0ad4a081be513fd3ef",
+            "description": "Codenames is a hit party game for 4+ players, designed by Vlaada Chvátil and published by Czech Games Edition. Players split into two teams, each with a “Spymaster” who knows the secret identities of 25 code-named agents laid out as word cards. Spymasters give one-word clues and a number to help their teammates guess as many of their agents as possible—while avoiding the agents of the o",
             "summary": "",
             "type": null,
             "is_monetized": false,
             "is_verified": true,
             "is_discoverable": true,
-            "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
+            "cover_image": "e61866614fc7a4fdd60f37113400101a",
             "bot": {
-                "id": "1258330015917936700",
-                "username": "Quiz Planet",
+                "id": "1344229080668700763",
+                "username": "Codenames Online",
                 "global_name": null,
-                "avatar": "006dc5ef871aacae1aadeb88e12afb6e",
+                "avatar": "97ee49ac8c51bf0ad4a081be513fd3ef",
                 "avatar_decoration_data": null,
                 "collectibles": null,
-                "discriminator": "7366",
+                "discriminator": "5622",
                 "display_name_styles": null,
-                "public_flags": 589824,
+                "public_flags": 65536,
                 "primary_guild": null,
                 "clan": null,
                 "bot": true,
@@ -3276,11 +3278,11 @@
                 "accent_color": null
             },
             "hook": true,
-            "guild_id": "1275776456408043530",
+            "guild_id": "1085986331894743220",
             "bot_public": true,
             "bot_require_code_grant": false,
-            "terms_of_service_url": "https://lotum-legal.web.app/lotumone/en/terms.html",
-            "privacy_policy_url": "https://lotum-legal.web.app/lotumone/en/privacy-policy-discord-games.html",
+            "terms_of_service_url": "https://codenames.game/tac",
+            "privacy_policy_url": "https://www.czechgames.com/privacy-policy",
             "install_params": {
                 "scopes": [
                     "applications.commands"
@@ -3305,11 +3307,11 @@
                     }
                 }
             },
-            "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
+            "verify_key": "6f77219d49e52e687175ee439a6ea1bb10fb85ac4a35ceac29a9aea616e19933",
             "flags": 131074,
-            "max_participants": 100,
+            "max_participants": null,
             "embedded_activity_config": {
-                "activity_preview_video_asset_id": "1298663472925638737",
+                "activity_preview_video_asset_id": null,
                 "supported_platforms": [
                     "web",
                     "ios",
@@ -3324,23 +3326,23 @@
                 "free_period_ends_at": null,
                 "client_platform_config": {
                     "web": {
-                        "label_type": 1,
+                        "label_type": 0,
                         "label_from": null,
-                        "label_until": "2024-11-29T00:00:00+00:00",
+                        "label_until": null,
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "android": {
-                        "label_type": 1,
+                        "label_type": 0,
                         "label_from": null,
-                        "label_until": "2024-11-29T00:00:00+00:00",
+                        "label_until": null,
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     },
                     "ios": {
-                        "label_type": 1,
+                        "label_type": 0,
                         "label_from": null,
-                        "label_until": "2024-11-29T00:00:00+00:00",
+                        "label_until": null,
                         "release_phase": "global_launch",
                         "omit_badge_from_surfaces": []
                     }
@@ -3352,11 +3354,9 @@
                 "supported_locales": []
             },
             "tags": [
-                "Co-op",
-                "Competitive",
-                "Quiz",
-                "Trivia",
-                "Turn-based"
+                "award winning",
+                "top secret",
+                "word game"
             ]
         },
         {
@@ -4949,8 +4949,8 @@
             "privacy_policy_url": "https://rythm.fm/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "8"
             },
@@ -4958,8 +4958,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "8"
                     }
@@ -5299,8 +5299,8 @@
             "privacy_policy_url": "https://magiccircle.gg/docs/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "2048"
             },
@@ -5308,8 +5308,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "2048"
                     }
@@ -6418,8 +6418,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "1"
             },
@@ -6427,8 +6427,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "1"
                     }
@@ -8997,19 +8997,19 @@
                 "name": "embedded_cover"
             }
         ],
-        "902271654783242291": [
+        "755827207812677713": [
             {
-                "id": "1316132314480381992",
+                "id": "839608726894018561",
                 "type": 1,
-                "name": "server_icon"
+                "name": "servericon"
             },
             {
-                "id": "1325917812031492136",
+                "id": "1070451415220232292",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1325917821523329175",
+                "id": "1121240234714202242",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -9854,18 +9854,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1351051595718201414": [
-            {
-                "id": "1352383048217399356",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1352383156736495656",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1227719606223765687": [
             {
                 "id": "1387511420249309204",
@@ -9879,6 +9867,18 @@
             },
             {
                 "id": "1413202748593278997",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1351051595718201414": [
+            {
+                "id": "1352383048217399356",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1352383156736495656",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -9910,18 +9910,6 @@
                 "id": "1405778008739938414",
                 "type": 1,
                 "name": "embedded_cover"
-            }
-        ],
-        "1300612940486934591": [
-            {
-                "id": "1347686660963565588",
-                "type": 1,
-                "name": "embedded_cover"
-            },
-            {
-                "id": "1368722693280497794",
-                "type": 1,
-                "name": "embedded_background"
             }
         ],
         "1106787098452832296": [
@@ -9966,33 +9954,16 @@
                 "name": "embedded_cover"
             }
         ],
-        "1078728822972764312": [
+        "1300612940486934591": [
             {
-                "id": "1078737214168629288",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1078737439792832682",
-                "type": 1,
-                "name": "servericon"
-            },
-            {
-                "id": "1111037441697140848",
+                "id": "1347686660963565588",
                 "type": 1,
                 "name": "embedded_cover"
-            }
-        ],
-        "1375094788713615434": [
-            {
-                "id": "1390256328705966120",
-                "type": 1,
-                "name": "embedded_background"
             },
             {
-                "id": "1390256340793950278",
+                "id": "1368722693280497794",
                 "type": 1,
-                "name": "embedded_cover"
+                "name": "embedded_background"
             }
         ],
         "1219647973806571553": [
@@ -10013,6 +9984,35 @@
             },
             {
                 "id": "1411122557553344723",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1375094788713615434": [
+            {
+                "id": "1390256328705966120",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1390256340793950278",
+                "type": 1,
+                "name": "embedded_cover"
+            }
+        ],
+        "1078728822972764312": [
+            {
+                "id": "1078737214168629288",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1078737439792832682",
+                "type": 1,
+                "name": "servericon"
+            },
+            {
+                "id": "1111037441697140848",
                 "type": 1,
                 "name": "embedded_cover"
             }
@@ -10101,19 +10101,19 @@
                 "name": "embedded_cover"
             }
         ],
-        "755827207812677713": [
+        "902271654783242291": [
             {
-                "id": "839608726894018561",
+                "id": "1316132314480381992",
                 "type": 1,
-                "name": "servericon"
+                "name": "server_icon"
             },
             {
-                "id": "1070451415220232292",
+                "id": "1325917812031492136",
                 "type": 1,
                 "name": "embedded_background"
             },
             {
-                "id": "1121240234714202242",
+                "id": "1325917821523329175",
                 "type": 1,
                 "name": "embedded_cover"
             }
