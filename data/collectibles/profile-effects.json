@@ -4910,65 +4910,6 @@
     },
     {
         "type": 1,
-        "id": "1179493515126898815",
-        "sku_id": "1179493515126898814",
-        "title": "Monster Pop",
-        "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "A purple, cheeky little creature floats across the screen. It's so adorable~~ wo-woah woahhh it just exploded!",
-        "animationType": 1,
-        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-29/monster-pop/static.png",
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-29/monster-pop/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-29/monster-pop/reduced-motion.png",
-        "effects": [
-            {
-                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-30/monster-pop/intro-monster.png",
-                "loop": true,
-                "height": 880,
-                "width": 450,
-                "duration": 3917,
-                "start": 0,
-                "loopDelay": 0,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 100,
-                "randomizedSources": []
-            },
-            {
-                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-30/monster-pop/intro-glass.png",
-                "loop": true,
-                "height": 880,
-                "width": 450,
-                "duration": 3917,
-                "start": 0,
-                "loopDelay": 0,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 101,
-                "randomizedSources": []
-            },
-            {
-                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-29/monster-pop/loop.png",
-                "loop": true,
-                "height": 880,
-                "width": 450,
-                "duration": 2083,
-                "start": 3917,
-                "loopDelay": 0,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 102,
-                "randomizedSources": []
-            }
-        ]
-    },
-    {
-        "type": 1,
         "id": "1341506444322668544",
         "sku_id": "1341506444310085632",
         "title": "Close Combat",
@@ -11329,6 +11270,65 @@
                         "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-10-07/d20/idle_failure.png"
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1179493515126898815",
+        "sku_id": "1179493515126898814",
+        "title": "Monster Pop",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "A purple, cheeky little creature floats across the screen. It's so adorable~~ wo-woah woahhh it just exploded!",
+        "animationType": 1,
+        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-29/monster-pop/static.png",
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-29/monster-pop/thumbnail.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-29/monster-pop/reduced-motion.png",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-30/monster-pop/intro-monster.png",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 3917,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-30/monster-pop/intro-glass.png",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 3917,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-29/monster-pop/loop.png",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 2083,
+                "start": 3917,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 102,
+                "randomizedSources": []
             }
         ]
     }
