@@ -4335,7 +4335,7 @@
         "accessibilityLabel": "Hearts are beating and shimmering upon the profile, binding you under its charm.",
         "animationType": 2,
         "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-18/magic-girl-blue/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-18/magic-girl-blue/reduced_motion.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-18/magic-girl-blue/reducedMotion.png",
         "effects": [
             {
                 "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-18/magic-girl-blue/intro.png",
@@ -5609,9 +5609,9 @@
         "description": "Show this effect when others view your profile.",
         "accessibilityLabel": "In a sudden gust of snow and wind, a snowman with a smoochy face sweeps into and out of view, leaving behind a flurry of snow in his wake. Who knows if we'll ever see him again...",
         "animationType": 1,
-        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-28/snowy-shenanigans/reducedMotion.png",
+        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_smooch/static.png",
         "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_smooch/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-28/snowy-shenanigans/reducedMotion.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_smooch/reduced_motion.png",
         "effects": [
             {
                 "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_smooch/intro.png",
@@ -5870,7 +5870,7 @@
         "accessibilityLabel": "Hearts are beating and shimmering upon the profile, binding you under its charm.",
         "animationType": 2,
         "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-18/magic-girl-orange/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-18/magic-girl-orange/reduced_motion.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-18/magic-girl-orange/reducedMotion.png",
         "effects": [
             {
                 "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-18/magic-girl-orange/intro.png",
@@ -6421,6 +6421,49 @@
                     "y": 0
                 },
                 "zIndex": 102,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1139323095744790569",
+        "sku_id": "1139323096180994169",
+        "title": "Breakfast Plate",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Eggs, bacon, berries, and toast unite to form a breakfast meal, arranged with a smile. You can hear the bellies of profile admirers everywhere rumbling.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/thumbnail.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/reducedMotion.png",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/intro.png",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/loop.png",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 5760,
+                "loopDelay": 5760,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
                 "randomizedSources": []
             }
         ]
@@ -7471,9 +7514,9 @@
         "description": "Show this effect when others view your profile.",
         "accessibilityLabel": "In a sudden gust of snow and wind, a snowman with a jolly expression sweeps into and out of view, leaving behind a flurry of snow in his wake. Who knows if we'll ever see him again...",
         "animationType": 1,
-        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-28/snowy-shenanigans/reducedMotion.png",
+        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_jolly/static.png",
         "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_jolly/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-28/snowy-shenanigans/reducedMotion.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_jolly/reduced_motion.png",
         "effects": [
             {
                 "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_jolly/intro.png",
@@ -8763,7 +8806,7 @@
         "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-05-07/baking_challenge/reduced_motion.png",
         "effects": [
             {
-                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-05-07/baking_challenge/intro_success.png",
+                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2025-05-07/baking_challenge/intro_[1-2].png",
                 "loop": false,
                 "height": 880,
                 "width": 450,
@@ -9049,9 +9092,9 @@
         "description": "Show this effect when others view your profile.",
         "accessibilityLabel": "In a sudden gust of snow and wind, a snowman with sunglasses and a cool demeanor sweeps into and out of view, leaving behind a flurry of snow in his wake. Who knows if we'll ever see him again...",
         "animationType": 1,
-        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-28/snowy-shenanigans/reducedMotion.png",
+        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_suave/static.png",
         "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_suave/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-28/snowy-shenanigans/reducedMotion.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_suave/reduced_motion.png",
         "effects": [
             {
                 "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_suave/intro.png",
@@ -11066,9 +11109,9 @@
         "description": "Show this effect when others view your profile.",
         "accessibilityLabel": "In a sudden gust of snow and wind, a snowman with a giddy expression sweeps into and out of view, leaving behind a flurry of snow in his wake. Who knows if we'll ever see him again...",
         "animationType": 1,
-        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-28/snowy-shenanigans/reducedMotion.png",
+        "staticFrameSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_giddy/static.png",
         "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_giddy/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-28/snowy-shenanigans/reducedMotion.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_giddy/reduced_motion.png",
         "effects": [
             {
                 "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-12-06/snowy_shenanigans_giddy/intro.png",
@@ -11286,49 +11329,6 @@
                         "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-10-07/d20/idle_failure.png"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "type": 1,
-        "id": "1139323095744790569",
-        "sku_id": "1139323096180994169",
-        "title": "Breakfast Plate",
-        "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "Eggs, bacon, berries, and toast unite to form a breakfast meal, arranged with a smile. You can hear the bellies of profile admirers everywhere rumbling.",
-        "animationType": 2,
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/reducedMotion.png",
-        "effects": [
-            {
-                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/intro.png",
-                "loop": false,
-                "height": 880,
-                "width": 450,
-                "duration": 2880,
-                "start": 0,
-                "loopDelay": 0,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 100,
-                "randomizedSources": []
-            },
-            {
-                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/loop.png",
-                "loop": true,
-                "height": 880,
-                "width": 450,
-                "duration": 2880,
-                "start": 5760,
-                "loopDelay": 5760,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 101,
-                "randomizedSources": []
             }
         ]
     }
