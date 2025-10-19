@@ -6427,49 +6427,6 @@
     },
     {
         "type": 1,
-        "id": "1139323095744790569",
-        "sku_id": "1139323096180994169",
-        "title": "Breakfast Plate",
-        "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "Eggs, bacon, berries, and toast unite to form a breakfast meal, arranged with a smile. You can hear the bellies of profile admirers everywhere rumbling.",
-        "animationType": 2,
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/thumbnail.png",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/reducedMotion.png",
-        "effects": [
-            {
-                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/intro.png",
-                "loop": false,
-                "height": 880,
-                "width": 450,
-                "duration": 2880,
-                "start": 0,
-                "loopDelay": 0,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 100,
-                "randomizedSources": []
-            },
-            {
-                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/loop.png",
-                "loop": true,
-                "height": 880,
-                "width": 450,
-                "duration": 2880,
-                "start": 5760,
-                "loopDelay": 5760,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 101,
-                "randomizedSources": []
-            }
-        ]
-    },
-    {
-        "type": 1,
         "id": "1387888352874860695",
         "sku_id": "1387888352853885098",
         "title": "Skibidi Toilets",
@@ -11329,6 +11286,49 @@
                         "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2024-10-07/d20/idle_failure.png"
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1139323095744790569",
+        "sku_id": "1139323096180994169",
+        "title": "Breakfast Plate",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Eggs, bacon, berries, and toast unite to form a breakfast meal, arranged with a smile. You can hear the bellies of profile admirers everywhere rumbling.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/thumbnail.png",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/reducedMotion.png",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/intro.png",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-9-25/plate/loop.png",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 5760,
+                "loopDelay": 5760,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
+                "randomizedSources": []
             }
         ]
     }
