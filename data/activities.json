@@ -5226,8 +5226,8 @@
             "privacy_policy_url": "https://magiccircle.gg/docs/privacy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "2048"
             },
@@ -5235,8 +5235,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "2048"
                     }
@@ -6886,8 +6886,8 @@
             "privacy_policy_url": "https://echochess.com/privacy-policy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "1126844833262593"
             },
@@ -6895,8 +6895,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "1126844833262593"
                     }
@@ -8456,8 +8456,8 @@
             "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
             "install_params": {
                 "scopes": [
-                    "bot",
-                    "applications.commands"
+                    "applications.commands",
+                    "bot"
                 ],
                 "permissions": "1"
             },
@@ -8465,8 +8465,8 @@
                 "0": {
                     "oauth2_install_params": {
                         "scopes": [
-                            "bot",
-                            "applications.commands"
+                            "applications.commands",
+                            "bot"
                         ],
                         "permissions": "1"
                     }
@@ -9667,18 +9667,6 @@
                 "name": "embedded_cover"
             }
         ],
-        "1351051595718201414": [
-            {
-                "id": "1352383048217399356",
-                "type": 1,
-                "name": "embedded_background"
-            },
-            {
-                "id": "1352383156736495656",
-                "type": 1,
-                "name": "embedded_cover"
-            }
-        ],
         "1227719606223765687": [
             {
                 "id": "1431051732372422676",
@@ -9694,6 +9682,18 @@
                 "id": "1431060550590398474",
                 "type": 1,
                 "name": "embedded_background"
+            }
+        ],
+        "1351051595718201414": [
+            {
+                "id": "1352383048217399356",
+                "type": 1,
+                "name": "embedded_background"
+            },
+            {
+                "id": "1352383156736495656",
+                "type": 1,
+                "name": "embedded_cover"
             }
         ],
         "945737671223947305": [
