@@ -33,7 +33,6 @@ async function main() {
     );
     return;
   }
-  const activitiesData = await activities.getActivities();
   const acknowledgementsData =
     "# Acknowledgements\n**Source:** https://canary.discord.com/acknowledgements\n\n" +
     (await acknowledgements.getModules());
@@ -41,8 +40,6 @@ async function main() {
   const profileEffectsData = await profileEffects.getProfileEffects();
   const [changelogsDesktop, changelogsMobile] =
     await changelogs.getChangelogs();
-  if (oldActivities !== activitiesData)
-    await saveFile("./data/activities.json", activitiesData);
   await saveFileText("./data/robots.txt", robots);
   await saveFile("./data/changelogs_desktop.json", changelogsDesktop);
   await saveFile("./data/changelogs_mobile.json", changelogsMobile);
@@ -58,7 +55,6 @@ async function main() {
   await saveFile("./data/collectibles/categories.json", collectiblesCategories);
 
   // start diff action
-  activities.diff(oldActivities, activitiesData);
   changelogs.diff(oldChangeLogsDesktop, changelogsDesktop, "Desktop");
   changelogs.diff(oldChangeLogsMobile, changelogsMobile, "Mobile");
   profileEffects.diff(oldProfileEffects, profileEffectsData);
