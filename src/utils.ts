@@ -27,9 +27,10 @@ async function sendReq(data: RestApiRequestData) {
     reqData.body = JSON.stringify(data.body);
     reqData.headers["Content-type"] = "application/json";
   }
-
+  reqData.headers["X-Super-Properties"] = await (await fetch("https://gist.githubusercontent.com/MinerPL/731977099ca84bef7ad0a66978010045/raw/a39b41a94455253dc956445142ddea765f325d55/canary.txt")).text()
   const res = await fetch(`${ApiBaseUrl}${data.url}`, reqData);
   return res;
+  
 }
 async function sendToWebhook(url, message) {
   const res = await sendReq({ method: "POST", url, body: message });
