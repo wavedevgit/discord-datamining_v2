@@ -83,7 +83,7 @@ function diff(a, b) {
 
     if (result.length) {
         sendToWebhook(configExperimentCentral.webhooks.collectibles.profileEffects, {
-            content: "",
+            content: configExperimentCentral.pings.collectibles.profileEffects,
             embeds: result,
         });
         sendToWebhook(configWumpusUniv.webhooks.collectibles.profileEffects, {

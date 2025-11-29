@@ -6,11 +6,12 @@ import profileEffects from "./categories/collectibles/profile-effects.js";
 import categories from "./categories/collectibles/categories.js";
 import acknowledgements from "./categories/acknowledgements.js";
 import robots_ from "./categories/robots.js";
+import marketing from "./categories/collectibles/marketing.js";
 
 async function main() {
   console.log("Tracker central - V1.0.0");
   const collectiblesCategories = await categories.getCollectiblesCategories();
-  const oldActivities = await readFile("./data/activities.json");
+  const oldMarketing = await readFile("./data/collectibles/marketing.json");
   const oldChangeLogsMobile = await readFile("./data/changelogs_mobile.json");
   const oldChangeLogsDesktop = await readFile("./data/changelogs_desktop.json");
   const oldProfileEffects = await readFile(
@@ -38,6 +39,7 @@ async function main() {
     (await acknowledgements.getModules());
   const robots = await robots_.getRobots();
   const profileEffectsData = await profileEffects.getProfileEffects();
+  const marketingData = await marketing.getMarketing();
   const [changelogsDesktop, changelogsMobile] =
     await changelogs.getChangelogs();
   await saveFileText("./data/robots.txt", robots);
@@ -52,6 +54,10 @@ async function main() {
     "./data/collectibles/profile-effects.json",
     profileEffectsData
   );
+  await saveFile(
+    "./data/collectibles/marketing.json",
+    marketingData
+  );
   await saveFile("./data/collectibles/categories.json", collectiblesCategories);
 
   // start diff action
@@ -61,5 +67,6 @@ async function main() {
   categories.diff(oldCategories, collectiblesCategories);
   acknowledgements.diff(oldAcknowledgements, acknowledgementsData);
   robots_.diff(oldRobots,robots);
+  marketing.diff(oldMarketing,marketingData);
 }
 main();
