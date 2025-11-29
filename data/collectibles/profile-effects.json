@@ -1,21 +1,21 @@
 [
     {
         "type": 1,
-        "id": "1400163655542378736",
-        "sku_id": "1400163655521402930",
-        "title": "Gomah",
+        "id": "1293373563398520832",
+        "sku_id": "1293373563381878836",
+        "title": "D20 Roll",
         "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "Gomah in a fighting stance with red energy swirling and clenching his staff.",
+        "accessibilityLabel": "A 20-sided dice rolls into view, displaying 'Critical Failure' when landing on a 1, and 'Critical Success' when rolling a 20. The outcome it decides remains unknown to this day.",
         "animationType": 2,
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/5e8d9c3805a9fb4c614ada44f0d1f8af963e9a9c90d54c34e91e5e08dde4f4da",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/d64ba4edf6a5c45194cfc6bdecbc2abf6c5b7794c87df369cb574e700dd46e41",
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/1e508fdc1591dcd1543067a39de4254c391e028bc24f6ae87fba884ae29e131e",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/0e4ff3d0f37362e2102720485fed3afa2f46cd4a0b8e55b3ecdb0fd65f0ec5eb",
         "effects": [
             {
-                "src": "https://cdn.discordapp.com/assets/content/d9b7abf195e8215059e1710e2156677fe95aa1d74360acfd2a198a324be86253",
+                "src": "https://cdn.discordapp.com/assets/content/067b4152dda6ed421750fea23eaee1d9d62af802ee310b5f52a8434b1b329b0a",
                 "loop": false,
                 "height": 880,
                 "width": 450,
-                "duration": 3417,
+                "duration": 3250,
                 "start": 0,
                 "loopDelay": 0,
                 "position": {
@@ -23,22 +23,36 @@
                     "y": 0
                 },
                 "zIndex": 100,
-                "randomizedSources": []
+                "randomizedSources": [
+                    {
+                        "src": "https://cdn.discordapp.com/assets/content/067b4152dda6ed421750fea23eaee1d9d62af802ee310b5f52a8434b1b329b0a"
+                    },
+                    {
+                        "src": "https://cdn.discordapp.com/assets/content/041d2bf57606f572ff748c604eb17ed5194df0242ce9e023c9958bab8b2dc618"
+                    }
+                ]
             },
             {
-                "src": "https://cdn.discordapp.com/assets/content/926e634b82fe484f7481aa7c3419f6969f3e02096bf0fd26ad1f05a3cf6fd147",
+                "src": "https://cdn.discordapp.com/assets/content/a09cb4a2eaec93ec6e805a3cb4435b261dce27e310046c68914b3ba686c6355d",
                 "loop": true,
                 "height": 880,
                 "width": 450,
-                "duration": 5000,
-                "start": 4000,
-                "loopDelay": 2000,
+                "duration": 3000,
+                "start": 3000,
+                "loopDelay": 4500,
                 "position": {
                     "x": 0,
                     "y": 0
                 },
                 "zIndex": 101,
-                "randomizedSources": []
+                "randomizedSources": [
+                    {
+                        "src": "https://cdn.discordapp.com/assets/content/a09cb4a2eaec93ec6e805a3cb4435b261dce27e310046c68914b3ba686c6355d"
+                    },
+                    {
+                        "src": "https://cdn.discordapp.com/assets/content/fa67a1652a24b24ba3cef7bf48f98bbc8c5fc460aa50d7a7b8b5e8eb53a0ff4f"
+                    }
+                ]
             }
         ]
     },
@@ -156,6 +170,49 @@
                     "y": 0
                 },
                 "zIndex": 103,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1400163655542378736",
+        "sku_id": "1400163655521402930",
+        "title": "Gomah",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Gomah in a fighting stance with red energy swirling and clenching his staff.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/5e8d9c3805a9fb4c614ada44f0d1f8af963e9a9c90d54c34e91e5e08dde4f4da",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/d64ba4edf6a5c45194cfc6bdecbc2abf6c5b7794c87df369cb574e700dd46e41",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/d9b7abf195e8215059e1710e2156677fe95aa1d74360acfd2a198a324be86253",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 3417,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/926e634b82fe484f7481aa7c3419f6969f3e02096bf0fd26ad1f05a3cf6fd147",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 5000,
+                "start": 4000,
+                "loopDelay": 2000,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
                 "randomizedSources": []
             }
         ]
@@ -281,6 +338,50 @@
                 "duration": 2880,
                 "start": 5760,
                 "loopDelay": 5760,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1341506445069254656",
+        "sku_id": "1341506443945181184",
+        "title": "Shatter (Blue)",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Streaks of blue fire blaze across a transparent glass layer covering your profile. The intense heat causes the glass to crack and shatter into fragments.",
+        "animationType": 1,
+        "staticFrameSrc": "https://cdn.discordapp.com/assets/content/cf12be71ad71ecc80b0de0e6912047568dfd473313c4fd6f6af11d1f38c8010b",
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/6a4e343fdb8e93cbf7196999a262e8bb8c0aebfd70eddd19820d0682ccaf99d7",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/cf12be71ad71ecc80b0de0e6912047568dfd473313c4fd6f6af11d1f38c8010b",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/a47e865e1909d9b9145edfff1e657007dbe53fdf55196db306b7343d85610a81",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/b36204fc340e21903a60d79caaa289b39b010fe38a6a9320cd676675e9fded83",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 2880,
+                "loopDelay": 2880,
                 "position": {
                     "x": 0,
                     "y": 0
@@ -1306,6 +1407,49 @@
                 "duration": 3000,
                 "start": 3000,
                 "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1436367669074067487",
+        "sku_id": "1436367669057159328",
+        "title": "Black Ops 7",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Animated border with red butterfly silhouette surrounded by blue electric interference and digital corruption patterns.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/71134496b2bd1a2e6c362503662b79d0eaa987f2ce0db20d6e6c4d03b44a5597",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/db50887c5ff32cdd924644c235798765e87c5059c4469377b95a5ed387b0d89c",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/b2246fcbfca7512e43e67ccbc0a0f54a400fde4822222204eeef8d8ab506281b",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 3875,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/f68d8ed5a7bbd2ac8eecf85e6ef19c6286a2d05831b94a1de5372fa26f3eb3f0",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 3375,
+                "start": 3875,
+                "loopDelay": 3000,
                 "position": {
                     "x": 0,
                     "y": 0
@@ -2553,21 +2697,21 @@
     },
     {
         "type": 1,
-        "id": "1400163655575666809",
-        "sku_id": "1400163655550763131",
-        "title": "Mini Goku",
+        "id": "1354894010782847179",
+        "sku_id": "1354894010761744455",
+        "title": "Lazy Loaf",
         "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "Super Saiyan Goku with golden energy radiating and fierce expression.",
+        "accessibilityLabel": "A freshly baked bread dog strolls and lies down comfortably before being picked up and away with tongs.",
         "animationType": 2,
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/5cbe7777f2629c89ec9b11b604aeaab76f499afb89b7ab153232c019413350cd",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/3975d4d6f815c98a94ce69f64a1d8520f70f7806c4c829d9b4e9cc7c3714fc2f",
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/595f684bb1da08e167303212453fe12d93a4c54b7aca02e4f039a3f0774ddf38",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/b5af0846970024db621e54dc6d3f96e3a8beab7ad15eb13745524033eb7f914e",
         "effects": [
             {
-                "src": "https://cdn.discordapp.com/assets/content/3478126b7a12ff05ddbfa698d9e252e50386fb2b763a7b0d3f0cdb8950a2ca3d",
+                "src": "https://cdn.discordapp.com/assets/content/50d869efb1e5be2e25b18750420327327a67f0da2c135e310a13553a36a1e27f",
                 "loop": false,
                 "height": 880,
                 "width": 450,
-                "duration": 3000,
+                "duration": 6875,
                 "start": 0,
                 "loopDelay": 0,
                 "position": {
@@ -2578,13 +2722,13 @@
                 "randomizedSources": []
             },
             {
-                "src": "https://cdn.discordapp.com/assets/content/a87cc8329f99c3b9325ae2ad27bfa8ea411213df0e0df8f870f84156c4a988a3",
+                "src": "https://cdn.discordapp.com/assets/content/3a108791bc2bb701e687f0ea124b56ac12771f33059057cb74c3da9ad19d29ac",
                 "loop": true,
                 "height": 880,
                 "width": 450,
-                "duration": 2583,
-                "start": 4000,
-                "loopDelay": 2000,
+                "duration": 2208,
+                "start": 6875,
+                "loopDelay": 3000,
                 "position": {
                     "x": 0,
                     "y": 0
@@ -2682,21 +2826,21 @@
     },
     {
         "type": 1,
-        "id": "1354894010782847179",
-        "sku_id": "1354894010761744455",
-        "title": "Lazy Loaf",
+        "id": "1400163655575666809",
+        "sku_id": "1400163655550763131",
+        "title": "Mini Goku",
         "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "A freshly baked bread dog strolls and lies down comfortably before being picked up and away with tongs.",
+        "accessibilityLabel": "Super Saiyan Goku with golden energy radiating and fierce expression.",
         "animationType": 2,
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/595f684bb1da08e167303212453fe12d93a4c54b7aca02e4f039a3f0774ddf38",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/b5af0846970024db621e54dc6d3f96e3a8beab7ad15eb13745524033eb7f914e",
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/5cbe7777f2629c89ec9b11b604aeaab76f499afb89b7ab153232c019413350cd",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/3975d4d6f815c98a94ce69f64a1d8520f70f7806c4c829d9b4e9cc7c3714fc2f",
         "effects": [
             {
-                "src": "https://cdn.discordapp.com/assets/content/50d869efb1e5be2e25b18750420327327a67f0da2c135e310a13553a36a1e27f",
+                "src": "https://cdn.discordapp.com/assets/content/3478126b7a12ff05ddbfa698d9e252e50386fb2b763a7b0d3f0cdb8950a2ca3d",
                 "loop": false,
                 "height": 880,
                 "width": 450,
-                "duration": 6875,
+                "duration": 3000,
                 "start": 0,
                 "loopDelay": 0,
                 "position": {
@@ -2707,13 +2851,13 @@
                 "randomizedSources": []
             },
             {
-                "src": "https://cdn.discordapp.com/assets/content/3a108791bc2bb701e687f0ea124b56ac12771f33059057cb74c3da9ad19d29ac",
+                "src": "https://cdn.discordapp.com/assets/content/a87cc8329f99c3b9325ae2ad27bfa8ea411213df0e0df8f870f84156c4a988a3",
                 "loop": true,
                 "height": 880,
                 "width": 450,
-                "duration": 2208,
-                "start": 6875,
-                "loopDelay": 3000,
+                "duration": 2583,
+                "start": 4000,
+                "loopDelay": 2000,
                 "position": {
                     "x": 0,
                     "y": 0
@@ -5244,6 +5388,49 @@
     },
     {
         "type": 1,
+        "id": "1436367669095039066",
+        "sku_id": "1436367669082325013",
+        "title": "Shattered Reality",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Dynamic frame featuring cascading blue and orange data streams with binary code elements flowing vertically.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/cea065bfb961187515e30ab2b5f2aaef7dae845107c47347a8cdb1cd1ed7c49d",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/f8c968dd9902dee88de4e28f28eca9e91a48b6b66046fda9eee868f44e30d6b3",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/ae46911c496f966781380267f970a315db5458ea6c6553e7af771d431a3e4fa0",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 5000,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/4049f02d5fe6eda17cf66dc047480e02c669b7022255203a996557086da2c44f",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 5000,
+                "start": 5000,
+                "loopDelay": 3000,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
         "id": "1324454241191858186",
         "sku_id": "1324454241141784697",
         "title": "Portal Beyond (Blue)",
@@ -5362,6 +5549,49 @@
                 "duration": 3000,
                 "start": 3600,
                 "loopDelay": 1500,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1437881614280560792",
+        "sku_id": "1437881614263910585",
+        "title": "The Grid Fireworks",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Colorful fireworks exploding over a digital grid background with blue, yellow, and green bursts.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/0921e7b893dcac31a42e864ecd4eea7dca5b0943029f3a94c659b1901b6e9969",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/386a1c8311e71d4d19c24ec412e78579f7cc103fcd43447d2ff4554170de48f9",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/f4ae9b0528ed09a094928c552077679d6619752b0cb90c4c512f8d83970529a9",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 3083,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/81f10c0f18be8ccb0bbaf72e80faa9d360029b30c8d7191024c224cbb385dba6",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 3083,
+                "start": 4500,
+                "loopDelay": 3000,
                 "position": {
                     "x": 0,
                     "y": 0
@@ -5511,6 +5741,49 @@
                     "y": 0
                 },
                 "zIndex": 102,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1428438924975673514",
+        "sku_id": "1428438924962959421",
+        "title": "Unlimited Void",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Satoru Gojo's glowing blue eyes and hand gesture with blue and black cursed energy sphere.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/7d9667d64f97129e07f45c9710b5f61902b14a035fb85089a3286b9c095a4466",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/41429f3cc0aa3304c08cdc58a2c9ece545c62ff42acba2ba1bc2728a23088c5e",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/11dbba8e43117d6955a3c9b3691cf2c1d145f785b51ff1bf84e83ce13719f58d",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 4167,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/fb531b323f3fdb4df0eae1c99da9994b868fb5b8609b1bc7109d48e01f2a5c8d",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 3167,
+                "start": 5167,
+                "loopDelay": 3250,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
                 "randomizedSources": []
             }
         ]
@@ -6093,6 +6366,49 @@
     },
     {
         "type": 1,
+        "id": "1437881614305726569",
+        "sku_id": "1437881614289076366",
+        "title": "Light Cycles",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "Red light cycle speeding with glowing trail and blue accent lights.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/01fdf5adad3d7aa4a39c879abcb22c7a3581418da2cbcda430e1c99bfa86cacc",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/5b74631ab1d70a586f9e37f921c579a83936435964ea6a42d6c6684544e72453",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/05180d34961f506cbefbf7368447fb10b145c4a7a9dc149de85c53e06fcf24da",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 3500,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/83a7f588aad72d13419762ab6799212749786f616e326d0e4981cf6f6834bb71",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 3083,
+                "start": 5000,
+                "loopDelay": 3000,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
         "id": "1282820582441746544",
         "sku_id": "1282820582429298748",
         "title": "Woodland Fall Foliage",
@@ -6146,6 +6462,49 @@
                     "y": 0
                 },
                 "zIndex": 102,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1427463138646954039",
+        "sku_id": "1427463138634109028",
+        "title": "Infinite Swirl",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "A cosmic vortex of swirling purple and cyan light pulses across the profile before settling.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/4b7152a9817541a0e6897108ce9e02ab005c726704064820f286641e4ac6b9ae",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/f55a04e4007ec4f14d0049b009ba37d643c4a1731568438f8dc5abbfba64544a",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/1fb36bb69c8ada1e0ab81272c038591b60a4e74e9046675bc845a6c48778949a",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 3983,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/f118567c8688b211d0b2233d9013b08950c3a62de9e50803ec4da27a24d74daf",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 2988,
+                "start": 6200,
+                "loopDelay": 3000,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
                 "randomizedSources": []
             }
         ]
@@ -8014,21 +8373,21 @@
     },
     {
         "type": 1,
-        "id": "1287835633964023910",
-        "sku_id": "1287835633947115570",
-        "title": "Infernal Dark Omens",
+        "id": "1428438925009227806",
+        "sku_id": "1428438924988125224",
+        "title": "Malevolent Shrine",
         "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "A ghastly infernal portal suddenly appears, summoning three blazing, ghostly spirits to haunt your enemies - no one gets to beat you in a game and get away with it.",
+        "accessibilityLabel": "Ryomen Sukuna's silhouette with bright orange and red fiery cursed energy flames erupting.",
         "animationType": 2,
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/d938cd66c9adfd6596290477c35b2e215fe7429bf2921ab46af1e42347bb41da",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/16cadb70f71e1cd92d6edc34800aac70a93e82fb0344b2311de0da8a4dc28785",
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/dbc47244466b389bcd0d17e17bd2adbb2a603aeb74bd8a84cc01b362fff99fdc",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/dab267f67b1e1bede3ef1bb6914520e9eb6263781e03a9f52b6b47132e9cb9d3",
         "effects": [
             {
-                "src": "https://cdn.discordapp.com/assets/content/54bd7b17f30f930867e932852ceef895ba389e18dfad8291cb8e295a986d2d61",
+                "src": "https://cdn.discordapp.com/assets/content/18d82e7e40d7f6aa542cd3842a3ed76c79cc3c8ee4f33a8ea8d7b32a3dbad5fb",
                 "loop": false,
                 "height": 880,
                 "width": 450,
-                "duration": 2880,
+                "duration": 4167,
                 "start": 0,
                 "loopDelay": 0,
                 "position": {
@@ -8039,13 +8398,13 @@
                 "randomizedSources": []
             },
             {
-                "src": "https://cdn.discordapp.com/assets/content/92c7ed946772bccf45b90d831b8659537398c52623ab13ae83029d254e5c9021",
+                "src": "https://cdn.discordapp.com/assets/content/36b02d6430e56d2695911f17177dee3d7c5b5d14e45777d70dec0982c86ac92a",
                 "loop": true,
                 "height": 880,
                 "width": 450,
-                "duration": 2880,
-                "start": 5760,
-                "loopDelay": 5760,
+                "duration": 4250,
+                "start": 4967,
+                "loopDelay": 3250,
                 "position": {
                     "x": 0,
                     "y": 0
@@ -8326,6 +8685,49 @@
                     "y": 0
                 },
                 "zIndex": 103,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1287835633964023910",
+        "sku_id": "1287835633947115570",
+        "title": "Infernal Dark Omens",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "A ghastly infernal portal suddenly appears, summoning three blazing, ghostly spirits to haunt your enemies - no one gets to beat you in a game and get away with it.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/d938cd66c9adfd6596290477c35b2e215fe7429bf2921ab46af1e42347bb41da",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/16cadb70f71e1cd92d6edc34800aac70a93e82fb0344b2311de0da8a4dc28785",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/54bd7b17f30f930867e932852ceef895ba389e18dfad8291cb8e295a986d2d61",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/92c7ed946772bccf45b90d831b8659537398c52623ab13ae83029d254e5c9021",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 5760,
+                "loopDelay": 5760,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
                 "randomizedSources": []
             }
         ]
@@ -11190,22 +11592,21 @@
     },
     {
         "type": 1,
-        "id": "1341506445069254656",
-        "sku_id": "1341506443945181184",
-        "title": "Shatter (Blue)",
+        "id": "1437881614255394978",
+        "sku_id": "1437881614242938900",
+        "title": "Encom Grid",
         "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "Streaks of blue fire blaze across a transparent glass layer covering your profile. The intense heat causes the glass to crack and shatter into fragments.",
-        "animationType": 1,
-        "staticFrameSrc": "https://cdn.discordapp.com/assets/content/cf12be71ad71ecc80b0de0e6912047568dfd473313c4fd6f6af11d1f38c8010b",
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/6a4e343fdb8e93cbf7196999a262e8bb8c0aebfd70eddd19820d0682ccaf99d7",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/cf12be71ad71ecc80b0de0e6912047568dfd473313c4fd6f6af11d1f38c8010b",
+        "accessibilityLabel": "Cyan geometric grid lines forming a digital network pattern.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/1bed48f4d898978d0d327ef621edee95d52be84d4a9ad89de53799b8cc5feb2e",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/3c5d14bfdccc8eb2f33c4e12166a85839d1acca1def3cdeeb8ce9178cb9e4fa7",
         "effects": [
             {
-                "src": "https://cdn.discordapp.com/assets/content/a47e865e1909d9b9145edfff1e657007dbe53fdf55196db306b7343d85610a81",
-                "loop": true,
+                "src": "https://cdn.discordapp.com/assets/content/8ff830fdfa68f36b1115df5d24924ccbc68540adb1487f08f942d31968db1547",
+                "loop": false,
                 "height": 880,
                 "width": 450,
-                "duration": 2880,
+                "duration": 3000,
                 "start": 0,
                 "loopDelay": 0,
                 "position": {
@@ -11216,13 +11617,13 @@
                 "randomizedSources": []
             },
             {
-                "src": "https://cdn.discordapp.com/assets/content/b36204fc340e21903a60d79caaa289b39b010fe38a6a9320cd676675e9fded83",
+                "src": "https://cdn.discordapp.com/assets/content/7c27cc2b7dd08c2a6df9824e9878f980f941fe74bc28c06b20b3d2ecf07f012d",
                 "loop": true,
                 "height": 880,
                 "width": 450,
-                "duration": 2880,
-                "start": 2880,
-                "loopDelay": 2880,
+                "duration": 3000,
+                "start": 0,
+                "loopDelay": 3000,
                 "position": {
                     "x": 0,
                     "y": 0
@@ -11277,21 +11678,21 @@
     },
     {
         "type": 1,
-        "id": "1293373563398520832",
-        "sku_id": "1293373563381878836",
-        "title": "D20 Roll",
+        "id": "1428438924954697952",
+        "sku_id": "1428438924937793627",
+        "title": "Black Flash",
         "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "A 20-sided dice rolls into view, displaying 'Critical Failure' when landing on a 1, and 'Critical Success' when rolling a 20. The outcome it decides remains unknown to this day.",
+        "accessibilityLabel": "Yuji Itadori's fist with red cursed energy and flowing black slashes surrounding a profile view.",
         "animationType": 2,
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/1e508fdc1591dcd1543067a39de4254c391e028bc24f6ae87fba884ae29e131e",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/0e4ff3d0f37362e2102720485fed3afa2f46cd4a0b8e55b3ecdb0fd65f0ec5eb",
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/529bc631aebdfe7defe3440564a0a14a4d9be4740b9bce23465fc581489e6276",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/a95f66ad45f9b331a3eab19660ec8aefe3dcdea864c1e986493d91f854bb7e80",
         "effects": [
             {
-                "src": "https://cdn.discordapp.com/assets/content/067b4152dda6ed421750fea23eaee1d9d62af802ee310b5f52a8434b1b329b0a",
+                "src": "https://cdn.discordapp.com/assets/content/13b6f2195cd38100b3752dcf9190546b0ba7ec26e5c5582ad102acba047dfa8f",
                 "loop": false,
                 "height": 880,
                 "width": 450,
-                "duration": 3250,
+                "duration": 4083,
                 "start": 0,
                 "loopDelay": 0,
                 "position": {
@@ -11299,36 +11700,22 @@
                     "y": 0
                 },
                 "zIndex": 100,
-                "randomizedSources": [
-                    {
-                        "src": "https://cdn.discordapp.com/assets/content/067b4152dda6ed421750fea23eaee1d9d62af802ee310b5f52a8434b1b329b0a"
-                    },
-                    {
-                        "src": "https://cdn.discordapp.com/assets/content/041d2bf57606f572ff748c604eb17ed5194df0242ce9e023c9958bab8b2dc618"
-                    }
-                ]
+                "randomizedSources": []
             },
             {
-                "src": "https://cdn.discordapp.com/assets/content/a09cb4a2eaec93ec6e805a3cb4435b261dce27e310046c68914b3ba686c6355d",
+                "src": "https://cdn.discordapp.com/assets/content/8ec8c0abd32b07d106cfa2cea5ed78fab6e69350029b33b575b78cbe75fa72bc",
                 "loop": true,
                 "height": 880,
                 "width": 450,
-                "duration": 3000,
-                "start": 3000,
-                "loopDelay": 4500,
+                "duration": 3250,
+                "start": 4783,
+                "loopDelay": 3250,
                 "position": {
                     "x": 0,
                     "y": 0
                 },
                 "zIndex": 101,
-                "randomizedSources": [
-                    {
-                        "src": "https://cdn.discordapp.com/assets/content/a09cb4a2eaec93ec6e805a3cb4435b261dce27e310046c68914b3ba686c6355d"
-                    },
-                    {
-                        "src": "https://cdn.discordapp.com/assets/content/fa67a1652a24b24ba3cef7bf48f98bbc8c5fc460aa50d7a7b8b5e8eb53a0ff4f"
-                    }
-                ]
+                "randomizedSources": []
             }
         ]
     }
