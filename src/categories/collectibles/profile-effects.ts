@@ -44,6 +44,7 @@ function diff(a, b) {
     /** a is before */
     for (let profileEffect in a) {
         const a_sku_id = a[profileEffect].sku_id;
+        if (a_sku_id === "1440063059774406818") continue
         /** removed type */
         if (!b.find((profile_effect) => profile_effect.sku_id === a_sku_id)) {
             diff.removed.push(a[profileEffect]);
@@ -53,6 +54,7 @@ function diff(a, b) {
     /** b is after */
     for (let profileEffect in b) {
         const b_sku_id = b[profileEffect].sku_id;
+        if (b_sku_id === "1440063059774406818") continue
         /** added type */
         if (!a.find((profile_effect) => profile_effect.sku_id === b_sku_id)) {
             diff.added.push(b[profileEffect]);
