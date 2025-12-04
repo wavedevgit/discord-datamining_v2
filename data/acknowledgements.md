@@ -1910,7 +1910,6 @@
 - evanw/thumbhash
 - WebRTC
 - jsoncpp
-- OpenH264
 - mediapipe
 - VMAF
 - VMAF: stdatomic
