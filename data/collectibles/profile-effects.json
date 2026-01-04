@@ -3320,49 +3320,6 @@
     },
     {
         "type": 1,
-        "id": "1341506445153140736",
-        "sku_id": "1341506444003901440",
-        "title": "Ki Detonate (Blue)",
-        "description": "Show this effect when others view your profile.",
-        "accessibilityLabel": "A blue ball of raw, powerful energy is about to detonate in the center of the profile and obliterate everything in its radius. We should probably be hiding behind something right now.",
-        "animationType": 2,
-        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/014b8404aa8f73fcf6be7281c2056d9dc102687e2e719982e855e44b464f391f",
-        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/c42b58e695421acc0068e61317fbd13f407fb6a26c12544a84466b847936d1fa",
-        "effects": [
-            {
-                "src": "https://cdn.discordapp.com/assets/content/935738e6bb678d8ebac9164dcdb525488004230fd22b6e148e4223eb2726aebf",
-                "loop": false,
-                "height": 880,
-                "width": 450,
-                "duration": 2880,
-                "start": 0,
-                "loopDelay": 0,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 100,
-                "randomizedSources": []
-            },
-            {
-                "src": "https://cdn.discordapp.com/assets/content/086a03dc9385e8b923ff04ab2a64c64c021cccd58b70b68ac2eed19bae6416ae",
-                "loop": true,
-                "height": 880,
-                "width": 450,
-                "duration": 2880,
-                "start": 3280,
-                "loopDelay": 4000,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                },
-                "zIndex": 101,
-                "randomizedSources": []
-            }
-        ]
-    },
-    {
-        "type": 1,
         "id": "1341506445186695168",
         "sku_id": "1341506444020678656",
         "title": "Ki Detonate (Red)",
@@ -12317,6 +12274,49 @@
                 "duration": 5000,
                 "start": 4000,
                 "loopDelay": 2000,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 101,
+                "randomizedSources": []
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "id": "1341506445153140736",
+        "sku_id": "1341506444003901440",
+        "title": "Ki Detonate (Blue)",
+        "description": "Show this effect when others view your profile.",
+        "accessibilityLabel": "A blue ball of raw, powerful energy is about to detonate in the center of the profile and obliterate everything in its radius. We should probably be hiding behind something right now.",
+        "animationType": 2,
+        "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/content/014b8404aa8f73fcf6be7281c2056d9dc102687e2e719982e855e44b464f391f",
+        "reducedMotionSrc": "https://cdn.discordapp.com/assets/content/c42b58e695421acc0068e61317fbd13f407fb6a26c12544a84466b847936d1fa",
+        "effects": [
+            {
+                "src": "https://cdn.discordapp.com/assets/content/935738e6bb678d8ebac9164dcdb525488004230fd22b6e148e4223eb2726aebf",
+                "loop": false,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 0,
+                "loopDelay": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zIndex": 100,
+                "randomizedSources": []
+            },
+            {
+                "src": "https://cdn.discordapp.com/assets/content/086a03dc9385e8b923ff04ab2a64c64c021cccd58b70b68ac2eed19bae6416ae",
+                "loop": true,
+                "height": 880,
+                "width": 450,
+                "duration": 2880,
+                "start": 3280,
+                "loopDelay": 4000,
                 "position": {
                     "x": 0,
                     "y": 0
