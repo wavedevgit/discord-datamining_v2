@@ -28,7 +28,7 @@ async function main() {
         content: `${
           configExperimentCentral.pings.status.token
         } **Your alt token has expired!!!**\n\`\`\`json\n${JSON.stringify(
-          categories
+          collectiblesCategories
         )}\n\`\`\``,
       }
     );
