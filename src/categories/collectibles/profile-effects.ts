@@ -38,6 +38,8 @@ function getFieldsForProfileEffect(profileEffect) {
 
 /** differ for our webhook, each module has to have a differ that generates an embed. */
 function diff(a, b) {
+    // fuck ts disabling until some day
+    return;
     const result = [];
     const diff = { removed: [], added: [] };
 
