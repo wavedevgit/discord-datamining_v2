@@ -7,7 +7,7 @@ async function getMarketing() {
             url: 'users/@me/collectibles-marketing?platform=0',
         })
     ).json();
-
+    console.log(marketing)
     return marketing.marketings;
 }
 
