@@ -56,7 +56,7 @@ async function main() {
   );
   await saveFile(
     "./data/collectibles/marketing.json",
-    marketingData
+    marketingData || 'invalid data'
   );
   await saveFile("./data/collectibles/categories.json", collectiblesCategories);
 
