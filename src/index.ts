@@ -20,7 +20,7 @@ async function main() {
     const oldProfileEffects = await readFile(
         './data/collectibles/profile-effects.json',
     );
-    const oldCSP = await readFile('./data/csp.txt');
+    const oldCSP = await readFile('./data/csp.txt', false);
     const oldCategories = await readFile('./data/collectibles/categories.json');
     const oldAcknowledgements = await readFile(
         './data/acknowledgements.md',
