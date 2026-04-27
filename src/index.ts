@@ -38,7 +38,6 @@ async function main() {
     "# Acknowledgements\n**Source:** https://canary.discord.com/acknowledgements\n\n" +
     (await acknowledgements.getModules());
   const robots = await robots_.getRobots();
-  const profileEffectsData = await profileEffects.getProfileEffects();
   const marketingData = await marketing.getMarketing();
   const [changelogsDesktop, changelogsMobile] =
     await changelogs.getChangelogs();
@@ -50,10 +49,7 @@ async function main() {
 
     acknowledgementsData
   );
-  await saveFile(
-    "./data/collectibles/profile-effects.json",
-    profileEffectsData
-  );
+
   await saveFile(
     "./data/collectibles/marketing.json",
     marketingData || 'invalid data'
