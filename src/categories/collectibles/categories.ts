@@ -36,12 +36,17 @@ function getFieldsForCategory(category) {
         },
         {
             name: 'Button Colors',
-            value: category.styles.button_colors.map((color) => color.toString(16)).join(', '),
+            value: category?.styles?.button_colors
+                ?.map?.((color) => color.toString(16))
+                ?.join?.(', ') || 'failed to get them',
             inline: true,
         },
         {
             name: 'Background Colors',
-            value: category.styles.background_colors.map((color) => color.toString(16)).join(', '),
+            value:
+                category?.styles?.background_colors
+                    ?.map?.((color) => color.toString(16))
+                    ?.join?.(', ') || 'failed to get them',
         },
     ];
 }
@@ -54,7 +59,9 @@ function diff(a, b) {
     /** a is before */
     for (let category in a) {
         /** removed type */
-        if (!b.map((category) => category.sku_id).includes(a[category]?.sku_id)) {
+        if (
+            !b.map((category) => category.sku_id).includes(a[category]?.sku_id)
+        ) {
             diff.removed.push(a[category]);
         }
     }
@@ -62,7 +69,9 @@ function diff(a, b) {
     /** b is after */
     for (let category in b) {
         /** added type */
-        if (!a.map((category) => category.sku_id).includes(b[category]?.sku_id)) {
+        if (
+            !a.map((category) => category.sku_id).includes(b[category]?.sku_id)
+        ) {
             diff.added.push(b[category]);
         }
     }
@@ -88,10 +97,13 @@ function diff(a, b) {
     }
 
     if (result.length) {
-        sendToWebhook(configExperimentCentral.webhooks.collectibles.categories, {
-            content: configExperimentCentral.pings.collectibles.categories,
-            embeds: result,
-        });
+        sendToWebhook(
+            configExperimentCentral.webhooks.collectibles.categories,
+            {
+                content: configExperimentCentral.pings.collectibles.categories,
+                embeds: result,
+            },
+        );
         sendToWebhook(configWumpusUniv.webhooks.collectibles.categories, {
             content: configWumpusUniv.pings.collectibles.categories,
             embeds: result,
