@@ -1,16 +1,18 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "resolveJsonModule": true,
-    "rootDir": "src",
-    "outDir": "dist",
-    "removeComments": true,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "resolveJsonModule": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "removeComments": true,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "types": ["node"]
+    },
+
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
 }
