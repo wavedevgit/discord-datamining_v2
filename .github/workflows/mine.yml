@@ -36,6 +36,7 @@ jobs:
           ACTIVITIES: ${{ secrets.ACTIVITIES }}
           EXPCENTRALWEBHOOK: ${{ secrets.EXPCENTRALWEBHOOK }}
           ACTIVIESWC: ${{ secrets.ACTIVIESWC }}
+          ACKNOWLEDGEMENTSWC: ${{ secrets.ACKNOWLEDGEMENTSWC }}
           CHANGELOGS: ${{ secrets.CHANGELOGS }}
           ROBOTS: ${{ secrets.ROBOTS }}
       - name: set email
