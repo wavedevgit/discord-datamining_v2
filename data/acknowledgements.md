@@ -1922,3 +1922,13 @@
 - VMAF: iqa
 - VMAF: svm
 - luben/zstd-jni
+- Steam Audio
+- Steam Audio: Intel IPP
+- Steam Audio: FFTS
+- Steam Audio: PFFFT
+- Steam Audio: MySOFA
+- Steam Audio: Intel Embree
+- Steam Audio: AMD RadeonRays
+- Steam Audio: AMD TrueAudio Next
+- Steam Audio: CIPIC HRTF Database
+- Steam Audio: Google Spherical Harmonics Library
