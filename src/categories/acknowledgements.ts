@@ -30,19 +30,19 @@ function diff(a, b) {
     // updated
     if (linesA[l] !== linesB[l] && linesB[l] !== undefined) {
       if (result.length === 0) result += "```diff\n";
-      result += `# Updated\n- ${linesA[l]}\n+ ${linesB[l]}\n\nn`;
+      result += `# Updated\n- ${linesA[l].replace("-","")}\n+ ${linesB[l].replace("-","")}\n\nn`;
     }
     // removed
     if (linesA[l] !== linesB[l] && linesB[l] === undefined) {
       if (result.length === 0) result += "```diff\n";
-      result += `# Removed\n- ${linesA[l]}\n\n`;
+      result += `# Removed\n- ${linesA[l].replace("-","")}\n\n`;
     }
   }
   for (let l = 0; l < linesB.length; l++) {
     // added
     if (linesA[l] !== linesB[l] && linesA[l] === undefined) {
       if (result.length === 0) result += "```diff\n";
-      result += `# Added\n+ ${linesB[l]}\n`;
+      result += `# Added\n+ ${linesB[l].replace("-","")}\n`;
     }
   }
   if (result.length !== 0) result += "\n```";
