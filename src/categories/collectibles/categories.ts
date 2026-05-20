@@ -5,7 +5,7 @@ import { formatAssetUrl } from './assets.js';
 async function getCollectiblesCategories() {
     const categories = await (
         await sendReq({
-            url: 'collectibles-categories',
+            url: 'collectibles-categories/v2',
         })
     ).json();
 
