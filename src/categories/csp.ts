@@ -7,42 +7,56 @@ async function getCSP() {
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     },
   });
-  return response.headers.get("content-security-policy") ?? "";
+  return (response.headers.get("content-security-policy") ?? "")
+    .replace(/'nonce-[^']+'/g, "'nonce-{NONCE}'");
+
 }
 
 function diff(oldContent: string, newContent: string) {
-  let result = "";
-  const linesA = oldContent.split(";");
-  const linesB = newContent.split(";");
+  const oldTokens = oldContent
+    .trim()
+    .replace(/\s+/g, " ")
+    .split(" ");
 
-  for (let l = 0; l < linesA.length; l++) {
-    if (linesA[l]?.trim() !== linesB[l]?.trim() && linesB[l] !== undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Updated\n- ${linesA[l]}\n+ ${linesB[l]}\n\n`;
-    }
-    if (linesA[l]?.trim() !== linesB[l]?.trim() && linesB[l] === undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Removed\n- ${linesA[l]}\n\n`;
-    }
+  const newTokens = newContent
+    .trim()
+    .replace(/\s+/g, " ")
+    .split(" ");
+
+  const removed = oldTokens.filter(
+    token =>
+      !newTokens.includes(token) &&
+      !token.startsWith("'nonce-")
+  );
+
+  const added = newTokens.filter(
+    token =>
+      !oldTokens.includes(token) &&
+      !token.startsWith("'nonce-")
+  );
+
+  if (!removed.length && !added.length) {
+    return;
   }
 
-  for (let l = 0; l < linesB.length; l++) {
-    if (linesA[l]?.trim() !== linesB[l]?.trim() && linesA[l] === undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Added\n+ ${linesB[l]}\n`;
-    }
+  let result = "```diff\n";
+
+  for (const token of removed) {
+    result += `- ${token}\n`;
   }
 
-  if (result.length !== 0) result += "```";
-
-  if (result.length) {
-    sendToWebhook(configExperimentCentral.webhooks.robots, {
-      content: configExperimentCentral.pings.robots + "\n" + result,
-    });
-    sendToWebhook(configWumpusUniv.webhooks.robots, {
-      content: configWumpusUniv.pings.robots + "\n" + result,
-    });
+  for (const token of added) {
+    result += `+ ${token}\n`;
   }
+
+  result += "```";
+
+  sendToWebhook(configExperimentCentral.webhooks.robots, {
+    content: configExperimentCentral.pings.robots + "\n" + result,
+  });
+
+  sendToWebhook(configWumpusUniv.webhooks.robots, {
+    content: configWumpusUniv.pings.robots + "\n" + result,
+  });
 }
-
 export default { getCSP, diff };
