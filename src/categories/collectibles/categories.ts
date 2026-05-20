@@ -9,7 +9,7 @@ async function getCollectiblesCategories() {
         })
     ).json();
 
-    return categories;
+    return categories.categories;
 }
 
 function getFieldsForCategory(category) {
