@@ -72,9 +72,7 @@ jobs:
 
       - name: Extract summary
         run: |
-          SUMMARY=$(jq -r '
-            .choices[0].message.content // "chore: api returned invalid response"
-          ' response.json)
+          SUMMARY=$(jq -r '.choices[0].message.content // empty' response.json)
 
           echo "SUMMARY<<EOF" >> $GITHUB_ENV
           echo "$SUMMARY" >> $GITHUB_ENV
