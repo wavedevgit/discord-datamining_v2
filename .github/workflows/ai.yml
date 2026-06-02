@@ -48,7 +48,7 @@ jobs:
             process.exit(0);
           }
 
-          const diff = execSync(`git diff ${prev} ${curr}`)
+          const diff = execSync(`git diff ${prev} ${curr} | head -c 200000`)
             .toString()
             .slice(0, 50000);
 
