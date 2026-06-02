@@ -50,7 +50,7 @@ jobs:
 
           const diff = execSync(`git diff ${prev} ${curr} | head -c 200000`)
             .toString()
-            .slice(0, 50000);
+            .slice(0, 5000);
 
           const response = await client.chat.completions.create({
             model: "big-pickle",
@@ -75,7 +75,7 @@ jobs:
 
           const summary =
             response?.choices?.[0]?.message?.content ||
-            "chore: api returned invalid response";
+            "chore: api returned invalid response:" + JSON.stringify(response);
 
           console.log(summary);
 
