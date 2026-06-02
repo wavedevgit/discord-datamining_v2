@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Wumpus-Central repo
         uses: actions/checkout@v4
         with:
-          repository: Wumpus-Central/Wumpus-Central
+          repository: Wumpus-Central/discrapper-canary
           fetch-depth: 2
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -83,7 +83,7 @@ jobs:
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              content: "🧠 **Repo Update Summary**\n\n" + summary
+              content: "🧠 **Repo Update Summary**\n\n[**view commit**](http://github.com/Wumpus-Central/discrapper-canary/commit/" + curr + ")\n\n" + summary
             })
           });
           EOF
