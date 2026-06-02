@@ -1,0 +1,58 @@
+name: Commit Summarizer
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get latest commit diff
+        run: |
+          CURR=$(git log -1 --pretty=format:"%H")
+          PREV=$(git log -2 --pretty=format:"%H" | tail -n 1)
+
+          git diff $PREV $CURR > diff.txt
+          head -c 50000 diff.txt > trimmed_diff.txt
+
+      - name: Call OpenCode Zen API
+        run: |
+          DIFF=$(cat trimmed_diff.txt | sed 's/"/\\"/g' | tr '\n' ' ')
+
+          curl -s https://api.opencode.ai/v1/chat/completions \
+            -H "Authorization: Bearer public" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"model\": \"big-pickle-free\",
+              \"messages\": [
+                {
+                  \"role\": \"system\",
+                  \"content\": \"You are a git diff summarization engine. Your task is to convert a diff into a single commit title and a short technical summary.\n\nRules:\n- Output ONLY two lines.\n- Line 1: commit title (max 72 characters).\n- Line 2: short summary (max 3 sentences).\n- Do NOT include explanations, commentary, or extra formatting.\n- Focus only on semantic code changes.\n- Ignore: minified files, bundler output, lockfile noise, formatting-only changes, whitespace, and generated files.\n- If the diff contains no meaningful semantic change, output:\n  \"chore: no meaningful changes\"\n  followed by a single sentence explaining why (still max 3 sentences total).\n- Never hallucinate intent. Only describe what is explicitly present in the diff.\n- Prefer conventional commit style (feat, fix, refactor, chore, perf, test).\"
+                },
+                {
+                  \"role\": \"user\",
+                  \"content\": \"Summarize this diff:\\n$DIFF\"
+                }
+              ]
+            }" > response.json
+
+          echo "RESPONSE=$(cat response.json | jq -r '.choices[0].message.content')" >> $GITHUB_ENV
+
+      - name: Send to Discord webhook
+        run: |
+          CONTENT=$(echo "$RESPONSE" | sed 's/"/\\"/g' | tr '\n' ' ')
+
+          curl -s -H "Content-Type: application/json" \
+            -X POST \
+            -d "{
+              \"content\": \"🧠 **Repo Update Summary**\\n\\n$CONTENT\"
+            }" \
+            ${{ secrets.BUILD_SUMMARIES_DISCORD_WEBHOOK }}
