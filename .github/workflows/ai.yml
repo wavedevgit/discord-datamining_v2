@@ -10,81 +10,80 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo (shallow)
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
-      - name: Get previous commit
-        id: commits
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install OpenAI SDK
+        run: npm i openai
+
+      - name: Run summarizer
+        env:
+          BUILD_SUMMARIES_DISCORD_WEBHOOK: ${{ secrets.BUILD_SUMMARIES_DISCORD_WEBHOOK }}
         run: |
-          CURR=$(git rev-parse HEAD)
-          PREV=$(git rev-parse HEAD~1 || echo "")
+          node <<'EOF'
+          import OpenAI from "openai";
+          import { execSync } from "node:child_process";
 
-          echo "CURR=$CURR" >> $GITHUB_ENV
-          echo "PREV=$PREV" >> $GITHUB_ENV
+          const webhook = process.env.BUILD_SUMMARIES_DISCORD_WEBHOOK;
 
-      - name: Build diff
-        run: |
-          if [ -z "$PREV" ]; then
-            echo "No previous commit, skipping diff"
-            exit 0
-          fi
+          const client = new OpenAI({
+            apiKey: "public",
+            baseURL: "https://opencode.ai/zen/v1"
+          });
 
-          git diff $PREV $CURR > diff.txt
+          let prev = "";
+          let curr = execSync("git rev-parse HEAD").toString().trim();
 
-          # cap diff to avoid token explosions
-          head -c 50000 diff.txt > trimmed_diff.txt
+          try {
+            prev = execSync("git rev-parse HEAD~1").toString().trim();
+          } catch {
+            console.log("No previous commit, skipping");
+            process.exit(0);
+          }
 
-      - name: Call OpenCode Zen API
-        run: |
-          DIFF=$(jq -Rs . trimmed_diff.txt)
+          const diff = execSync(`git diff ${prev} ${curr}`)
+            .toString()
+            .slice(0, 50000);
 
-          curl -s https://opencode.ai/zen/v1/chat/completions \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer public" \
-            -H "x-opencode-client: cli" \
-            -H "x-opencode-project: global" \
-            -d "{
-              \"model\": \"big-pickle\",
-              \"max_tokens\": 800,
-              \"system\": [
-                {
-                  \"type\": \"text\",
-                  \"text\": \"You are a git diff summarizer.\n\nOutput EXACTLY:\nLine 1: commit title (max 72 chars, conventional commit style)\nLine 2: short technical summary (max 3 sentences)\n\nRules:\n- Ignore minified/bundler/lockfile/formatting changes\n- Focus only on semantic code changes\n- If no meaningful change, output: chore: no meaningful changes\n- Never hallucinate intent\"
-                }
-              ],
-              \"messages\": [
-                {
-                  \"role\": \"user\",
-                  \"content\": [
-                    {
-                      \"type\": \"text\",
-                      \"text\": \"Summarize this git diff:\\n$DIFF\"
-                    }
-                  ]
-                }
-              ],
-              \"tools\": []
-            }" > response.json
+          const response = await client.chat.completions.create({
+            model: "big-pickle",
+            max_tokens: 800,
+            messages: [
+              {
+                role: "system",
+                content:
+                  "You are a git diff summarizer.\n" +
+                  "Output EXACTLY:\n" +
+                  "Line 1: commit title (max 72 chars, conventional commit style)\n" +
+                  "Line 2: short technical summary (max 3 sentences)\n" +
+                  "Ignore minified/bundler/lockfile noise and formatting-only changes.\n" +
+                  "If no meaningful change, output: chore: no meaningful changes"
+              },
+              {
+                role: "user",
+                content: `Summarize this diff:\n${diff}`
+              }
+            ]
+          });
 
-          cat response.json
+          const summary =
+            response?.choices?.[0]?.message?.content ||
+            "chore: api returned invalid response";
 
-      - name: Extract summary
-        run: |
-          SUMMARY=$(jq -r '.choices[0].message.content // empty' response.json)
+          console.log(summary);
 
-          echo "SUMMARY<<EOF" >> $GITHUB_ENV
-          echo "$SUMMARY" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
-
-      - name: Send to Discord webhook
-        run: |
-          CONTENT=$(echo "$SUMMARY" | tr '\n' ' ')
-
-          curl -s -H "Content-Type: application/json" \
-            -X POST \
-            -d "{
-              \"content\": \"🧠 **Repo Update Summary**\\n\\n$CONTENT\"
-            }" \
-            "${{ secrets.BUILD_SUMMARIES_DISCORD_WEBHOOK }}"
+          await fetch(webhook, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              content: "🧠 **Repo Update Summary**\n\n" + summary
+            })
+          });
+          EOF
