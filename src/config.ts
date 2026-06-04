@@ -22,7 +22,7 @@ const configExperimentCentral: Config = {
       assets: "<@&1234231704109977710>",
     },
     activities: "<@&1262808781608452107>",
-    robots: "<@1419756435302125648>",
+    robots: "<@&1419756435302125648>",
     changelogs: "<@&1308872618186772480>",
     acknowledgements: "",
     status: {
