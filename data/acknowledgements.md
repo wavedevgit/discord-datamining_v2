@@ -1572,13 +1572,13 @@
 - signalsmith-stretch
 - reverb-example-code
 - onnxruntime
-- Cherry Bomb One
-- Chicle
-- Museo Moderno
-- Neo Castel
-- Pixelify Sans
-- Sinistre
-- Zilla Slab
+- Sakura
+- Jellybean
+- Modern
+- Medieval
+- 8Bit
+- Vampyre
+- Tempo
 - Electron
 - NAN
 - Squirrel
