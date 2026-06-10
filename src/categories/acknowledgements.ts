@@ -30,7 +30,7 @@ function diff(a, b) {
     // updated
     if (linesA[l] !== linesB[l] && linesB[l] !== undefined) {
       if (result.length === 0) result += "```diff\n";
-      result += `# Updated\n- ${linesA[l].replace("-","")}\n+ ${linesB[l].replace("-","")}\n\nn`;
+      result += `# Updated\n- ${linesA[l].replace("-","")}\n+ ${linesB[l].replace("-","")}\n\n`;
     }
     // removed
     if (linesA[l] !== linesB[l] && linesB[l] === undefined) {
