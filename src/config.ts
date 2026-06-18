@@ -1,60 +1,64 @@
-import { Config } from "./types.js";
+import { Config } from './types.js';
 
 const configExperimentCentral: Config = {
-  webhooks: {
-    collectibles: {
-      categories: process.env.CATEGORIES,
-      profileEffects: process.env.PROFILEEFFECTS,
-      assets: process.env.ASSETS,
+    webhooks: {
+        collectibles: {
+            categories: process.env.CATEGORIES,
+            profileEffects: process.env.PROFILEEFFECTS,
+            assets: process.env.ASSETS,
+        },
+        changelogs: process.env.CHANGELOGS,
+        activities: process.env.ACTIVITIES,
+        acknowledgements: process.env.ACKNOWLEDGEMENTSWC,
+        servers: process.env.SERVERS,
+        robots: process.env.ROBOTS,
+        status: {
+            token: process.env.TOKEN,
+        },
     },
-    changelogs: process.env.CHANGELOGS,
-    activities: process.env.ACTIVITIES,
-    acknowledgements: process.env.ACKNOWLEDGEMENTSWC,
-    robots: process.env.ROBOTS,
-    status: {
-      token: process.env.TOKEN,
+    pings: {
+        collectibles: {
+            categories: '<@&1234231619758587986>',
+            profileEffects: '<@&1234231661550370928>',
+            assets: '<@&1234231704109977710>',
+        },
+        servers: '',
+        activities: '<@&1262808781608452107>',
+        robots: '<@&1419756435302125648>',
+        changelogs: '<@&1308872618186772480>',
+        acknowledgements: '',
+        status: {
+            token: '<@1083437693347827764>',
+        },
     },
-  },
-  pings: {
-    collectibles: {
-      categories: "<@&1234231619758587986>",
-      profileEffects: "<@&1234231661550370928>",
-      assets: "<@&1234231704109977710>",
-    },
-    activities: "<@&1262808781608452107>",
-    robots: "<@&1419756435302125648>",
-    changelogs: "<@&1308872618186772480>",
-    acknowledgements: "",
-    status: {
-      token: "<@1083437693347827764>",
-    },
-  },
 };
 const configWumpusUniv: Config = {
-  webhooks: {
-    collectibles: {
-      categories: process.env.EXPCENTRALWEBHOOK,
-      profileEffects: process.env.EXPCENTRALWEBHOOK,
+    webhooks: {
+        collectibles: {
+            categories: process.env.EXPCENTRALWEBHOOK,
+            profileEffects: process.env.EXPCENTRALWEBHOOK,
+        },
+        robots: process.env.ACKNOWLEDGEMENTS,
+        acknowledgements: process.env.ACKNOWLEDGEMENTS,
+        servers: process.env.SERVERSWC,
+        activities: process.env.ACTIVIESWC,
     },
-    robots: process.env.ACKNOWLEDGEMENTS,
-    acknowledgements: process.env.ACKNOWLEDGEMENTS,
-    activities: process.env.ACTIVIESWC,
-  },
-  pings: {
-    collectibles: {
-      categories: "<@&1309873655085400074>",
-      profileEffects: "<@&1309873655085400074>",
+    pings: {
+        collectibles: {
+            categories: '<@&1309873655085400074>',
+            profileEffects: '<@&1309873655085400074>',
+        },
+        servers: '',
+        robots: '',
+        acknowledgements: '<@1395435418798788618>',
+        activities: '<@&1309874632127680582>',
     },
-    robots: "",
-    acknowledgements: "<@1395435418798788618>",
-    activities: "<@&1309874632127680582>",
-  },
 };
 const headers = {
-  "User-Agent":
-    "Mozilla/5.0 (X11; Linux x86_64; rv:2.2a1pre) Gecko/20110324 Firefox/4.2a1pre",
-  Authorization: process.env.ALT_TOKEN,
+    'User-Agent':
+        'Mozilla/5.0 (X11; Linux x86_64; rv:2.2a1pre) Gecko/20110324 Firefox/4.2a1pre',
+    Authorization: process.env.ALT_TOKEN,
 };
-const ApiBaseUrl = "https://canary.discord.com/api/v10/";
+const ApiBaseUrl = 'https://canary.discord.com/api/v10/';
 
 export { configExperimentCentral, configWumpusUniv, headers, ApiBaseUrl };

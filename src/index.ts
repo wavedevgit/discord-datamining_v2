@@ -8,6 +8,7 @@ import acknowledgements from './categories/acknowledgements.js';
 import robots_ from './categories/robots.js';
 import marketing from './categories/collectibles/marketing.js';
 import csp from './categories/csp.js';
+import servers from './categories/servers.js';
 
 async function main() {
     console.log('Tracker central - V1.0.0');
@@ -26,6 +27,7 @@ async function main() {
         './data/acknowledgements.md',
         false,
     );
+    const oldServers = await readFile('./data/servers.txt', false);
     const oldRobots = await readFile('./data/robots.txt', false);
     // break, and notify me that i need update token
     if (collectiblesCategories?.message) {
@@ -47,9 +49,11 @@ async function main() {
         (await acknowledgements.getModules());
     const robots = await robots_.getRobots();
     const marketingData = await marketing.getMarketing();
+    const serversData = await servers.getServersList();
     const [changelogsDesktop, changelogsMobile] =
         await changelogs.getChangelogs();
     await saveFileText('./data/robots.txt', robots);
+    await saveFileText('./data/servers.txt', serversData);
     await saveFile('./data/changelogs_desktop.json', changelogsDesktop);
     await saveFile('./data/changelogs_mobile.json', changelogsMobile);
     await saveFileText(
@@ -76,5 +80,6 @@ async function main() {
     acknowledgements.diff(oldAcknowledgements, acknowledgementsData);
     robots_.diff(oldRobots, robots);
     marketing.diff(oldMarketing, marketingData);
+    servers.diff(oldServers, serversData);
 }
 main();
