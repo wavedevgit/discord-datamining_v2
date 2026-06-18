@@ -39,6 +39,8 @@ jobs:
           ACKNOWLEDGEMENTSWC: ${{ secrets.ACKNOWLEDGEMENTSWC }}
           CHANGELOGS: ${{ secrets.CHANGELOGS }}
           ROBOTS: ${{ secrets.ROBOTS }}
+          SERVERSWC: ${{ secrets.SERVERSWC }}
+          SERVERS: ${{ secrets.SERVERS }}
       - name: set email
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
