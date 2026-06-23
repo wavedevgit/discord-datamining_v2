@@ -90,20 +90,50 @@ function diffSnapshots(oldSnap: string, newSnap: string) {
     return out;
 }
 
+function chunkString(str: string, maxLength = 2000): string[] {
+    const chunks: string[] = [];
+
+    let remaining = str;
+    while (remaining.length > maxLength) {
+        let splitAt = remaining.lastIndexOf('\n', maxLength);
+
+        if (splitAt <= 0) {
+            splitAt = maxLength;
+        }
+
+        chunks.push(remaining.slice(0, splitAt));
+        remaining = remaining.slice(splitAt).trimStart();
+    }
+
+    if (remaining.length > 0) {
+        chunks.push(remaining);
+    }
+
+    return chunks;
+}
+
 /**
  * compare snapshots and send webhook updates
  */
-function diff(oldSnap: string, newSnap: string) {
+async function diff(oldSnap: string, newSnap: string) {
     const result = diffSnapshots(oldSnap, newSnap);
     if (!result) return;
 
-    sendToWebhook(configExperimentCentral.webhooks.servers, {
-        content: configExperimentCentral.pings.servers + '\n' + result,
-    });
+    const serverContent = configExperimentCentral.pings.servers + '\n' + result;
 
-    sendToWebhook(configWumpusUniv.webhooks.servers, {
-        content: configWumpusUniv.pings.servers + '\n' + result,
-    });
+    const universityContent = configWumpusUniv.pings.servers + '\n' + result;
+
+    for (const chunk of chunkString(serverContent)) {
+        await sendToWebhook(configExperimentCentral.webhooks.servers, {
+            content: chunk,
+        });
+    }
+
+    for (const chunk of chunkString(universityContent)) {
+        await sendToWebhook(configWumpusUniv.webhooks.servers, {
+            content: chunk,
+        });
+    }
 }
 
 export default { diff, getServersList };
