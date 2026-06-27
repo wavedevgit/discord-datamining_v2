@@ -30,9 +30,12 @@ interface ConfigCategoriesObject {
     };
     changelogs?: string;
     activities?: string;
+    domains: string;
     servers: string;
     robots: string;
     acknowledgements: string;
+    powerups: string;
+    skus: string;
     status?: {
         token: string;
     };

@@ -9,7 +9,10 @@ const configExperimentCentral: Config = {
         },
         changelogs: process.env.CHANGELOGS,
         activities: process.env.ACTIVITIES,
+        domains: process.env.DOMAINS,
         acknowledgements: process.env.ACKNOWLEDGEMENTSWC,
+        powerups: process.env.POWERUPS,
+        skus: process.env.SKUS,
         servers: process.env.SERVERS,
         robots: process.env.ROBOTS,
         status: {
@@ -23,9 +26,12 @@ const configExperimentCentral: Config = {
             assets: '<@&1234231704109977710>',
         },
         servers: '',
+        powerups: '<@&1419756435302125648>',
+        skus: '<@&1419756435302125648>',
         activities: '<@&1262808781608452107>',
         robots: '<@&1419756435302125648>',
         changelogs: '<@&1308872618186772480>',
+        domains: '<@1519033225853276231>',
         acknowledgements: '',
         status: {
             token: '<@1083437693347827764>',
@@ -40,8 +46,11 @@ const configWumpusUniv: Config = {
         },
         robots: process.env.ACKNOWLEDGEMENTS,
         acknowledgements: process.env.ACKNOWLEDGEMENTS,
+        powerups: process.env.POWERUPSWC,
+        skus: process.env.POWERUPSWC,
         servers: process.env.SERVERSWC,
         activities: process.env.ACTIVIESWC,
+        domains: process.env.POWERUPSWC,
     },
     pings: {
         collectibles: {
@@ -49,7 +58,10 @@ const configWumpusUniv: Config = {
             profileEffects: '<@&1309873655085400074>',
         },
         servers: '',
+        powerups: '',
+        skus: '',
         robots: '',
+        domains: '',
         acknowledgements: '<@1395435418798788618>',
         activities: '<@&1309874632127680582>',
     },
@@ -61,4 +73,6 @@ const headers = {
 };
 const ApiBaseUrl = 'https://canary.discord.com/api/v10/';
 
-export { configExperimentCentral, configWumpusUniv, headers, ApiBaseUrl };
+const SECURITYTRIALS_API_KEY = process.env.SECURITYTRIALS ?? '';
+
+export { configExperimentCentral, configWumpusUniv, headers, ApiBaseUrl, SECURITYTRIALS_API_KEY };
