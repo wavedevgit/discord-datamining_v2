@@ -11,7 +11,7 @@ async function getPowerups() {
     });
     const text = await res.text();
     const powerups = [];
-    const regex = /var\d+\['(\w+)'\]\s*=\s*'(\d+)'/g;
+    const regex = /var3\['(\w+)'\]\s*=\s*var2;\s*var2\s*=\s*'(\d+)';/g;
     let match;
     while ((match = regex.exec(text)) !== null) {
         powerups.push({
