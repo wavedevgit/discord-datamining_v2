@@ -1,53 +1,52 @@
 name: Mine data
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
-  workflow_dispatch:
+    schedule:
+        - cron: '*/5 * * * *'
+    workflow_dispatch:
 
 jobs:
+    build:
+        permissions:
+            contents: write
+            packages: write
+            pull-requests: write
+            issues: write
+            statuses: write
+            deployments: write
+        runs-on: ubuntu-latest
 
-  build:
-    permissions:
-      contents: write
-      packages: write
-      pull-requests: write
-      issues: write
-      statuses: write
-      deployments: write
-    runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '20.x'
+            - run: npm i
+            - name: Run script
+              run: |
+                  npm run build && npm run start
+              env:
+                  ALT_TOKEN: ${{ secrets.ALT_TOKEN }}
+                  CATEGORIES: ${{ secrets.CATEGORIES }}
+                  PROFILEEFFECTS: ${{ secrets.PROFILEEFFECTS }}
+                  ASSETS: ${{ secrets.ASSETS }}
+                  TOKEN: ${{ secrets.TOKEN }}
+                  ACTIVITIES: ${{ secrets.ACTIVITIES }}
+                  EXPCENTRALWEBHOOK: ${{ secrets.EXPCENTRALWEBHOOK }}
+                  ACTIVIESWC: ${{ secrets.ACTIVIESWC }}
+                  ACKNOWLEDGEMENTSWC: ${{ secrets.ACKNOWLEDGEMENTSWC }}
+                  CHANGELOGS: ${{ secrets.CHANGELOGS }}
+                  ROBOTS: ${{ secrets.ROBOTS }}
+                  SERVERSWC: ${{ secrets.SERVERSWC }}
+                  SERVERS: ${{ secrets.SERVERS }}
+            - name: set email
+              run: |
+                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
 
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.x'
-      - run: npm i 
-      - name: Run script
-        run: |
-          npm run build && npm run start
-        env:
-          ALT_TOKEN: ${{ secrets.ALT_TOKEN }}
-          CATEGORIES: ${{ secrets.CATEGORIES }}
-          PROFILEEFFECTS: ${{ secrets.PROFILEEFFECTS }}
-          ASSETS: ${{ secrets.ASSETS }}
-          TOKEN: ${{ secrets.TOKEN }}
-          ACTIVITIES: ${{ secrets.ACTIVITIES }}
-          EXPCENTRALWEBHOOK: ${{ secrets.EXPCENTRALWEBHOOK }}
-          ACTIVIESWC: ${{ secrets.ACTIVIESWC }}
-          ACKNOWLEDGEMENTSWC: ${{ secrets.ACKNOWLEDGEMENTSWC }}
-          CHANGELOGS: ${{ secrets.CHANGELOGS }}
-          ROBOTS: ${{ secrets.ROBOTS }}
-          SERVERSWC: ${{ secrets.SERVERSWC }}
-          SERVERS: ${{ secrets.SERVERS }}
-      - name: set email
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
-      - name: commit
-        run: |
-          git add --all >> /dev/null
-          git commit -am "✅ data updated!" >> /dev/null  
-          git push >> /dev/null
+            - name: commit
+              run: |
+                  git add --all >> /dev/null
+                  git commit -am "✅ data updated!" >> /dev/null  
+                  git push >> /dev/null
