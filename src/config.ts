@@ -11,8 +11,8 @@ const configExperimentCentral: Config = {
         activities: process.env.ACTIVITIES,
         domains: process.env.DOMAINS,
         acknowledgements: process.env.ACKNOWLEDGEMENTSWC,
-        powerups: process.env.POWERUPS,
-        skus: process.env.SKUS,
+        powerups: process.env.DOMAINS,
+        skus: process.env.DOMAINS,
         servers: process.env.SERVERS,
         robots: process.env.ROBOTS,
         status: {
