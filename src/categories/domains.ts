@@ -30,6 +30,25 @@ const DOMAINS = [
     'discordvibeapps.com',
 ];
 
+function sortDomains(domains: Iterable<string>): string[] {
+    return [...new Set(domains)].sort((a, b) => {
+        const aParts = a.split('.').reverse();
+        const bParts = b.split('.').reverse();
+
+        const len = Math.max(aParts.length, bParts.length);
+
+        for (let i = 0; i < len; i++) {
+            const aPart = aParts[i] ?? '';
+            const bPart = bParts[i] ?? '';
+
+            const cmp = aPart.localeCompare(bPart);
+            if (cmp !== 0) return cmp;
+        }
+
+        return a.localeCompare(b);
+    });
+}
+
 async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
     const subs = new Set<string>();
 
@@ -98,18 +117,20 @@ async function getDomains(): Promise<string[]> {
                 findSubdomainsCrtSh(domain),
                 findSubdomainsSecurityTrails(domain),
             ]);
-            return [domain, ...crtSh, ...st];
+
+            return sortDomains([domain, ...crtSh, ...st]);
         }),
     );
 
     const all = new Set<string>();
+
     for (const subs of results) {
         for (const sub of subs) {
             all.add(sub);
         }
     }
 
-    return [...all].sort();
+    return sortDomains(all);
 }
 
 async function diff(oldData: string[], newData: string[]) {
