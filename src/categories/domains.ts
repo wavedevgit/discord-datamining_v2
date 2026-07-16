@@ -70,7 +70,7 @@ async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
             const names = entry.name_value.split('\n');
             for (const name of names) {
                 const cleaned = name.trim().toLowerCase();
-                if ((cleaned.endsWith(`.${domain}`) || cleaned === domain) && !/[a-z]+\-[a-z]+\d+\./.test(cleaned)) {
+                if ((cleaned.endsWith(`.${domain}`) || cleaned === domain) && !cleaned.startsWith('*') && !/[a-z]+\-[a-z]+\d+\./.test(cleaned)) {
                     subs.add(cleaned);
                 }
             }
