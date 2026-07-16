@@ -89,17 +89,17 @@ async function main() {
     );
 
     // start diff action
-    changelogs.diff(oldChangeLogsDesktop, changelogsDesktop, 'Desktop');
-    changelogs.diff(oldChangeLogsMobile, changelogsMobile, 'Mobile');
-    csp.diff(oldCSP, cspData);
-    categories.diff(oldCategories, collectiblesCategories);
-    acknowledgements.diff(oldAcknowledgements, acknowledgementsData);
-    robots_.diff(oldRobots, robots);
-    marketing.diff(oldMarketing, marketingData);
-    servers.diff(oldServers, serversData);
-    domains.diff(oldDomains, domainsData);
-    powerups.diff(oldPowerups, powerupsData);
-    skus.diff(oldSkus, skusData);
-    skus.diffSkuApps(oldSkuApps, skuAppsData);
+    await changelogs.diff(oldChangeLogsDesktop, changelogsDesktop, 'Desktop');
+    await changelogs.diff(oldChangeLogsMobile, changelogsMobile, 'Mobile');
+    await csp.diff(oldCSP, cspData);
+    await categories.diff(oldCategories, collectiblesCategories);
+    await acknowledgements.diff(oldAcknowledgements, acknowledgementsData);
+    await robots_.diff(oldRobots, robots);
+    await marketing.diff(oldMarketing, marketingData);
+    await servers.diff(oldServers, serversData);
+    await domains.diff(oldDomains, domainsData);
+    await powerups.diff(oldPowerups, powerupsData);
+    await skus.diff(oldSkus, skusData);
+    await skus.diffSkuApps(oldSkuApps, skuAppsData);
 }
-main();
+main().catch(console.error);

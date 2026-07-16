@@ -70,7 +70,7 @@ async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
             const names = entry.name_value.split('\n');
             for (const name of names) {
                 const cleaned = name.trim().toLowerCase();
-                if (cleaned.endsWith(`.${domain}`) || cleaned === domain || !cleaned.match(/[a-z]+\-[a-z]+\d+\./)) {
+                if ((cleaned.endsWith(`.${domain}`) || cleaned === domain) && !/[a-z]+\-[a-z]+\d+\./.test(cleaned)) {
                     subs.add(cleaned);
                 }
             }
@@ -137,8 +137,8 @@ async function diff(oldData: string[], newData: string[]) {
     const oldSet = new Set(oldData);
     const newSet = new Set(newData);
 
-    const added = newData.filter((v) => !oldSet.has(v));
-    const removed = oldData.filter((v) => !newSet.has(v));
+    const added = newData.filter((v) => !oldSet.has(v)).sort();
+    const removed = oldData.filter((v) => !newSet.has(v)).sort();
 
     if (!added.length && !removed.length) return;
 
@@ -155,20 +155,27 @@ async function diff(oldData: string[], newData: string[]) {
     }
     result += '```';
 
-    const centralContent =
-        configExperimentCentral.pings.domains + '\n' + result;
-    const uniContent = configWumpusUniv.pings.domains + '\n' + result;
-
-    for (const chunk of chunkString(centralContent)) {
-        await sendToWebhook(configExperimentCentral.webhooks.domains, {
-            content: chunk,
-        });
+    try {
+        const centralContent =
+            configExperimentCentral.pings.domains + '\n' + result;
+        for (const chunk of chunkString(centralContent)) {
+            await sendToWebhook(configExperimentCentral.webhooks.domains, {
+                content: chunk,
+            });
+        }
+    } catch (e) {
+        console.error('Failed to send central domain diff:', e);
     }
 
-    for (const chunk of chunkString(uniContent)) {
-        await sendToWebhook(configWumpusUniv.webhooks.domains, {
-            content: chunk,
-        });
+    try {
+        const uniContent = configWumpusUniv.pings.domains + '\n' + result;
+        for (const chunk of chunkString(uniContent)) {
+            await sendToWebhook(configWumpusUniv.webhooks.domains, {
+                content: chunk,
+            });
+        }
+    } catch (e) {
+        console.error('Failed to send wumpus domain diff:', e);
     }
 }
 
