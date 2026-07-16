@@ -37,6 +37,10 @@ async function main() {
     const oldSkus = await readFile('./data/skus.json');
     const oldSkuApps = await readFile('./data/skus_apps_listings.json');
     const skuAppIds = await readFile('./data/skus_apps.json');
+    let oldServerSitemaps: Record<string, { urls: string[] }> = {};
+    try {
+        oldServerSitemaps = await readFile('./data/servers_sitemaps.json');
+    } catch {}
     // break, and notify me that i need update token
     if (collectiblesCategories?.message) {
         const res = await await sendToWebhook(
@@ -57,7 +61,8 @@ async function main() {
         (await acknowledgements.getModules());
     const robots = await robots_.getRobots();
     const marketingData = await marketing.getMarketing();
-    const serversData = await servers.getServersList();
+    const { data: serversData, cache: serverSitemaps } =
+        await servers.getServersList(oldServerSitemaps);
     const domainsData = await domains.getDomains();
     const powerupsData = await powerups.getPowerups();
     const skusData = await skus.getSkus(oldSkus);
@@ -66,6 +71,7 @@ async function main() {
         await changelogs.getChangelogs();
     await saveFileText('./data/robots.txt', robots);
     await saveFileText('./data/servers.txt', serversData);
+    await saveFile('./data/servers_sitemaps.json', serverSitemaps);
     await saveFile('./data/domains.json', domainsData);
     await saveFile('./data/powerups.json', powerupsData);
     await saveFile('./data/skus.json', skusData);

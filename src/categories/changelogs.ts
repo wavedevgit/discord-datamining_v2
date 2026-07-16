@@ -65,17 +65,20 @@ function generateEmbed(changelog) {
         ],
     };
 }
-function diff(a, b, type) {
+async function diff(a, b, type) {
     let diff = { added: [], removed: [] };
     for (let changelog of a) {
-        // removed
-        if (b.filter((changelog_) => changelog_.changelog_id !== changelog.changelog_id)) diff.removed.push(changelog);
+        if (!b.some((changelog_) => changelog_.changelog_id === changelog.changelog_id))
+            diff.removed.push(changelog);
     }
     for (let changelog of b) {
-        // added
-        if (a.filter((changelog_) => changelog_.changelog_id !== changelog.changelog_id)) diff.added.push(changelog);
+        if (!a.some((changelog_) => changelog_.changelog_id === changelog.changelog_id))
+            diff.added.push(changelog);
     }
     let result = [];
+
+    diff.removed.sort((x, y) => x.changelog_id - y.changelog_id);
+    diff.added.sort((x, y) => x.changelog_id - y.changelog_id);
 
     for (let changelog of diff.removed) {
         result.push({
@@ -91,10 +94,15 @@ function diff(a, b, type) {
             ...generateEmbed(changelog),
         });
     }
-    if (result.length)
-        sendToWebhook(configExperimentCentral.webhooks.changelogs, {
+    if (!result.length) return;
+
+    try {
+        await sendToWebhook(configExperimentCentral.webhooks.changelogs, {
             content: configExperimentCentral.pings.changelogs,
             embeds: result,
         });
+    } catch (e) {
+        console.error('Failed to send changelog diff:', e);
+    }
 }
 export default { getChangelogs, diff };

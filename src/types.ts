@@ -30,6 +30,7 @@ interface ConfigCategoriesObject {
     };
     changelogs?: string;
     activities?: string;
+    csp?: string;
     domains: string;
     servers: string;
     robots: string;

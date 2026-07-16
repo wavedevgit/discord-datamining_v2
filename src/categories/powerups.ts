@@ -30,7 +30,7 @@ function getFieldsForPowerup(powerup) {
     ];
 }
 
-function diff(a, b) {
+async function diff(a, b) {
     const result = [];
     const diff = { removed: [], added: [] };
 
@@ -45,6 +45,9 @@ function diff(a, b) {
             diff.added.push(powerup);
         }
     }
+
+    diff.removed.sort((x, y) => x.name.localeCompare(y.name));
+    diff.added.sort((x, y) => x.name.localeCompare(y.name));
 
     for (let powerup of diff.removed) {
         result.push({
@@ -62,15 +65,24 @@ function diff(a, b) {
         });
     }
 
-    if (result.length) {
-        sendToWebhook(configExperimentCentral.webhooks.powerups, {
+    if (!result.length) return;
+
+    try {
+        await sendToWebhook(configExperimentCentral.webhooks.powerups, {
             content: configExperimentCentral.pings.powerups,
             embeds: result,
         });
-        sendToWebhook(configWumpusUniv.webhooks.powerups, {
+    } catch (e) {
+        console.error('Failed to send central powerup diff:', e);
+    }
+
+    try {
+        await sendToWebhook(configWumpusUniv.webhooks.powerups, {
             content: configWumpusUniv.pings.powerups,
             embeds: result,
         });
+    } catch (e) {
+        console.error('Failed to send wumpus powerup diff:', e);
     }
 }
 

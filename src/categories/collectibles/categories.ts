@@ -51,14 +51,11 @@ function getFieldsForCategory(category) {
     ];
 }
 
-/** differ for our webhook, each module has to have a differ that generates an embed. */
-function diff(a, b) {
+async function diff(a, b) {
     const result = [];
     const diff = { removed: [], added: [] };
 
-    /** a is before */
     for (let category in a) {
-        /** removed type */
         if (
             !b.map((category) => category.sku_id).includes(a[category]?.sku_id)
         ) {
@@ -66,15 +63,16 @@ function diff(a, b) {
         }
     }
 
-    /** b is after */
     for (let category in b) {
-        /** added type */
         if (
             !a.map((category) => category.sku_id).includes(b[category]?.sku_id)
         ) {
             diff.added.push(b[category]);
         }
     }
+
+    diff.removed.sort((x, y) => x.name.localeCompare(y.name));
+    diff.added.sort((x, y) => x.name.localeCompare(y.name));
 
     for (let category of diff.removed) {
         result.push({
@@ -96,18 +94,27 @@ function diff(a, b) {
         });
     }
 
-    if (result.length) {
-        sendToWebhook(
+    if (!result.length) return;
+
+    try {
+        await sendToWebhook(
             configExperimentCentral.webhooks.collectibles.categories,
             {
                 content: configExperimentCentral.pings.collectibles.categories,
                 embeds: result,
             },
         );
-        sendToWebhook(configWumpusUniv.webhooks.collectibles.categories, {
+    } catch (e) {
+        console.error('Failed to send central categories diff:', e);
+    }
+
+    try {
+        await sendToWebhook(configWumpusUniv.webhooks.collectibles.categories, {
             content: configWumpusUniv.pings.collectibles.categories,
             embeds: result,
         });
+    } catch (e) {
+        console.error('Failed to send wumpus categories diff:', e);
     }
 }
 

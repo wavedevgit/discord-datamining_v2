@@ -3,58 +3,67 @@ import { sendToWebhook } from '../utils.js';
 
 const SITEMAP_INDEX = 'https://discord.com/servers/servers-sitemap-index.xml';
 
-/**
- * fetch raw xml
- */
+const MAX_DIFF_ENTRIES = 30;
+
 async function fetchText(url: string) {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Failed fetch ${url}: ${res.status}`);
     return (await res.text()).trim();
 }
 
-/**
- * extract <loc> values from sitemap xml
- */
 function extractLocs(xml: string): string[] {
     const matches = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)];
     return matches.map((m) => m[1]);
 }
 
-/**
- * get child sitemap urls
- */
 async function getChildSitemaps(): Promise<string[]> {
     const xml = await fetchText(SITEMAP_INDEX);
     return extractLocs(xml);
 }
 
-/**
- * build newline-separated server list string
- */
-async function getServersList(): Promise<string> {
+export interface SitemapCache {
+    [url: string]: { urls: string[] };
+}
+
+async function getServersList(
+    oldCache?: SitemapCache,
+): Promise<{ data: string; cache: SitemapCache }> {
     const children = await getChildSitemaps();
+    const oldChildren = oldCache ?? {};
 
-    const xmls = await Promise.all(children.map(fetchText));
-
-    const allLocs = xmls.flatMap(extractLocs);
-
-    // dedupe manually (since you hate Set now)
+    const cache: SitemapCache = {};
     const seen = new Set<string>();
-    const lines: string[] = [];
 
-    for (const loc of allLocs) {
-        if (!seen.has(loc)) {
-            seen.add(loc);
-            lines.push(loc);
+    const toFetch: string[] = [];
+
+    for (const url of children) {
+        if (oldChildren[url]) {
+            // cache hit — reuse
+            cache[url] = oldChildren[url];
+            for (const loc of oldChildren[url].urls) {
+                seen.add(loc);
+            }
+        } else {
+            toFetch.push(url);
         }
     }
 
-    return lines.join('\n');
+    // fetch only new/changed sitemaps
+    const xmls = await Promise.all(toFetch.map(fetchText));
+
+    for (let i = 0; i < toFetch.length; i++) {
+        const url = toFetch[i];
+        const locs = extractLocs(xmls[i]);
+        cache[url] = { urls: locs };
+        for (const loc of locs) {
+            seen.add(loc);
+        }
+    }
+
+    const lines = [...seen].sort();
+    return { data: lines.join('\n'), cache };
 }
 
-/**
- * diff two newline-separated snapshots
- */
 function diffSnapshots(oldSnap: string, newSnap: string) {
     const oldSet = new Set(oldSnap.split('\n').filter(Boolean));
     const newSet = new Set(newSnap.split('\n').filter(Boolean));
@@ -72,17 +81,26 @@ function diffSnapshots(oldSnap: string, newSnap: string) {
 
     if (!added.length && !removed.length) return '';
 
+    added.sort();
+    removed.sort();
+
     let out = '```diff\n';
 
     if (added.length) {
-        out += '# Added\n';
-        for (const a of added) out += `+ ${a}\n`;
+        out += `# Added (${added.length})\n`;
+        const display = added.slice(0, MAX_DIFF_ENTRIES);
+        for (const a of display) out += `+ ${a}\n`;
+        const remaining = added.length - display.length;
+        if (remaining > 0) out += `… and ${remaining} more\n`;
         out += '\n';
     }
 
     if (removed.length) {
-        out += '# Removed\n';
-        for (const r of removed) out += `- ${r}\n`;
+        out += `# Removed (${removed.length})\n`;
+        const display = removed.slice(0, MAX_DIFF_ENTRIES);
+        for (const r of display) out += `- ${r}\n`;
+        const remaining = removed.length - display.length;
+        if (remaining > 0) out += `… and ${remaining} more\n`;
         out += '\n';
     }
 
@@ -92,47 +110,43 @@ function diffSnapshots(oldSnap: string, newSnap: string) {
 
 function chunkString(str: string, maxLength = 2000): string[] {
     const chunks: string[] = [];
-
     let remaining = str;
     while (remaining.length > maxLength) {
         let splitAt = remaining.lastIndexOf('\n', maxLength);
-
-        if (splitAt <= 0) {
-            splitAt = maxLength;
-        }
-
+        if (splitAt <= 0) splitAt = maxLength;
         chunks.push(remaining.slice(0, splitAt));
         remaining = remaining.slice(splitAt).trimStart();
     }
-
-    if (remaining.length > 0) {
-        chunks.push(remaining);
-    }
-
+    if (remaining.length > 0) chunks.push(remaining);
     return chunks;
 }
 
-/**
- * compare snapshots and send webhook updates
- */
 async function diff(oldSnap: string, newSnap: string) {
     const result = diffSnapshots(oldSnap, newSnap);
     if (!result) return;
 
-    const serverContent = configExperimentCentral.pings.servers + '\n' + result;
-
-    const universityContent = configWumpusUniv.pings.servers + '\n' + result;
-
-    for (const chunk of chunkString(serverContent)) {
-        await sendToWebhook(configExperimentCentral.webhooks.servers, {
-            content: chunk,
-        });
+    try {
+        const serverContent =
+            configExperimentCentral.pings.servers + '\n' + result;
+        for (const chunk of chunkString(serverContent)) {
+            await sendToWebhook(configExperimentCentral.webhooks.servers, {
+                content: chunk,
+            });
+        }
+    } catch (e) {
+        console.error('Failed to send central server diff:', e);
     }
 
-    for (const chunk of chunkString(universityContent)) {
-        await sendToWebhook(configWumpusUniv.webhooks.servers, {
-            content: chunk,
-        });
+    try {
+        const universityContent =
+            configWumpusUniv.pings.servers + '\n' + result;
+        for (const chunk of chunkString(universityContent)) {
+            await sendToWebhook(configWumpusUniv.webhooks.servers, {
+                content: chunk,
+            });
+        }
+    } catch (e) {
+        console.error('Failed to send wumpus server diff:', e);
     }
 }
 

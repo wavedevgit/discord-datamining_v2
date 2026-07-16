@@ -9,10 +9,9 @@ async function getCSP() {
   });
   return (response.headers.get("content-security-policy") ?? "")
     .replace(/'nonce-[^']+'/g, "'nonce-{NONCE}'");
-
 }
 
-function diff(oldContent: string, newContent: string) {
+async function diff(oldContent: string, newContent: string) {
   const oldTokens = oldContent
     .trim()
     .replace(/\s+/g, " ")
@@ -27,17 +26,15 @@ function diff(oldContent: string, newContent: string) {
     token =>
       !newTokens.includes(token) &&
       !token.startsWith("'nonce-")
-  );
+  ).sort();
 
   const added = newTokens.filter(
     token =>
       !oldTokens.includes(token) &&
       !token.startsWith("'nonce-")
-  );
+  ).sort();
 
-  if (!removed.length && !added.length) {
-    return;
-  }
+  if (!removed.length && !added.length) return;
 
   let result = "```diff\n";
 
@@ -51,12 +48,21 @@ function diff(oldContent: string, newContent: string) {
 
   result += "```";
 
-  sendToWebhook(configExperimentCentral.webhooks.robots, {
-    content: configExperimentCentral.pings.robots + "\n" + result,
-  });
+  try {
+    await sendToWebhook(configExperimentCentral.webhooks.csp, {
+      content: configExperimentCentral.pings.csp + "\n" + result,
+    });
+  } catch (e) {
+    console.error("Failed to send central csp diff:", e);
+  }
 
-  sendToWebhook(configWumpusUniv.webhooks.robots, {
-    content: configWumpusUniv.pings.robots + "\n" + result,
-  });
+  try {
+    await sendToWebhook(configWumpusUniv.webhooks.csp, {
+      content: configWumpusUniv.pings.csp + "\n" + result,
+    });
+  } catch (e) {
+    console.error("Failed to send wumpus csp diff:", e);
+  }
 }
+
 export default { getCSP, diff };
