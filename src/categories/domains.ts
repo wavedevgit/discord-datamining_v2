@@ -137,8 +137,8 @@ async function diff(oldData: string[], newData: string[]) {
     const oldSet = new Set(oldData);
     const newSet = new Set(newData);
 
-    const added = newData.filter((v) => !oldSet.has(v)).sort();
-    const removed = oldData.filter((v) => !newSet.has(v)).sort();
+    const added = sortDomains(newData.filter((v) => !oldSet.has(v)));
+    const removed = sortDomains(oldData.filter((v) => !newSet.has(v)));
 
     if (!added.length && !removed.length) return;
 
