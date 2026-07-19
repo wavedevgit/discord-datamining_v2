@@ -103,7 +103,7 @@ async function main() {
     await robots_.diff(oldRobots, robots);
     await marketing.diff(oldMarketing, marketingData);
     await servers.diff(oldServers, serversData);
-    await domains.diff(oldDomains, domainsData);
+    //await domains.diff(oldDomains, domainsData);
     await powerups.diff(oldPowerups, powerupsData);
     await skus.diff(oldSkus, skusData);
     await skus.diffSkuApps(oldSkuApps, skuAppsData);
