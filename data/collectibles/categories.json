@@ -1,5 +1,446 @@
 [
     {
+        "sku_id": "1527810876411875478",
+        "name": "Sunkissed",
+        "summary": " ",
+        "store_listing_id": "1527810876411875478",
+        "styles": {
+            "background_colors": [
+                11765424,
+                9737168
+            ],
+            "button_colors": [
+                5793266,
+                5793266
+            ],
+            "confetti_colors": [
+                43772,
+                15774258,
+                16414587,
+                3000177,
+                9739511
+            ]
+        },
+        "hero_ranking": [
+            "1527812992429723759",
+            "1527811435311140984",
+            "1527811929081511976",
+            "1527812336750952489"
+        ],
+        "products": [
+            {
+                "sku_id": "1527812992429723759",
+                "name": "Summermaxxing Bundle",
+                "summary": "{joinedItems}",
+                "store_listing_id": "1527812992429723759",
+                "styles": {
+                    "background_colors": [
+                        11765424,
+                        9737168
+                    ],
+                    "button_colors": [
+                        5793266,
+                        5793266
+                    ],
+                    "confetti_colors": [
+                        43772,
+                        15774258,
+                        16414587,
+                        3000177,
+                        9739511
+                    ]
+                },
+                "prices": {
+                    "0": {
+                        "country_prices": {
+                            "country_code": "US",
+                            "prices": [
+                                {
+                                    "amount": 1599,
+                                    "currency": "usd",
+                                    "exponent": 2
+                                }
+                            ]
+                        }
+                    },
+                    "4": {
+                        "country_prices": {
+                            "country_code": "US",
+                            "prices": [
+                                {
+                                    "amount": 1299,
+                                    "currency": "usd",
+                                    "exponent": 2
+                                }
+                            ]
+                        }
+                    }
+                },
+                "preview_assets": {
+                    "fg_static": "https://cdn.discordapp.com/media/v1/collectibles-shop/bundle-fg-static/1527812992429723759",
+                    "bg_static": "https://cdn.discordapp.com/media/v1/collectibles-shop/bundle-bg-static/1527812992429723759"
+                },
+                "items": [
+                    {
+                        "type": 0,
+                        "sku_id": "1527811435311140984",
+                        "asset": "a_fbef5484c1f491c3ac897e53a5478158",
+                        "label": "Blue and pink waves pulse in a heart shape, then a dolphin leaps out in an arc beneath a rainbow"
+                    },
+                    {
+                        "type": 2,
+                        "sku_id": "1527811929081511976",
+                        "asset": "nameplates/all_summer/1527811929081511976/",
+                        "label": "Soft waves wash over a sandy shore carrying a yellow hibiscus flower",
+                        "palette": "berry"
+                    },
+                    {
+                        "type": 3,
+                        "sku_id": "1527812336750952489",
+                        "label": "Hibiscus flowers, butterflies, and waves on top of the profile with pastel bead garlands and ocean charm pendants along the sides",
+                        "layers": [
+                            {
+                                "id": "1527812760669388840",
+                                "type": "rail",
+                                "order": "front",
+                                "anchor": "center",
+                                "responsive": true
+                            },
+                            {
+                                "id": "1527812764574421124",
+                                "type": "staple",
+                                "order": "front",
+                                "anchor": "top",
+                                "responsive": false
+                            },
+                            {
+                                "id": "1527812769129304214",
+                                "type": "staple",
+                                "order": "front",
+                                "anchor": "bottom",
+                                "responsive": false
+                            },
+                            {
+                                "id": "1527812773143122030",
+                                "type": "rail",
+                                "order": "back",
+                                "anchor": "top",
+                                "responsive": true
+                            },
+                            {
+                                "id": "1527812777664708718",
+                                "type": "staple",
+                                "order": "back",
+                                "anchor": "bottom",
+                                "responsive": false
+                            }
+                        ],
+                        "inner_width": 1200,
+                        "overflow_top": 304,
+                        "overflow_bottom": 212,
+                        "overflow_horizontal": 56
+                    }
+                ],
+                "type": 1000,
+                "premium_type": 0,
+                "category_sku_id": "1527810876411875478",
+                "bundled_products": [
+                    {
+                        "sku_id": "1527811435311140984",
+                        "name": "Dolphin Life",
+                        "summary": "Give your avatar a new look.",
+                        "type": 0,
+                        "premium_type": 0,
+                        "prices": {
+                            "0": {
+                                "country_prices": {
+                                    "country_code": "US",
+                                    "prices": [
+                                        {
+                                            "amount": 599,
+                                            "currency": "usd",
+                                            "exponent": 2
+                                        },
+                                        {
+                                            "amount": 4100,
+                                            "currency": "discord_orb",
+                                            "exponent": 0
+                                        }
+                                    ]
+                                }
+                            },
+                            "4": {
+                                "country_prices": {
+                                    "country_code": "US",
+                                    "prices": [
+                                        {
+                                            "amount": 499,
+                                            "currency": "usd",
+                                            "exponent": 2
+                                        },
+                                        {
+                                            "amount": 4100,
+                                            "currency": "discord_orb",
+                                            "exponent": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "sku_id": "1527811929081511976",
+                        "name": "All Summer",
+                        "summary": "Make your name stand out in servers and chats.",
+                        "type": 2,
+                        "premium_type": 0,
+                        "prices": {
+                            "0": {
+                                "country_prices": {
+                                    "country_code": "US",
+                                    "prices": [
+                                        {
+                                            "amount": 599,
+                                            "currency": "usd",
+                                            "exponent": 2
+                                        },
+                                        {
+                                            "amount": 4100,
+                                            "currency": "discord_orb",
+                                            "exponent": 0
+                                        }
+                                    ]
+                                }
+                            },
+                            "4": {
+                                "country_prices": {
+                                    "country_code": "US",
+                                    "prices": [
+                                        {
+                                            "amount": 499,
+                                            "currency": "usd",
+                                            "exponent": 2
+                                        },
+                                        {
+                                            "amount": 4100,
+                                            "currency": "discord_orb",
+                                            "exponent": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "sku_id": "1527812336750952489",
+                        "name": "Tropical Symphony",
+                        "summary": "Elevate and wrap your profile with a frame.",
+                        "type": 3,
+                        "premium_type": 0,
+                        "prices": {
+                            "0": {
+                                "country_prices": {
+                                    "country_code": "US",
+                                    "prices": [
+                                        {
+                                            "amount": 599,
+                                            "currency": "usd",
+                                            "exponent": 2
+                                        }
+                                    ]
+                                }
+                            },
+                            "4": {
+                                "country_prices": {
+                                    "country_code": "US",
+                                    "prices": [
+                                        {
+                                            "amount": 499,
+                                            "currency": "usd",
+                                            "exponent": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "google_sku_ids": {
+                    "5": "1527812992429723759_1527813997540147220",
+                    "7": "1527812992429723759_1527814003382943906"
+                },
+                "is_first_party": true
+            },
+            {
+                "sku_id": "1527811435311140984",
+                "name": "Dolphin Life",
+                "summary": "Give your avatar a new look.",
+                "store_listing_id": "1527811435311140984",
+                "styles": {
+                    "background_colors": [
+                        11765424,
+                        9737168
+                    ],
+                    "button_colors": [
+                        5793266,
+                        5793266
+                    ],
+                    "confetti_colors": [
+                        43772,
+                        15774258,
+                        16414587,
+                        3000177,
+                        9739511
+                    ]
+                },
+                "prices": {
+                    "0": {
+                        "country_prices": {
+                            "country_code": "US",
+                            "prices": [
+                                {
+                                    "amount": 599,
+                                    "currency": "usd",
+                                    "exponent": 2
+                                },
+                                {
+                                    "amount": 4100,
+                                    "currency": "discord_orb",
+                                    "exponent": 0
+                                }
+                            ]
+                        }
+                    },
+                    "4": {
+                        "country_prices": {
+                            "country_code": "US",
+                            "prices": [
+                                {
+                                    "amount": 499,
+                                    "currency": "usd",
+                                    "exponent": 2
+                                },
+                                {
+                                    "amount": 4100,
+                                    "currency": "discord_orb",
+                                    "exponent": 0
+                                }
+                            ]
+                        }
+                    }
+                },
+                "preview_assets": null,
+                "items": [
+                    {
+                        "type": 0,
+                        "sku_id": "1527811435311140984",
+                        "asset": "a_fbef5484c1f491c3ac897e53a5478158",
+                        "label": "Blue and pink waves pulse in a heart shape, then a dolphin leaps out in an arc beneath a rainbow"
+                    }
+                ],
+                "type": 0,
+                "premium_type": 0,
+                "category_sku_id": "1527810876411875478",
+                "google_sku_ids": {
+                    "5": "1527811435311140984_1527812589730529323",
+                    "7": "1527811435311140984_1527812595753680916"
+                },
+                "is_first_party": true
+            },
+            {
+                "sku_id": "1527811929081511976",
+                "name": "All Summer",
+                "summary": "Make your name stand out in servers and chats.",
+                "store_listing_id": "1527811929081511976",
+                "styles": {
+                    "background_colors": [
+                        11765424,
+                        9737168
+                    ],
+                    "button_colors": [
+                        5793266,
+                        5793266
+                    ],
+                    "confetti_colors": [
+                        43772,
+                        15774258,
+                        16414587,
+                        3000177,
+                        9739511
+                    ]
+                },
+                "prices": {
+                    "0": {
+                        "country_prices": {
+                            "country_code": "US",
+                            "prices": [
+                                {
+                                    "amount": 599,
+                                    "currency": "usd",
+                                    "exponent": 2
+                                },
+                                {
+                                    "amount": 4100,
+                                    "currency": "discord_orb",
+                                    "exponent": 0
+                                }
+                            ]
+                        }
+                    },
+                    "4": {
+                        "country_prices": {
+                            "country_code": "US",
+                            "prices": [
+                                {
+                                    "amount": 499,
+                                    "currency": "usd",
+                                    "exponent": 2
+                                },
+                                {
+                                    "amount": 4100,
+                                    "currency": "discord_orb",
+                                    "exponent": 0
+                                }
+                            ]
+                        }
+                    }
+                },
+                "preview_assets": null,
+                "items": [
+                    {
+                        "type": 2,
+                        "sku_id": "1527811929081511976",
+                        "asset": "nameplates/all_summer/1527811929081511976/",
+                        "label": "Soft waves wash over a sandy shore carrying a yellow hibiscus flower",
+                        "palette": "berry"
+                    }
+                ],
+                "type": 2,
+                "premium_type": 0,
+                "category_sku_id": "1527810876411875478",
+                "google_sku_ids": {
+                    "5": "1527811929081511976_1527813483041919217",
+                    "7": "1527811929081511976_1527813488603304047"
+                },
+                "is_first_party": true
+            }
+        ],
+        "hero_banner_url": "https://cdn.discordapp.com/media/v1/collectibles-shop/deef07eb1ac9deaaef1dc438eb928f41c9a0929eef632c461ffbd9460a224ff5",
+        "hero_logo_url": "https://cdn.discordapp.com/media/v1/collectibles-shop/e2f0ea7aed74c212cffe69e66e248aff70551d1e61ee232e42f46b1f42eeda53",
+        "catalog_banner_url": "https://cdn.discordapp.com/media/v1/collectibles-shop/e0613f0ecc644f55fcd45cf33dbc861f160b533673e46c2412f6bbdff0cd1a87",
+        "featured_block_url": "https://cdn.discordapp.com/media/v1/collectibles-shop/d1050f9d4a8714a5cf2287ea5817d00089ee0331d706d5c4102f80d1d8a84528",
+        "logo_url": "https://cdn.discordapp.com/media/v1/collectibles-shop/e2f0ea7aed74c212cffe69e66e248aff70551d1e61ee232e42f46b1f42eeda53",
+        "pdp_bg_url": "https://cdn.discordapp.com/media/v1/collectibles-shop/4d3f9e7b02e0acb67d4bdbdf5a75cfd16cf3c9533a339c5a2f216c49568bcbb0",
+        "mobile_banner_url": "https://cdn.discordapp.com/media/v1/collectibles-shop/5f7b40ca95a49f9a28945d1600717faa207b96b691e4f77eac5a7ead825a4910",
+        "mobile_bg_url": "https://cdn.discordapp.com/media/v1/collectibles-shop/abd3c88f740f01697241c0b80bdae7e901c6e1371212f9b4f0fd8be4f5cae7ee",
+        "hero_banner_display_config": {
+            "desktop_max_height": null,
+            "mobile_max_height": null,
+            "responsive": null,
+            "background_style": "linear-gradient(180deg, #B386B0 0%, #9493D0 100%)"
+        }
+    },
+    {
         "sku_id": "1519794936143282317",
         "name": "Fin.",
         "summary": " ",
