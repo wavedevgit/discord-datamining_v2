@@ -97,12 +97,12 @@
                         "purchase_limit": 1,
                         "guild_features": {
                             "features": [
-                                "AUDIO_BITRATE_128_KBPS",
                                 "INVITE_SPLASH",
-                                "STAGE_CHANNEL_VIEWERS_50",
-                                "ANIMATED_ICON",
+                                "AUDIO_BITRATE_128_KBPS",
                                 "VIDEO_BITRATE_ENHANCED",
-                                "VIDEO_QUALITY_720_60FPS"
+                                "VIDEO_QUALITY_720_60FPS",
+                                "ANIMATED_ICON",
+                                "STAGE_CHANNEL_VIEWERS_50"
                             ],
                             "additional_emoji_slots": 50,
                             "additional_sticker_slots": 10,
@@ -118,12 +118,12 @@
                 "purchase_limit": 1,
                 "guild_features": {
                     "features": [
-                        "AUDIO_BITRATE_128_KBPS",
                         "INVITE_SPLASH",
-                        "STAGE_CHANNEL_VIEWERS_50",
-                        "ANIMATED_ICON",
+                        "AUDIO_BITRATE_128_KBPS",
                         "VIDEO_BITRATE_ENHANCED",
-                        "VIDEO_QUALITY_720_60FPS"
+                        "VIDEO_QUALITY_720_60FPS",
+                        "ANIMATED_ICON",
+                        "STAGE_CHANNEL_VIEWERS_50"
                     ],
                     "additional_emoji_slots": 50,
                     "additional_sticker_slots": 10,
@@ -179,11 +179,11 @@
                         "guild_features": {
                             "features": [
                                 "AUDIO_BITRATE_256_KBPS",
-                                "ROLE_ICONS",
-                                "BANNER",
-                                "STAGE_CHANNEL_VIEWERS_150",
                                 "MAX_FILE_SIZE_50_MB",
-                                "VIDEO_QUALITY_1080_60FPS"
+                                "VIDEO_QUALITY_1080_60FPS",
+                                "STAGE_CHANNEL_VIEWERS_150",
+                                "ROLE_ICONS",
+                                "BANNER"
                             ],
                             "additional_emoji_slots": 50,
                             "additional_sticker_slots": 15,
@@ -200,11 +200,11 @@
                 "guild_features": {
                     "features": [
                         "AUDIO_BITRATE_256_KBPS",
-                        "ROLE_ICONS",
-                        "BANNER",
-                        "STAGE_CHANNEL_VIEWERS_150",
                         "MAX_FILE_SIZE_50_MB",
-                        "VIDEO_QUALITY_1080_60FPS"
+                        "VIDEO_QUALITY_1080_60FPS",
+                        "STAGE_CHANNEL_VIEWERS_150",
+                        "ROLE_ICONS",
+                        "BANNER"
                     ],
                     "additional_emoji_slots": 50,
                     "additional_sticker_slots": 15,
@@ -261,9 +261,9 @@
                             "features": [
                                 "ANIMATED_BANNER",
                                 "MAX_FILE_SIZE_100_MB",
-                                "VANITY_URL",
                                 "STAGE_CHANNEL_VIEWERS_300",
-                                "AUDIO_BITRATE_384_KBPS"
+                                "AUDIO_BITRATE_384_KBPS",
+                                "VANITY_URL"
                             ],
                             "additional_emoji_slots": 100,
                             "additional_sticker_slots": 30,
@@ -281,9 +281,9 @@
                     "features": [
                         "ANIMATED_BANNER",
                         "MAX_FILE_SIZE_100_MB",
-                        "VANITY_URL",
                         "STAGE_CHANNEL_VIEWERS_300",
-                        "AUDIO_BITRATE_384_KBPS"
+                        "AUDIO_BITRATE_384_KBPS",
+                        "VANITY_URL"
                     ],
                     "additional_emoji_slots": 100,
                     "additional_sticker_slots": 30,
