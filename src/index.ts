@@ -30,17 +30,17 @@ async function main() {
         './data/acknowledgements.md',
         false,
     );
-    const oldServers = await readFile('./data/servers.txt', false);
+    //const oldServers = await readFile('./data/servers.txt', false);
     const oldRobots = await readFile('./data/robots.txt', false);
     const oldDomains = await readFile('./data/domains.json');
     const oldPowerups = await readFile('./data/powerups.json');
     const oldSkus = await readFile('./data/skus.json');
     const oldSkuApps = await readFile('./data/skus_apps_listings.json');
     const skuAppIds = await readFile('./data/skus_apps.json');
-    let oldServerSitemaps: Record<string, { urls: string[] }> = {};
-    try {
-        oldServerSitemaps = await readFile('./data/servers_sitemaps.json');
-    } catch {}
+    //let oldServerSitemaps: Record<string, { urls: string[] }> = {};
+    //try {
+        //oldServerSitemaps = await readFile('./data/servers_sitemaps.json');
+    //} catch {}
     // break, and notify me that i need update token
     if (collectiblesCategories?.message) {
         const res = await await sendToWebhook(
@@ -61,8 +61,8 @@ async function main() {
         (await acknowledgements.getModules());
     const robots = await robots_.getRobots();
     const marketingData = await marketing.getMarketing();
-    const { data: serversData, cache: serverSitemaps } =
-        await servers.getServersList(oldServerSitemaps);
+    //const { data: serversData, cache: serverSitemaps } =
+    //    await servers.getServersList(oldServerSitemaps);
     const domainsData = await domains.getDomains();
     const powerupsData = await powerups.getPowerups();
     const skusData = await skus.getSkus(oldSkus);
@@ -70,8 +70,8 @@ async function main() {
     const [changelogsDesktop, changelogsMobile] =
         await changelogs.getChangelogs();
     await saveFileText('./data/robots.txt', robots);
-    await saveFileText('./data/servers.txt', serversData);
-    await saveFile('./data/servers_sitemaps.json', serverSitemaps);
+    //await saveFileText('./data/servers.txt', serversData);
+    //await saveFile('./data/servers_sitemaps.json', serverSitemaps);
     await saveFile('./data/domains.json', domainsData);
     await saveFile('./data/powerups.json', powerupsData);
     await saveFile('./data/skus.json', skusData);
@@ -102,7 +102,7 @@ async function main() {
     await acknowledgements.diff(oldAcknowledgements, acknowledgementsData);
     await robots_.diff(oldRobots, robots);
     await marketing.diff(oldMarketing, marketingData);
-    await servers.diff(oldServers, serversData);
+   // await servers.diff(oldServers, serversData);
     //await domains.diff(oldDomains, domainsData);
     await powerups.diff(oldPowerups, powerupsData);
     await skus.diff(oldSkus, skusData);
