@@ -41,7 +41,7 @@ jobs:
                   SERVERSWC: ${{ secrets.SERVERSWC }}
                   SERVERS: ${{ secrets.SERVERS }}
                   DOMAINS: ${{ secrets.DOMAINS }}
-                  POWERUPSWC: ${{ secrets.POWERUPSWC }}
+                  POWERUPSWC: ${{ secrets.POWERUPS }}
             - name: set email
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
