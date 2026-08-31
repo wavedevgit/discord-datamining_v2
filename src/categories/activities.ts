@@ -1,63 +1,78 @@
 import { configExperimentCentral, configWumpusUniv } from '../config.js';
-import { sendReq, sendToWebhook } from '../utils.js';
+import { changedKeys, diffByKey, sendTrackerMessage, target } from '../tracker.js';
+import { DiscordEmbed } from '../types.js';
+import { sendReq } from '../utils.js';
 
-async function getActivities() {
-    const activities = await (
-        await sendReq({
-            url: 'activities/shelf?guild_id=612443491770957833',
-        })
-    ).json();
-    return activities;
+interface Activity extends Record<string, unknown> {
+    application_id: string;
 }
 
-/** differ for our webhook, each module has to have a differ that generates an embed. */
-function diff(a, b) {
-    const result = [];
-    const diff = { removed: [], added: [] };
-    const aIds = a.activities.map((activity) => activity.application_id);
-    const bIds = b.activities.map((activity) => activity.application_id);
-    const names = {};
+interface ActivitiesResponse {
+    activities: Activity[];
+}
 
-    for (let activityId of aIds) {
-        // removed
-        if (!bIds.includes(activityId)) {
-            diff.removed.push(a.activities.find((activity) => activity.application_id == activityId));
-        }
-    }
+async function getActivities(): Promise<ActivitiesResponse> {
+    const response = await sendReq({
+        url: 'activities/shelf?guild_id=612443491770957833',
+    });
+    if (!response.ok) throw new Error(`Failed to fetch activities: HTTP ${response.status}`);
+    return response.json() as Promise<ActivitiesResponse>;
+}
 
-    for (let activityId of bIds) {
-        // added
-        if (!aIds.includes(activityId)) {
-            diff.added.push(b.activities.find((activity) => activity.application_id == activityId));
-        }
-    }
+function activityEmbed(
+    activity: Activity,
+    change: 'Added' | 'Removed' | 'Updated',
+    changes: string[] = [],
+): DiscordEmbed {
+    return {
+        title: `Activities - ${change}`,
+        description: `[Open activity](https://discord.com/activities/${activity.application_id})`,
+        color: change === 'Removed' ? 0xff0000 : change === 'Added' ? 0x008000 : 0xffa500,
+        fields: [
+            { name: 'Application ID', value: activity.application_id, inline: true },
+            {
+                name: 'Activity URL',
+                value: `https://${activity.application_id}.discordsays.com`,
+                inline: true,
+            },
+            ...(changes.length
+                ? [{ name: 'Changed fields', value: changes.join(', ') }]
+                : []),
+        ],
+    };
+}
 
-    if (diff.added.length)
-        result.push(
-            '## Activites - Added\n',
-            ...diff.added.map(
-                (activity) =>
-                    `https://discord.com/activities/${activity.application_id} - \`https://${activity.application_id}.discordsays.com\`\n`,
+async function diff(before: ActivitiesResponse, after: ActivitiesResponse): Promise<void> {
+    const changes = diffByKey(
+        before.activities,
+        after.activities,
+        ({ application_id }) => application_id,
+    );
+    const embeds: DiscordEmbed[] = [
+        ...changes.removed.map((activity) => activityEmbed(activity, 'Removed')),
+        ...changes.added.map((activity) => activityEmbed(activity, 'Added')),
+        ...changes.updated.map(({ before: previous, after: activity }) =>
+            activityEmbed(activity, 'Updated', changedKeys(previous, activity)),
+        ),
+    ];
+    if (!embeds.length) return;
+
+    await sendTrackerMessage(
+        [
+            target(
+                'Experiment Central activities',
+                configExperimentCentral.webhooks.activities,
+                configExperimentCentral.pings.activities,
             ),
-        );
-
-    if (diff.removed.length)
-        result.push(
-            '## Activites - Removed',
-            ...diff.removed.map(
-                (activity) =>
-                    `https://discord.com/activities/${activity.application_id} - \`https://${activity.application_id}.discordsays.com\``,
+            target(
+                'Wumpus University activities',
+                configWumpusUniv.webhooks.activities,
+                configWumpusUniv.pings.activities,
             ),
-        );
-
-    if (result.length) {
-        sendToWebhook(configExperimentCentral.webhooks.activities, {
-            content: configExperimentCentral.pings.activities + '\n' + result.join('\n'),
-        });
-        sendToWebhook(configWumpusUniv.webhooks.activities, {
-            content: configWumpusUniv.pings.activities + '\n' + result.join('\n'),
-        });
-    }
+        ],
+        { embeds },
+    );
 }
 
 export default { getActivities, diff };
+export type { ActivitiesResponse };

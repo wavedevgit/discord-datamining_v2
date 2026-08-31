@@ -1,59 +1,48 @@
-import { configExperimentCentral, configWumpusUniv } from "../config.js";
-import { sendReq, sendToWebhook } from "../utils.js";
-import { diffChars } from "diff";
+import { configExperimentCentral, configWumpusUniv } from '../config.js';
+import { diffLines, formatTextDiff, sendTrackerMessage, target } from '../tracker.js';
 
-async function getModules() {
-  const html = await (
-    await fetch("https://canary.discord.com/acknowledgements")
-  ).text();
-  const scripts = [
-    ...html.matchAll(
-      /script async data-chunk="refresh-text_pages-Acknowledgements" src="(?<url>\/assets\/.+?\.js)"><\/script>/g
-    ),
-  ].map((m) => m.groups?.url);
-  const script = scripts[scripts.length - 2];
-  const content = await (
-    await fetch("https://canary.discord.com" + script)
-  ).text();
-  return content
-    .match(/\.exports="(?<modules>\*.+)"/)
-    .groups?.modules?.replaceAll("* ", "- ")
-    .replaceAll("\\n", "\n");
+async function getModules(): Promise<string> {
+    const response = await fetch('https://canary.discord.com/acknowledgements');
+    if (!response.ok) {
+        throw new Error(`Failed to fetch acknowledgements: HTTP ${response.status}`);
+    }
+    const html = await response.text();
+    const scripts = [
+        ...html.matchAll(
+            /script async data-chunk="refresh-text_pages-Acknowledgements" src="(?<url>\/assets\/.+?\.js)"><\/script>/g,
+        ),
+    ].map((match) => match.groups?.url).filter((url): url is string => Boolean(url));
+    const script = scripts.at(-2);
+    if (!script) throw new Error('Acknowledgements script was not found');
+
+    const scriptResponse = await fetch(`https://canary.discord.com${script}`);
+    if (!scriptResponse.ok) {
+        throw new Error(`Failed to fetch acknowledgements script: HTTP ${scriptResponse.status}`);
+    }
+    const content = await scriptResponse.text();
+    const modules = content.match(/\.exports="(?<modules>\*.+)"/)?.groups?.modules;
+    if (!modules) throw new Error('Acknowledgements modules were not found');
+    return modules.replaceAll('* ', '- ').replaceAll('\\n', '\n');
 }
 
-/** differ for our webhook, each module has to have a differ that generates an embed. */
-function diff(a, b) {
-  let result = "";
-  const linesA = a.split("\n");
-  const linesB = b.split("\n");
-  for (let l = 0; l < linesA.length; l++) {
-    // updated
-    if (linesA[l] !== linesB[l] && linesB[l] !== undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Updated\n- ${linesA[l].replace("-","")}\n+ ${linesB[l].replace("-","")}\n\n`;
-    }
-    // removed
-    if (linesA[l] !== linesB[l] && linesB[l] === undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Removed\n- ${linesA[l].replace("-","")}\n\n`;
-    }
-  }
-  for (let l = 0; l < linesB.length; l++) {
-    // added
-    if (linesA[l] !== linesB[l] && linesA[l] === undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Added\n+ ${linesB[l].replace("-","")}\n`;
-    }
-  }
-  if (result.length !== 0) result += "\n```";
-  if (result.length) {
-    sendToWebhook(configExperimentCentral.webhooks.acknowledgements, {
-      content: configExperimentCentral.pings.acknowledgements + "\n" + result,
-    });
-    sendToWebhook(configWumpusUniv.webhooks.acknowledgements, {
-      content: configWumpusUniv.pings.acknowledgements + "\n" + result,
-    });
-  }
+async function diff(before: string, after: string): Promise<void> {
+    const content = formatTextDiff(diffLines(before, after));
+    if (!content) return;
+    await sendTrackerMessage(
+        [
+            target(
+                'Experiment Central acknowledgements',
+                configExperimentCentral.webhooks.acknowledgements,
+                configExperimentCentral.pings.acknowledgements,
+            ),
+            target(
+                'Wumpus University acknowledgements',
+                configWumpusUniv.webhooks.acknowledgements,
+                configWumpusUniv.pings.acknowledgements,
+            ),
+        ],
+        { content },
+    );
 }
 
 export default { getModules, diff };

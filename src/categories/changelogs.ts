@@ -1,108 +1,132 @@
+import { isDeepStrictEqual } from 'node:util';
+
 import { configExperimentCentral } from '../config.js';
-import { sendToWebhook } from '../utils.js';
+import { changedKeys, diffByKey, sendTrackerMessage, target } from '../tracker.js';
+import { DiscordEmbed } from '../types.js';
 
-async function getChangelogs() {
-    const changelogsDesktop = await (await fetch('https://cdn.discordapp.com/changelogs/config_0.json')).json();
-    const changelogsMobile = await (await fetch('https://cdn.discordapp.com/changelogs/config_1.json')).json();
-    let resultMobile = [];
-    let resultDesktop = [];
-    for (let changelogId in changelogsDesktop) {
-        let content = await (await fetch(`https://cdn.discordapp.com/changelogs/0/${changelogId}/en-US.json`)).json();
-        let obj = {
-            ...changelogsDesktop[changelogId],
-            ...content,
-        };
-        resultDesktop.push(obj);
-    }
-    for (let changelogId in changelogsMobile) {
-        let content = await (await fetch(`https://cdn.discordapp.com/changelogs/1/${changelogId}/en-US.json`)).json();
-        let obj = {
-            ...changelogsMobile[changelogId],
-            ...content,
-        };
-        resultMobile.push(obj);
-    }
-
-    return [resultDesktop, resultMobile];
+interface Changelog extends Record<string, unknown> {
+    changelog_id: string;
+    entry_id: string;
+    date: string;
+    asset: string;
+    asset_type: 0 | 1;
+    content: string;
 }
-function generateEmbed(changelog) {
+
+type ChangelogConfig = Record<string, Omit<Changelog, 'content'>>;
+
+async function fetchJson<T>(url: string): Promise<T> {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Failed to fetch ${url}: HTTP ${response.status}`);
+    return response.json() as Promise<T>;
+}
+
+async function hydrateChangelogs(platform: 0 | 1): Promise<Changelog[]> {
+    const config = await fetchJson<ChangelogConfig>(
+        `https://cdn.discordapp.com/changelogs/config_${platform}.json`,
+    );
+    return Promise.all(
+        Object.entries(config).map(async ([changelogId, metadata]): Promise<Changelog> => ({
+            ...metadata,
+            ...(await fetchJson<Pick<Changelog, 'content'>>(
+                `https://cdn.discordapp.com/changelogs/${platform}/${changelogId}/en-US.json`,
+            )),
+        }) as Changelog),
+    );
+}
+
+async function getChangelogs(): Promise<[Changelog[], Changelog[]]> {
+    return Promise.all([hydrateChangelogs(0), hydrateChangelogs(1)]);
+}
+
+function stableAsset(asset: string): string {
+    try {
+        const url = new URL(asset);
+        url.search = '';
+        return url.toString();
+    } catch {
+        return asset;
+    }
+}
+
+function sameChangelog(before: Changelog, after: Changelog): boolean {
+    return isDeepStrictEqual(
+        { ...before, asset: stableAsset(before.asset) },
+        { ...after, asset: stableAsset(after.asset) },
+    );
+}
+
+function generateEmbed(
+    changelog: Changelog,
+    type: string,
+    change: 'Added' | 'Removed' | 'Updated',
+    changes: string[] = [],
+): DiscordEmbed {
+    const assetUrl = changelog.asset_type === 0
+        ? `https://youtube.com/watch?v=${changelog.asset}`
+        : changelog.asset;
     return {
-        description: changelog.content.length > 4096 ? changelog.content.slice(3999) + '...' : changelog.content,
+        title: `Changelogs - ${change} (${type})`,
+        description: changelog.content,
         image: {
-            url:
-                changelog.asset_type === 1
-                    ? changelog.asset
-                    : `https://img.youtube.com/vi/${changelog.asset}/hqdefault.jpg`,
+            url: changelog.asset_type === 1
+                ? changelog.asset
+                : `https://img.youtube.com/vi/${changelog.asset}/hqdefault.jpg`,
         },
         fields: [
-            {
-                name: 'Changelog ID',
-                value: `**\`${changelog.changelog_id}\`**`,
-                inline: true,
-            },
-            {
-                name: 'Entry ID',
-                value: `**\`${changelog.entry_id}\`**`,
-                inline: true,
-            },
-            {
-                name: 'Date',
-                value: `**\`${changelog.date}\`**`,
-                inline: true,
-            },
+            { name: 'Changelog ID', value: changelog.changelog_id, inline: true },
+            { name: 'Entry ID', value: changelog.entry_id, inline: true },
+            { name: 'Date', value: changelog.date, inline: true },
             {
                 name: 'Asset Type',
-                value: `**\`${changelog.asset_type === 0 ? 'Youtube Video' : 'Image'}\`**`,
+                value: changelog.asset_type === 0 ? 'YouTube Video' : 'Image',
                 inline: true,
             },
-            {
-                name: 'Asset URL',
-                value: `**\`${
-                    changelog.asset_type === 0 ? `https://youtube.com/watch?v=${changelog.asset}` : changelog.asset
-                }\`**`,
-                inline: true,
-            },
+            { name: 'Asset URL', value: assetUrl, inline: true },
+            ...(changes.length
+                ? [{ name: 'Changed fields', value: changes.join(', ') }]
+                : []),
         ],
+        color: change === 'Removed' ? 0xff0000 : change === 'Added' ? 0x008000 : 0xffa500,
     };
 }
-async function diff(a, b, type) {
-    let diff = { added: [], removed: [] };
-    for (let changelog of a) {
-        if (!b.some((changelog_) => changelog_.changelog_id === changelog.changelog_id))
-            diff.removed.push(changelog);
-    }
-    for (let changelog of b) {
-        if (!a.some((changelog_) => changelog_.changelog_id === changelog.changelog_id))
-            diff.added.push(changelog);
-    }
-    let result = [];
 
-    diff.removed.sort((x, y) => x.changelog_id - y.changelog_id);
-    diff.added.sort((x, y) => x.changelog_id - y.changelog_id);
+async function diff(before: Changelog[], after: Changelog[], type: string): Promise<void> {
+    const changes = diffByKey(
+        before,
+        after,
+        ({ changelog_id }) => changelog_id,
+        sameChangelog,
+    );
+    const byId = (left: Changelog, right: Changelog) =>
+        left.changelog_id.localeCompare(right.changelog_id);
+    changes.added.sort(byId);
+    changes.removed.sort(byId);
 
-    for (let changelog of diff.removed) {
-        result.push({
-            title: `Changelogs - Removed (${type})`,
-            color: 0xff0000,
-            ...generateEmbed(changelog),
-        });
-    }
-    for (let changelog of diff.added) {
-        result.push({
-            title: `Changelogs - Added (${type})`,
-            color: 0x008000,
-            ...generateEmbed(changelog),
-        });
-    }
-    if (!result.length) return;
-
-    try {
-        await sendToWebhook(configExperimentCentral.webhooks.changelogs, {
-            content: configExperimentCentral.pings.changelogs,
-            embeds: result,
-        });
-    } catch (e) {
-        console.error('Failed to send changelog diff:', e);
-    }
+    const embeds: DiscordEmbed[] = [
+        ...changes.removed.map((changelog) =>
+            generateEmbed(changelog, type, 'Removed')),
+        ...changes.added.map((changelog) =>
+            generateEmbed(changelog, type, 'Added')),
+        ...changes.updated.map(({ before: previous, after: changelog }) => {
+            const fields = changedKeys(previous, changelog).filter(
+                (field) => field !== 'asset' || stableAsset(previous.asset) !== stableAsset(changelog.asset),
+            );
+            return generateEmbed(changelog, type, 'Updated', fields);
+        }),
+    ];
+    if (!embeds.length) return;
+    await sendTrackerMessage(
+        [
+            target(
+                'Experiment Central changelogs',
+                configExperimentCentral.webhooks.changelogs,
+                configExperimentCentral.pings.changelogs,
+            ),
+        ],
+        { embeds },
+    );
 }
+
 export default { getChangelogs, diff };
+export type { Changelog };

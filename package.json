@@ -4,6 +4,7 @@
     "scripts": {
         "lint": "tsc",
         "build": "tsc",
+        "test": "npm run build && node --test dist/tracker.test.js dist/utils.test.js",
         "start": "node --enable-source-maps dist/index.js",
         "prod": "node scripts/run.js --sync cleanup lint build start",
         "dev:lint": "tsc --watch --preserveWatchOutput",
@@ -25,8 +26,5 @@
         "eslint-plugin-simple-import-sort": "^10.0.0",
         "eslint-plugin-unused-imports": "^3.0.0",
         "husky": "^9.1.5"
-    },
-    "dependencies": {
-        "diff": "^8.0.2"
     }
 }

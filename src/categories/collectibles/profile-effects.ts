@@ -1,100 +1,82 @@
 import { configExperimentCentral, configWumpusUniv } from '../../config.js';
-import { sendReq, sendToWebhook } from '../../utils.js';
+import { changedKeys, diffByKey, sendTrackerMessage, target } from '../../tracker.js';
+import { DiscordEmbed } from '../../types.js';
+import { sendReq } from '../../utils.js';
 
-async function getProfileEffects() {
-    const profileEffects = await (
-        await sendReq({
-            url: 'user-profile-effects',
-        })
-    ).json();
-
-    return profileEffects.profile_effect_configs;
+interface ProfileEffect extends Record<string, unknown> {
+    sku_id: string;
+    title: string;
+    description: string;
+    thumbnailPreviewSrc?: string;
+    effects: Array<{ src: string }>;
 }
 
-function getFieldsForProfileEffect(profileEffect) {
-    return [
-        {
-            name: 'Name',
-            value: profileEffect.title,
-            inline: true,
-        },
-        {
-            name: 'Description',
-            value: profileEffect.description,
-            inline: true,
-        },
-        {
-            name: 'Sku ID',
-            value: profileEffect.sku_id,
-            inline: true,
-        },
-        {
-            name: 'Effects Count',
-            value: `${profileEffect.effects.length}`,
-            inline: true,
-        },
+async function getProfileEffects(): Promise<ProfileEffect[]> {
+    const response = await sendReq({ url: 'user-profile-effects' });
+    const body = await response.json() as {
+        profile_effect_configs?: ProfileEffect[];
+        message?: string;
+    };
+    if (!response.ok || !Array.isArray(body.profile_effect_configs)) {
+        throw new Error(body.message ?? `Failed to fetch profile effects: HTTP ${response.status}`);
+    }
+    return body.profile_effect_configs;
+}
+
+function profileEffectEmbed(
+    profileEffect: ProfileEffect,
+    change: 'Added' | 'Removed' | 'Updated',
+    changes: string[] = [],
+): DiscordEmbed {
+    const intro = profileEffect.effects[0]?.src;
+    return {
+        title: `Collectibles - ${change} Profile Effect`,
+        description: intro ? `[Open effect asset](${intro})` : undefined,
+        fields: [
+            { name: 'Name', value: profileEffect.title || 'Unnamed', inline: true },
+            {
+                name: 'Description',
+                value: profileEffect.description || 'None',
+                inline: true,
+            },
+            { name: 'SKU ID', value: profileEffect.sku_id, inline: true },
+            { name: 'Effects', value: String(profileEffect.effects.length), inline: true },
+            ...(changes.length
+                ? [{ name: 'Changed fields', value: changes.join(', ') }]
+                : []),
+        ],
+        image: profileEffect.thumbnailPreviewSrc
+            ? { url: profileEffect.thumbnailPreviewSrc }
+            : undefined,
+        color: change === 'Removed' ? 0xff0000 : change === 'Added' ? 0x008000 : 0xffa500,
+    };
+}
+
+async function diff(before: ProfileEffect[], after: ProfileEffect[]): Promise<void> {
+    const changes = diffByKey(before, after, ({ sku_id }) => sku_id);
+    const embeds: DiscordEmbed[] = [
+        ...changes.removed.map((effect) => profileEffectEmbed(effect, 'Removed')),
+        ...changes.added.map((effect) => profileEffectEmbed(effect, 'Added')),
+        ...changes.updated.map(({ before: previous, after: effect }) =>
+            profileEffectEmbed(effect, 'Updated', changedKeys(previous, effect))),
     ];
-}
-
-/** differ for our webhook, each module has to have a differ that generates an embed. */
-function diff(a, b) {
-    // fuck ts disabling until some day
-    return;
-    const result = [];
-    const diff = { removed: [], added: [] };
-
-    /** a is before */
-    for (let profileEffect in a) {
-        const a_sku_id = a[profileEffect].sku_id;
-        if (a_sku_id === "1440063059774406818") continue
-        /** removed type */
-        if (!b.find((profile_effect) => profile_effect.sku_id === a_sku_id)) {
-            diff.removed.push(a[profileEffect]);
-        }
-    }
-
-    /** b is after */
-    for (let profileEffect in b) {
-        const b_sku_id = b[profileEffect].sku_id;
-        if (b_sku_id === "1440063059774406818") continue
-        /** added type */
-        if (!a.find((profile_effect) => profile_effect.sku_id === b_sku_id)) {
-            diff.added.push(b[profileEffect]);
-        }
-    }
-
-    // generate the embed
-
-    for (let profileEffect of diff.removed) {
-        result.push({
-            title: 'Collectibles — Removed Profile Effect:',
-            description: `[Open intro.png](<${profileEffect.effects[0].src}>)`,
-            fields: getFieldsForProfileEffect(profileEffect),
-            image: { url: profileEffect.thumbnailPreviewSrc },
-            color: 0xff0000,
-        });
-    }
-
-    for (let profileEffect of diff.added) {
-        result.push({
-            title: 'Collectibles — Added Profile Effect:',
-            description: `[Open intro.png](<${profileEffect.effects[0].src}>)`,
-            fields: getFieldsForProfileEffect(profileEffect),
-            image: { url: profileEffect.thumbnailPreviewSrc },
-            color: 0x008000,
-        });
-    }
-
-    if (result.length) {
-        sendToWebhook(configExperimentCentral.webhooks.collectibles.profileEffects, {
-            content: configExperimentCentral.pings.collectibles.profileEffects,
-            embeds: result,
-        });
-        sendToWebhook(configWumpusUniv.webhooks.collectibles.profileEffects, {
-            content: configWumpusUniv.pings.collectibles.profileEffects,
-            embeds: result,
-        });
-    }
+    if (!embeds.length) return;
+    await sendTrackerMessage(
+        [
+            target(
+                'Experiment Central profile effects',
+                configExperimentCentral.webhooks.collectibles?.profileEffects,
+                configExperimentCentral.pings.collectibles?.profileEffects,
+            ),
+            target(
+                'Wumpus University profile effects',
+                configWumpusUniv.webhooks.collectibles?.profileEffects,
+                configWumpusUniv.pings.collectibles?.profileEffects,
+            ),
+        ],
+        { embeds },
+    );
 }
 
 export default { getProfileEffects, diff };
+export type { ProfileEffect };

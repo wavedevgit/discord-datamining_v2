@@ -1,5 +1,5 @@
 import { configExperimentCentral, configWumpusUniv } from '../config.js';
-import { sendToWebhook } from '../utils.js';
+import { diffLines, formatTextDiff, sendTrackerMessage, target } from '../tracker.js';
 
 const SITEMAP_INDEX = 'https://discord.com/servers/servers-sitemap-index.xml';
 
@@ -35,10 +35,12 @@ async function getServersList(
     const seen = new Set<string>();
 
     const toFetch: string[] = [];
+    const lastChild = children.at(-1);
 
     for (const url of children) {
-        if (oldChildren[url]) {
-            // cache hit — reuse
+        if (oldChildren[url] && url !== lastChild) {
+            // Completed sitemap shards are immutable. The final shard can
+            // still grow, so always refresh it.
             cache[url] = oldChildren[url];
             for (const loc of oldChildren[url].urls) {
                 seen.add(loc);
@@ -64,90 +66,43 @@ async function getServersList(
     return { data: lines.join('\n'), cache };
 }
 
-function diffSnapshots(oldSnap: string, newSnap: string) {
-    const oldSet = new Set(oldSnap.split('\n').filter(Boolean));
-    const newSet = new Set(newSnap.split('\n').filter(Boolean));
-
-    const added: string[] = [];
-    const removed: string[] = [];
-
-    for (const v of newSet) {
-        if (!oldSet.has(v)) added.push(v);
-    }
-
-    for (const v of oldSet) {
-        if (!newSet.has(v)) removed.push(v);
-    }
+function diffSnapshots(oldSnap: string, newSnap: string): string {
+    const changes = diffLines(oldSnap, newSnap);
+    const { added, removed } = changes;
 
     if (!added.length && !removed.length) return '';
 
     added.sort();
     removed.sort();
 
-    let out = '```diff\n';
-
-    if (added.length) {
-        out += `# Added (${added.length})\n`;
-        const display = added.slice(0, MAX_DIFF_ENTRIES);
-        for (const a of display) out += `+ ${a}\n`;
-        const remaining = added.length - display.length;
-        if (remaining > 0) out += `… and ${remaining} more\n`;
-        out += '\n';
-    }
-
-    if (removed.length) {
-        out += `# Removed (${removed.length})\n`;
-        const display = removed.slice(0, MAX_DIFF_ENTRIES);
-        for (const r of display) out += `- ${r}\n`;
-        const remaining = removed.length - display.length;
-        if (remaining > 0) out += `… and ${remaining} more\n`;
-        out += '\n';
-    }
-
-    out += '```';
-    return out;
-}
-
-function chunkString(str: string, maxLength = 2000): string[] {
-    const chunks: string[] = [];
-    let remaining = str;
-    while (remaining.length > maxLength) {
-        let splitAt = remaining.lastIndexOf('\n', maxLength);
-        if (splitAt <= 0) splitAt = maxLength;
-        chunks.push(remaining.slice(0, splitAt));
-        remaining = remaining.slice(splitAt).trimStart();
-    }
-    if (remaining.length > 0) chunks.push(remaining);
-    return chunks;
+    const shown = {
+        added: added.slice(0, MAX_DIFF_ENTRIES),
+        removed: removed.slice(0, MAX_DIFF_ENTRIES),
+    };
+    const summary = `Server directory changed: +${added.length} / -${removed.length}`;
+    const formatted = formatTextDiff(shown);
+    return `${summary}\n${formatted ?? ''}`;
 }
 
 async function diff(oldSnap: string, newSnap: string) {
     const result = diffSnapshots(oldSnap, newSnap);
     if (!result) return;
 
-    try {
-        const serverContent =
-            configExperimentCentral.pings.servers + '\n' + result;
-        for (const chunk of chunkString(serverContent)) {
-            await sendToWebhook(configExperimentCentral.webhooks.servers, {
-                content: chunk,
-            });
-        }
-    } catch (e) {
-        console.error('Failed to send central server diff:', e);
-    }
-
-    try {
-        const universityContent =
-            configWumpusUniv.pings.servers + '\n' + result;
-        for (const chunk of chunkString(universityContent)) {
-            await sendToWebhook(configWumpusUniv.webhooks.servers, {
-                content: chunk,
-            });
-        }
-    } catch (e) {
-        console.error('Failed to send wumpus server diff:', e);
-    }
+    await sendTrackerMessage(
+        [
+            target(
+                'Experiment Central servers',
+                configExperimentCentral.webhooks.servers,
+                configExperimentCentral.pings.servers,
+            ),
+            target(
+                'Wumpus University servers',
+                configWumpusUniv.webhooks.servers,
+                configWumpusUniv.pings.servers,
+            ),
+        ],
+        { content: result },
+    );
 }
 
 export default { diff, getServersList };

@@ -1,50 +1,30 @@
-import { configExperimentCentral, configWumpusUniv } from "../config.js";
-import { sendToWebhook } from "../utils.js";
+import { configExperimentCentral, configWumpusUniv } from '../config.js';
+import { diffLines, formatTextDiff, sendTrackerMessage, target } from '../tracker.js';
 
-/**
- * Fetches robots.txt content from a given URL
- */
-async function getRobots(url = "https://discord.com/robots.txt") {
-  const content = await (await fetch(url)).text();
-  return content.trim();
+async function getRobots(url = 'https://discord.com/robots.txt'): Promise<string> {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Failed to fetch robots.txt: HTTP ${response.status}`);
+    return (await response.text()).trim();
 }
 
-/**
- * Compare two versions of robots.txt and send diffs to webhooks
- */
-function diff(oldContent: string, newContent: string) {
-  let result = "";
-  const linesA = oldContent.split("\n");
-  const linesB = newContent.split("\n");
-
-  for (let l = 0; l < linesA.length; l++) {
-    if (linesA[l] !== linesB[l] && linesB[l] !== undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Updated\n- ${linesA[l]}\n+ ${linesB[l]}\n\n`;
-    }
-    if (linesA[l] !== linesB[l] && linesB[l] === undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Removed\n- ${linesA[l]}\n\n`;
-    }
-  }
-
-  for (let l = 0; l < linesB.length; l++) {
-    if (linesA[l] !== linesB[l] && linesA[l] === undefined) {
-      if (result.length === 0) result += "```diff\n";
-      result += `# Added\n+ ${linesB[l]}\n`;
-    }
-  }
-
-  if (result.length !== 0) result += "```";
-
-  if (result.length) {
-    sendToWebhook(configExperimentCentral.webhooks.robots, {
-      content: configExperimentCentral.pings.robots + "\n" + result,
-    });
-    sendToWebhook(configWumpusUniv.webhooks.robots, {
-      content: configWumpusUniv.pings.robots + "\n" + result,
-    });
-  }
+async function diff(before: string, after: string): Promise<void> {
+    const content = formatTextDiff(diffLines(before, after));
+    if (!content) return;
+    await sendTrackerMessage(
+        [
+            target(
+                'Experiment Central robots',
+                configExperimentCentral.webhooks.robots,
+                configExperimentCentral.pings.robots,
+            ),
+            target(
+                'Wumpus University robots',
+                configWumpusUniv.webhooks.robots,
+                configWumpusUniv.pings.robots,
+            ),
+        ],
+        { content },
+    );
 }
 
 export default { getRobots, diff };

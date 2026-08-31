@@ -3,7 +3,7 @@ import {
     configWumpusUniv,
     SECURITYTRIALS_API_KEY,
 } from '../config.js';
-import { sendToWebhook } from '../utils.js';
+import { formatTextDiff, sendTrackerMessage, target } from '../tracker.js';
 
 const DOMAINS = [
     'dis.gd',
@@ -60,6 +60,7 @@ async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
                     'User-Agent':
                         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                 },
+                signal: AbortSignal.timeout(20_000),
             },
         );
 
@@ -93,6 +94,7 @@ async function findSubdomainsSecurityTrails(domain: string): Promise<string[]> {
                     Accept: 'application/json',
                     APIKEY: SECURITYTRIALS_API_KEY,
                 },
+                signal: AbortSignal.timeout(20_000),
             },
         );
 
@@ -110,7 +112,7 @@ async function findSubdomainsSecurityTrails(domain: string): Promise<string[]> {
     return [...subs];
 }
 
-async function getDomains(): Promise<string[]> {
+async function getDomains(previous: string[] = []): Promise<string[]> {
     const results = await Promise.all(
         DOMAINS.map(async (domain) => {
             const [crtSh, st] = await Promise.all([
@@ -122,7 +124,9 @@ async function getDomains(): Promise<string[]> {
         }),
     );
 
-    const all = new Set<string>();
+    // Certificate transparency is append-only. Keep known domains when a
+    // provider has a transient failure instead of reporting false removals.
+    const all = new Set<string>(previous);
 
     for (const subs of results) {
         for (const sub of subs) {
@@ -142,54 +146,23 @@ async function diff(oldData: string[], newData: string[]) {
 
     if (!added.length && !removed.length) return;
 
-    let result = '```diff\n';
-    if (added.length) {
-        result += '# Added\n';
-        for (const v of added) result += `+ ${v}\n`;
-        result += '\n';
-    }
-    if (removed.length) {
-        result += '# Removed\n';
-        for (const v of removed) result += `- ${v}\n`;
-        result += '\n';
-    }
-    result += '```';
-
-    try {
-        const centralContent =
-            configExperimentCentral.pings.domains + '\n' + result;
-        for (const chunk of chunkString(centralContent)) {
-            await sendToWebhook(configExperimentCentral.webhooks.domains, {
-                content: chunk,
-            });
-        }
-    } catch (e) {
-        console.error('Failed to send central domain diff:', e);
-    }
-
-    try {
-        const uniContent = configWumpusUniv.pings.domains + '\n' + result;
-        for (const chunk of chunkString(uniContent)) {
-            await sendToWebhook(configWumpusUniv.webhooks.domains, {
-                content: chunk,
-            });
-        }
-    } catch (e) {
-        console.error('Failed to send wumpus domain diff:', e);
-    }
-}
-
-function chunkString(str: string, maxLength = 2000): string[] {
-    const chunks: string[] = [];
-    let remaining = str;
-    while (remaining.length > maxLength) {
-        let splitAt = remaining.lastIndexOf('\n', maxLength);
-        if (splitAt <= 0) splitAt = maxLength;
-        chunks.push(remaining.slice(0, splitAt));
-        remaining = remaining.slice(splitAt).trimStart();
-    }
-    if (remaining.length > 0) chunks.push(remaining);
-    return chunks;
+    const content = formatTextDiff({ added, removed });
+    if (!content) return;
+    await sendTrackerMessage(
+        [
+            target(
+                'Experiment Central domains',
+                configExperimentCentral.webhooks.domains,
+                configExperimentCentral.pings.domains,
+            ),
+            target(
+                'Wumpus University domains',
+                configWumpusUniv.webhooks.domains,
+                configWumpusUniv.pings.domains,
+            ),
+        ],
+        { content },
+    );
 }
 
 export default { getDomains, diff };

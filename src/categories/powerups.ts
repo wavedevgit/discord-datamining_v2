@@ -1,89 +1,78 @@
 import { configExperimentCentral, configWumpusUniv } from '../config.js';
-import { sendToWebhook } from '../utils.js';
+import { changedKeys, diffByKey, sendTrackerMessage, target } from '../tracker.js';
+import { DiscordEmbed } from '../types.js';
 
-const POWERUPS_URL = 'https://raw.githubusercontent.com/nexpid/Themelings/data/source/discord_common/js/shared/shared-constants/Powerups.tsx';
+const POWERUPS_URL =
+    'https://raw.githubusercontent.com/nexpid/Themelings/data/source/discord_common/js/shared/shared-constants/Powerups.tsx';
 
-async function getPowerups() {
-    const res = await fetch(POWERUPS_URL, {
-        headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        },
-    });
-    const text = await res.text();
-    const powerups = [];
-    const regex = /var3\['(\w+)'\]\s*=\s*var2;\s*var2\s*=\s*'(\d+)';/g;
-    let match;
-    while ((match = regex.exec(text)) !== null) {
-        powerups.push({
-            name: match[1],
-            sku_id: match[2],
-        });
+interface Powerup extends Record<string, unknown> {
+    name: string;
+    sku_id: string;
+}
+
+async function getPowerups(): Promise<Powerup[]> {
+    const response = await fetch(POWERUPS_URL);
+    if (!response.ok) throw new Error(`Failed to fetch powerups: HTTP ${response.status}`);
+    const text = await response.text();
+    const powerups: Powerup[] = [];
+    for (const match of text.matchAll(/var3\['(\w+)'\]\s*=\s*var2;\s*var2\s*=\s*'(\d+)';/g)) {
+        powerups.push({ name: match[1], sku_id: match[2] });
     }
+    if (!powerups.length) throw new Error('Powerup parser returned no entries');
     return powerups;
 }
 
-function getFieldsForPowerup(powerup) {
-    return [
-        { name: 'Name', value: powerup.name, inline: true },
-        { name: 'SKU ID', value: powerup.sku_id, inline: true },
-        { name: 'View SKU', value: `[view sku](https://canary.discord.com/api/v9/store/published-listings/skus/${powerup.sku_id}?country_code=US&variants_return_style=2)`, inline: true },
-    ];
+function powerupEmbed(
+    powerup: Powerup,
+    change: 'Added' | 'Removed' | 'Updated',
+    changes: string[] = [],
+): DiscordEmbed {
+    return {
+        title: `Powerups - ${change}`,
+        fields: [
+            { name: 'Name', value: powerup.name, inline: true },
+            { name: 'SKU ID', value: powerup.sku_id, inline: true },
+            {
+                name: 'View SKU',
+                value: `[view sku](https://canary.discord.com/api/v9/store/published-listings/skus/${powerup.sku_id}?country_code=US&variants_return_style=2)`,
+                inline: true,
+            },
+            ...(changes.length
+                ? [{ name: 'Changed fields', value: changes.join(', ') }]
+                : []),
+        ],
+        color: change === 'Removed' ? 0xff0000 : change === 'Added' ? 0x008000 : 0xffa500,
+    };
 }
 
-async function diff(a, b) {
-    const result = [];
-    const diff = { removed: [], added: [] };
-
-    for (let powerup of a) {
-        if (!b.find(p => p.sku_id === powerup.sku_id)) {
-            diff.removed.push(powerup);
-        }
-    }
-
-    for (let powerup of b) {
-        if (!a.find(p => p.sku_id === powerup.sku_id)) {
-            diff.added.push(powerup);
-        }
-    }
-
-    diff.removed.sort((x, y) => x.name.localeCompare(y.name));
-    diff.added.sort((x, y) => x.name.localeCompare(y.name));
-
-    for (let powerup of diff.removed) {
-        result.push({
-            title: 'Powerups — Removed:',
-            fields: getFieldsForPowerup(powerup),
-            color: 0xff0000,
-        });
-    }
-
-    for (let powerup of diff.added) {
-        result.push({
-            title: 'Powerups — Added:',
-            fields: getFieldsForPowerup(powerup),
-            color: 0x008000,
-        });
-    }
-
-    if (!result.length) return;
-
-    try {
-        await sendToWebhook(configExperimentCentral.webhooks.powerups, {
-            content: configExperimentCentral.pings.powerups,
-            embeds: result,
-        });
-    } catch (e) {
-        console.error('Failed to send central powerup diff:', e);
-    }
-
-    try {
-        await sendToWebhook(configWumpusUniv.webhooks.powerups, {
-            content: configWumpusUniv.pings.powerups,
-            embeds: result,
-        });
-    } catch (e) {
-        console.error('Failed to send wumpus powerup diff:', e);
-    }
+async function diff(before: Powerup[], after: Powerup[]): Promise<void> {
+    const changes = diffByKey(before, after, ({ sku_id }) => sku_id);
+    const byName = (left: Powerup, right: Powerup) => left.name.localeCompare(right.name);
+    changes.added.sort(byName);
+    changes.removed.sort(byName);
+    const embeds: DiscordEmbed[] = [
+        ...changes.removed.map((powerup) => powerupEmbed(powerup, 'Removed')),
+        ...changes.added.map((powerup) => powerupEmbed(powerup, 'Added')),
+        ...changes.updated.map(({ before: previous, after: powerup }) =>
+            powerupEmbed(powerup, 'Updated', changedKeys(previous, powerup))),
+    ];
+    if (!embeds.length) return;
+    await sendTrackerMessage(
+        [
+            target(
+                'Experiment Central powerups',
+                configExperimentCentral.webhooks.powerups,
+                configExperimentCentral.pings.powerups,
+            ),
+            target(
+                'Wumpus University powerups',
+                configWumpusUniv.webhooks.powerups,
+                configWumpusUniv.pings.powerups,
+            ),
+        ],
+        { embeds },
+    );
 }
 
 export default { getPowerups, diff };
+export type { Powerup };
