@@ -66,7 +66,7 @@ async function getServersList(
     return { data: lines.join('\n'), cache };
 }
 
-function diffSnapshots(oldSnap: string, newSnap: string): string {
+function diffSnapshots(oldSnap: string, newSnap: string): string | undefined {
     const changes = diffLines(oldSnap, newSnap);
     const { added, removed } = changes;
 
@@ -74,6 +74,10 @@ function diffSnapshots(oldSnap: string, newSnap: string): string {
 
     added.sort();
     removed.sort();
+
+    if (added.length > MAX_DIFF_ENTRIES || removed.length > MAX_DIFF_ENTRIES) {
+        return undefined;
+    }
 
     const shown = {
         added: added.slice(0, MAX_DIFF_ENTRIES),
@@ -85,8 +89,9 @@ function diffSnapshots(oldSnap: string, newSnap: string): string {
 }
 
 async function diff(oldSnap: string, newSnap: string) {
+    const changes = diffLines(oldSnap, newSnap);
+    if (!changes.added.length && !changes.removed.length) return;
     const result = diffSnapshots(oldSnap, newSnap);
-    if (!result) return;
 
     await sendTrackerMessage(
         [

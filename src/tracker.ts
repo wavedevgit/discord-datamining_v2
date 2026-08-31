@@ -107,9 +107,12 @@ async function sendTrackerMessage(
         return;
     }
 
+    const commitLink = process.env.COMMIT_URL
+        ? `[View committed changes](${process.env.COMMIT_URL})`
+        : undefined;
     const results = await Promise.allSettled(
         configured.map(async ({ name, url, ping }) => {
-            const content = [ping, message.content].filter(Boolean).join('\n');
+            const content = [ping, message.content, commitLink].filter(Boolean).join('\n');
             try {
                 await sendToWebhook(url, { ...message, content: content || undefined });
             } catch (error) {

@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 import { changedKeys, diffByKey, diffLines, formatTextDiff } from './tracker.js';
+import { parsePowerups } from './categories/powerups.js';
 
 test('diffByKey ignores reordering and reports entity changes', () => {
     const before = [
@@ -41,4 +42,16 @@ test('diffByKey rejects ambiguous duplicate keys', () => {
         () => diffByKey([{ id: '1' }, { id: '1' }], [], ({ id }) => id),
         /Duplicate tracker key: 1/,
     );
+});
+
+test('parsePowerups reads exported mobile constants without shifting SKU IDs', () => {
+    const source = [
+        'export const VANITY_URL_POWERUP_SKU_ID = "1387197800336330924";',
+        "export const GUILD_POWERUP_LEVEL_1_SKU_ID = '1341586379779604621';",
+    ].join('\n');
+
+    assert.deepEqual(parsePowerups(source), [
+        { name: 'VANITY_URL_POWERUP_SKU_ID', sku_id: '1387197800336330924' },
+        { name: 'GUILD_POWERUP_LEVEL_1_SKU_ID', sku_id: '1341586379779604621' },
+    ]);
 });

@@ -3,21 +3,25 @@ import { changedKeys, diffByKey, sendTrackerMessage, target } from '../tracker.j
 import { DiscordEmbed } from '../types.js';
 
 const POWERUPS_URL =
-    'https://raw.githubusercontent.com/nexpid/Themelings/data/source/discord_common/js/shared/shared-constants/Powerups.tsx';
+    'https://raw.githubusercontent.com/Wumpus-Central/discord-mobile-datamining/refs/heads/main/discord_common/js/shared/shared-constants/Powerups.tsx';
 
 interface Powerup extends Record<string, unknown> {
     name: string;
     sku_id: string;
 }
 
+function parsePowerups(text: string): Powerup[] {
+    return [...text.matchAll(/export const (\w+) = ["'](\d+)["'];/g)].map((match) => ({
+        name: match[1],
+        sku_id: match[2],
+    }));
+}
+
 async function getPowerups(): Promise<Powerup[]> {
     const response = await fetch(POWERUPS_URL);
     if (!response.ok) throw new Error(`Failed to fetch powerups: HTTP ${response.status}`);
     const text = await response.text();
-    const powerups: Powerup[] = [];
-    for (const match of text.matchAll(/var3\['(\w+)'\]\s*=\s*var2;\s*var2\s*=\s*'(\d+)';/g)) {
-        powerups.push({ name: match[1], sku_id: match[2] });
-    }
+    const powerups = parsePowerups(text);
     if (!powerups.length) throw new Error('Powerup parser returned no entries');
     return powerups;
 }
@@ -75,4 +79,5 @@ async function diff(before: Powerup[], after: Powerup[]): Promise<void> {
 }
 
 export default { getPowerups, diff };
+export { parsePowerups };
 export type { Powerup };
