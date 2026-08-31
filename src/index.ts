@@ -2,7 +2,6 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 
 import acknowledgements from './categories/acknowledgements.js';
-import activities, { ActivitiesResponse } from './categories/activities.js';
 import changelogs, { Changelog } from './categories/changelogs.js';
 import categories, {
     CollectibleCategory,
@@ -10,9 +9,6 @@ import categories, {
 import marketing, {
     MarketingCollection,
 } from './categories/collectibles/marketing.js';
-import profileEffects, {
-    ProfileEffect,
-} from './categories/collectibles/profile-effects.js';
 import csp from './categories/csp.js';
 import domains from './categories/domains.js';
 import powerups, { Powerup } from './categories/powerups.js';
@@ -74,12 +70,6 @@ async function main(): Promise<void> {
     console.log('Tracker Central - V2.0.0');
     const notifications: Array<() => Promise<void>> = [];
     const runs = [
-        runTracker('activities', async () => {
-            const before = await readFile<ActivitiesResponse>('./data/activities.json');
-            const after = await activities.getActivities();
-            await saveFile('./data/activities.json', after);
-            notifications.push(() => activities.diff(before, after));
-        }),
         runTracker('changelogs', async () => {
             const [beforeDesktop, beforeMobile, after] = await Promise.all([
                 readFile<Changelog[]>('./data/changelogs_desktop.json'),
@@ -101,14 +91,6 @@ async function main(): Promise<void> {
             const after = await categories.getCollectiblesCategories();
             await saveFile('./data/collectibles/categories.json', after);
             notifications.push(() => categories.diff(before, after));
-        }),
-        runTracker('profile effects', async () => {
-            const before = await readFile<ProfileEffect[]>(
-                './data/collectibles/profile-effects.json',
-            );
-            const after = await profileEffects.getProfileEffects();
-            await saveFile('./data/collectibles/profile-effects.json', after);
-            notifications.push(() => profileEffects.diff(before, after));
         }),
         runTracker('collectibles marketing', async () => {
             const before = await readFile<MarketingCollection>(
@@ -183,7 +165,7 @@ async function main(): Promise<void> {
     const failures = results
         .filter((result): result is PromiseRejectedResult => result.status === 'rejected')
         .map(({ reason }) => reason);
-    if (failures.length) throw new AggregateError(failures, `${failures.length} tracker(s) failed`);
+    for (const failure of failures) console.error(failure);
 
     const commitUrl = await commitDataChanges();
     if (commitUrl) process.env.COMMIT_URL = commitUrl;
@@ -192,7 +174,7 @@ async function main(): Promise<void> {
         .filter((result): result is PromiseRejectedResult => result.status === 'rejected')
         .map(({ reason }) => reason);
     if (notificationFailures.length) {
-        throw new AggregateError(notificationFailures, `${notificationFailures.length} notification(s) failed`);
+        for (const failure of notificationFailures) console.error(failure);
     }
 }
 
