@@ -12,6 +12,22 @@ interface SkuListing extends Record<string, unknown> {
     };
 }
 
+function normalizeFeatureLists(value: unknown): void {
+    if (Array.isArray(value)) {
+        for (const item of value) normalizeFeatureLists(item);
+        return;
+    }
+    if (!value || typeof value !== 'object') return;
+
+    for (const [key, child] of Object.entries(value)) {
+        if (key === 'features' && Array.isArray(child) && child.every((item) => typeof item === 'string')) {
+            child.sort();
+        } else {
+            normalizeFeatureLists(child);
+        }
+    }
+}
+
 async function getSkus(skus: string[]): Promise<string[]> {
     const results = await Promise.all(
         skus.map(async (sku) => {
@@ -72,6 +88,7 @@ async function getSkuApps(appIds: string[]): Promise<SkuListing[]> {
             }
             const body = await response.json() as SkuListing[];
             if (!Array.isArray(body)) throw new Error(`Invalid SKU response for ${appId}`);
+            for (const listing of body) normalizeFeatureLists(listing);
             return body;
         }),
     );
@@ -115,4 +132,5 @@ async function diffSkuApps(before: SkuListing[], after: SkuListing[]): Promise<v
 }
 
 export default { getSkus, diff, getSkuApps, diffSkuApps };
+export { normalizeFeatureLists };
 export type { SkuListing };

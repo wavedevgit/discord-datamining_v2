@@ -23,7 +23,7 @@ async function getCollectiblesCategories(): Promise<CollectibleCategory[]> {
         categories?: CollectibleCategory[];
         message?: string;
     };
-    if (!response.ok || !Array.isArray(body.categories)) {
+    if (!response.ok || !Array.isArray(body.categories) || !body.categories.length) {
         throw new Error(body.message ?? `Failed to fetch categories: HTTP ${response.status}`);
     }
     return body.categories;

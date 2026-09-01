@@ -3,6 +3,7 @@ import test from 'node:test';
 
 import { changedKeys, diffByKey, diffLines, formatTextDiff } from './tracker.js';
 import { parsePowerups } from './categories/powerups.js';
+import { normalizeFeatureLists } from './categories/skus.js';
 
 test('diffByKey ignores reordering and reports entity changes', () => {
     const before = [
@@ -53,5 +54,19 @@ test('parsePowerups reads exported mobile constants without shifting SKU IDs', (
     assert.deepEqual(parsePowerups(source), [
         { name: 'VANITY_URL_POWERUP_SKU_ID', sku_id: '1387197800336330924' },
         { name: 'GUILD_POWERUP_LEVEL_1_SKU_ID', sku_id: '1341586379779604621' },
+    ]);
+});
+
+test('normalizeFeatureLists ignores unordered SKU feature lists', () => {
+    const listing = {
+        guild_features: { features: ['ROLE_ICONS', 'BANNER', 'ANIMATED_ICON'] },
+    };
+
+    normalizeFeatureLists(listing);
+
+    assert.deepEqual(listing.guild_features.features, [
+        'ANIMATED_ICON',
+        'BANNER',
+        'ROLE_ICONS',
     ]);
 });

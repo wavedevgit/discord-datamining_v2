@@ -11,9 +11,17 @@ async function fetchText(url: string) {
     return (await res.text()).trim();
 }
 
-function extractLocs(xml: string): string[] {
+function serverId(url: string): string | undefined {
+    return url.match(/\/servers\/[^/]+-(\d+)$/)?.[1];
+}
+
+function extractLocs(xml: string, knownUrls = new Map<string, string>()): string[] {
     const matches = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)];
-    return matches.map((m) => m[1]);
+    return matches.map((match) => {
+        const url = match[1];
+        const id = serverId(url);
+        return (id && knownUrls.get(id)) ?? url;
+    });
 }
 
 async function getChildSitemaps(): Promise<string[]> {
@@ -27,12 +35,25 @@ export interface SitemapCache {
 
 async function getServersList(
     oldCache?: SitemapCache,
+    previousData = '',
 ): Promise<{ data: string; cache: SitemapCache }> {
     const children = await getChildSitemaps();
     const oldChildren = oldCache ?? {};
 
     const cache: SitemapCache = {};
     const seen = new Set<string>();
+    const knownUrls = new Map<string, string>();
+
+    for (const url of previousData.split('\n')) {
+        const id = serverId(url);
+        if (id) knownUrls.set(id, url);
+    }
+    for (const sitemap of Object.values(oldChildren)) {
+        for (const url of sitemap.urls) {
+            const id = serverId(url);
+            if (id && !knownUrls.has(id)) knownUrls.set(id, url);
+        }
+    }
 
     const toFetch: string[] = [];
     const lastChild = children.at(-1);
@@ -55,7 +76,7 @@ async function getServersList(
 
     for (let i = 0; i < toFetch.length; i++) {
         const url = toFetch[i];
-        const locs = extractLocs(xmls[i]);
+        const locs = extractLocs(xmls[i], knownUrls);
         cache[url] = { urls: locs };
         for (const loc of locs) {
             seen.add(loc);

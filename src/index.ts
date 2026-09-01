@@ -152,7 +152,7 @@ async function main(): Promise<void> {
                 readFile<string>('./data/servers.txt', false),
                 readFile<SitemapCache>('./data/servers_sitemaps.json').catch(() => ({})),
             ]);
-            const after = await servers.getServersList(cache);
+            const after = await servers.getServersList(cache, before);
             await Promise.all([
                 saveFileText('./data/servers.txt', after.data),
                 saveFile('./data/servers_sitemaps.json', after.cache),
