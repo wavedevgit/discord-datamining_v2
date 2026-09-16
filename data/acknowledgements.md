@@ -1934,6 +1934,7 @@
 - Steam Audio: FFTS
 - Steam Audio: PFFFT
 - Steam Audio: MySOFA
+- Steam Audio: FlatBuffers
 - Steam Audio: Intel Embree
 - Steam Audio: AMD RadeonRays
 - Steam Audio: AMD TrueAudio Next
