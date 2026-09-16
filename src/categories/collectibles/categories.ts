@@ -17,6 +17,30 @@ interface CollectibleCategory extends Record<string, unknown> {
     };
 }
 
+// Prices are localized to the request's country, which can change between runs.
+// Product and bundle order is also unstable in the API response.
+function categoryForNotification(value: unknown, parentKey = ''): unknown {
+    if (Array.isArray(value)) {
+        const items = value.map((item) => categoryForNotification(item));
+        if (['products', 'bundled_products', 'items'].includes(parentKey)) {
+            items.sort((left, right) =>
+                String((left as CollectibleCategory).sku_id).localeCompare(
+                    String((right as CollectibleCategory).sku_id),
+                ),
+            );
+        }
+        return items;
+    }
+    if (value && typeof value === 'object') {
+        return Object.fromEntries(
+            Object.entries(value).filter(([key]) => key !== 'prices').map(
+                ([key, item]) => [key, categoryForNotification(item, key)],
+            ),
+        );
+    }
+    return value;
+}
+
 async function getCollectiblesCategories(): Promise<CollectibleCategory[]> {
     const response = await sendReq({ url: 'collectibles-categories/v2' });
     const body = await response.json() as {
@@ -65,7 +89,11 @@ async function diff(
     before: CollectibleCategory[],
     after: CollectibleCategory[],
 ): Promise<void> {
-    const changes = diffByKey(before, after, ({ sku_id }) => sku_id);
+    const changes = diffByKey(
+        before.map((category) => categoryForNotification(category) as CollectibleCategory),
+        after.map((category) => categoryForNotification(category) as CollectibleCategory),
+        ({ sku_id }) => sku_id,
+    );
     const byName = (left: CollectibleCategory, right: CollectibleCategory) =>
         left.name.localeCompare(right.name);
     changes.added.sort(byName);
@@ -95,4 +123,5 @@ async function diff(
 }
 
 export default { getCollectiblesCategories, diff };
+export { categoryForNotification };
 export type { CollectibleCategory };
