@@ -210,9 +210,13 @@ function merchEmbed(
     change: 'Added' | 'Removed' | 'Updated',
     changes: JsonChange[] = [],
 ): DiscordEmbed {
-    const firstImage = product.images.find(
-        (image) => typeof image.src === 'string',
-    )?.src;
+    const firstImage = product.images
+        .filter((image) => typeof image.src === 'string')
+        .sort(
+            (left, right) =>
+                Number(left.position ?? Number.MAX_SAFE_INTEGER) -
+                Number(right.position ?? Number.MAX_SAFE_INTEGER),
+        )[0]?.src;
     return {
         title: product.title,
         url: productUrl(product),
