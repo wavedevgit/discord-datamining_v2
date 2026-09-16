@@ -3,6 +3,7 @@ import test from 'node:test';
 
 import { changedKeys, diffByKey, diffLines, formatTextDiff } from './tracker.js';
 import { parsePowerups } from './categories/powerups.js';
+import { categoryForNotification } from './categories/collectibles/categories.js';
 import { normalizeFeatureLists } from './categories/skus.js';
 
 test('diffByKey ignores reordering and reports entity changes', () => {
@@ -43,6 +44,28 @@ test('diffByKey rejects ambiguous duplicate keys', () => {
         () => diffByKey([{ id: '1' }, { id: '1' }], [], ({ id }) => id),
         /Duplicate tracker key: 1/,
     );
+});
+
+test('collectible notifications ignore localized prices and product order', () => {
+    const before = {
+        sku_id: 'category',
+        products: [
+            { sku_id: 'b', name: 'B', prices: { country_code: 'CL' } },
+            { sku_id: 'a', name: 'A', prices: { country_code: 'CL' } },
+        ],
+    };
+    const after = {
+        sku_id: 'category',
+        products: [
+            { sku_id: 'a', name: 'A', prices: { country_code: 'US' } },
+            { sku_id: 'b', name: 'B', prices: { country_code: 'US' } },
+        ],
+    };
+    const normalizedBefore = categoryForNotification(before);
+    assert.deepEqual(normalizedBefore, categoryForNotification(after));
+    assert.equal(before.products[0].sku_id, 'b');
+    after.products[0].name = 'Changed';
+    assert.notDeepEqual(normalizedBefore, categoryForNotification(after));
 });
 
 test('parsePowerups reads exported mobile constants without shifting SKU IDs', () => {
