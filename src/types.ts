@@ -24,6 +24,7 @@ interface DiscordEmbedField {
 }
 interface DiscordEmbed {
     title?: string;
+    url?: string;
     description?: string;
     color?: number;
     fields?: DiscordEmbedField[];
@@ -64,6 +65,7 @@ interface ConfigCategoriesObject {
     robots?: string;
     acknowledgements?: string;
     powerups?: string;
+    merch?: string;
     skus?: string;
     status?: {
         token?: string;

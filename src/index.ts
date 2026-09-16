@@ -11,6 +11,7 @@ import marketing, {
 } from './categories/collectibles/marketing.js';
 import csp from './categories/csp.js';
 import domains from './categories/domains.js';
+import merch, { MerchProduct } from './categories/merch.js';
 import powerups, { Powerup } from './categories/powerups.js';
 import robots from './categories/robots.js';
 import servers, { SitemapCache } from './categories/servers.js';
@@ -131,6 +132,12 @@ async function main(): Promise<void> {
             const after = await powerups.getPowerups();
             await saveFile('./data/powerups.json', after);
             notifications.push(() => powerups.diff(before, after));
+        }),
+        runTracker('merch', async () => {
+            const before = await readFile<MerchProduct[]>('./data/merch.json');
+            const after = await merch.getMerch();
+            await saveFile('./data/merch.json', after);
+            notifications.push(() => merch.diff(before, after));
         }),
         runTracker('SKU publication', async () => {
             const before = await readFile<string[]>('./data/skus.json');
