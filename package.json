@@ -4,7 +4,7 @@
     "scripts": {
         "lint": "tsc",
         "build": "tsc",
-        "test": "npm run build && node --test dist/tracker.test.js dist/utils.test.js",
+        "test": "npm run build && node --test dist/**/*.test.js dist/*.test.js",
         "start": "node --enable-source-maps dist/index.js",
         "prod": "node scripts/run.js --sync cleanup lint build start",
         "dev:lint": "tsc --watch --preserveWatchOutput",

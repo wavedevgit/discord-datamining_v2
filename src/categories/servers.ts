@@ -11,16 +11,36 @@ async function fetchText(url: string) {
     return (await res.text()).trim();
 }
 
-function serverId(url: string): string | undefined {
-    return url.match(/\/servers\/[^/]+-(\d+)$/)?.[1];
+interface ServerEntry {
+    id: string;
+    url: string;
 }
 
-function extractLocs(xml: string, knownUrls = new Map<string, string>()): string[] {
+export function serverEntry(value: string): ServerEntry | undefined {
+    const match = value.match(/^(?:(\d+)\s+)?(https:\/\/discord\.com\/servers\/[^\s]*?(\d+))$/);
+    if (!match) return;
+    return { id: match[1] ?? match[3], url: match[2] };
+}
+
+export function formatServer(entry: ServerEntry): string {
+    return `${entry.id} ${entry.url}`;
+}
+
+export function compareServers(a: string, b: string): number {
+    const first = serverEntry(a);
+    const second = serverEntry(b);
+    if (!first || !second) return a.localeCompare(b);
+    if (first.id.length !== second.id.length) return first.id.length - second.id.length;
+    return first.id.localeCompare(second.id);
+}
+
+function extractLocs(xml: string): string[] {
     const matches = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)];
     return matches.map((match) => {
         const url = match[1];
-        const id = serverId(url);
-        return (id && knownUrls.get(id)) ?? url;
+        const entry = serverEntry(url);
+        if (!entry) return url;
+        return formatServer(entry);
     });
 }
 
@@ -35,26 +55,13 @@ export interface SitemapCache {
 
 async function getServersList(
     oldCache?: SitemapCache,
-    previousData = '',
+    ..._legacyPreviousData: [string?]
 ): Promise<{ data: string; cache: SitemapCache }> {
     const children = await getChildSitemaps();
     const oldChildren = oldCache ?? {};
 
     const cache: SitemapCache = {};
     const seen = new Set<string>();
-    const knownUrls = new Map<string, string>();
-
-    for (const url of previousData.split('\n')) {
-        const id = serverId(url);
-        if (id) knownUrls.set(id, url);
-    }
-    for (const sitemap of Object.values(oldChildren)) {
-        for (const url of sitemap.urls) {
-            const id = serverId(url);
-            if (id && !knownUrls.has(id)) knownUrls.set(id, url);
-        }
-    }
-
     const toFetch: string[] = [];
     const lastChild = children.at(-1);
 
@@ -62,8 +69,13 @@ async function getServersList(
         if (oldChildren[url] && url !== lastChild) {
             // Completed sitemap shards are immutable. The final shard can
             // still grow, so always refresh it.
-            cache[url] = oldChildren[url];
-            for (const loc of oldChildren[url].urls) {
+            cache[url] = {
+                urls: oldChildren[url].urls.map((line) => {
+                    const entry = serverEntry(line);
+                    return entry ? formatServer(entry) : line;
+                }),
+            };
+            for (const loc of cache[url].urls) {
                 seen.add(loc);
             }
         } else {
@@ -76,14 +88,19 @@ async function getServersList(
 
     for (let i = 0; i < toFetch.length; i++) {
         const url = toFetch[i];
-        const locs = extractLocs(xmls[i], knownUrls);
+        const locs = extractLocs(xmls[i]).sort(compareServers);
         cache[url] = { urls: locs };
         for (const loc of locs) {
             seen.add(loc);
         }
     }
 
-    const lines = [...seen].sort();
+    // Ensure cached shards that were reused remain deterministically sorted
+    for (const key of Object.keys(cache)) {
+        cache[key].urls = [...new Set(cache[key].urls)].sort(compareServers);
+    }
+
+    const lines = [...seen].sort(compareServers);
     return { data: lines.join('\n'), cache };
 }
 
