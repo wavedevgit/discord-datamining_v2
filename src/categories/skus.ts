@@ -41,7 +41,7 @@ async function getSkus(skus: string[]): Promise<string[]> {
             }
         }),
     );
-    return results.filter((sku): sku is string => sku !== undefined);
+    return results.filter((sku): sku is string => sku !== undefined).sort();
 }
 
 function skuTargets() {
@@ -92,7 +92,7 @@ async function getSkuApps(appIds: string[]): Promise<SkuListing[]> {
             return body;
         }),
     );
-    return listings.flat();
+    return listings.flat().sort((a, b) => a.sku.id.localeCompare(b.sku.id));
 }
 
 function listingEmbed(

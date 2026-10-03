@@ -11,12 +11,21 @@ interface ActivitiesResponse {
     activities: Activity[];
 }
 
+function normalizeActivities(response: ActivitiesResponse): ActivitiesResponse {
+    const activities = [...(response.activities ?? [])].sort((a, b) =>
+        a.application_id.localeCompare(b.application_id),
+    );
+    return { ...response, activities };
+}
+
 async function getActivities(): Promise<ActivitiesResponse> {
     const response = await sendReq({
         url: 'activities/shelf?guild_id=612443491770957833',
     });
     if (!response.ok) throw new Error(`Failed to fetch activities: HTTP ${response.status}`);
-    return response.json() as Promise<ActivitiesResponse>;
+    const data = (await response.json()) as ActivitiesResponse;
+    if (!Array.isArray(data.activities)) throw new Error('Invalid activities response');
+    return normalizeActivities(data);
 }
 
 function activityEmbed(
@@ -43,9 +52,11 @@ function activityEmbed(
 }
 
 async function diff(before: ActivitiesResponse, after: ActivitiesResponse): Promise<void> {
+    const normalizedBefore = normalizeActivities(before);
+    const normalizedAfter = normalizeActivities(after);
     const changes = diffByKey(
-        before.activities,
-        after.activities,
+        normalizedBefore.activities,
+        normalizedAfter.activities,
         ({ application_id }) => application_id,
     );
     const embeds: DiscordEmbed[] = [

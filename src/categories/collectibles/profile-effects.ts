@@ -11,6 +11,17 @@ interface ProfileEffect extends Record<string, unknown> {
     effects: Array<{ src: string }>;
 }
 
+function normalizeProfileEffects(effects: ProfileEffect[]): ProfileEffect[] {
+    const cloned = JSON.parse(JSON.stringify(effects)) as ProfileEffect[];
+    cloned.sort((a, b) => a.sku_id.localeCompare(b.sku_id));
+    for (const effect of cloned) {
+        if (Array.isArray(effect.effects)) {
+            effect.effects.sort((a, b) => String(a.src).localeCompare(String(b.src)));
+        }
+    }
+    return cloned;
+}
+
 async function getProfileEffects(): Promise<ProfileEffect[]> {
     const response = await sendReq({ url: 'user-profile-effects' });
     const body = await response.json() as {
@@ -20,7 +31,10 @@ async function getProfileEffects(): Promise<ProfileEffect[]> {
     if (!response.ok || !Array.isArray(body.profile_effect_configs)) {
         throw new Error(body.message ?? `Failed to fetch profile effects: HTTP ${response.status}`);
     }
-    return body.profile_effect_configs;
+    if (!body.profile_effect_configs.length) {
+        throw new Error('Profile effects response is empty');
+    }
+    return normalizeProfileEffects(body.profile_effect_configs);
 }
 
 function profileEffectEmbed(
@@ -53,7 +67,11 @@ function profileEffectEmbed(
 }
 
 async function diff(before: ProfileEffect[], after: ProfileEffect[]): Promise<void> {
-    const changes = diffByKey(before, after, ({ sku_id }) => sku_id);
+    const changes = diffByKey(
+        normalizeProfileEffects([...before]),
+        normalizeProfileEffects([...after]),
+        ({ sku_id }) => sku_id,
+    );
     const embeds: DiscordEmbed[] = [
         ...changes.removed.map((effect) => profileEffectEmbed(effect, 'Removed')),
         ...changes.added.map((effect) => profileEffectEmbed(effect, 'Added')),

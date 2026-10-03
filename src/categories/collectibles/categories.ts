@@ -41,6 +41,38 @@ function categoryForNotification(value: unknown, parentKey = ''): unknown {
     return value;
 }
 
+function normalizeCollectibleCategories(categories: CollectibleCategory[]): CollectibleCategory[] {
+    const cloned = JSON.parse(JSON.stringify(categories)) as CollectibleCategory[];
+    const sorted = cloned.sort((a, b) => a.sku_id.localeCompare(b.sku_id));
+    for (const category of sorted) {
+        if (Array.isArray((category as any).products)) {
+            const products = (category as any).products as Array<Record<string, unknown>>;
+            products.sort((a, b) => String((a as any).sku_id).localeCompare(String((b as any).sku_id)));
+            for (const product of products) {
+                const styles = (product as any).styles;
+                if (styles) {
+                    if (Array.isArray(styles.button_colors)) styles.button_colors.sort((a: number, b: number) => a - b);
+                    if (Array.isArray(styles.background_colors)) styles.background_colors.sort((a: number, b: number) => a - b);
+                    if (Array.isArray(styles.confetti_colors)) styles.confetti_colors.sort((a: number, b: number) => a - b);
+                }
+                if (Array.isArray((product as any).items)) {
+                    (product as any).items.sort((a: any, b: any) => String(a.sku_id).localeCompare(String(b.sku_id)));
+                }
+                if (Array.isArray((product as any).bundled_products)) {
+                    (product as any).bundled_products.sort((a: any, b: any) => String(a.sku_id).localeCompare(String(b.sku_id)));
+                }
+            }
+        }
+        const styles = (category as any).styles;
+        if (styles) {
+            if (Array.isArray(styles.button_colors)) styles.button_colors.sort((a: number, b: number) => a - b);
+            if (Array.isArray(styles.background_colors)) styles.background_colors.sort((a: number, b: number) => a - b);
+            if (Array.isArray(styles.confetti_colors)) styles.confetti_colors.sort((a: number, b: number) => a - b);
+        }
+    }
+    return sorted;
+}
+
 async function getCollectiblesCategories(): Promise<CollectibleCategory[]> {
     const response = await sendReq({ url: 'collectibles-categories/v2' });
     const body = await response.json() as {
@@ -50,7 +82,7 @@ async function getCollectiblesCategories(): Promise<CollectibleCategory[]> {
     if (!response.ok || !Array.isArray(body.categories) || !body.categories.length) {
         throw new Error(body.message ?? `Failed to fetch categories: HTTP ${response.status}`);
     }
-    return body.categories;
+    return normalizeCollectibleCategories(body.categories);
 }
 
 function colors(values: number[] | undefined): string {
@@ -90,8 +122,12 @@ async function diff(
     after: CollectibleCategory[],
 ): Promise<void> {
     const changes = diffByKey(
-        before.map((category) => categoryForNotification(category) as CollectibleCategory),
-        after.map((category) => categoryForNotification(category) as CollectibleCategory),
+        normalizeCollectibleCategories([...before]).map(
+            (category) => categoryForNotification(category) as CollectibleCategory,
+        ),
+        normalizeCollectibleCategories([...after]).map(
+            (category) => categoryForNotification(category) as CollectibleCategory,
+        ),
         ({ sku_id }) => sku_id,
     );
     const byName = (left: CollectibleCategory, right: CollectibleCategory) =>

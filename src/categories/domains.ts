@@ -49,6 +49,29 @@ function sortDomains(domains: Iterable<string>): string[] {
     });
 }
 
+function isValidDomainLabel(label: string): boolean {
+    if (!label || label.length > 63) return false;
+    if (label.startsWith('-') || label.endsWith('-')) return false;
+    if (!/^[a-z0-9-]+$/.test(label)) return false;
+    return true;
+}
+
+function isValidDomain(name: string, baseDomain: string): boolean {
+    const cleaned = name.trim().toLowerCase();
+    if (!cleaned || cleaned.length > 253) return false;
+    if (cleaned.includes('..') || cleaned.includes('__') || cleaned.includes('*') || cleaned.includes('_')) return false;
+    if (!/^[a-z0-9.-]+$/.test(cleaned)) return false;
+    if (!(cleaned === baseDomain || cleaned.endsWith(`.${baseDomain}`))) return false;
+    // Filter ephemeral / random subdomains that create noise (e.g., xxx-yyy123., foo-bar-123.)
+    if (/(^|\.)[a-z]+-[a-z]+-?\d+(\.|$)/.test(cleaned)) return false;
+    if (/[a-z]+\-[a-z]+\d+\./.test(cleaned)) return false;
+    const labels = cleaned.split('.');
+    for (const label of labels) {
+        if (!isValidDomainLabel(label)) return false;
+    }
+    return true;
+}
+
 async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
     const subs = new Set<string>();
 
@@ -71,7 +94,7 @@ async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
             const names = entry.name_value.split('\n');
             for (const name of names) {
                 const cleaned = name.trim().toLowerCase();
-                if ((cleaned.endsWith(`.${domain}`) || cleaned === domain) && !cleaned.startsWith('*') && !/[a-z]+\-[a-z]+\d+\./.test(cleaned)) {
+                if (isValidDomain(cleaned, domain)) {
                     subs.add(cleaned);
                 }
             }
@@ -104,7 +127,9 @@ async function findSubdomainsSecurityTrails(domain: string): Promise<string[]> {
         if (data.subdomains) {
             for (const sub of data.subdomains) {
                 const full = `${sub}.${domain}`.toLowerCase();
-                subs.add(full);
+                if (isValidDomain(full, domain)) {
+                    subs.add(full);
+                }
             }
         }
     } catch {}
@@ -126,7 +151,14 @@ async function getDomains(previous: string[] = []): Promise<string[]> {
 
     // Certificate transparency is append-only. Keep known domains when a
     // provider has a transient failure instead of reporting false removals.
-    const all = new Set<string>(previous);
+    // Prune any previously stored noise/invalid domains while preserving valid ones.
+    const all = new Set<string>();
+    for (const domain of previous) {
+        const normalized = domain.trim().toLowerCase();
+        const isValid = DOMAINS.some((base) => normalized === base || isValidDomain(normalized, base));
+        if (isValid) all.add(normalized);
+        else if (DOMAINS.includes(normalized)) all.add(normalized);
+    }
 
     for (const subs of results) {
         for (const sub of subs) {

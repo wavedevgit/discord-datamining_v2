@@ -114,7 +114,7 @@ test('normalizeProducts removes merch noise and canonicalizes unordered data', (
         ],
         images: [
             { id: 2, src: 'two.png', variant_ids: [20, 10], updated_at: 'noise' },
-            { id: 1, src: 'one.png', variant_ids: [] },
+            { id: 1, src: 'one.png', variant_ids: [], updated_at: 'noise' },
         ],
         options: [],
     };

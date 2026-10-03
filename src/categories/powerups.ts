@@ -23,7 +23,7 @@ async function getPowerups(): Promise<Powerup[]> {
     const text = await response.text();
     const powerups = parsePowerups(text);
     if (!powerups.length) throw new Error('Powerup parser returned no entries');
-    return powerups;
+    return [...powerups].sort((a, b) => a.sku_id.localeCompare(b.sku_id) || a.name.localeCompare(b.name));
 }
 
 function powerupEmbed(

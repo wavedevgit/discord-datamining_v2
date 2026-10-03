@@ -12,17 +12,30 @@ async function getModules(): Promise<string> {
             /script async data-chunk="refresh-text_pages-Acknowledgements" src="(?<url>\/assets\/.+?\.js)"><\/script>/g,
         ),
     ].map((match) => match.groups?.url).filter((url): url is string => Boolean(url));
-    const script = scripts.at(-2);
-    if (!script) throw new Error('Acknowledgements script was not found');
+    if (!scripts.length) throw new Error('Acknowledgements script was not found');
 
-    const scriptResponse = await fetch(`https://canary.discord.com${script}`);
-    if (!scriptResponse.ok) {
-        throw new Error(`Failed to fetch acknowledgements script: HTTP ${scriptResponse.status}`);
+    let lastError: unknown;
+    for (const script of [...scripts].reverse()) {
+        try {
+            const scriptResponse = await fetch(`https://canary.discord.com${script}`);
+            if (!scriptResponse.ok) continue;
+            const content = await scriptResponse.text();
+            const modules = content.match(/\.exports="(?<modules>\*.+)"/)?.groups?.modules;
+            if (!modules) continue;
+            const normalized = modules.replaceAll('* ', '- ').replaceAll('\\n', '\n');
+            const lines = normalized
+                .split('\n')
+                .map((line) => line.trim())
+                .filter(Boolean)
+                .map((line) => line.replace(/\s+/g, ' '));
+            const deduped = [...new Set(lines)].sort((a, b) => a.localeCompare(b));
+            if (!deduped.length) continue;
+            return deduped.join('\n');
+        } catch (error) {
+            lastError = error;
+        }
     }
-    const content = await scriptResponse.text();
-    const modules = content.match(/\.exports="(?<modules>\*.+)"/)?.groups?.modules;
-    if (!modules) throw new Error('Acknowledgements modules were not found');
-    return modules.replaceAll('* ', '- ').replaceAll('\\n', '\n');
+    throw new Error(`Acknowledgements modules were not found: ${String(lastError)}`);
 }
 
 async function diff(before: string, after: string): Promise<void> {

@@ -35,8 +35,19 @@ async function hydrateChangelogs(platform: 0 | 1): Promise<Changelog[]> {
     );
 }
 
+function normalizeChangelog(changelog: Changelog): Changelog {
+    return {
+        ...changelog,
+        asset: stableAsset(changelog.asset),
+    };
+}
+
 async function getChangelogs(): Promise<[Changelog[], Changelog[]]> {
-    return Promise.all([hydrateChangelogs(0), hydrateChangelogs(1)]);
+    const [desktop, mobile] = await Promise.all([hydrateChangelogs(0), hydrateChangelogs(1)]);
+    const byId = (a: Changelog, b: Changelog) => a.changelog_id.localeCompare(b.changelog_id);
+    const normalizeAndSort = (items: Changelog[]) =>
+        items.map(normalizeChangelog).sort(byId);
+    return [normalizeAndSort(desktop), normalizeAndSort(mobile)];
 }
 
 function stableAsset(asset: string): string {

@@ -57,7 +57,7 @@ function normalizedLines(content: string): string[] {
     return content
         .replace(/\r\n/g, '\n')
         .split('\n')
-        .map((line) => line.trimEnd())
+        .map((line) => line.trim())
         .filter(Boolean);
 }
 

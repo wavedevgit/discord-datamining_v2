@@ -23,6 +23,14 @@ function normalizeMarketing(value: MarketingCollection): Marketing[] {
     );
 }
 
+function sortMarketingCollection(collection: MarketingCollection): MarketingCollection {
+    const sorted: MarketingCollection = {};
+    for (const key of Object.keys(collection).sort()) {
+        sorted[key] = collection[key];
+    }
+    return sorted;
+}
+
 async function getMarketing(): Promise<MarketingCollection> {
     const response = await sendReq({
         url: 'users/@me/collectibles-marketing?platform=0',
@@ -34,7 +42,10 @@ async function getMarketing(): Promise<MarketingCollection> {
     if (!response.ok || !body.marketings || typeof body.marketings !== 'object') {
         throw new Error(body.message ?? `Failed to fetch marketing: HTTP ${response.status}`);
     }
-    return body.marketings;
+    if (!Object.keys(body.marketings).length) {
+        throw new Error('Marketing response is empty');
+    }
+    return sortMarketingCollection(body.marketings);
 }
 
 function marketingEmbed(

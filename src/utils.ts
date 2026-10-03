@@ -23,8 +23,20 @@ async function atomicWrite(file: string, content: string): Promise<void> {
     await fs.rename(temporaryFile, file);
 }
 
+function sortKeys(value: unknown): unknown {
+    if (Array.isArray(value)) return value.map(sortKeys);
+    if (value && typeof value === 'object' && value.constructor === Object) {
+        const sorted: Record<string, unknown> = {};
+        for (const key of Object.keys(value as Record<string, unknown>).sort()) {
+            sorted[key] = sortKeys((value as Record<string, unknown>)[key]);
+        }
+        return sorted;
+    }
+    return value;
+}
+
 async function saveFile(file: string, data: unknown): Promise<void> {
-    await atomicWrite(file, JSON.stringify(data, null, 4));
+    await atomicWrite(file, JSON.stringify(sortKeys(data), null, 4));
 }
 
 async function saveFileText(file: string, data: string): Promise<void> {
