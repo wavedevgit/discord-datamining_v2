@@ -87,6 +87,6 @@ test('IP range notifications report sync-token-only changes', () => {
 
     assert.equal(
         formatIpRangesNotification(before, after),
-        '**Discord IP ranges updated**\n**Sync token:** `4ce19406` → `4ce19407`',
+        '## Discord Egress IP Ranges Updated\n\n**Sync token:** `4ce19406` → `4ce19407`',
     );
 });

@@ -120,7 +120,7 @@ function formatIpRangesNotification(
     const before = normalizeIpRanges(beforeValue);
     const after = normalizeIpRanges(afterValue);
     const changes = diffByKey(before.prefixes, after.prefixes, prefixValue);
-    const metadata: string[] = ['**Discord IP ranges updated**'];
+    const metadata: string[] = [];
 
     if (before.syncToken !== after.syncToken) {
         metadata.push(`**Sync token:** \`${before.syncToken}\` → \`${after.syncToken}\``);
@@ -141,9 +141,13 @@ function formatIpRangesNotification(
         ...changes.updated.map(({ after: prefix }) => formatPrefix(prefix)),
     ];
     const prefixDiff = formatTextDiff({ added, removed });
-    const metadataChanged = metadata.length > 1;
+    const metadataChanged = metadata.length > 0;
     if (!metadataChanged && !prefixDiff) return undefined;
-    return [...metadata, prefixDiff].filter(Boolean).join('\n');
+    return [
+        '## Discord Egress IP Ranges Updated',
+        metadata.join('\n'),
+        prefixDiff,
+    ].filter(Boolean).join('\n\n');
 }
 
 async function diff(before: IpRangesDocument, after: IpRangesDocument): Promise<void> {
