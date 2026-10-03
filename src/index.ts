@@ -11,6 +11,7 @@ import marketing, {
 } from './categories/collectibles/marketing.js';
 import csp from './categories/csp.js';
 import domains from './categories/domains.js';
+import ipRanges, { IpRangesDocument } from './categories/ip-ranges.js';
 import merch, { MerchProduct } from './categories/merch.js';
 import powerups, { Powerup } from './categories/powerups.js';
 import robots from './categories/robots.js';
@@ -126,6 +127,12 @@ async function main(): Promise<void> {
             const after = await domains.getDomains(before);
             await saveFile('./data/domains.json', after);
             notifications.push(() => domains.diff(before, after));
+        }),
+        runTracker('IP ranges', async () => {
+            const before = await readFile<IpRangesDocument>('./data/ip_ranges.json');
+            const after = await ipRanges.getIpRanges();
+            await saveFile('./data/ip_ranges.json', after);
+            notifications.push(() => ipRanges.diff(before, after));
         }),
         runTracker('powerups', async () => {
             const before = await readFile<Powerup[]>('./data/powerups.json');

@@ -15,6 +15,7 @@ const configExperimentCentral: Config = {
         powerups: process.env.DOMAINS,
         merch: process.env.DOMAINS,
         skus: process.env.DOMAINS,
+        ipRanges: process.env.ROBOTS,
         servers: process.env.SERVERS,
         robots: process.env.ROBOTS,
         status: {
@@ -36,6 +37,7 @@ const configExperimentCentral: Config = {
         robots: '<@&1419756435302125648>',
         changelogs: '<@&1308872618186772480>',
         domains: '<@1519033225853276231>',
+        ipRanges: '',
         acknowledgements: '',
         status: {
             token: '<@1083437693347827764>',
@@ -57,6 +59,7 @@ const configWumpusUniv: Config = {
         servers: process.env.SERVERSWC,
         activities: process.env.ACTIVIESWC,
         domains: process.env.POWERUPSWC,
+        ipRanges: process.env.POWERUPSWC,
     },
     pings: {
         collectibles: {
@@ -70,6 +73,7 @@ const configWumpusUniv: Config = {
         skus: '',
         robots: '',
         domains: '',
+        ipRanges: '',
         acknowledgements: '<@1395435418798788618>',
         activities: '<@&1309874632127680582>',
     },
