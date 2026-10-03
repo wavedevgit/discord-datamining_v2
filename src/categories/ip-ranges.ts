@@ -123,13 +123,13 @@ function formatIpRangesNotification(
     const metadata: string[] = [];
 
     if (before.syncToken !== after.syncToken) {
-        metadata.push(`**Sync token:** \`${before.syncToken}\` → \`${after.syncToken}\``);
+        metadata.push(`> **Sync token:** \`${before.syncToken}\` → \`${after.syncToken}\``);
     }
     if (before.creationTime !== after.creationTime) {
-        metadata.push(`**Creation time:** <t:${Math.floor(Date.parse(after.creationTime) / 1_000)}:F>`);
+        metadata.push(`> **Creation time:** <t:${Math.floor(Date.parse(after.creationTime) / 1_000)}:F>`);
     }
     if (before.notes !== after.notes) {
-        metadata.push(`**Notes:** ${before.notes || 'None'} → ${after.notes || 'None'}`);
+        metadata.push(`> **Notes:** ${before.notes || 'None'} → ${after.notes || 'None'}`);
     }
 
     const removed = [
@@ -143,11 +143,12 @@ function formatIpRangesNotification(
     const prefixDiff = formatTextDiff({ added, removed });
     const metadataChanged = metadata.length > 0;
     if (!metadataChanged && !prefixDiff) return undefined;
-    return [
-        '## Discord Egress IP Ranges Updated',
+    const content = [
+        '### Discord Egress IP Ranges Updated',
         metadata.join('\n'),
         prefixDiff,
     ].filter(Boolean).join('\n\n');
+    return `${content}\n`;
 }
 
 async function diff(before: IpRangesDocument, after: IpRangesDocument): Promise<void> {
