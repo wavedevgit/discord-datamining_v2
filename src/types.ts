@@ -61,6 +61,7 @@ interface ConfigCategoriesObject {
     activities?: string;
     csp?: string;
     domains?: string;
+    ipRanges?: string;
     servers?: string;
     robots?: string;
     acknowledgements?: string;
