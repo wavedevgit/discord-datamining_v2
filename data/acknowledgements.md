@@ -4,11 +4,11 @@
 - [@adyen/adyen-web](https://github.com/Adyen/adyen-web)
 - [@alloc/types](https://registry.npmjs.org/@alloc/types/-/types-1.3.0.tgz)
 - [@alwaysmeticulous/recorder-loader](https://github.com/alwaysmeticulous/meticulous-sdk)
-- [@babel/runtime](https://github.com/babel/babel)
 - [@babel/runtime-corejs3](https://github.com/babel/babel)
+- [@babel/runtime](https://github.com/babel/babel)
 - [@discord/arborium-rt-wasm](https://github.com/appellation/arborium-rt)
-- [@discord/intl](https://github.com/discord/discord-intl)
 - [@discord/intl-ast](https://github.com/discord/discord-intl)
+- [@discord/intl](https://github.com/discord/discord-intl)
 - [@discord/markdown-react](https://registry.npmjs.org/@discord/markdown-react/-/markdown-react-0.6.0.tgz)
 - [@discord/markdown-wasm](https://registry.npmjs.org/@discord/markdown-wasm/-/markdown-wasm-0.7.0.tgz)
 - [@discordapp/libdave](https://registry.npmjs.org/@discordapp/libdave/-/libdave-1.0.1.tgz)
@@ -32,10 +32,9 @@
 - [@intrnl/xxhash64](https://codeberg.org/intrnl/js-xxhash64)
 - [@juggle/resize-observer](https://github.com/juggle/resize-observer)
 - [@openpgp/unbzip2-stream](https://github.com/openpgpjs/unbzip2-stream)
-- [@opentelemetry/api](https://github.com/open-telemetry/opentelemetry-js)
 - [@opentelemetry/api-logs](https://github.com/open-telemetry/opentelemetry-js)
+- [@opentelemetry/api](https://github.com/open-telemetry/opentelemetry-js)
 - [@opentelemetry/core](https://github.com/open-telemetry/opentelemetry-js)
-- [@opentelemetry/instrumentation](https://github.com/open-telemetry/opentelemetry-js)
 - [@opentelemetry/instrumentation-amqplib](https://github.com/open-telemetry/opentelemetry-js-contrib)
 - [@opentelemetry/instrumentation-connect](https://github.com/open-telemetry/opentelemetry-js-contrib)
 - [@opentelemetry/instrumentation-dataloader](https://github.com/open-telemetry/opentelemetry-js-contrib)
@@ -56,6 +55,7 @@
 - [@opentelemetry/instrumentation-pg](https://github.com/open-telemetry/opentelemetry-js-contrib)
 - [@opentelemetry/instrumentation-redis](https://github.com/open-telemetry/opentelemetry-js-contrib)
 - [@opentelemetry/instrumentation-tedious](https://github.com/open-telemetry/opentelemetry-js-contrib)
+- [@opentelemetry/instrumentation](https://github.com/open-telemetry/opentelemetry-js)
 - [@opentelemetry/redis-common](https://github.com/open-telemetry/opentelemetry-js-contrib)
 - [@opentelemetry/resources](https://github.com/open-telemetry/opentelemetry-js)
 - [@opentelemetry/sdk-trace-base](https://github.com/open-telemetry/opentelemetry-js)
@@ -75,20 +75,20 @@
 - [@rive-app/react-canvas](https://github.com/rive-app/rive-react)
 - [@sentry-internal/browser-utils](https://github.com/getsentry/sentry-javascript)
 - [@sentry-internal/feedback](https://github.com/getsentry/sentry-javascript)
-- [@sentry-internal/replay](https://github.com/getsentry/sentry-javascript)
 - [@sentry-internal/replay-canvas](https://github.com/getsentry/sentry-javascript)
+- [@sentry-internal/replay](https://github.com/getsentry/sentry-javascript)
 - [@sentry/browser](https://github.com/getsentry/sentry-javascript)
 - [@sentry/core](https://github.com/getsentry/sentry-javascript)
 - [@sentry/electron](https://github.com/getsentry/sentry-electron)
-- [@sentry/node](https://github.com/getsentry/sentry-javascript)
 - [@sentry/node-core](https://github.com/getsentry/sentry-javascript)
+- [@sentry/node](https://github.com/getsentry/sentry-javascript)
 - [@sentry/opentelemetry](https://github.com/getsentry/sentry-javascript)
 - [@sentry/utils](https://github.com/getsentry/sentry-javascript)
 - [@stripe/react-stripe-js](https://github.com/stripe/react-stripe-js)
 - [@stripe/stripe-js](https://github.com/stripe/stripe-js)
-- [@tanstack/devtools](https://github.com/TanStack/devtools)
 - [@tanstack/devtools-event-client](https://github.com/TanStack/devtools)
 - [@tanstack/devtools-ui](https://github.com/TanStack/devtools)
+- [@tanstack/devtools](https://github.com/TanStack/devtools)
 - [@tanstack/form-core](https://github.com/TanStack/form)
 - [@tanstack/react-router](https://github.com/TanStack/router)
 - [@tanstack/react-store](https://github.com/TanStack/store)
@@ -116,35 +116,35 @@
 - [bintrees](https://github.com/vadimg/js_bintrees)
 - [brace-expansion](https://github.com/juliangruber/brace-expansion)
 - [braintree-web](https://github.com/braintree/braintree-web)
-- [buffer](https://github.com/feross/buffer)
 - [buffer-crc32](https://github.com/brianloveswords/buffer-crc32)
-- [call-bind](https://github.com/ljharb/call-bind)
+- [buffer](https://github.com/feross/buffer)
 - [call-bind-apply-helpers](https://github.com/ljharb/call-bind-apply-helpers)
+- [call-bind](https://github.com/ljharb/call-bind)
 - [call-bound](https://github.com/ljharb/call-bound)
 - [caseless](https://github.com/mikeal/caseless)
 - [chroma-js](https://github.com/gka/chroma.js)
 - [chrono-node](https://github.com/wanasit/chrono)
 - [classnames](https://github.com/JedWatson/classnames)
 - [clsx](https://github.com/lukeed/clsx)
-- [color](https://github.com/Qix-/color)
 - [color-convert](https://github.com/Qix-/color-convert)
 - [color-name](https://github.com/colorjs/color-name)
 - [color-string](https://github.com/Qix-/color-string)
+- [color](https://github.com/Qix-/color)
 - [colorjs.io](https://github.com/LeaVerou/color.js)
 - [combined-stream](https://github.com/felixge/node-combined-stream)
 - [combokeys](https://github.com/PolicyStat/combokeys)
 - [component-emitter](https://github.com/sindresorhus/component-emitter)
 - [confetti-cannon](https://github.com/discord/confetti-cannon)
 - [cookie](https://github.com/jshttp/cookie)
-- [core-js](https://github.com/zloirock/core-js)
 - [core-js-pure](https://github.com/zloirock/core-js)
+- [core-js](https://github.com/zloirock/core-js)
 - [core-util-is](https://github.com/isaacs/core-util-is)
 - [create-react-class](https://github.com/facebook/react)
 - [date-fns](https://github.com/date-fns/date-fns)
 - [dayjs](https://github.com/iamkun/dayjs)
 - [debug](https://github.com/debug-js/debug)
-- [decimal.js](https://github.com/MikeMcl/decimal.js)
 - [decimal.js-light](https://github.com/MikeMcl/decimal.js-light)
+- [decimal.js](https://github.com/MikeMcl/decimal.js)
 - [decode-uri-component](https://github.com/SamVerschueren/decode-uri-component)
 - [deep-equal](http://github.com/substack/node-deep-equal)
 - [define-data-property](https://github.com/ljharb/define-data-property)
@@ -215,9 +215,9 @@
 - [inherits](https://github.com/isaacs/inherits)
 - [internal-slot](https://github.com/ljharb/internal-slot)
 - [intersection-observer](https://github.com/w3c/IntersectionObserver)
-- [intl](https://github.com/andyearnshaw/Intl.js)
-- [intl-messageformat](https://github.com/yahoo/intl-messageformat)
 - [intl-messageformat-parser](https://github.com/yahoo/intl-messageformat-parser)
+- [intl-messageformat](https://github.com/yahoo/intl-messageformat)
+- [intl](https://github.com/andyearnshaw/Intl.js)
 - [invariant](https://github.com/zertosh/invariant)
 - [ip-regex](https://github.com/sindresorhus/ip-regex)
 - [is-arguments](https://github.com/inspect-js/is-arguments)
@@ -241,13 +241,13 @@
 - [joi-browser](http://github.com/jeffbski/joi-browser)
 - [js-binary-schema-parser](https://github.com/matt-way/jsBinarySchemaParser)
 - [jsbn](https://github.com/andyperlitch/jsbn)
-- [json-schema](http://github.com/kriszyp/json-schema)
 - [json-schema-traverse](https://github.com/epoberezkin/json-schema-traverse)
+- [json-schema](http://github.com/kriszyp/json-schema)
 - [json-stringify-safe](https://github.com/isaacs/json-stringify-safe)
 - [jsprim](https://github.com/joyent/node-jsprim)
 - [keycode](https://github.com/timoxley/keycode)
-- [lodash](https://github.com/lodash/lodash)
 - [lodash.curry](https://github.com/lodash/lodash)
+- [lodash](https://github.com/lodash/lodash)
 - [lottie-web](https://github.com/airbnb/lottie-web)
 - [lru-cache](https://github.com/isaacs/node-lru-cache)
 - [markdown-it-dollarmath](https://registry.npmjs.org/markdown-it-dollarmath/-/markdown-it-dollarmath-0.5.0.tgz)
@@ -293,15 +293,14 @@
 - [quantize](https://github.com/olivierlesnicki/quantize)
 - [query-string](https://github.com/sindresorhus/query-string)
 - [querystring](https://github.com/Gozala/querystring)
-- [react](https://github.com/facebook/react)
-- [react-aria](https://github.com/adobe/react-spectrum)
 - [react-aria-components](https://github.com/adobe/react-spectrum)
+- [react-aria](https://github.com/adobe/react-spectrum)
 - [react-base-hooks](https://registry.npmjs.org/react-base-hooks/-/react-base-hooks-0.0.3.tgz)
 - [react-color](https://github.com/casesandberg/react-color)
 - [react-datepicker](https://github.com/Hacker0x01/react-datepicker)
 - [react-diff-viewer](https://github.com/praneshr/react-diff-viewer)
-- [react-dnd](https://github.com/react-dnd/react-dnd)
 - [react-dnd-html5-backend](https://github.com/react-dnd/react-dnd)
+- [react-dnd](https://github.com/react-dnd/react-dnd)
 - [react-dom](https://github.com/facebook/react)
 - [react-error-boundary](https://github.com/bvaughn/react-error-boundary)
 - [react-fast-compare](https://github.com/FormidableLabs/react-fast-compare)
@@ -312,12 +311,13 @@
 - [react-layout-effect](https://github.com/alloc/react-layout-effect)
 - [react-onclickoutside](https://github.com/Pomax/react-onclickoutside)
 - [react-qr-code](https://github.com/rosskhanas/react-qr-code)
-- [react-router](https://github.com/remix-run/react-router)
 - [react-router-dom](https://github.com/remix-run/react-router)
+- [react-router](https://github.com/remix-run/react-router)
 - [react-select](https://github.com/JedWatson/react-select/tree/master/packages/react-select)
 - [react-spring](https://registry.npmjs.org/react-spring/-/react-spring-9.0.0-rc.3.tgz)
 - [react-stately](https://github.com/adobe/react-spectrum)
 - [react-transition-group](https://github.com/reactjs/react-transition-group)
+- [react](https://github.com/facebook/react)
 - [reactcss](https://github.com/casesandberg/reactcss)
 - [reaptcha](https://github.com/sarneeh/reaptcha)
 - [regenerator-runtime](https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime)
@@ -336,14 +336,14 @@
 - [set-proto](https://github.com/ljharb/set-proto)
 - [setimmediate](https://github.com/YuzuJS/setImmediate)
 - [shallowequal](https://github.com/dashed/shallowequal)
-- [side-channel](https://github.com/ljharb/side-channel)
 - [side-channel-list](https://github.com/ljharb/side-channel-list)
 - [side-channel-map](https://github.com/ljharb/side-channel-map)
 - [side-channel-weakmap](https://github.com/ljharb/side-channel-weakmap)
+- [side-channel](https://github.com/ljharb/side-channel)
 - [simple-markdown](https://github.com/Khan/simple-markdown)
 - [simple-swizzle](https://github.com/qix-/node-simple-swizzle)
-- [slate](https://github.com/ianstormtaylor/slate)
 - [slate-react](https://github.com/ianstormtaylor/slate)
+- [slate](https://github.com/ianstormtaylor/slate)
 - [slugify](https://github.com/simov/slugify)
 - [snowball-stemmers](https://github.com/mazko/jssnowball)
 - [solid-js](https://github.com/solidjs/solid)
@@ -377,8 +377,8 @@
 - [use-memo-value](https://github.com/discord/use-memo-value)
 - [use-sync-external-store](https://github.com/facebook/react)
 - [util](https://github.com/browserify/node-util)
-- [uuid](https://github.com/uuidjs/uuid)
 - [uuid-random](https://github.com/jchook/uuid-random)
+- [uuid](https://github.com/uuidjs/uuid)
 - [value-equal](https://github.com/mjackson/value-equal)
 - [verror](https://github.com/davepacheco/node-verror)
 - [warning](https://github.com/BerkeleyTrue/warning)
@@ -390,45 +390,16 @@
 - [yauzl](https://github.com/thejoshwolfe/yauzl)
 - [zod](https://github.com/colinhacks/zod)
 - [zustand](https://github.com/pmndrs/zustand)
-- babel
-- webpack
-- event-stream
-- nlf
-- dsp
-- signalsmith-stretch
-- reverb-example-code
-- onnxruntime
-- Sakura (based on Cherry Bomb One)
-- Jellybean (based on Chicle)
-- Modern (based on Museo Moderno)
-- Medieval (based on Neo Castel)
 - 8Bit (based on Pixelify Sans)
-- Vampyre (based on Sinistre)
-- Tempo (based on Zilla Slab)
-- Electron
-- NAN
-- Squirrel
-- curl
-- kiss_fft
-- libsodium
-- libuv
-- uws
-- breakpad
-- sqlite3
-- pugixml
-- zlib
-- minhhook
-- openssl
-- Cisco OpenH264
 - ab_glyph_rasterizer v0.1.8
 - addr2line v0.22.0
 - adler v1.0.2
 - aho-corasick v1.1.3
 - andrew v0.2.1
 - andrew v0.3.1
-- android-tzdata v0.1.1
 - android_glue v0.2.3
 - android_system_properties v0.1.5
+- android-tzdata v0.1.1
 - anes v0.1.6
 - ansi_term v0.12.1
 - anstream v0.6.14
@@ -441,11 +412,13 @@
 - atomic v0.4.6
 - atty v0.2.14
 - autocfg v1.3.0
+- babel
 - backtrace v0.3.73
 - bindgen v0.69.4
 - bitflags v1.3.2
 - bitflags v2.5.0
 - block v0.1.6
+- breakpad
 - bumpalo v3.16.0
 - bytemuck v1.16.0
 - byteorder v1.5.0
@@ -461,6 +434,7 @@
 - ciborium v0.2.2
 - ciborium-io v0.2.2
 - ciborium-ll v0.2.2
+- Cisco OpenH264
 - clang-sys v1.8.1
 - clap v2.34.0
 - clap v4.5.7
@@ -497,6 +471,7 @@
 - crossbeam-utils v0.8.20
 - crunchy v0.2.2
 - cty v0.2.2
+- curl
 - darling v0.10.2
 - darling_core v0.10.2
 - darling_macro v0.10.2
@@ -505,13 +480,18 @@
 - dlib v0.4.2
 - dlib v0.5.2
 - downcast-rs v1.2.1
+- dsp
 - either v1.13.0
+- Electron
 - env_logger v0.6.2
 - env_logger v0.8.4
 - equivalent v1.0.1
 - errno v0.3.9
+- evanw/thumbhash
+- event-stream
 - fastrand v2.1.0
 - flexi_logger v0.28.5
+- flowkey/react-native-home-indicator
 - fnv v1.0.7
 - foreign-types v0.3.2
 - foreign-types-shared v0.1.1
@@ -537,14 +517,17 @@
 - instant v0.1.13
 - io-surface v0.15.1
 - iovec v0.1.4
-- is-terminal v0.4.13
 - is_terminal_polyfill v1.70.0
+- is-terminal v0.4.13
 - itertools v0.10.5
 - itertools v0.12.1
 - itoa v1.0.11
+- Jellybean (based on Chicle)
 - jni-sys v0.3.0
 - js-sys v0.3.69
+- jsoncpp
 - kernel32-sys v0.2.2
+- kiss_fft
 - lazy_static v1.4.0
 - lazycell v1.3.0
 - leak v0.1.2
@@ -553,24 +536,32 @@
 - libloading v0.6.7
 - libloading v0.7.4
 - libloading v0.8.3
+- libsodium
 - libsw v3.3.1
+- libuv
 - line_drawing v0.7.0
 - linux-raw-sys v0.4.14
 - lock_api v0.3.4
 - lock_api v0.4.12
 - log v0.4.21
+- luben/zstd-jni
 - malloc_buf v0.0.6
 - maybe-uninit v2.0.0
+- mediapipe
+- Medieval (based on Neo Castel)
 - memchr v2.7.4
 - memmap v0.7.0
 - memmap2 v0.1.0
 - memoffset v0.5.6
 - metal v0.21.0
+- minhhook
 - minimal-lexical v0.2.1
 - miniz_oxide v0.7.4
 - mio v0.6.23
 - mio-extras v2.0.6
 - miow v0.2.2
+- Modern (based on Museo Moderno)
+- NAN
 - ndk v0.2.1
 - ndk-glue v0.2.1
 - ndk-macro v0.2.0
@@ -579,21 +570,24 @@
 - nix v0.14.1
 - nix v0.18.0
 - nix v0.20.0
+- nlf
 - nom v7.1.3
 - nu-ansi-term v0.50.1
-- num-traits v0.2.19
 - num_enum v0.4.3
 - num_enum_derive v0.4.3
+- num-traits v0.2.19
 - objc v0.2.7
 - objc_exception v0.1.2
 - object v0.36.1
 - once_cell v1.19.0
+- onnxruntime
 - oorandom v11.1.4
+- openssl
 - ordered-float v1.1.1
 - owned_ttf_parser v0.15.2
-- parking_lot v0.9.0
 - parking_lot v0.11.2
 - parking_lot v0.12.3
+- parking_lot v0.9.0
 - parking_lot_core v0.6.3
 - parking_lot_core v0.8.6
 - parking_lot_core v0.9.10
@@ -610,6 +604,7 @@
 - proc-macro-error-attr v1.0.4
 - proc-macro2 v0.4.30
 - proc-macro2 v1.0.92
+- pugixml
 - quick-error v1.2.3
 - quickcheck v1.0.3
 - quickcheck_macros v1.0.0
@@ -628,15 +623,17 @@
 - regex v1.10.5
 - regex-automata v0.4.7
 - regex-syntax v0.8.4
+- reverb-example-code
 - rgb v0.8.37
+- rustc_version v0.2.3
 - rustc-demangle v0.1.24
 - rustc-hash v1.1.0
-- rustc_version v0.2.3
 - rustix v0.38.34
 - rusttype v0.7.9
 - rusttype v0.8.3
 - rusttype v0.9.3
 - ryu v1.0.18
+- Sakura (based on Cherry Bomb One)
 - same-file v1.0.6
 - scoped-tls v1.0.1
 - scopeguard v1.2.0
@@ -647,20 +644,35 @@
 - serde_json v1.0.133
 - serde_spanned v0.6.7
 - shlex v1.3.0
+- signalsmith-stretch
 - slab v0.4.9
 - smallvec v0.6.14
 - smallvec v1.13.2
-- smithay-client-toolkit v0.4.6
 - smithay-client-toolkit v0.12.3
+- smithay-client-toolkit v0.4.6
+- sqlite3
+- Squirrel
 - stb_truetype v0.3.1
+- Steam Audio
+- Steam Audio: AMD RadeonRays
+- Steam Audio: AMD TrueAudio Next
+- Steam Audio: CIPIC HRTF Database
+- Steam Audio: FFTS
+- Steam Audio: FlatBuffers
+- Steam Audio: Google Spherical Harmonics Library
+- Steam Audio: Intel Embree
+- Steam Audio: Intel IPP
+- Steam Audio: MySOFA
+- Steam Audio: PFFFT
+- strsim v0.11.1
 - strsim v0.8.0
 - strsim v0.9.3
-- strsim v0.11.1
 - structopt v0.3.26
 - structopt-derive v0.4.18
 - syn v1.0.109
 - syn v2.0.90
 - tempfile v3.12.0
+- Tempo (based on Zilla Slab)
 - termcolor v1.4.1
 - textwrap v0.11.0
 - thiserror v1.0.61
@@ -676,9 +688,20 @@
 - unicode-width v0.1.13
 - unicode-xid v0.1.0
 - utf8parse v0.2.2
+- uws
+- Vampyre (based on Sinistre)
 - vec_map v0.8.2
 - version_check v0.9.4
 - video-levels v1.0.0
+- VMAF
+- VMAF: ciede
+- VMAF: iqa
+- VMAF: mkdirp
+- VMAF: stdatomic
+- VMAF: svm
+- VMAF: x86 cpuid
+- VMAF: x86inc
+- VMAF: Xiph.Org
 - void v1.0.2
 - walkdir v2.5.0
 - wasi v0.11.0+wasi-snapshot-preview1
@@ -699,6 +722,8 @@
 - wayland-sys v0.21.13
 - wayland-sys v0.28.6
 - web-sys v0.3.69
+- webpack
+- WebRTC
 - which v4.4.2
 - widestring v0.4.3
 - widestring v1.1.0
@@ -709,6 +734,14 @@
 - winapi-util v0.1.8
 - winapi-x86_64-pc-windows-gnu v0.4.0
 - windows v0.60.0
+- windows_aarch64_gnullvm v0.52.6
+- windows_aarch64_msvc v0.52.6
+- windows_i686_gnu v0.52.6
+- windows_i686_gnullvm v0.52.6
+- windows_i686_msvc v0.52.6
+- windows_x86_64_gnu v0.52.6
+- windows_x86_64_gnullvm v0.52.6
+- windows_x86_64_msvc v0.52.6
 - windows-collections v0.1.1
 - windows-core v0.52.0
 - windows-core v0.60.1
@@ -723,14 +756,6 @@
 - windows-sys v0.52.0
 - windows-sys v0.59.0
 - windows-targets v0.52.6
-- windows_aarch64_gnullvm v0.52.6
-- windows_aarch64_msvc v0.52.6
-- windows_i686_gnu v0.52.6
-- windows_i686_gnullvm v0.52.6
-- windows_i686_msvc v0.52.6
-- windows_x86_64_gnu v0.52.6
-- windows_x86_64_gnullvm v0.52.6
-- windows_x86_64_msvc v0.52.6
 - winit v0.19.5
 - winit v0.24.0
 - winnow v0.6.18
@@ -740,29 +765,4 @@
 - xdg v2.5.2
 - xml-rs v0.8.20
 - yuv v0.1.6
-- flowkey/react-native-home-indicator
-- evanw/thumbhash
-- WebRTC
-- jsoncpp
-- mediapipe
-- VMAF
-- VMAF: stdatomic
-- VMAF: x86 cpuid
-- VMAF: x86inc
-- VMAF: ciede
-- VMAF: Xiph.Org
-- VMAF: mkdirp
-- VMAF: iqa
-- VMAF: svm
-- Steam Audio
-- Steam Audio: Intel IPP
-- Steam Audio: FFTS
-- Steam Audio: PFFFT
-- Steam Audio: MySOFA
-- Steam Audio: FlatBuffers
-- Steam Audio: Intel Embree
-- Steam Audio: AMD RadeonRays
-- Steam Audio: AMD TrueAudio Next
-- Steam Audio: CIPIC HRTF Database
-- Steam Audio: Google Spherical Harmonics Library
-- luben/zstd-jni
+- zlib

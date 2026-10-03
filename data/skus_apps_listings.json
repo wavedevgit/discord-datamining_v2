@@ -1,122 +1,33 @@
 [
     {
-        "id": "1422296448396951579",
-        "summary": "Flex Badge Pack",
-        "sku": {
-            "id": "1395150923734581339",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": "1351706802684952639",
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
-            "access_type": 1,
-            "name": "Flex Badge Pack",
-            "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "flex-badge-pack",
-            "flags": 0,
-            "show_age_gate": false,
-            "tenant_metadata": {
-                "guild_monetization": {
-                    "powerup": {
-                        "boost_price": 5,
-                        "purchase_limit": 1,
-                        "guild_features": {
-                            "features": [
-                                "GUILD_TAGS_BADGE_PACK_FLEX"
-                            ],
-                            "additional_emoji_slots": 0,
-                            "additional_sticker_slots": 0,
-                            "additional_sound_slots": 0
-                        },
-                        "category_type": "perk",
-                        "static_image_url": "https://cdn.discordapp.com/assets/content/4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642.png",
-                        "animated_image_url": "https://cdn.discordapp.com/assets/content/20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc.png"
-                    }
-                }
-            },
-            "powerup_metadata": {
-                "boost_price": 5,
-                "purchase_limit": 1,
-                "guild_features": {
-                    "features": [
-                        "GUILD_TAGS_BADGE_PACK_FLEX"
-                    ],
-                    "additional_emoji_slots": 0,
-                    "additional_sticker_slots": 0,
-                    "additional_sound_slots": 0
-                },
-                "category_type": "perk",
-                "static_image_url": "https://cdn.discordapp.com/assets/content/4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642.png",
-                "animated_image_url": "https://cdn.discordapp.com/assets/content/20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc.png"
-            },
-            "selected_options": [
-                {
-                    "option_name": "default",
-                    "option_value": "default"
-                }
-            ],
-            "product_id": "1422296448396951579",
-            "created_at": "2025-08-05T20:53:39.133830+00:00",
-            "updated_at": "2025-10-10T14:55:25.560337+00:00"
-        },
-        "description": "Flex Badge Pack",
-        "published": true,
         "benefits": [],
-        "powerup_metadata": {
-            "category_type": "perk",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642.png",
-            "animated_image_url": "https://cdn.discordapp.com/assets/content/20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc.png",
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
-    },
-    {
+        "description": "Level 1",
         "id": "1422296448396951572",
-        "summary": "Level 1",
+        "powerup_metadata": {
+            "animated_image_url": null,
+            "category_type": "level",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg",
+            "store_removal_date": null
+        },
+        "published": true,
         "sku": {
-            "id": "1341586379779604621",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": null,
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
             "access_type": 1,
-            "name": "Level 1",
+            "application_id": "1340102344645283891",
+            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "dependent_sku_id": null,
             "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "level-1",
             "flags": 0,
-            "show_age_gate": false,
-            "tenant_metadata": {
-                "guild_monetization": {
-                    "powerup": {
-                        "boost_price": 2,
-                        "purchase_limit": 1,
-                        "guild_features": {
-                            "features": [
-                                "ANIMATED_ICON",
-                                "AUDIO_BITRATE_128_KBPS",
-                                "INVITE_SPLASH",
-                                "STAGE_CHANNEL_VIEWERS_50",
-                                "VIDEO_BITRATE_ENHANCED",
-                                "VIDEO_QUALITY_720_60FPS"
-                            ],
-                            "additional_emoji_slots": 50,
-                            "additional_sticker_slots": 10,
-                            "additional_sound_slots": 16
-                        },
-                        "category_type": "level",
-                        "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg"
-                    }
-                }
-            },
+            "id": "1341586379779604621",
+            "manifest_labels": null,
+            "name": "Level 1",
             "powerup_metadata": {
                 "boost_price": 2,
-                "purchase_limit": 1,
+                "category_type": "level",
                 "guild_features": {
+                    "additional_emoji_slots": 50,
+                    "additional_sound_slots": 16,
+                    "additional_sticker_slots": 10,
                     "features": [
                         "ANIMATED_ICON",
                         "AUDIO_BITRATE_128_KBPS",
@@ -124,80 +35,80 @@
                         "STAGE_CHANNEL_VIEWERS_50",
                         "VIDEO_BITRATE_ENHANCED",
                         "VIDEO_QUALITY_720_60FPS"
-                    ],
-                    "additional_emoji_slots": 50,
-                    "additional_sticker_slots": 10,
-                    "additional_sound_slots": 16
+                    ]
                 },
-                "category_type": "level",
+                "purchase_limit": 1,
                 "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg"
             },
+            "premium": false,
+            "product_id": "1422296448396951572",
+            "product_line": 13,
+            "release_date": null,
             "selected_options": [
                 {
                     "option_name": "default",
                     "option_value": "default"
                 }
             ],
-            "product_id": "1422296448396951572",
-            "created_at": "2025-08-05T20:53:39.133830+00:00",
-            "updated_at": "2025-10-10T14:55:25.092816+00:00"
-        },
-        "description": "Level 1",
-        "published": true,
-        "benefits": [],
-        "powerup_metadata": {
-            "category_type": "level",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg",
-            "animated_image_url": null,
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
-    },
-    {
-        "id": "1422296448396951573",
-        "summary": "Level 2",
-        "sku": {
-            "id": "1341586379779604622",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": "1341586379779604621",
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
-            "access_type": 1,
-            "name": "Level 2",
-            "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "level-2",
-            "flags": 0,
             "show_age_gate": false,
+            "slug": "level-1",
             "tenant_metadata": {
                 "guild_monetization": {
                     "powerup": {
-                        "boost_price": 5,
-                        "purchase_limit": 1,
-                        "guild_features": {
-                            "features": [
-                                "AUDIO_BITRATE_256_KBPS",
-                                "BANNER",
-                                "MAX_FILE_SIZE_50_MB",
-                                "ROLE_ICONS",
-                                "STAGE_CHANNEL_VIEWERS_150",
-                                "VIDEO_QUALITY_1080_60FPS"
-                            ],
-                            "additional_emoji_slots": 50,
-                            "additional_sticker_slots": 15,
-                            "additional_sound_slots": 12
-                        },
+                        "boost_price": 2,
                         "category_type": "level",
+                        "guild_features": {
+                            "additional_emoji_slots": 50,
+                            "additional_sound_slots": 16,
+                            "additional_sticker_slots": 10,
+                            "features": [
+                                "ANIMATED_ICON",
+                                "AUDIO_BITRATE_128_KBPS",
+                                "INVITE_SPLASH",
+                                "STAGE_CHANNEL_VIEWERS_50",
+                                "VIDEO_BITRATE_ENHANCED",
+                                "VIDEO_QUALITY_720_60FPS"
+                            ]
+                        },
+                        "purchase_limit": 1,
                         "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg"
                     }
                 }
             },
+            "type": 2,
+            "updated_at": "2025-10-10T14:55:25.092816+00:00"
+        },
+        "summary": "Level 1"
+    },
+    {
+        "benefits": [],
+        "description": "Level 2",
+        "id": "1422296448396951573",
+        "powerup_metadata": {
+            "animated_image_url": null,
+            "category_type": "level",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg",
+            "store_removal_date": null
+        },
+        "published": true,
+        "sku": {
+            "access_type": 1,
+            "application_id": "1340102344645283891",
+            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "dependent_sku_id": "1341586379779604621",
+            "features": [],
+            "flags": 0,
+            "id": "1341586379779604622",
+            "manifest_labels": null,
+            "name": "Level 2",
             "powerup_metadata": {
                 "boost_price": 5,
-                "purchase_limit": 1,
+                "category_type": "level",
                 "guild_features": {
+                    "additional_emoji_slots": 50,
+                    "additional_sound_slots": 12,
+                    "additional_sticker_slots": 15,
                     "features": [
                         "AUDIO_BITRATE_256_KBPS",
                         "BANNER",
@@ -205,473 +116,562 @@
                         "ROLE_ICONS",
                         "STAGE_CHANNEL_VIEWERS_150",
                         "VIDEO_QUALITY_1080_60FPS"
-                    ],
-                    "additional_emoji_slots": 50,
-                    "additional_sticker_slots": 15,
-                    "additional_sound_slots": 12
+                    ]
                 },
-                "category_type": "level",
+                "purchase_limit": 1,
                 "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg"
             },
+            "premium": false,
+            "product_id": "1422296448396951573",
+            "product_line": 13,
+            "release_date": null,
             "selected_options": [
                 {
                     "option_name": "default",
                     "option_value": "default"
                 }
             ],
-            "product_id": "1422296448396951573",
-            "created_at": "2025-08-05T20:53:39.133830+00:00",
-            "updated_at": "2025-10-10T14:55:25.190756+00:00"
-        },
-        "description": "Level 2",
-        "published": true,
-        "benefits": [],
-        "powerup_metadata": {
-            "category_type": "level",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg",
-            "animated_image_url": null,
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
-    },
-    {
-        "id": "1422296448396951574",
-        "summary": "Level 3",
-        "sku": {
-            "id": "1341586379779604623",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": "1341586379779604622",
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
-            "access_type": 1,
-            "name": "Level 3",
-            "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "level-3",
-            "flags": 0,
             "show_age_gate": false,
+            "slug": "level-2",
             "tenant_metadata": {
                 "guild_monetization": {
                     "powerup": {
-                        "boost_price": 7,
-                        "purchase_limit": 1,
-                        "guild_features": {
-                            "features": [
-                                "ANIMATED_BANNER",
-                                "AUDIO_BITRATE_384_KBPS",
-                                "MAX_FILE_SIZE_100_MB",
-                                "STAGE_CHANNEL_VIEWERS_300",
-                                "VANITY_URL"
-                            ],
-                            "additional_emoji_slots": 100,
-                            "additional_sticker_slots": 30,
-                            "additional_sound_slots": 12
-                        },
+                        "boost_price": 5,
                         "category_type": "level",
+                        "guild_features": {
+                            "additional_emoji_slots": 50,
+                            "additional_sound_slots": 12,
+                            "additional_sticker_slots": 15,
+                            "features": [
+                                "AUDIO_BITRATE_256_KBPS",
+                                "BANNER",
+                                "MAX_FILE_SIZE_50_MB",
+                                "ROLE_ICONS",
+                                "STAGE_CHANNEL_VIEWERS_150",
+                                "VIDEO_QUALITY_1080_60FPS"
+                            ]
+                        },
+                        "purchase_limit": 1,
                         "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg"
                     }
                 }
             },
+            "type": 2,
+            "updated_at": "2025-10-10T14:55:25.190756+00:00"
+        },
+        "summary": "Level 2"
+    },
+    {
+        "benefits": [],
+        "description": "Level 3",
+        "id": "1422296448396951574",
+        "powerup_metadata": {
+            "animated_image_url": null,
+            "category_type": "level",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg",
+            "store_removal_date": null
+        },
+        "published": true,
+        "sku": {
+            "access_type": 1,
+            "application_id": "1340102344645283891",
+            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "dependent_sku_id": "1341586379779604622",
+            "features": [],
+            "flags": 0,
+            "id": "1341586379779604623",
+            "manifest_labels": null,
+            "name": "Level 3",
             "powerup_metadata": {
                 "boost_price": 7,
-                "purchase_limit": 1,
+                "category_type": "level",
                 "guild_features": {
+                    "additional_emoji_slots": 100,
+                    "additional_sound_slots": 12,
+                    "additional_sticker_slots": 30,
                     "features": [
                         "ANIMATED_BANNER",
                         "AUDIO_BITRATE_384_KBPS",
                         "MAX_FILE_SIZE_100_MB",
                         "STAGE_CHANNEL_VIEWERS_300",
                         "VANITY_URL"
-                    ],
-                    "additional_emoji_slots": 100,
-                    "additional_sticker_slots": 30,
-                    "additional_sound_slots": 12
+                    ]
                 },
-                "category_type": "level",
+                "purchase_limit": 1,
                 "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg"
             },
+            "premium": false,
+            "product_id": "1422296448396951574",
+            "product_line": 13,
+            "release_date": null,
             "selected_options": [
                 {
                     "option_name": "default",
                     "option_value": "default"
                 }
             ],
-            "product_id": "1422296448396951574",
-            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "show_age_gate": false,
+            "slug": "level-3",
+            "tenant_metadata": {
+                "guild_monetization": {
+                    "powerup": {
+                        "boost_price": 7,
+                        "category_type": "level",
+                        "guild_features": {
+                            "additional_emoji_slots": 100,
+                            "additional_sound_slots": 12,
+                            "additional_sticker_slots": 30,
+                            "features": [
+                                "ANIMATED_BANNER",
+                                "AUDIO_BITRATE_384_KBPS",
+                                "MAX_FILE_SIZE_100_MB",
+                                "STAGE_CHANNEL_VIEWERS_300",
+                                "VANITY_URL"
+                            ]
+                        },
+                        "purchase_limit": 1,
+                        "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg"
+                    }
+                }
+            },
+            "type": 2,
             "updated_at": "2025-10-10T14:55:25.234215+00:00"
         },
-        "description": "Level 3",
-        "published": true,
-        "benefits": [],
-        "powerup_metadata": {
-            "category_type": "level",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/74bebcffe052733570281d5a346ed2c59047b9af7a9638c9a63359533d464261.svg",
-            "animated_image_url": null,
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
+        "summary": "Level 3"
     },
     {
+        "benefits": [],
+        "description": "Let your members represent your server everywhere on Discord.",
         "id": "1422296448396951575",
-        "summary": "Server Tag",
+        "powerup_metadata": {
+            "animated_image_url": "https://cdn.discordapp.com/assets/content/f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163.png",
+            "category_type": "perk",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79.png",
+            "store_removal_date": null
+        },
+        "published": true,
         "sku": {
-            "id": "1351706802684952639",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": null,
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
             "access_type": 1,
-            "name": "Server Tag",
+            "application_id": "1340102344645283891",
+            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "dependent_sku_id": null,
             "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "server-tag",
             "flags": 0,
-            "show_age_gate": false,
-            "tenant_metadata": {
-                "guild_monetization": {
-                    "powerup": {
-                        "boost_price": 3,
-                        "purchase_limit": 1,
-                        "guild_features": {
-                            "features": [
-                                "GUILD_TAGS"
-                            ],
-                            "additional_emoji_slots": 0,
-                            "additional_sticker_slots": 0,
-                            "additional_sound_slots": 0
-                        },
-                        "category_type": "perk",
-                        "static_image_url": "https://cdn.discordapp.com/assets/content/478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79.png",
-                        "animated_image_url": "https://cdn.discordapp.com/assets/content/f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163.png"
-                    }
-                }
-            },
+            "id": "1351706802684952639",
+            "manifest_labels": null,
+            "name": "Server Tag",
             "powerup_metadata": {
+                "animated_image_url": "https://cdn.discordapp.com/assets/content/f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163.png",
                 "boost_price": 3,
-                "purchase_limit": 1,
+                "category_type": "perk",
                 "guild_features": {
+                    "additional_emoji_slots": 0,
+                    "additional_sound_slots": 0,
+                    "additional_sticker_slots": 0,
                     "features": [
                         "GUILD_TAGS"
-                    ],
-                    "additional_emoji_slots": 0,
-                    "additional_sticker_slots": 0,
-                    "additional_sound_slots": 0
+                    ]
                 },
-                "category_type": "perk",
-                "static_image_url": "https://cdn.discordapp.com/assets/content/478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79.png",
-                "animated_image_url": "https://cdn.discordapp.com/assets/content/f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163.png"
+                "purchase_limit": 1,
+                "static_image_url": "https://cdn.discordapp.com/assets/content/478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79.png"
             },
+            "premium": false,
+            "product_id": "1422296448396951575",
+            "product_line": 13,
+            "release_date": null,
             "selected_options": [
                 {
                     "option_name": "default",
                     "option_value": "default"
                 }
             ],
-            "product_id": "1422296448396951575",
-            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "show_age_gate": false,
+            "slug": "server-tag",
+            "tenant_metadata": {
+                "guild_monetization": {
+                    "powerup": {
+                        "animated_image_url": "https://cdn.discordapp.com/assets/content/f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163.png",
+                        "boost_price": 3,
+                        "category_type": "perk",
+                        "guild_features": {
+                            "additional_emoji_slots": 0,
+                            "additional_sound_slots": 0,
+                            "additional_sticker_slots": 0,
+                            "features": [
+                                "GUILD_TAGS"
+                            ]
+                        },
+                        "purchase_limit": 1,
+                        "static_image_url": "https://cdn.discordapp.com/assets/content/478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79.png"
+                    }
+                }
+            },
+            "type": 2,
             "updated_at": "2025-10-10T14:55:25.332909+00:00"
         },
-        "description": "Let your members represent your server everywhere on Discord.",
-        "published": true,
-        "benefits": [],
-        "powerup_metadata": {
-            "category_type": "perk",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79.png",
-            "animated_image_url": "https://cdn.discordapp.com/assets/content/f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163.png",
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
+        "summary": "Server Tag"
     },
     {
+        "benefits": [],
+        "description": "Make certain roles stand out with animated, vibrant gradients.",
         "id": "1422296448396951576",
-        "summary": "Enhanced Role Styles",
+        "powerup_metadata": {
+            "animated_image_url": "https://cdn.discordapp.com/assets/content/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png",
+            "category_type": "perk",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png",
+            "store_removal_date": null
+        },
+        "published": true,
         "sku": {
-            "id": "1354906318279807056",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": null,
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
             "access_type": 1,
-            "name": "Enhanced Role Styles",
+            "application_id": "1340102344645283891",
+            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "dependent_sku_id": null,
             "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "enhanced-role-styles",
             "flags": 0,
-            "show_age_gate": false,
-            "tenant_metadata": {
-                "guild_monetization": {
-                    "powerup": {
-                        "boost_price": 3,
-                        "purchase_limit": 1,
-                        "guild_features": {
-                            "features": [
-                                "ENHANCED_ROLE_COLORS"
-                            ],
-                            "additional_emoji_slots": 0,
-                            "additional_sticker_slots": 0,
-                            "additional_sound_slots": 0
-                        },
-                        "category_type": "perk",
-                        "static_image_url": "https://cdn.discordapp.com/assets/content/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png",
-                        "animated_image_url": "https://cdn.discordapp.com/assets/content/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png"
-                    }
-                }
-            },
+            "id": "1354906318279807056",
+            "manifest_labels": null,
+            "name": "Enhanced Role Styles",
             "powerup_metadata": {
+                "animated_image_url": "https://cdn.discordapp.com/assets/content/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png",
                 "boost_price": 3,
-                "purchase_limit": 1,
+                "category_type": "perk",
                 "guild_features": {
+                    "additional_emoji_slots": 0,
+                    "additional_sound_slots": 0,
+                    "additional_sticker_slots": 0,
                     "features": [
                         "ENHANCED_ROLE_COLORS"
-                    ],
-                    "additional_emoji_slots": 0,
-                    "additional_sticker_slots": 0,
-                    "additional_sound_slots": 0
+                    ]
                 },
-                "category_type": "perk",
-                "static_image_url": "https://cdn.discordapp.com/assets/content/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png",
-                "animated_image_url": "https://cdn.discordapp.com/assets/content/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png"
+                "purchase_limit": 1,
+                "static_image_url": "https://cdn.discordapp.com/assets/content/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png"
             },
+            "premium": false,
+            "product_id": "1422296448396951576",
+            "product_line": 13,
+            "release_date": null,
             "selected_options": [
                 {
                     "option_name": "default",
                     "option_value": "default"
                 }
             ],
-            "product_id": "1422296448396951576",
-            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "show_age_gate": false,
+            "slug": "enhanced-role-styles",
+            "tenant_metadata": {
+                "guild_monetization": {
+                    "powerup": {
+                        "animated_image_url": "https://cdn.discordapp.com/assets/content/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png",
+                        "boost_price": 3,
+                        "category_type": "perk",
+                        "guild_features": {
+                            "additional_emoji_slots": 0,
+                            "additional_sound_slots": 0,
+                            "additional_sticker_slots": 0,
+                            "features": [
+                                "ENHANCED_ROLE_COLORS"
+                            ]
+                        },
+                        "purchase_limit": 1,
+                        "static_image_url": "https://cdn.discordapp.com/assets/content/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png"
+                    }
+                }
+            },
+            "type": 2,
             "updated_at": "2025-10-10T14:55:25.371791+00:00"
         },
-        "description": "Make certain roles stand out with animated, vibrant gradients.",
-        "published": true,
-        "benefits": [],
-        "powerup_metadata": {
-            "category_type": "perk",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png",
-            "animated_image_url": "https://cdn.discordapp.com/assets/content/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png",
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
+        "summary": "Enhanced Role Styles"
     },
     {
+        "benefits": [],
+        "description": "Pet Badge Pack",
         "id": "1422296448396951578",
-        "summary": "Pet Badge Pack",
+        "powerup_metadata": {
+            "animated_image_url": "https://cdn.discordapp.com/assets/content/63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b.png",
+            "category_type": "perk",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d.png",
+            "store_removal_date": null
+        },
+        "published": true,
         "sku": {
-            "id": "1395150519886024775",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": "1351706802684952639",
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
             "access_type": 1,
-            "name": "Pet Badge Pack",
+            "application_id": "1340102344645283891",
+            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "dependent_sku_id": "1351706802684952639",
             "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "pet-badge-pack",
             "flags": 0,
-            "show_age_gate": false,
-            "tenant_metadata": {
-                "guild_monetization": {
-                    "powerup": {
-                        "boost_price": 3,
-                        "purchase_limit": 1,
-                        "guild_features": {
-                            "features": [
-                                "GUILD_TAGS_BADGE_PACK_PETS"
-                            ],
-                            "additional_emoji_slots": 0,
-                            "additional_sticker_slots": 0,
-                            "additional_sound_slots": 0
-                        },
-                        "category_type": "perk",
-                        "static_image_url": "https://cdn.discordapp.com/assets/content/a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d.png",
-                        "animated_image_url": "https://cdn.discordapp.com/assets/content/63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b.png"
-                    }
-                }
-            },
+            "id": "1395150519886024775",
+            "manifest_labels": null,
+            "name": "Pet Badge Pack",
             "powerup_metadata": {
+                "animated_image_url": "https://cdn.discordapp.com/assets/content/63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b.png",
                 "boost_price": 3,
-                "purchase_limit": 1,
+                "category_type": "perk",
                 "guild_features": {
+                    "additional_emoji_slots": 0,
+                    "additional_sound_slots": 0,
+                    "additional_sticker_slots": 0,
                     "features": [
                         "GUILD_TAGS_BADGE_PACK_PETS"
-                    ],
-                    "additional_emoji_slots": 0,
-                    "additional_sticker_slots": 0,
-                    "additional_sound_slots": 0
+                    ]
                 },
-                "category_type": "perk",
-                "static_image_url": "https://cdn.discordapp.com/assets/content/a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d.png",
-                "animated_image_url": "https://cdn.discordapp.com/assets/content/63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b.png"
+                "purchase_limit": 1,
+                "static_image_url": "https://cdn.discordapp.com/assets/content/a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d.png"
             },
+            "premium": false,
+            "product_id": "1422296448396951578",
+            "product_line": 13,
+            "release_date": null,
             "selected_options": [
                 {
                     "option_name": "default",
                     "option_value": "default"
                 }
             ],
-            "product_id": "1422296448396951578",
-            "created_at": "2025-08-05T20:53:39.133830+00:00",
-            "updated_at": "2025-10-10T14:55:25.510057+00:00"
-        },
-        "description": "Pet Badge Pack",
-        "published": true,
-        "benefits": [],
-        "powerup_metadata": {
-            "category_type": "perk",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d.png",
-            "animated_image_url": "https://cdn.discordapp.com/assets/content/63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b.png",
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
-    },
-    {
-        "id": "1466214266758634971",
-        "summary": "Creepy Crawlies Badge Pack",
-        "sku": {
-            "id": "1466209416931055898",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": "1351706802684952639",
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
-            "access_type": 1,
-            "name": "Creepy Crawlies Badge Pack",
-            "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "creepy-crawlies-badge-pack",
-            "flags": 4,
             "show_age_gate": false,
+            "slug": "pet-badge-pack",
             "tenant_metadata": {
                 "guild_monetization": {
                     "powerup": {
-                        "boost_price": 2,
-                        "purchase_limit": 1,
-                        "guild_features": {
-                            "features": [
-                                "GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES"
-                            ],
-                            "additional_emoji_slots": 0,
-                            "additional_sticker_slots": 0,
-                            "additional_sound_slots": 0
-                        },
+                        "animated_image_url": "https://cdn.discordapp.com/assets/content/63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b.png",
+                        "boost_price": 3,
                         "category_type": "perk",
-                        "static_image_url": "https://cdn.discordapp.com/assets/content/c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f.png"
+                        "guild_features": {
+                            "additional_emoji_slots": 0,
+                            "additional_sound_slots": 0,
+                            "additional_sticker_slots": 0,
+                            "features": [
+                                "GUILD_TAGS_BADGE_PACK_PETS"
+                            ]
+                        },
+                        "purchase_limit": 1,
+                        "static_image_url": "https://cdn.discordapp.com/assets/content/a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d.png"
                     }
                 }
             },
+            "type": 2,
+            "updated_at": "2025-10-10T14:55:25.510057+00:00"
+        },
+        "summary": "Pet Badge Pack"
+    },
+    {
+        "benefits": [],
+        "description": "Flex Badge Pack",
+        "id": "1422296448396951579",
+        "powerup_metadata": {
+            "animated_image_url": "https://cdn.discordapp.com/assets/content/20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc.png",
+            "category_type": "perk",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642.png",
+            "store_removal_date": null
+        },
+        "published": true,
+        "sku": {
+            "access_type": 1,
+            "application_id": "1340102344645283891",
+            "created_at": "2025-08-05T20:53:39.133830+00:00",
+            "dependent_sku_id": "1351706802684952639",
+            "features": [],
+            "flags": 0,
+            "id": "1395150923734581339",
+            "manifest_labels": null,
+            "name": "Flex Badge Pack",
             "powerup_metadata": {
-                "boost_price": 2,
-                "purchase_limit": 1,
-                "guild_features": {
-                    "features": [
-                        "GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES"
-                    ],
-                    "additional_emoji_slots": 0,
-                    "additional_sticker_slots": 0,
-                    "additional_sound_slots": 0
-                },
+                "animated_image_url": "https://cdn.discordapp.com/assets/content/20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc.png",
+                "boost_price": 5,
                 "category_type": "perk",
-                "static_image_url": "https://cdn.discordapp.com/assets/content/c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f.png"
+                "guild_features": {
+                    "additional_emoji_slots": 0,
+                    "additional_sound_slots": 0,
+                    "additional_sticker_slots": 0,
+                    "features": [
+                        "GUILD_TAGS_BADGE_PACK_FLEX"
+                    ]
+                },
+                "purchase_limit": 1,
+                "static_image_url": "https://cdn.discordapp.com/assets/content/4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642.png"
             },
+            "premium": false,
+            "product_id": "1422296448396951579",
+            "product_line": 13,
+            "release_date": null,
             "selected_options": [
                 {
                     "option_name": "default",
                     "option_value": "default"
                 }
             ],
-            "product_id": "1466214266758634971",
-            "created_at": "2026-02-06T18:11:13.821344+00:00",
-            "updated_at": "2026-02-10T20:06:25.711578+00:00"
+            "show_age_gate": false,
+            "slug": "flex-badge-pack",
+            "tenant_metadata": {
+                "guild_monetization": {
+                    "powerup": {
+                        "animated_image_url": "https://cdn.discordapp.com/assets/content/20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc.png",
+                        "boost_price": 5,
+                        "category_type": "perk",
+                        "guild_features": {
+                            "additional_emoji_slots": 0,
+                            "additional_sound_slots": 0,
+                            "additional_sticker_slots": 0,
+                            "features": [
+                                "GUILD_TAGS_BADGE_PACK_FLEX"
+                            ]
+                        },
+                        "purchase_limit": 1,
+                        "static_image_url": "https://cdn.discordapp.com/assets/content/4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642.png"
+                    }
+                }
+            },
+            "type": 2,
+            "updated_at": "2025-10-10T14:55:25.560337+00:00"
         },
-        "description": "Creepy Crawlies Badge Pack",
-        "published": true,
-        "benefits": [],
-        "powerup_metadata": {
-            "category_type": "perk",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f.png",
-            "animated_image_url": null,
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
+        "summary": "Flex Badge Pack"
     },
     {
+        "benefits": [],
+        "description": "Plant Badge Pack",
         "id": "1466214266750246361",
-        "summary": "Plant Badge Pack",
+        "powerup_metadata": {
+            "animated_image_url": null,
+            "category_type": "perk",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/a586e274a51442be7a6088580bf17a03e681120c57830b702c71024535ec3163.png",
+            "store_removal_date": null
+        },
+        "published": true,
         "sku": {
-            "id": "1466209416922667288",
-            "type": 2,
-            "product_line": 13,
-            "dependent_sku_id": "1351706802684952639",
-            "application_id": "1340102344645283891",
-            "manifest_labels": null,
             "access_type": 1,
-            "name": "Plant Badge Pack",
+            "application_id": "1340102344645283891",
+            "created_at": "2026-02-06T18:11:13.777975+00:00",
+            "dependent_sku_id": "1351706802684952639",
             "features": [],
-            "release_date": null,
-            "premium": false,
-            "slug": "plant-badge-pack",
             "flags": 4,
+            "id": "1466209416922667288",
+            "manifest_labels": null,
+            "name": "Plant Badge Pack",
+            "powerup_metadata": {
+                "boost_price": 3,
+                "category_type": "perk",
+                "guild_features": {
+                    "additional_emoji_slots": 0,
+                    "additional_sound_slots": 0,
+                    "additional_sticker_slots": 0,
+                    "features": [
+                        "GUILD_TAGS_BADGE_PACK_PLANT"
+                    ]
+                },
+                "purchase_limit": 1,
+                "static_image_url": "https://cdn.discordapp.com/assets/content/a586e274a51442be7a6088580bf17a03e681120c57830b702c71024535ec3163.png"
+            },
+            "premium": false,
+            "product_id": "1466214266750246361",
+            "product_line": 13,
+            "release_date": null,
+            "selected_options": [
+                {
+                    "option_name": "default",
+                    "option_value": "default"
+                }
+            ],
             "show_age_gate": false,
+            "slug": "plant-badge-pack",
             "tenant_metadata": {
                 "guild_monetization": {
                     "powerup": {
                         "boost_price": 3,
-                        "purchase_limit": 1,
+                        "category_type": "perk",
                         "guild_features": {
+                            "additional_emoji_slots": 0,
+                            "additional_sound_slots": 0,
+                            "additional_sticker_slots": 0,
                             "features": [
                                 "GUILD_TAGS_BADGE_PACK_PLANT"
-                            ],
-                            "additional_emoji_slots": 0,
-                            "additional_sticker_slots": 0,
-                            "additional_sound_slots": 0
+                            ]
                         },
-                        "category_type": "perk",
+                        "purchase_limit": 1,
                         "static_image_url": "https://cdn.discordapp.com/assets/content/a586e274a51442be7a6088580bf17a03e681120c57830b702c71024535ec3163.png"
                     }
                 }
             },
+            "type": 2,
+            "updated_at": "2026-02-10T20:06:10.849339+00:00"
+        },
+        "summary": "Plant Badge Pack"
+    },
+    {
+        "benefits": [],
+        "description": "Creepy Crawlies Badge Pack",
+        "id": "1466214266758634971",
+        "powerup_metadata": {
+            "animated_image_url": null,
+            "category_type": "perk",
+            "deactivation_cooldown_period_days": null,
+            "static_image_url": "https://cdn.discordapp.com/assets/content/c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f.png",
+            "store_removal_date": null
+        },
+        "published": true,
+        "sku": {
+            "access_type": 1,
+            "application_id": "1340102344645283891",
+            "created_at": "2026-02-06T18:11:13.821344+00:00",
+            "dependent_sku_id": "1351706802684952639",
+            "features": [],
+            "flags": 4,
+            "id": "1466209416931055898",
+            "manifest_labels": null,
+            "name": "Creepy Crawlies Badge Pack",
             "powerup_metadata": {
-                "boost_price": 3,
-                "purchase_limit": 1,
-                "guild_features": {
-                    "features": [
-                        "GUILD_TAGS_BADGE_PACK_PLANT"
-                    ],
-                    "additional_emoji_slots": 0,
-                    "additional_sticker_slots": 0,
-                    "additional_sound_slots": 0
-                },
+                "boost_price": 2,
                 "category_type": "perk",
-                "static_image_url": "https://cdn.discordapp.com/assets/content/a586e274a51442be7a6088580bf17a03e681120c57830b702c71024535ec3163.png"
+                "guild_features": {
+                    "additional_emoji_slots": 0,
+                    "additional_sound_slots": 0,
+                    "additional_sticker_slots": 0,
+                    "features": [
+                        "GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES"
+                    ]
+                },
+                "purchase_limit": 1,
+                "static_image_url": "https://cdn.discordapp.com/assets/content/c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f.png"
             },
+            "premium": false,
+            "product_id": "1466214266758634971",
+            "product_line": 13,
+            "release_date": null,
             "selected_options": [
                 {
                     "option_name": "default",
                     "option_value": "default"
                 }
             ],
-            "product_id": "1466214266750246361",
-            "created_at": "2026-02-06T18:11:13.777975+00:00",
-            "updated_at": "2026-02-10T20:06:10.849339+00:00"
+            "show_age_gate": false,
+            "slug": "creepy-crawlies-badge-pack",
+            "tenant_metadata": {
+                "guild_monetization": {
+                    "powerup": {
+                        "boost_price": 2,
+                        "category_type": "perk",
+                        "guild_features": {
+                            "additional_emoji_slots": 0,
+                            "additional_sound_slots": 0,
+                            "additional_sticker_slots": 0,
+                            "features": [
+                                "GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES"
+                            ]
+                        },
+                        "purchase_limit": 1,
+                        "static_image_url": "https://cdn.discordapp.com/assets/content/c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f.png"
+                    }
+                }
+            },
+            "type": 2,
+            "updated_at": "2026-02-10T20:06:25.711578+00:00"
         },
-        "description": "Plant Badge Pack",
-        "published": true,
-        "benefits": [],
-        "powerup_metadata": {
-            "category_type": "perk",
-            "static_image_url": "https://cdn.discordapp.com/assets/content/a586e274a51442be7a6088580bf17a03e681120c57830b702c71024535ec3163.png",
-            "animated_image_url": null,
-            "store_removal_date": null,
-            "deactivation_cooldown_period_days": null
-        }
+        "summary": "Creepy Crawlies Badge Pack"
     }
 ]
