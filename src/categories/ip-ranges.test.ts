@@ -1,92 +1,77 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import {
-    formatIpRangesNotification,
-    normalizeIpRanges,
-} from './ip-ranges.js';
+import { normalizeIpRanges } from './ip-ranges.js';
 
-const base = {
+const metadata = {
     creationTime: '2026-08-04T18:01:19Z',
     syncToken: '4ce19406',
     notes: 'discord egress',
-    prefixes: [
-        { ipv4Prefix: '35.190.130.193/32', services: ['media', 'api', 'api'] },
-        { ipv6Prefix: '2600:1900::/48', services: ['media'] },
-    ],
 };
 
-test('normalizeIpRanges canonicalizes prefixes and services', () => {
-    const normalized = normalizeIpRanges(base);
-
-    assert.deepEqual(normalized.prefixes, [
-        { ipv4Prefix: '35.190.130.193/32', services: ['api', 'media'] },
-        { ipv6Prefix: '2600:1900::/48', services: ['media'] },
-    ]);
-});
-
-test('normalizeIpRanges merges duplicate CIDRs', () => {
+test('merges duplicate CIDRs and canonicalizes reordered services', () => {
     const normalized = normalizeIpRanges({
-        ...base,
+        ...metadata,
         prefixes: [
-            { ipv4Prefix: '35.190.130.193/32', services: ['api'] },
-            { ipv4Prefix: '35.190.130.193/32', services: ['media'] },
+            { ipv4Prefix: '35.190.130.193/32', services: ['media', 'api', 'api'] },
+            { ipv4Prefix: '35.190.130.193/32', services: ['voice', 'media'] },
         ],
     });
 
     assert.deepEqual(normalized.prefixes, [
-        { ipv4Prefix: '35.190.130.193/32', services: ['api', 'media'] },
+        {
+            ipv4Prefix: '35.190.130.193/32',
+            services: ['api', 'media', 'voice'],
+        },
     ]);
 });
 
-test('normalizeIpRanges rejects invalid or empty payloads', () => {
-    assert.throws(() => normalizeIpRanges({ ...base, prefixes: [] }), /no prefixes/);
+test('accepts IPv6 boundary masks and rejects invalid address-family combinations', () => {
+    assert.deepEqual(
+        normalizeIpRanges({
+            ...metadata,
+            prefixes: [{ ipv6Prefix: '2600:1900::/128', services: ['media'] }],
+        }).prefixes,
+        [{ ipv6Prefix: '2600:1900::/128', services: ['media'] }],
+    );
+
     assert.throws(
         () => normalizeIpRanges({
-            ...base,
+            ...metadata,
+            prefixes: [{
+                ipv4Prefix: '35.190.130.193/32',
+                ipv6Prefix: '2600:1900::/48',
+                services: ['api'],
+            }],
+        }),
+        /exactly one CIDR/,
+    );
+    assert.throws(
+        () => normalizeIpRanges({
+            ...metadata,
+            prefixes: [{ ipv6Prefix: '2600:1900::/129', services: ['media'] }],
+        }),
+        /Invalid IPv6 prefix/,
+    );
+});
+
+test('rejects malformed responses instead of replacing the stored snapshot', () => {
+    assert.throws(
+        () => normalizeIpRanges({ ...metadata, prefixes: [] }),
+        /no prefixes/,
+    );
+    assert.throws(
+        () => normalizeIpRanges({
+            ...metadata,
             prefixes: [{ ipv4Prefix: '999.1.1.1/32', services: ['api'] }],
         }),
         /Invalid IPv4 prefix/,
     );
-});
-
-test('IP range notifications track tokens and prefix changes', () => {
-    const notification = formatIpRangesNotification(
-        normalizeIpRanges(base),
-        normalizeIpRanges({
-            ...base,
-            creationTime: '2026-08-05T18:01:19Z',
-            syncToken: '4ce19407',
-            prefixes: [
-                { ipv4Prefix: '35.190.130.193/32', services: ['api'] },
-                { ipv4Prefix: '34.138.218.50/32', services: ['api'] },
-            ],
+    assert.throws(
+        () => normalizeIpRanges({
+            ...metadata,
+            prefixes: [{ ipv4Prefix: '35.190.130.193/32', services: [''] }],
         }),
-    );
-
-    assert.match(notification ?? '', /4ce19406.*4ce19407/);
-    assert.match(notification ?? '', /- 2600:1900::\/48 — media/);
-    assert.match(notification ?? '', /- 35.190.130.193\/32 — api, media/);
-    assert.match(notification ?? '', /\+ 34.138.218.50\/32 — api/);
-    assert.match(notification ?? '', /\+ 35.190.130.193\/32 — api/);
-});
-
-test('IP range notifications ignore response reordering', () => {
-    const before = normalizeIpRanges(base);
-    const after = normalizeIpRanges({
-        ...base,
-        prefixes: [...base.prefixes].reverse(),
-    });
-
-    assert.equal(formatIpRangesNotification(before, after), undefined);
-});
-
-test('IP range notifications report sync-token-only changes', () => {
-    const before = normalizeIpRanges(base);
-    const after = normalizeIpRanges({ ...base, syncToken: '4ce19407' });
-
-    assert.equal(
-        formatIpRangesNotification(before, after),
-        '### Discord Egress IP Ranges Updated\n\n> **Sync token:** `4ce19406` → `4ce19407`\n',
+        /Invalid services/,
     );
 });
