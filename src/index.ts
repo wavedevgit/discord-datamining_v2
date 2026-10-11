@@ -17,7 +17,11 @@ import robots from './categories/robots.js';
 import servers, { SitemapCache } from './categories/servers.js';
 import skus, { SkuListing } from './categories/skus.js';
 import { configExperimentCentral } from './config.js';
-import { sendTrackerMessage, target } from './tracker.js';
+import {
+    getIpCountry,
+    sendTrackerMessage,
+    target,
+} from './tracker.js';
 import { readFile, saveFile, saveFileText } from './utils.js';
 
 const execFileAsync = promisify(execFile);
@@ -44,10 +48,11 @@ function notifyAuthenticationFailure(error: unknown): Promise<void> {
     return authAlert;
 }
 
-async function runTracker(name: string, run: () => Promise<void>): Promise<void> {
+async function runTracker<T>(name: string, run: () => Promise<T>): Promise<T> {
     try {
-        await run();
+        const result = await run();
         console.log(`${name}: complete`);
+        return result;
     } catch (error) {
         if (isAuthenticationError(error)) await notifyAuthenticationFailure(error);
         throw new Error(`${name}: ${String(error)}`);
@@ -70,6 +75,21 @@ async function commitDataChanges(): Promise<string | undefined> {
 async function main(): Promise<void> {
     console.log('Tracker Central - V2.0.0');
     const notifications: Array<() => Promise<void>> = [];
+    const trackDiscordProducts = await runTracker('IP location', async () => {
+        const previousCountry = await readFile<string>('./data/ip_country.txt', false).catch(() => '');
+        const currentCountry = await getIpCountry();
+        await saveFileText('./data/ip_country.txt', currentCountry);
+        const shouldTrack = previousCountry.trim() === currentCountry;
+        if (!shouldTrack) {
+            console.warn(
+                `Discord products: skipped because IP country changed from ${previousCountry.trim() || 'unknown'} to ${currentCountry}`,
+            );
+        }
+        return shouldTrack;
+    }).catch((error) => {
+        console.error(error);
+        return false;
+    });
     const runs = [
         runTracker('changelogs', async () => {
             const [beforeDesktop, beforeMobile, after] = await Promise.all([
@@ -85,14 +105,16 @@ async function main(): Promise<void> {
                 await changelogs.diff(beforeMobile, afterMobile, 'Mobile');
             });
         }),
-        runTracker('collectible categories', async () => {
-            const before = await readFile<CollectibleCategory[]>(
-                './data/collectibles/categories.json',
-            );
-            const after = await categories.getCollectiblesCategories();
-            await saveFile('./data/collectibles/categories.json', after);
-            notifications.push(() => categories.diff(before, after));
-        }),
+        trackDiscordProducts
+            ? runTracker('collectible categories', async () => {
+                const before = await readFile<CollectibleCategory[]>(
+                    './data/collectibles/categories.json',
+                );
+                const after = await categories.getCollectiblesCategories();
+                await saveFile('./data/collectibles/categories.json', after);
+                notifications.push(() => categories.diff(before, after));
+            })
+            : Promise.resolve(),
         runTracker('collectibles marketing', async () => {
             const before = await readFile<MarketingCollection>(
                 './data/collectibles/marketing.json',
