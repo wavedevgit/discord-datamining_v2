@@ -1,7 +1,20 @@
 import { isDeepStrictEqual } from 'node:util';
 
 import { WebhookMessage, WebhookTarget } from './types.js';
-import { sendToWebhook } from './utils.js';
+import { sendReq, sendToWebhook } from './utils.js';
+
+async function getIpCountry(): Promise<string> {
+    const response = await sendReq({ url: 'users/@me/billing/country-code' });
+    const body = await response.json() as { country_code?: unknown; message?: string };
+    if (
+        !response.ok ||
+        typeof body.country_code !== 'string' ||
+        !/^[A-Z]{2}$/.test(body.country_code)
+    ) {
+        throw new Error(body.message ?? `Failed to fetch IP country: HTTP ${response.status}`);
+    }
+    return body.country_code;
+}
 
 interface Updated<T> {
     before: T;
@@ -146,6 +159,7 @@ export {
     diffByKey,
     diffLines,
     formatTextDiff,
+    getIpCountry,
     sendTrackerMessage,
     target,
 };
