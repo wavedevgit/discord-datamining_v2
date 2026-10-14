@@ -1,0 +1,25 @@
+name: WORKTIME
+
+on:
+    schedule:
+        - cron: '0 16,17 * * 1-5'
+        - cron: '0 0,1 * * 2-6'
+
+jobs:
+    notify:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Send worktime message
+              env:
+                  WORKTIMEWC: ${{ secrets.WORKTIMEWC }}
+              run: |
+                  case "$(TZ=America/Los_Angeles date +%H)" in
+                      09) message="The San Francisco workday has started." ;;
+                      17) message="The San Francisco workday has ended." ;;
+                      *) exit 0 ;;
+                  esac
+
+                  curl --fail-with-body --silent --show-error \
+                      -H 'Content-Type: application/json' \
+                      --data "{\"content\":\"$message\"}" \
+                      "$WORKTIMEWC"
