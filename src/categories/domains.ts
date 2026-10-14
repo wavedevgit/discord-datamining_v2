@@ -11,6 +11,7 @@ const DOMAINS = [
     'discord.co',
     'discord.com',
     'discord.design',
+    'devtun.to', 
     'discord.gg', 
     'discord.dev',
     'discord.gift',
