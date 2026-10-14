@@ -11,8 +11,8 @@ const DOMAINS = [
     'discord.co',
     'discord.com',
     'discord.design',
-    'devtun.to', 
-    'discord.gg', 
+    'devtun.to',
+    'discord.gg',
     'discord.dev',
     'discord.gift',
     'discord.gifts',
@@ -105,6 +105,26 @@ async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
     return [...subs];
 }
 
+export function parseCrtNameResponse(data: string, domain: string): string[] {
+    return data
+        .split('\n')
+        .map((name) => name.trim().toLowerCase())
+        .filter((name) => isValidDomain(name, domain));
+}
+
+async function findSubdomainsCrtName(domain: string): Promise<string[]> {
+    try {
+        const res = await fetch(
+            `https://crt.name/v1/search?apex=${encodeURIComponent(domain)}`,
+            { signal: AbortSignal.timeout(20_000) },
+        );
+
+        if (res.ok) return parseCrtNameResponse(await res.text(), domain);
+    } catch {}
+
+    return [];
+}
+
 async function findSubdomainsSecurityTrails(domain: string): Promise<string[]> {
     const subs = new Set<string>();
 
@@ -141,12 +161,13 @@ async function findSubdomainsSecurityTrails(domain: string): Promise<string[]> {
 async function getDomains(previous: string[] = []): Promise<string[]> {
     const results = await Promise.all(
         DOMAINS.map(async (domain) => {
-            const [crtSh, st] = await Promise.all([
+            const [crtSh, crtName, st] = await Promise.all([
                 findSubdomainsCrtSh(domain),
+                domain === 'devtun.to' ? findSubdomainsCrtName(domain) : [],
                 findSubdomainsSecurityTrails(domain),
             ]);
 
-            return sortDomains([domain, ...crtSh, ...st]);
+            return sortDomains([domain, ...crtSh, ...crtName, ...st]);
         }),
     );
 
