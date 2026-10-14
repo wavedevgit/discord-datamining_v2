@@ -73,7 +73,7 @@ function isValidDomain(name: string, baseDomain: string): boolean {
     return true;
 }
 
-async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
+export async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
     const subs = new Set<string>();
 
     try {
@@ -100,7 +100,11 @@ async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
                 }
             }
         }
-    } catch {}
+    } catch (error) {
+        if (error instanceof Error && error.name === 'TimeoutError') {
+            return findSubdomainsCrtName(domain);
+        }
+    }
 
     return [...subs];
 }
@@ -161,13 +165,12 @@ async function findSubdomainsSecurityTrails(domain: string): Promise<string[]> {
 async function getDomains(previous: string[] = []): Promise<string[]> {
     const results = await Promise.all(
         DOMAINS.map(async (domain) => {
-            const [crtSh, crtName, st] = await Promise.all([
+            const [crtSh, st] = await Promise.all([
                 findSubdomainsCrtSh(domain),
-                domain === 'devtun.to' ? findSubdomainsCrtName(domain) : [],
                 findSubdomainsSecurityTrails(domain),
             ]);
 
-            return sortDomains([domain, ...crtSh, ...crtName, ...st]);
+            return sortDomains([domain, ...crtSh, ...st]);
         }),
     );
 
