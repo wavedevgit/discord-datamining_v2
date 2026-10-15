@@ -31,6 +31,9 @@ const DOMAINS = [
     'discordvibeapps.com',
 ];
 
+// Cap how many entries a diff prints; a broken upstream can add thousands at once.
+const MAX_DIFF_ENTRIES = 50;
+
 function sortDomains(domains: Iterable<string>): string[] {
     return [...new Set(domains)].sort((a, b) => {
         const aParts = a.split('.').reverse();
@@ -73,7 +76,7 @@ function isValidDomain(name: string, baseDomain: string): boolean {
     return true;
 }
 
-export async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
+async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
     const subs = new Set<string>();
 
     try {
@@ -100,11 +103,7 @@ export async function findSubdomainsCrtSh(domain: string): Promise<string[]> {
                 }
             }
         }
-    } catch (error) {
-        if (error instanceof Error && error.name === 'TimeoutError') {
-            return findSubdomainsCrtName(domain);
-        }
-    }
+    } catch {}
 
     return [...subs];
 }
@@ -162,15 +161,20 @@ async function findSubdomainsSecurityTrails(domain: string): Promise<string[]> {
     return [...subs];
 }
 
-async function getDomains(previous: string[] = []): Promise<string[]> {
+export async function getDomains(previous: string[] = []): Promise<string[]> {
     const results = await Promise.all(
         DOMAINS.map(async (domain) => {
-            const [crtSh, st] = await Promise.all([
+            const [crtSh, crtName, st] = await Promise.all([
                 findSubdomainsCrtSh(domain),
+                // devtun.to issues per-hostname certs that never reach CT, so
+                // crt.sh only sees its wildcard. crt.name discovers them, but
+                // its index also holds never-certified guessed names, so it is
+                // limited to this one apex instead of running for every domain.
+                domain === 'devtun.to' ? findSubdomainsCrtName(domain) : [],
                 findSubdomainsSecurityTrails(domain),
             ]);
 
-            return sortDomains([domain, ...crtSh, ...st]);
+            return sortDomains([domain, ...crtSh, ...crtName, ...st]);
         }),
     );
 
@@ -194,6 +198,18 @@ async function getDomains(previous: string[] = []): Promise<string[]> {
     return sortDomains(all);
 }
 
+export function formatDomainDiff(added: string[], removed: string[]): string | undefined {
+    if (!added.length && !removed.length) return undefined;
+
+    const summary = `Domains changed: +${added.length} / -${removed.length}`;
+    const shown = formatTextDiff({
+        added: added.slice(0, MAX_DIFF_ENTRIES),
+        removed: removed.slice(0, MAX_DIFF_ENTRIES),
+    });
+
+    return shown ? `${summary}\n${shown}` : summary;
+}
+
 async function diff(oldData: string[], newData: string[]) {
     const oldSet = new Set(oldData);
     const newSet = new Set(newData);
@@ -201,9 +217,7 @@ async function diff(oldData: string[], newData: string[]) {
     const added = sortDomains(newData.filter((v) => !oldSet.has(v)));
     const removed = sortDomains(oldData.filter((v) => !newSet.has(v)));
 
-    if (!added.length && !removed.length) return;
-
-    const content = formatTextDiff({ added, removed });
+    const content = formatDomainDiff(added, removed);
     if (!content) return;
     await sendTrackerMessage(
         [

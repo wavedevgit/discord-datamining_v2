@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { findSubdomainsCrtSh, parseCrtNameResponse } from './domains.js';
+import { formatDomainDiff, getDomains, parseCrtNameResponse } from './domains.js';
 
 test('parses valid crt.name subdomains', () => {
     assert.deepEqual(
@@ -13,26 +13,38 @@ test('parses valid crt.name subdomains', () => {
     );
 });
 
-test('uses crt.name only when crt.sh times out', async () => {
+test('queries crt.name for devtun.to only', async () => {
     const originalFetch = globalThis.fetch;
     const urls: string[] = [];
 
     globalThis.fetch = (async (input: string | URL | Request) => {
-        urls.push(input.toString());
-        if (urls.length === 1) throw new DOMException('timed out', 'TimeoutError');
-        return new Response('devtun.to\nalice-workspace.devtun.to\n');
+        const url = input.toString();
+        urls.push(url);
+        if (url.includes('crt.name')) {
+            return new Response('devtun.to\nalice-workspace.devtun.to\n');
+        }
+        return new Response('[]');
     }) as typeof fetch;
 
     try {
-        assert.deepEqual(await findSubdomainsCrtSh('devtun.to'), [
-            'devtun.to',
-            'alice-workspace.devtun.to',
-        ]);
-        assert.deepEqual(urls, [
-            'https://crt.sh/?q=%25.devtun.to&output=json',
-            'https://crt.name/v1/search?apex=devtun.to',
-        ]);
+        const domains = await getDomains([]);
+
+        assert.deepEqual(
+            urls.filter((url) => url.includes('crt.name')),
+            ['https://crt.name/v1/search?apex=devtun.to'],
+        );
+        assert.ok(domains.includes('alice-workspace.devtun.to'));
     } finally {
         globalThis.fetch = originalFetch;
     }
+});
+
+test('caps large domain diffs behind a summary', () => {
+    const added = Array.from({ length: 500 }, (_, index) => `h${index}.discord.gg`);
+    const content = formatDomainDiff(added, []);
+
+    assert.match(content ?? '', /^Domains changed: \+500 \/ -0/);
+    assert.equal(content?.match(/^\+ /gm)?.length, 50);
+
+    assert.equal(formatDomainDiff([], []), undefined);
 });
