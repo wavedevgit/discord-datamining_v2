@@ -7,6 +7,7 @@ import { formatTextDiff, sendTrackerMessage, target } from '../tracker.js';
 
 const DOMAINS = [
     'dis.gd',
+    'vibeyard.tool',
     'i.dis.gd',
     'discord.co',
     'discord.com',
