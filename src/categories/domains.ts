@@ -29,6 +29,7 @@ const DOMAINS = [
     'discordstatus.com',
     'discordpartygames.com',
     'discord-activities.com',
+    'conjure.city',
     'discordvibeapps.com',
 ];
 
