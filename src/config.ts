@@ -58,7 +58,7 @@ const configWumpusUniv: Config = {
         skus: process.env.POWERUPSWC,
         servers: process.env.SERVERSWC,
         activities: process.env.ACTIVIESWC,
-        domains: process.env.POWERUPSWC,
+        domains: process.env.DOMAINSWC_,
         ipRanges: process.env.POWERUPSWC,
     },
     pings: {
