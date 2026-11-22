@@ -11,6 +11,7 @@ const DOMAINS = [
     'i.dis.gd',
     'discord.co',
     'discord.com',
+    'disabled.tools',
     'discordsez.com',
     'sentropy.com',
     'krisp.ai',
