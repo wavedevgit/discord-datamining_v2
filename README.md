@@ -1,5 +1,26 @@
 # please for god sake dont fork this or use it THIS IS MEANT FOR A PRIVATE PROJECT....
 
+## Branches
+
+| Branch | Contents |
+| --- | --- |
+| `src` (default) | Trackers, workflows, docs. No data. |
+| `data` | Machine-written JSON/text only, at the branch root. Rewritten every five minutes by `.github/workflows/mine.yml`. |
+
+`src` writes into `DATA_DIR` (default `./data`, absolute path in CI). Run locally with the
+data branch next to this tree:
+
+```sh
+git clone -b data git@github.com:wavedevgit/discord-datamining_v2.git data
+npm ci && npm run build && npm run start
+```
+
+Data is read straight from the branch:
+
+```
+https://raw.githubusercontent.com/wavedevgit/discord-datamining_v2/data/domains.json
+```
+
 ## Local Claude-to-Codex bridge
 
 This repository includes `codex-claude-proxy.js`, a loopback-only adapter for using the

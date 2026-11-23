@@ -18,6 +18,7 @@ import robots from './categories/robots.js';
 import servers, { SitemapCache } from './categories/servers.js';
 import skus, { SkuListing } from './categories/skus.js';
 import { configExperimentCentral } from './config.js';
+import { DATA_DIR, dataPath } from './paths.js';
 import {
     getIpCountry,
     sendTrackerMessage,
@@ -60,16 +61,26 @@ async function runTracker<T>(name: string, run: () => Promise<T>): Promise<T> {
     }
 }
 
+const DATA_BRANCH = process.env.DATA_BRANCH?.trim() || 'data';
+
 async function commitDataChanges(): Promise<string | undefined> {
     if (process.env.GITHUB_ACTIONS !== 'true') return undefined;
 
-    await execFileAsync('git', ['add', 'data']);
-    const { stdout } = await execFileAsync('git', ['diff', '--cached', '--name-only']);
+    const git = (...args: string[]) => execFileAsync('git', ['-C', DATA_DIR, ...args]);
+    try {
+        await git('rev-parse', '--git-dir');
+    } catch {
+        console.warn(`${DATA_DIR} is not a git checkout; data left uncommitted.`);
+        return undefined;
+    }
+
+    await git('add', '-A');
+    const { stdout } = await git('diff', '--cached', '--name-only');
     if (!stdout.trim()) return undefined;
 
-    await execFileAsync('git', ['commit', '-m', '✅ data updated!']);
-    await execFileAsync('git', ['push']);
-    const { stdout: sha } = await execFileAsync('git', ['rev-parse', 'HEAD']);
+    await git('commit', '-m', '✅ data updated!');
+    await git('push', 'origin', `HEAD:${DATA_BRANCH}`);
+    const { stdout: sha } = await git('rev-parse', 'HEAD');
     return `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/commit/${sha.trim()}`;
 }
 
@@ -77,9 +88,9 @@ async function main(): Promise<void> {
     console.log('Tracker Central - V2.0.0');
     const notifications: Array<() => Promise<void>> = [];
     const trackDiscordProducts = await runTracker('IP location', async () => {
-        const previousCountry = await readFile<string>('./data/ip_country.txt', false).catch(() => '');
+        const previousCountry = await readFile<string>(dataPath('ip_country.txt'), false).catch(() => '');
         const currentCountry = await getIpCountry();
-        await saveFileText('./data/ip_country.txt', currentCountry);
+        await saveFileText(dataPath('ip_country.txt'), currentCountry);
         const shouldTrack = previousCountry.trim() === currentCountry;
         if (!shouldTrack) {
             console.warn(
@@ -94,13 +105,13 @@ async function main(): Promise<void> {
     const runs = [
         runTracker('changelogs', async () => {
             const [beforeDesktop, beforeMobile, after] = await Promise.all([
-                readFile<Changelog[]>('./data/changelogs_desktop.json'),
-                readFile<Changelog[]>('./data/changelogs_mobile.json'),
+                readFile<Changelog[]>(dataPath('changelogs_desktop.json')),
+                readFile<Changelog[]>(dataPath('changelogs_mobile.json')),
                 changelogs.getChangelogs(),
             ]);
             const [afterDesktop, afterMobile] = after;
-            await saveFile('./data/changelogs_desktop.json', afterDesktop);
-            await saveFile('./data/changelogs_mobile.json', afterMobile);
+            await saveFile(dataPath('changelogs_desktop.json'), afterDesktop);
+            await saveFile(dataPath('changelogs_mobile.json'), afterMobile);
             notifications.push(async () => {
                 await changelogs.diff(beforeDesktop, afterDesktop, 'Desktop');
                 await changelogs.diff(beforeMobile, afterMobile, 'Mobile');
@@ -109,89 +120,89 @@ async function main(): Promise<void> {
         trackDiscordProducts
             ? runTracker('collectible categories', async () => {
                 const before = await readFile<CollectibleCategory[]>(
-                    './data/collectibles/categories.json',
+                    dataPath('collectibles/categories.json'),
                 );
                 const after = await categories.getCollectiblesCategories();
-                await saveFile('./data/collectibles/categories.json', after);
+                await saveFile(dataPath('collectibles/categories.json'), after);
                 notifications.push(() => categories.diff(before, after));
             })
             : Promise.resolve(),
         runTracker('collectibles marketing', async () => {
             const before = await readFile<MarketingCollection>(
-                './data/collectibles/marketing.json',
+                dataPath('collectibles/marketing.json'),
             );
             const after = await marketing.getMarketing();
-            await saveFile('./data/collectibles/marketing.json', after);
+            await saveFile(dataPath('collectibles/marketing.json'), after);
             notifications.push(() => marketing.diff(before, after));
         }),
         runTracker('CSP', async () => {
-            const before = await readFile<string>('./data/csp.txt', false);
+            const before = await readFile<string>(dataPath('csp.txt'), false);
             const after = await csp.getCSP();
-            await saveFileText('./data/csp.txt', after);
+            await saveFileText(dataPath('csp.txt'), after);
             notifications.push(() => csp.diff(before, after));
         }),
         runTracker('acknowledgements', async () => {
-            const before = await readFile<string>('./data/acknowledgements.md', false);
+            const before = await readFile<string>(dataPath('acknowledgements.md'), false);
             const after =
                 '# Acknowledgements\n**Source:** https://canary.discord.com/acknowledgements\n\n' +
                 (await acknowledgements.getModules());
-            await saveFileText('./data/acknowledgements.md', after);
+            await saveFileText(dataPath('acknowledgements.md'), after);
             notifications.push(() => acknowledgements.diff(before, after));
         }),
         runTracker('robots.txt', async () => {
-            const before = await readFile<string>('./data/robots.txt', false);
+            const before = await readFile<string>(dataPath('robots.txt'), false);
             const after = await robots.getRobots();
-            await saveFileText('./data/robots.txt', after);
+            await saveFileText(dataPath('robots.txt'), after);
             notifications.push(() => robots.diff(before, after));
         }),
         runTracker('domains', async () => {
-            const before = await readFile<string[]>('./data/domains.json');
+            const before = await readFile<string[]>(dataPath('domains.json'));
             const after = await domains.getDomains(before);
-            await saveFile('./data/domains.json', after);
+            await saveFile(dataPath('domains.json'), after);
             notifications.push(() => domains.diff(before, after));
         }),
         runTracker('IP ranges', async () => {
-            const before = await readFile<IpRangesDocument>('./data/ip_ranges.json');
+            const before = await readFile<IpRangesDocument>(dataPath('ip_ranges.json'));
             const after = await ipRanges.getIpRanges();
-            await saveFile('./data/ip_ranges.json', after);
+            await saveFile(dataPath('ip_ranges.json'), after);
             notifications.push(() => ipRanges.diff(before, after));
         }),
         runTracker('powerups', async () => {
-            const before = await readFile<Powerup[]>('./data/powerups.json');
+            const before = await readFile<Powerup[]>(dataPath('powerups.json'));
             const after = await powerups.getPowerups();
-            await saveFile('./data/powerups.json', after);
+            await saveFile(dataPath('powerups.json'), after);
             notifications.push(() => powerups.diff(before, after));
         }),
         runTracker('merch', async () => {
-            const before = await readFile<MerchProduct[]>('./data/merch.json');
+            const before = await readFile<MerchProduct[]>(dataPath('merch.json'));
             const after = await merch.getMerch();
-            await saveFile('./data/merch.json', after);
+            await saveFile(dataPath('merch.json'), after);
             notifications.push(() => merch.diff(before, after));
         }),
         runTracker('SKU publication', async () => {
-            const before = await readFile<string[]>('./data/skus.json');
+            const before = await readFile<string[]>(dataPath('skus.json'));
             const after = await skus.getSkus(before);
-            await saveFile('./data/skus.json', after);
+            await saveFile(dataPath('skus.json'), after);
             notifications.push(() => skus.diff(before, after));
         }),
         runTracker('SKU listings', async () => {
             const [before, appIds] = await Promise.all([
-                readFile<SkuListing[]>('./data/skus_apps_listings.json'),
-                readFile<string[]>('./data/skus_apps.json'),
+                readFile<SkuListing[]>(dataPath('skus_apps_listings.json')),
+                readFile<string[]>(dataPath('skus_apps.json')),
             ]);
             const after = await skus.getSkuApps(appIds);
-            await saveFile('./data/skus_apps_listings.json', after);
+            await saveFile(dataPath('skus_apps_listings.json'), after);
             notifications.push(() => skus.diffSkuApps(before, after));
         }),
         runTracker('server directory', async () => {
             const [before, cache] = await Promise.all([
-                readFile<string>('./data/servers.txt', false),
-                readFile<SitemapCache>('./data/servers_sitemaps.json').catch(() => ({})),
+                readFile<string>(dataPath('servers.txt'), false),
+                readFile<SitemapCache>(dataPath('servers_sitemaps.json')).catch(() => ({})),
             ]);
             const after = await servers.getServersList(cache, before);
             await Promise.all([
-                saveFileText('./data/servers.txt', after.data),
-                saveFile('./data/servers_sitemaps.json', after.cache),
+                saveFileText(dataPath('servers.txt'), after.data),
+                saveFile(dataPath('servers_sitemaps.json'), after.cache),
             ]);
             notifications.push(() => servers.diff(before, after.data));
         }),
