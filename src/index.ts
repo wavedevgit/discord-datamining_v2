@@ -14,6 +14,7 @@ import domains from './categories/domains.js';
 import ipRanges, { IpRangesDocument } from './categories/ip-ranges.js';
 import merch, { MerchProduct } from './categories/merch.js';
 import powerups, { Powerup } from './categories/powerups.js';
+import policies from './categories/policies.js';
 import robots from './categories/robots.js';
 import servers, { SitemapCache } from './categories/servers.js';
 import skus, { SkuListing } from './categories/skus.js';
@@ -103,6 +104,10 @@ async function main(): Promise<void> {
         return false;
     });
     const runs = [
+        runTracker('policies', async () => {
+            const changes = await policies.getPolicies();
+            notifications.push(() => policies.diff(changes));
+        }),
         runTracker('changelogs', async () => {
             const [beforeDesktop, beforeMobile, after] = await Promise.all([
                 readFile<Changelog[]>(dataPath('changelogs_desktop.json')),

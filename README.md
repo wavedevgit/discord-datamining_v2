@@ -21,6 +21,30 @@ Data is read straight from the branch:
 https://raw.githubusercontent.com/wavedevgit/discord-datamining_v2/data/domains.json
 ```
 
+## Policies tracker
+
+One `policies` tracker monitors the English Terms, Privacy, Guidelines,
+Acknowledgements, Licences, and Company Information pages from Discord's footer.
+Cookie Settings is a consent UI, not a static policy document, and is excluded.
+Documents are normalized to Markdown under `policies/*.md` on `data`; no generated
+documents are tracked on `src`. Navigation, scripts and hidden content are removed.
+Acknowledgements uses the page's bundled library list, not its empty SSR shell.
+Each page fails independently; unsuccessful downloads never overwrite its snapshot.
+
+The existing five-minute Actions schedule runs this tracker around the clock
+(GitHub schedules can be delayed; this is not a continuously running daemon).
+Set the **`POLICIESWC` repository secret** to the Wumpus University policies webhook.
+Experiment Central policies notifications are disabled. There is no misc fallback.
+Small updates include an ordered unified diff; large updates link to the committed
+data diff using the existing post-commit notification flow.
+
+The first run seeds missing documents silently. Later runs compare current pages
+against the saved Markdown. Historical comparisons are a separate one-off research
+task; the tracker never contacts Wayback or requires archive configuration.
+
+Local: clone the `data` branch into `./data`, set the same environment variables,
+and run `npm ci && npm test && npm start`. Tests use fixtures and do not send webhooks.
+
 ## Local Claude-to-Codex bridge
 
 This repository includes `codex-claude-proxy.js`, a loopback-only adapter for using the
