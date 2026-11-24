@@ -31,7 +31,8 @@ async function fetchText(url: string): Promise<string> {
         signal: AbortSignal.timeout(45_000),
         headers: { 'Accept-Language': 'en-US,en;q=0.9' },
     });
-    if (!response.ok) throw new Error(`Policies: HTTP ${response.status} fetching ${url}`);
+    if (!response.ok)
+        throw new Error(`Policies: HTTP ${response.status} fetching ${url}`);
     const reader = response.body?.getReader();
     if (!reader) throw new Error(`Policies: empty response from ${url}`);
     const chunks: Uint8Array[] = [];
@@ -41,7 +42,8 @@ async function fetchText(url: string): Promise<string> {
             const { done, value } = await reader.read();
             if (done) break;
             size += value.byteLength;
-            if (size > MAX_HTML_BYTES) throw new Error(`Policies: oversized response from ${url}`);
+            if (size > MAX_HTML_BYTES)
+                throw new Error(`Policies: oversized response from ${url}`);
             chunks.push(value);
         }
     } finally {
@@ -52,25 +54,35 @@ async function fetchText(url: string): Promise<string> {
 
 function toMarkdown(html: string, slug: string, title: string): string {
     const $ = load(html);
-    $('script, style, noscript, nav, footer, header, [hidden], .w-condition-invisible').remove();
+    $(
+        'script, style, noscript, nav, footer, header, [hidden], .w-condition-invisible',
+    ).remove();
     // ponytail: six known footer documents; add selectors when Discord changes their layouts.
     const main = $('main, .section-rich, .section.guidlines').first();
     const content = main.length
         ? main
         : slug === 'licenses'
-            ? $('[class*="document-"]').first()
-            : $('section[class*="projectListWrapper"]').first();
-    if (!content.length) throw new Error(`Policies: document container missing for ${slug}`);
+          ? $('[class*="document-"]').first()
+          : $('section[class*="projectListWrapper"]').first();
+    if (!content.length)
+        throw new Error(`Policies: document container missing for ${slug}`);
     content.find('a[href]').each((_, element) => {
         const link = $(element);
         const href = link.attr('href')!;
         const resolved = new URL(href, `https://discord.com/${slug}`);
-        link.attr('href', resolved.protocol === 'http:' && resolved.hostname === 'discord.com'
-            ? resolved.href.replace(/^http:/, 'https:')
-            : resolved.href);
+        link.attr(
+            'href',
+            resolved.protocol === 'http:' && resolved.hostname === 'discord.com'
+                ? resolved.href.replace(/^http:/, 'https:')
+                : resolved.href,
+        );
     });
-    const converter = new TurndownService({ headingStyle: 'atx', bulletListMarker: '-' });
-    const text = converter.turndown(content.html() ?? '')
+    const converter = new TurndownService({
+        headingStyle: 'atx',
+        bulletListMarker: '-',
+    });
+    const text = converter
+        .turndown(content.html() ?? '')
         .replace(/[\u200b-\u200d\ufeff]/g, '')
         .replace(/\r\n/g, '\n')
         .trim();
@@ -80,16 +92,25 @@ function toMarkdown(html: string, slug: string, title: string): string {
     return `# ${title}\n\nSource: https://discord.com/${slug}\n\n${text}\n`;
 }
 
-async function documentMarkdown(html: string, slug: string, title: string): Promise<string> {
+async function documentMarkdown(
+    html: string,
+    slug: string,
+    title: string,
+): Promise<string> {
     if (slug !== 'acknowledgements') return toMarkdown(html, slug, title);
     const $ = load(html);
     const scripts = $('script[data-chunk*="Acknowledgements"][src]')
-        .map((_, element) => $(element).attr('src')!).get();
+        .map((_, element) => $(element).attr('src')!)
+        .get();
     // ponytail: at most eight acknowledgement chunks; revisit if the page splits into more chunks.
     let lastError: unknown;
     for (const src of scripts.slice(0, 8).reverse()) {
         const url = new URL(src, 'https://discord.com');
-        if (url.origin !== 'https://discord.com' || !url.pathname.startsWith('/assets/')) continue;
+        if (
+            url.origin !== 'https://discord.com' ||
+            !url.pathname.startsWith('/assets/')
+        )
+            continue;
         let script: string;
         try {
             script = await fetchText(url.href);
@@ -100,10 +121,17 @@ async function documentMarkdown(html: string, slug: string, title: string): Prom
         const literal = script.match(/\.exports=("(?:\\.|[^"\\])*")/)?.[1];
         if (!literal) continue;
         const modules: unknown = JSON.parse(literal);
-        if (typeof modules !== 'string' || !modules.startsWith('* [') || !modules.includes('](')) continue;
+        if (
+            typeof modules !== 'string' ||
+            !modules.startsWith('* [') ||
+            !modules.includes('](')
+        )
+            continue;
         return `# ${title}\n\nSource: https://discord.com/${slug}\n\n${modules.trim()}\n`;
     }
-    throw new Error(`Policies: acknowledgements library list missing; refusing an empty baseline. ${String(lastError ?? '')}`);
+    throw new Error(
+        `Policies: acknowledgements library list missing; refusing an empty baseline. ${String(lastError ?? '')}`,
+    );
 }
 
 async function getPolicies(): Promise<PolicyChange[]> {
@@ -118,11 +146,17 @@ async function getPolicies(): Promise<PolicyChange[]> {
             try {
                 before = await readFile<string>(file, false);
             } catch (error) {
-                if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+                if ((error as NodeJS.ErrnoException).code !== 'ENOENT')
+                    throw error;
             }
-            const after = await documentMarkdown(await fetchText(`https://discord.com/${slug}`), slug, title);
+            const after = await documentMarkdown(
+                await fetchText(`https://discord.com/${slug}`),
+                slug,
+                title,
+            );
             await saveFileText(file, after);
-            if (before !== undefined && before !== after) changes.push({ slug, before, after });
+            if (before !== undefined && before !== after)
+                changes.push({ slug, before, after });
         } catch (error) {
             failures.push(error);
         }
@@ -136,24 +170,42 @@ async function getPolicies(): Promise<PolicyChange[]> {
 
 function notification(change: PolicyChange): string {
     const heading = `Policy updated: https://discord.com/${change.slug}`;
-    const patch = createTwoFilesPatch(change.slug, change.slug, change.before, change.after,
-        undefined, undefined, { context: 2, timeout: 1_000, maxEditLength: 2_000 });
+    const patch = createTwoFilesPatch(
+        change.slug,
+        change.slug,
+        change.before,
+        change.after,
+        undefined,
+        undefined,
+        { context: 2, timeout: 1_000, maxEditLength: 2_000 },
+    );
     if (patch && patch.length <= MAX_INLINE_DIFF && !patch.includes('```')) {
         return `${heading}\n\`\`\`diff\n${patch}\`\`\``;
     }
-    return `${heading}\n${process.env.COMMIT_URL
-        ? 'Full diff in the data commit below.'
-        : `Full Markdown: https://github.com/wavedevgit/discord-datamining_v2/blob/data/policies/${change.slug}.md`}`;
+    return `${heading}\n${
+        process.env.COMMIT_URL
+            ? 'Full diff in the data commit below.'
+            : `Full Markdown: https://github.com/wavedevgit/discord-datamining_v2/blob/data/policies/${change.slug}.md`
+    }`;
 }
 
 async function diff(changes: PolicyChange[]): Promise<void> {
     for (const change of changes) {
-        await sendTrackerMessage([
-            target('Experiment Central policies', configExperimentCentral.webhooks.policies,
-                configExperimentCentral.pings.policies),
-            target('Wumpus University policies', configWumpusUniv.webhooks.policies,
-                configWumpusUniv.pings.policies),
-        ], { content: notification(change), allowed_mentions: { parse: [] } });
+        await sendTrackerMessage(
+            [
+                target(
+                    'Experiment Central policies',
+                    configExperimentCentral.webhooks.policies,
+                    configExperimentCentral.pings.policies,
+                ),
+                target(
+                    'Wumpus University policies',
+                    configWumpusUniv.webhooks.policies,
+                    configWumpusUniv.pings.policies,
+                ),
+            ],
+            { content: notification(change), allowed_mentions: { parse: [] } },
+        );
     }
 }
 
