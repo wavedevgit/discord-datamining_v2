@@ -64,6 +64,7 @@ interface ConfigCategoriesObject {
     ipRanges?: string;
     servers?: string;
     robots?: string;
+    policies?: string;
     acknowledgements?: string;
     powerups?: string;
     merch?: string;
