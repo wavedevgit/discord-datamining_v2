@@ -21,6 +21,17 @@ Data is read straight from the branch:
 https://raw.githubusercontent.com/wavedevgit/discord-datamining_v2/data/domains.json
 ```
 
+## Topics sitemap tracker
+
+The `topics sitemap` tracker expands
+`https://discord.com/topics/topics-sitemap-index.xml` and refreshes every child
+sitemap. It stores a sorted URL-to-`lastmod` map in `topics.json` on `data`.
+Diffs report added URLs, removed URLs, and changed `lastmod` values; XML ordering
+and timestamped shard filename churn do not produce alerts. The first run seeds
+silently. Any failed or invalid shard prevents replacing the previous snapshot.
+Alerts use **Experiment Central's robots.txt webhook (`ROBOTS`) only**, with small
+inline diffs and a data commit link for larger changes.
+
 ## Policies tracker
 
 One `policies` tracker monitors the English Terms, Privacy, Guidelines,

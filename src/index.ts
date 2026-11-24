@@ -18,6 +18,7 @@ import policies from './categories/policies.js';
 import robots from './categories/robots.js';
 import servers, { SitemapCache } from './categories/servers.js';
 import skus, { SkuListing } from './categories/skus.js';
+import topics, { TopicsSnapshot } from './categories/topics.js';
 import { configExperimentCentral } from './config.js';
 import { DATA_DIR, dataPath } from './paths.js';
 import {
@@ -104,6 +105,20 @@ async function main(): Promise<void> {
         return false;
     });
     const runs = [
+        runTracker('topics sitemap', async () => {
+            let before: TopicsSnapshot | undefined;
+            try {
+                before = await readFile<TopicsSnapshot>(dataPath('topics.json'));
+            } catch (error) {
+                if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+            }
+            const after = await topics.getTopics();
+            await saveFile(dataPath('topics.json'), after);
+            if (before !== undefined) {
+                const previous = before;
+                notifications.push(() => topics.diff(previous, after));
+            }
+        }),
         runTracker('policies', async () => {
             const changes = await policies.getPolicies();
             notifications.push(() => policies.diff(changes));
