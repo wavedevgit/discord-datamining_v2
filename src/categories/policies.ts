@@ -1,5 +1,4 @@
 import { mkdir } from 'node:fs/promises';
-import { gunzipSync } from 'node:zlib';
 
 import { load } from 'cheerio';
 import { createTwoFilesPatch } from 'diff';
@@ -25,7 +24,6 @@ interface PolicyChange {
     slug: string;
     before: string;
     after: string;
-    archiveUrl?: string;
 }
 
 async function fetchText(url: string): Promise<string> {
@@ -49,10 +47,7 @@ async function fetchText(url: string): Promise<string> {
     } finally {
         await reader.cancel();
     }
-    const body = Buffer.concat(chunks);
-    // Some Wayback identity responses retain gzip bytes without Content-Encoding.
-    return (body[0] === 0x1f && body[1] === 0x8b
-        ? gunzipSync(body, { maxOutputLength: MAX_HTML_BYTES }) : body).toString('utf8');
+    return Buffer.concat(chunks).toString('utf8');
 }
 
 function toMarkdown(html: string, slug: string, title: string): string {
@@ -69,8 +64,7 @@ function toMarkdown(html: string, slug: string, title: string): string {
     content.find('a[href]').each((_, element) => {
         const link = $(element);
         const href = link.attr('href')!;
-        const original = href.replace(/^https?:\/\/web\.archive\.org\/web\/\d+(?:[a-z_]+)?\//, '');
-        const resolved = new URL(original, `https://discord.com/${slug}`);
+        const resolved = new URL(href, `https://discord.com/${slug}`);
         link.attr('href', resolved.protocol === 'http:' && resolved.hostname === 'discord.com'
             ? resolved.href.replace(/^http:/, 'https:')
             : resolved.href);
@@ -86,7 +80,7 @@ function toMarkdown(html: string, slug: string, title: string): string {
     return `# ${title}\n\nSource: https://discord.com/${slug}\n\n${text}\n`;
 }
 
-async function documentMarkdown(html: string, slug: string, title: string, archivePrefix = ''): Promise<string> {
+async function documentMarkdown(html: string, slug: string, title: string): Promise<string> {
     if (slug !== 'acknowledgements') return toMarkdown(html, slug, title);
     const $ = load(html);
     const scripts = $('script[data-chunk*="Acknowledgements"][src]')
@@ -98,7 +92,7 @@ async function documentMarkdown(html: string, slug: string, title: string, archi
         if (url.origin !== 'https://discord.com' || !url.pathname.startsWith('/assets/')) continue;
         let script: string;
         try {
-            script = await fetchText(`${archivePrefix}${url.href}`);
+            script = await fetchText(url.href);
         } catch (error) {
             lastError = error;
             continue;
@@ -112,61 +106,23 @@ async function documentMarkdown(html: string, slug: string, title: string, archi
     throw new Error(`Policies: acknowledgements library list missing; refusing an empty baseline. ${String(lastError ?? '')}`);
 }
 
-async function getArchive(slug: string, title: string): Promise<{ text: string; url: string }> {
-    const before = process.env.POLICIES_ARCHIVE_BEFORE ?? '20260101000000';
-    if (!/^\d{14}$/.test(before)) throw new Error('POLICIES_ARCHIVE_BEFORE must be YYYYMMDDhhmmss');
-    const query = new URLSearchParams({
-        url: `discord.com/${slug}`, output: 'json', to: before,
-        filter: 'statuscode:200', limit: '-1', fl: 'timestamp,original',
-    });
-    const rows: unknown = JSON.parse(await fetchText(`https://web.archive.org/cdx/search/cdx?${query}`));
-    if (!Array.isArray(rows) || rows.length < 2 || !Array.isArray(rows[1])) {
-        throw new Error(`Policies: no archived baseline for ${slug} before ${before}`);
-    }
-    const [timestamp, original] = rows[1];
-    if (typeof timestamp !== 'string' || !/^\d{14}$/.test(timestamp)
-        || typeof original !== 'string' || new URL(original).hostname !== 'discord.com') {
-        throw new Error(`Policies: invalid archive response for ${slug}`);
-    }
-    const url = `https://web.archive.org/web/${timestamp}id_/${original}`;
-    return {
-        text: await documentMarkdown(await fetchText(url), slug, title,
-            `https://web.archive.org/web/${timestamp}id_/`),
-        url,
-    };
-}
-
 async function getPolicies(): Promise<PolicyChange[]> {
     await mkdir(dataPath('policies'), { recursive: true });
     const changes: PolicyChange[] = [];
     const failures: unknown[] = [];
-    // Sequential requests keep the six-page poll and optional archive bootstrap bounded.
+    // Sequential requests avoid fetching all six documents simultaneously.
     for (const [slug, title] of POLICY_PAGES) {
         try {
             const file = dataPath(`policies/${slug}.md`);
             let before: string | undefined;
-            let archiveUrl: string | undefined;
             try {
                 before = await readFile<string>(file, false);
             } catch (error) {
                 if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
             }
             const after = await documentMarkdown(await fetchText(`https://discord.com/${slug}`), slug, title);
-            if (before === undefined && process.env.POLICIES_ARCHIVE_BOOTSTRAP === 'true') {
-                try {
-                    const archive = await getArchive(slug, title);
-                    before = archive.text;
-                    archiveUrl = archive.url;
-                    await mkdir(dataPath('policies/archive'), { recursive: true });
-                    await saveFileText(dataPath(`policies/archive/${slug}.md`),
-                        `Archived source: ${archive.url}\n\n${archive.text}`);
-                } catch (error) {
-                    // Leave this file uninitialized so the next run retries the baseline.
-                    throw new Error(`Archive bootstrap failed for ${slug}: ${String(error)}`);
-                }
-            }
             await saveFileText(file, after);
-            if (before !== undefined && before !== after) changes.push({ slug, before, after, archiveUrl });
+            if (before !== undefined && before !== after) changes.push({ slug, before, after });
         } catch (error) {
             failures.push(error);
         }
@@ -182,11 +138,10 @@ function notification(change: PolicyChange): string {
     const heading = `Policy updated: https://discord.com/${change.slug}`;
     const patch = createTwoFilesPatch(change.slug, change.slug, change.before, change.after,
         undefined, undefined, { context: 2, timeout: 1_000, maxEditLength: 2_000 });
-    const archive = change.archiveUrl ? `\nArchived baseline: ${change.archiveUrl}` : '';
     if (patch && patch.length <= MAX_INLINE_DIFF && !patch.includes('```')) {
-        return `${heading}${archive}\n\`\`\`diff\n${patch}\`\`\``;
+        return `${heading}\n\`\`\`diff\n${patch}\`\`\``;
     }
-    return `${heading}${archive}\n${process.env.COMMIT_URL
+    return `${heading}\n${process.env.COMMIT_URL
         ? 'Full diff in the data commit below.'
         : `Full Markdown: https://github.com/wavedevgit/discord-datamining_v2/blob/data/policies/${change.slug}.md`}`;
 }

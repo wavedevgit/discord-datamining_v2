@@ -38,16 +38,9 @@ Optional `POLICIESWC` configures a second destination. There is no misc fallback
 Small updates include an ordered unified diff; large updates link to the committed
 data diff using the existing post-commit notification flow.
 
-The scheduled workflow enables a historical comparison by default. Set repository
-variable `POLICIES_ARCHIVE_BOOTSTRAP=false` to seed current documents silently instead.
-Local runs opt in with environment variable `POLICIES_ARCHIVE_BOOTSTRAP=true`.
-Missing current files then seed from the latest successful Wayback CDX capture at or
-before `POLICIES_ARCHIVE_BEFORE` (14-digit UTC timestamp, default `20260101000000`).
-Historical Markdown is kept in `policies/archive/*.md` with its exact capture URL;
-notifications compare that baseline against today's document. Existing files never
-query Wayback again. An unavailable or unparseable archive leaves that page
-uninitialized and logs the failure so the next run retries instead of inventing history.
-Disable the bootstrap variable once initial comparisons are complete.
+The first run seeds missing documents silently. Later runs compare current pages
+against the saved Markdown. Historical comparisons are a separate one-off research
+task; the tracker never contacts Wayback or requires archive configuration.
 
 Local: clone the `data` branch into `./data`, set the same environment variables,
 and run `npm ci && npm test && npm start`. Tests use fixtures and do not send webhooks.

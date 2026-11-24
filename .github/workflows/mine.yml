@@ -48,8 +48,6 @@ jobs:
                   DATA_BRANCH: data
                   POLICIES: ${{ secrets.POLICIES }}
                   POLICIESWC: ${{ secrets.POLICIESWC }}
-                  POLICIES_ARCHIVE_BOOTSTRAP: ${{ vars.POLICIES_ARCHIVE_BOOTSTRAP || 'true' }}
-                  POLICIES_ARCHIVE_BEFORE: ${{ vars.POLICIES_ARCHIVE_BEFORE }}
                   ALT_TOKEN: ${{ secrets.ALT_TOKEN }}
                   CATEGORIES: ${{ secrets.CATEGORIES }}
                   PROFILEEFFECTS: ${{ secrets.PROFILEEFFECTS }}
