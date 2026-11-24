@@ -46,7 +46,6 @@ jobs:
               env:
                   DATA_DIR: ${{ github.workspace }}/data
                   DATA_BRANCH: data
-                  POLICIES: ${{ secrets.POLICIES }}
                   POLICIESWC: ${{ secrets.POLICIESWC }}
                   ALT_TOKEN: ${{ secrets.ALT_TOKEN }}
                   CATEGORIES: ${{ secrets.CATEGORIES }}

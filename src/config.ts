@@ -8,7 +8,6 @@ const configExperimentCentral: Config = {
             assets: process.env.ASSETS,
         },
         changelogs: process.env.CHANGELOGS,
-        policies: process.env.POLICIES,
         activities: process.env.ACTIVITIES,
         domains: process.env.DOMAINS,
         acknowledgements: process.env.ACKNOWLEDGEMENTSWC,

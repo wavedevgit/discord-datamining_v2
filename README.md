@@ -33,8 +33,8 @@ Each page fails independently; unsuccessful downloads never overwrite its snapsh
 
 The existing five-minute Actions schedule runs this tracker around the clock
 (GitHub schedules can be delayed; this is not a continuously running daemon).
-Set the **`POLICIES` repository secret** to the new policies Discord webhook.
-Optional `POLICIESWC` configures a second destination. There is no misc fallback.
+Set the **`POLICIESWC` repository secret** to the Wumpus University policies webhook.
+Experiment Central policies notifications are disabled. There is no misc fallback.
 Small updates include an ordered unified diff; large updates link to the committed
 data diff using the existing post-commit notification flow.
 

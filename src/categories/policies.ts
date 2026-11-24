@@ -4,7 +4,7 @@ import { load } from 'cheerio';
 import { createTwoFilesPatch } from 'diff';
 import TurndownService from 'turndown';
 
-import { configExperimentCentral, configWumpusUniv } from '../config.js';
+import { configWumpusUniv } from '../config.js';
 import { dataPath } from '../paths.js';
 import { sendTrackerMessage, target } from '../tracker.js';
 import { readFile, saveFileText } from '../utils.js';
@@ -193,11 +193,6 @@ async function diff(changes: PolicyChange[]): Promise<void> {
     for (const change of changes) {
         await sendTrackerMessage(
             [
-                target(
-                    'Experiment Central policies',
-                    configExperimentCentral.webhooks.policies,
-                    configExperimentCentral.pings.policies,
-                ),
                 target(
                     'Wumpus University policies',
                     configWumpusUniv.webhooks.policies,
