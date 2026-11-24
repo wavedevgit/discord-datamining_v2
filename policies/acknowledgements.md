@@ -1,0 +1,769 @@
+# Acknowledgements
+
+Source: https://discord.com/acknowledgements
+
+* [@adyen/adyen-web](https://github.com/Adyen/adyen-web)
+* [@alloc/types](https://registry.npmjs.org/@alloc/types/-/types-1.3.0.tgz)
+* [@alwaysmeticulous/recorder-loader](https://github.com/alwaysmeticulous/meticulous-sdk)
+* [@babel/runtime](https://github.com/babel/babel)
+* [@babel/runtime-corejs3](https://github.com/babel/babel)
+* [@discord/arborium-rt-wasm](https://github.com/appellation/arborium-rt)
+* [@discord/intl](https://github.com/discord/discord-intl)
+* [@discord/intl-ast](https://github.com/discord/discord-intl)
+* [@discord/markdown-react](https://registry.npmjs.org/@discord/markdown-react/-/markdown-react-0.6.0.tgz)
+* [@discord/markdown-wasm](https://registry.npmjs.org/@discord/markdown-wasm/-/markdown-wasm-0.7.0.tgz)
+* [@discordapp/libdave](https://registry.npmjs.org/@discordapp/libdave/-/libdave-1.0.1.tgz)
+* [@discordapp/twemoji](https://github.com/discord/twemoji)
+* [@emotion/memoize](https://github.com/emotion-js/emotion/tree/main/packages/memoize)
+* [@emotion/weak-memoize](https://github.com/emotion-js/emotion/tree/main/packages/weak-memoize)
+* [@fastify/otel](https://github.com/fastify/otel)
+* [@floating-ui/react-dom](https://github.com/floating-ui/floating-ui)
+* [@floating-ui/utils](https://github.com/floating-ui/floating-ui)
+* [@formatjs/ecma402-abstract](https://github.com/formatjs/formatjs)
+* [@formatjs/fast-memoize](https://github.com/formatjs/formatjs)
+* [@formatjs/intl-durationformat](https://github.com/formatjs/formatjs)
+* [@formatjs/intl-listformat](https://github.com/formatjs/formatjs)
+* [@formatjs/intl-localematcher](https://github.com/formatjs/formatjs)
+* [@icons/material](https://github.com/at-icons/material)
+* [@incodetech/core](https://github.com/IncodeTechnologies/incode-web-sdk)
+* [@incodetech/web](https://github.com/IncodeTechnologies/incode-web-sdk)
+* [@internationalized/date](https://github.com/adobe/react-spectrum/tree/main/packages/@internationalized/date)
+* [@internationalized/number](https://github.com/adobe/react-spectrum)
+* [@internationalized/string](https://github.com/adobe/react-spectrum)
+* [@intrnl/xxhash64](https://codeberg.org/intrnl/js-xxhash64)
+* [@juggle/resize-observer](https://github.com/juggle/resize-observer)
+* [@openpgp/unbzip2-stream](https://github.com/openpgpjs/unbzip2-stream)
+* [@opentelemetry/api](https://github.com/open-telemetry/opentelemetry-js)
+* [@opentelemetry/api-logs](https://github.com/open-telemetry/opentelemetry-js)
+* [@opentelemetry/core](https://github.com/open-telemetry/opentelemetry-js)
+* [@opentelemetry/instrumentation](https://github.com/open-telemetry/opentelemetry-js)
+* [@opentelemetry/instrumentation-amqplib](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-connect](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-dataloader](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-fs](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-generic-pool](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-graphql](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-hapi](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-http](https://github.com/open-telemetry/opentelemetry-js)
+* [@opentelemetry/instrumentation-ioredis](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-kafkajs](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-knex](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-koa](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-lru-memoizer](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-mongodb](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-mongoose](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-mysql](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-mysql2](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-pg](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-redis](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/instrumentation-tedious](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/redis-common](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@opentelemetry/resources](https://github.com/open-telemetry/opentelemetry-js)
+* [@opentelemetry/sdk-trace-base](https://github.com/open-telemetry/opentelemetry-js)
+* [@opentelemetry/semantic-conventions](https://github.com/open-telemetry/opentelemetry-js)
+* [@opentelemetry/sql-common](https://github.com/open-telemetry/opentelemetry-js-contrib)
+* [@prisma/instrumentation](https://github.com/prisma/prisma)
+* [@protobuf-ts/runtime](https://github.com/timostamm/protobuf-ts)
+* [@react-aria/live-announcer](https://github.com/adobe/react-spectrum)
+* [@react-dnd/invariant](https://github.com/react-dnd/invariant)
+* [@react-dnd/shallowequal](https://github.com/react-dnd/shallowequal)
+* [@react-spring/animated](https://registry.npmjs.org/@react-spring/animated/-/animated-9.0.0-rc.3.tgz)
+* [@react-spring/core](https://registry.npmjs.org/@react-spring/core/-/core-9.0.0-rc.3.tgz)
+* [@react-spring/shared](https://registry.npmjs.org/@react-spring/shared/-/shared-9.0.0-rc.3.tgz)
+* [@react-spring/web](https://registry.npmjs.org/@react-spring/web/-/web-9.0.0-rc.3.tgz)
+* [@remix-run/router](https://github.com/remix-run/react-router)
+* [@rive-app/canvas](https://github.com/rive-app/rive-wasm/tree/master/js)
+* [@rive-app/react-canvas](https://github.com/rive-app/rive-react)
+* [@sentry-internal/browser-utils](https://github.com/getsentry/sentry-javascript)
+* [@sentry-internal/feedback](https://github.com/getsentry/sentry-javascript)
+* [@sentry-internal/replay](https://github.com/getsentry/sentry-javascript)
+* [@sentry-internal/replay-canvas](https://github.com/getsentry/sentry-javascript)
+* [@sentry/browser](https://github.com/getsentry/sentry-javascript)
+* [@sentry/core](https://github.com/getsentry/sentry-javascript)
+* [@sentry/electron](https://github.com/getsentry/sentry-electron)
+* [@sentry/node](https://github.com/getsentry/sentry-javascript)
+* [@sentry/node-core](https://github.com/getsentry/sentry-javascript)
+* [@sentry/opentelemetry](https://github.com/getsentry/sentry-javascript)
+* [@sentry/utils](https://github.com/getsentry/sentry-javascript)
+* [@stripe/react-stripe-js](https://github.com/stripe/react-stripe-js)
+* [@stripe/stripe-js](https://github.com/stripe/stripe-js)
+* [@tanstack/devtools](https://github.com/TanStack/devtools)
+* [@tanstack/devtools-event-client](https://github.com/TanStack/devtools)
+* [@tanstack/devtools-ui](https://github.com/TanStack/devtools)
+* [@tanstack/form-core](https://github.com/TanStack/form)
+* [@tanstack/react-router](https://github.com/TanStack/router)
+* [@tanstack/react-store](https://github.com/TanStack/store)
+* [@tanstack/router-core](https://github.com/TanStack/router)
+* [@zxing/library](https://github.com/zxing-js/library)
+* [ajv](https://github.com/ajv-validator/ajv)
+* [animated](https://github.com/animatedjs/animated)
+* [ansi-to-html](https://github.com/rburns/ansi-to-html)
+* [arch](https://github.com/feross/arch)
+* [aria-query](https://github.com/A11yance/aria-query)
+* [array.prototype.map](https://github.com/es-shims/Array.prototype.map)
+* [asn1](https://github.com/joyent/node-asn1)
+* [assert-plus](https://github.com/mcavage/node-assert-plus)
+* [asynckit](https://github.com/alexindigo/asynckit)
+* [audiobuffer-to-wav](https://github.com/Jam3/audiobuffer-to-wav)
+* [available-typed-arrays](https://github.com/inspect-js/available-typed-arrays)
+* [aws-sign2](https://github.com/mikeal/aws-sign)
+* [aws4](https://github.com/mhart/aws4)
+* [balanced-match](https://github.com/juliangruber/balanced-match)
+* [base16](https://github.com/gaearon/base16-js)
+* [base64-js](https://github.com/beatgammit/base64-js)
+* [bcp47](https://github.com/gagle/node-bcp47)
+* [bcrypt-pbkdf](https://github.com/joyent/node-bcrypt-pbkdf)
+* [big-integer](https://github.com/peterolson/BigInteger.js)
+* [bintrees](https://github.com/vadimg/js_bintrees)
+* [brace-expansion](https://github.com/juliangruber/brace-expansion)
+* [braintree-web](https://github.com/braintree/braintree-web)
+* [buffer](https://github.com/feross/buffer)
+* [buffer-crc32](https://github.com/brianloveswords/buffer-crc32)
+* [call-bind](https://github.com/ljharb/call-bind)
+* [call-bind-apply-helpers](https://github.com/ljharb/call-bind-apply-helpers)
+* [call-bound](https://github.com/ljharb/call-bound)
+* [caseless](https://github.com/mikeal/caseless)
+* [chroma-js](https://github.com/gka/chroma.js)
+* [chrono-node](https://github.com/wanasit/chrono)
+* [classnames](https://github.com/JedWatson/classnames)
+* [clsx](https://github.com/lukeed/clsx)
+* [color](https://github.com/Qix-/color)
+* [color-convert](https://github.com/Qix-/color-convert)
+* [color-name](https://github.com/colorjs/color-name)
+* [color-string](https://github.com/Qix-/color-string)
+* [colorjs.io](https://github.com/LeaVerou/color.js)
+* [combined-stream](https://github.com/felixge/node-combined-stream)
+* [combokeys](https://github.com/PolicyStat/combokeys)
+* [component-emitter](https://github.com/sindresorhus/component-emitter)
+* [confetti-cannon](https://github.com/discord/confetti-cannon)
+* [cookie](https://github.com/jshttp/cookie)
+* [core-js](https://github.com/zloirock/core-js)
+* [core-js-pure](https://github.com/zloirock/core-js)
+* [core-util-is](https://github.com/isaacs/core-util-is)
+* [create-react-class](https://github.com/facebook/react)
+* [date-fns](https://github.com/date-fns/date-fns)
+* [dayjs](https://github.com/iamkun/dayjs)
+* [debug](https://github.com/debug-js/debug)
+* [decimal.js](https://github.com/MikeMcl/decimal.js)
+* [decimal.js-light](https://github.com/MikeMcl/decimal.js-light)
+* [decode-uri-component](https://github.com/SamVerschueren/decode-uri-component)
+* [deep-equal](http://github.com/substack/node-deep-equal)
+* [define-data-property](https://github.com/ljharb/define-data-property)
+* [define-properties](https://github.com/ljharb/define-properties)
+* [delayed-stream](https://github.com/felixge/node-delayed-stream)
+* [dependency-graph](https://github.com/jriecken/dependency-graph)
+* [diff](https://github.com/kpdecker/jsdiff)
+* [direction](https://github.com/wooorm/direction)
+* [double-ended-queue](https://github.com/petkaantonov/deque)
+* [dunder-proto](https://github.com/es-shims/dunder-proto)
+* [ecc-jsbn](https://github.com/quartzjer/ecc-jsbn)
+* [electron-log](https://github.com/megahertz/electron-log)
+* [element-is-visible](https://github.com/thefrontside/element-is-visible)
+* [emoji-picker-react](https://github.com/ealush/emoji-picker-react)
+* [emoji-regex-xs](https://github.com/slevithan/emoji-regex-xs)
+* [entities](https://github.com/fb55/entities)
+* [es-abstract](https://github.com/ljharb/es-abstract)
+* [es-array-method-boxes-properly](https://github.com/ljharb/es-array-method-boxes-properly)
+* [es-define-property](https://github.com/ljharb/es-define-property)
+* [es-errors](https://github.com/ljharb/es-errors)
+* [es-get-iterator](https://github.com/ljharb/es-get-iterator)
+* [es-object-atoms](https://github.com/ljharb/es-object-atoms)
+* [es-set-tostringtag](https://github.com/es-shims/es-set-tostringtag)
+* [es-to-primitive](https://github.com/ljharb/es-to-primitive)
+* [eventemitter3](https://github.com/primus/eventemitter3)
+* [events](https://github.com/Gozala/events)
+* [extend](https://github.com/justmoon/node-extend)
+* [extsprintf](https://github.com/davepacheco/node-extsprintf)
+* [fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal)
+* [fast-json-stable-stringify](https://github.com/epoberezkin/fast-json-stable-stringify)
+* [fast-safe-stringify](https://github.com/davidmarkclements/fast-safe-stringify)
+* [fast-text-encoding](https://github.com/samthor/fast-text-encoding)
+* [favico.js](https://github.com/ejci/favico.js)
+* [fd-slicer](https://github.com/andrewrk/node-fd-slicer)
+* [fflate](https://github.com/101arrowz/fflate)
+* [file-saver](https://github.com/eligrey/FileSaver.js)
+* [file-type-checker](https://github.com/nir11/file-type-checker)
+* [fluids](https://github.com/alloc/fluids)
+* [focus-layers](https://github.com/discord/focus-layers)
+* [for-each](https://github.com/Raynos/for-each)
+* [forever-agent](https://github.com/mikeal/forever-agent)
+* [form-data](https://github.com/form-data/form-data)
+* [forwarded-parse](https://github.com/lpinca/forwarded-parse)
+* [function-bind](https://github.com/Raynos/function-bind)
+* [fuzzysearch](https://github.com/bevacqua/fuzzysearch)
+* [get-intrinsic](https://github.com/ljharb/get-intrinsic)
+* [get-proto](https://github.com/ljharb/get-proto)
+* [gifenc](https://github.com/mattdesl/gifenc)
+* [gifuct-js](https://github.com/matt-way/gifuct-js)
+* [goober](https://github.com/cristianbote/goober)
+* [gopd](https://github.com/ljharb/gopd)
+* [har-schema](https://github.com/ahmadnassri/har-schema)
+* [har-validator](https://github.com/ahmadnassri/node-har-validator)
+* [has-property-descriptors](https://github.com/inspect-js/has-property-descriptors)
+* [has-symbols](https://github.com/inspect-js/has-symbols)
+* [has-tostringtag](https://github.com/inspect-js/has-tostringtag)
+* [hasown](https://github.com/inspect-js/hasOwn)
+* [highlight.js](https://github.com/highlightjs/highlight.js)
+* [history](https://github.com/ReactTraining/history)
+* [hls.js](https://github.com/video-dev/hls.js)
+* [hoist-non-react-statics](https://github.com/mridgway/hoist-non-react-statics)
+* [http-signature](https://github.com/joyent/node-http-signature)
+* [humanize](https://github.com/taijinlee/humanize)
+* [ical-generator](https://github.com/sebbo2002/ical-generator)
+* [ieee754](https://github.com/feross/ieee754)
+* [immer](https://github.com/immerjs/immer)
+* [import-in-the-middle](https://github.com/nodejs/import-in-the-middle)
+* [inherits](https://github.com/isaacs/inherits)
+* [internal-slot](https://github.com/ljharb/internal-slot)
+* [intersection-observer](https://github.com/w3c/IntersectionObserver)
+* [intl](https://github.com/andyearnshaw/Intl.js)
+* [intl-messageformat](https://github.com/yahoo/intl-messageformat)
+* [intl-messageformat-parser](https://github.com/yahoo/intl-messageformat-parser)
+* [invariant](https://github.com/zertosh/invariant)
+* [ip-regex](https://github.com/sindresorhus/ip-regex)
+* [is-arguments](https://github.com/inspect-js/is-arguments)
+* [is-arrayish](https://github.com/qix-/node-is-arrayish)
+* [is-callable](https://github.com/inspect-js/is-callable)
+* [is-date-object](https://github.com/inspect-js/is-date-object)
+* [is-generator-function](https://github.com/inspect-js/is-generator-function)
+* [is-hotkey](https://github.com/ianstormtaylor/is-hotkey)
+* [is-map](https://github.com/inspect-js/is-map)
+* [is-plain-object](https://github.com/jonschlinkert/is-plain-object)
+* [is-regex](https://github.com/inspect-js/is-regex)
+* [is-set](https://github.com/inspect-js/is-set)
+* [is-string](https://github.com/inspect-js/is-string)
+* [is-symbol](https://github.com/inspect-js/is-symbol)
+* [is-typed-array](https://github.com/inspect-js/is-typed-array)
+* [is-typedarray](https://github.com/hughsk/is-typedarray)
+* [isarray](https://github.com/juliangruber/isarray)
+* [isstream](https://github.com/rvagg/isstream)
+* [iterate-iterator](https://github.com/ljharb/iterate-iterator)
+* [iterate-value](https://github.com/ljharb/iterate-value)
+* [joi-browser](http://github.com/jeffbski/joi-browser)
+* [js-binary-schema-parser](https://github.com/matt-way/jsBinarySchemaParser)
+* [jsbn](https://github.com/andyperlitch/jsbn)
+* [json-schema](http://github.com/kriszyp/json-schema)
+* [json-schema-traverse](https://github.com/epoberezkin/json-schema-traverse)
+* [json-stringify-safe](https://github.com/isaacs/json-stringify-safe)
+* [jsprim](https://github.com/joyent/node-jsprim)
+* [keycode](https://github.com/timoxley/keycode)
+* [lodash](https://github.com/lodash/lodash)
+* [lodash.curry](https://github.com/lodash/lodash)
+* [lottie-web](https://github.com/airbnb/lottie-web)
+* [lru-cache](https://github.com/isaacs/node-lru-cache)
+* [markdown-it-dollarmath](https://registry.npmjs.org/markdown-it-dollarmath/-/markdown-it-dollarmath-0.5.0.tgz)
+* [match-sorter](https://github.com/kentcdodds/match-sorter)
+* [math-intrinsics](https://github.com/es-shims/math-intrinsics)
+* [memoize-one](https://github.com/alexreardon/memoize-one)
+* [mime-db](https://github.com/jshttp/mime-db)
+* [mime-types](https://github.com/jshttp/mime-types)
+* [minimatch](https://github.com/isaacs/minimatch)
+* [module-details-from-path](https://github.com/watson/module-details-from-path)
+* [moment](https://github.com/moment/moment)
+* [mp4box](https://github.com/gpac/mp4box.js)
+* [ms](https://github.com/vercel/ms)
+* [murmurhash](https://github.com/perezd/node-murmurhash)
+* [mux-embed](https://registry.npmjs.org/mux-embed/-/mux-embed-5.13.0.tgz)
+* [node-downloader-helper](https://github.com/hgouveia/node-downloader-helper)
+* [normalize-css-color](https://github.com/react-community/normalize-css-color)
+* [oauth-sign](https://github.com/mikeal/oauth-sign)
+* [object-assign](https://github.com/sindresorhus/object-assign)
+* [object-inspect](https://github.com/inspect-js/object-inspect)
+* [object-keys](https://github.com/ljharb/object-keys)
+* [object.fromentries](https://github.com/es-shims/Object.fromEntries)
+* [ogv](https://github.com/brion/ogv.js)
+* [only-react-css-property-operations](https://github.com/viewsdx/only-react-css-property-operations)
+* [p-finally](https://github.com/sindresorhus/p-finally)
+* [p-queue](https://github.com/sindresorhus/p-queue)
+* [p-timeout](https://github.com/sindresorhus/p-timeout)
+* [pako](https://github.com/nodeca/pako)
+* [path-to-regexp](https://github.com/pillarjs/path-to-regexp)
+* [pend](https://github.com/andrewrk/node-pend)
+* [performance-now](https://github.com/braveg1rl/performance-now)
+* [platform](https://github.com/bestiejs/platform.js)
+* [possible-typed-array-names](https://github.com/ljharb/possible-typed-array-names)
+* [process](https://github.com/shtylman/node-process)
+* [promise-timeout](https://github.com/building5/promise-timeout)
+* [promise.allsettled](https://github.com/es-shims/Promise.allSettled)
+* [prop-types](https://github.com/facebook/prop-types)
+* [pseudomap](https://github.com/isaacs/pseudomap)
+* [psl](https://github.com/lupomontero/psl)
+* [punycode](https://github.com/bestiejs/punycode.js)
+* [qr.js](https://github.com/shtylman/qr.js)
+* [qs](https://github.com/ljharb/qs)
+* [quantize](https://github.com/olivierlesnicki/quantize)
+* [query-string](https://github.com/sindresorhus/query-string)
+* [querystring](https://github.com/Gozala/querystring)
+* [react](https://github.com/facebook/react)
+* [react-aria](https://github.com/adobe/react-spectrum)
+* [react-aria-components](https://github.com/adobe/react-spectrum)
+* [react-base-hooks](https://registry.npmjs.org/react-base-hooks/-/react-base-hooks-0.0.3.tgz)
+* [react-color](https://github.com/casesandberg/react-color)
+* [react-datepicker](https://github.com/Hacker0x01/react-datepicker)
+* [react-diff-viewer](https://github.com/praneshr/react-diff-viewer)
+* [react-dnd](https://github.com/react-dnd/react-dnd)
+* [react-dnd-html5-backend](https://github.com/react-dnd/react-dnd)
+* [react-dom](https://github.com/facebook/react)
+* [react-error-boundary](https://github.com/bvaughn/react-error-boundary)
+* [react-fast-compare](https://github.com/FormidableLabs/react-fast-compare)
+* [react-focus-rings](https://github.com/discord/focus-rings)
+* [react-helmet-async](http://github.com/staylor/react-helmet-async)
+* [react-is](https://github.com/facebook/react)
+* [react-json-view](https://github.com/mac-s-g/react-json-view)
+* [react-layout-effect](https://github.com/alloc/react-layout-effect)
+* [react-onclickoutside](https://github.com/Pomax/react-onclickoutside)
+* [react-qr-code](https://github.com/rosskhanas/react-qr-code)
+* [react-router](https://github.com/remix-run/react-router)
+* [react-router-dom](https://github.com/remix-run/react-router)
+* [react-select](https://github.com/JedWatson/react-select/tree/master/packages/react-select)
+* [react-spring](https://registry.npmjs.org/react-spring/-/react-spring-9.0.0-rc.3.tgz)
+* [react-stately](https://github.com/adobe/react-spectrum)
+* [react-transition-group](https://github.com/reactjs/react-transition-group)
+* [reactcss](https://github.com/casesandberg/reactcss)
+* [reaptcha](https://github.com/sarneeh/reaptcha)
+* [regenerator-runtime](https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime)
+* [remove-accents](https://github.com/tyxla/remove-accents)
+* [request](https://github.com/request/request)
+* [requestidlecallback](https://github.com/aFarkas/requestIdleCallback)
+* [require-in-the-middle](https://github.com/nodejs/require-in-the-middle)
+* [resolve-pathname](https://github.com/mjackson/resolve-pathname)
+* [safe-buffer](https://github.com/feross/safe-buffer)
+* [safe-regex-test](https://github.com/ljharb/safe-regex-test)
+* [safer-buffer](https://github.com/ChALkeR/safer-buffer)
+* [scheduler](https://github.com/facebook/react)
+* [sdp-transform](https://github.com/clux/sdp-transform)
+* [semver](https://github.com/npm/node-semver)
+* [set-function-length](https://github.com/ljharb/set-function-length)
+* [set-proto](https://github.com/ljharb/set-proto)
+* [setimmediate](https://github.com/YuzuJS/setImmediate)
+* [shallowequal](https://github.com/dashed/shallowequal)
+* [side-channel](https://github.com/ljharb/side-channel)
+* [side-channel-list](https://github.com/ljharb/side-channel-list)
+* [side-channel-map](https://github.com/ljharb/side-channel-map)
+* [side-channel-weakmap](https://github.com/ljharb/side-channel-weakmap)
+* [simple-markdown](https://github.com/Khan/simple-markdown)
+* [simple-swizzle](https://github.com/qix-/node-simple-swizzle)
+* [slate](https://github.com/ianstormtaylor/slate)
+* [slate-react](https://github.com/ianstormtaylor/slate)
+* [slugify](https://github.com/simov/slugify)
+* [snowball-stemmers](https://github.com/mazko/jssnowball)
+* [solid-js](https://github.com/solidjs/solid)
+* [spark-md5](https://github.com/satazor/js-spark-md5)
+* [srt-webvtt](https://github.com/imshaikot/srt-webvtt)
+* [sshpk](https://github.com/joyent/node-sshpk)
+* [stop-iteration-iterator](https://github.com/ljharb/stop-iteration-iterator)
+* [strict-uri-encode](https://github.com/kevva/strict-uri-encode)
+* [string-similarity-js](https://github.com/stephenjjbrown/string-similarity-js)
+* [string.prototype.trim](https://github.com/es-shims/String.prototype.trim)
+* [superagent](https://github.com/ladjs/superagent)
+* [tabbable](https://github.com/focus-trap/tabbable)
+* [tdigest](https://github.com/welch/tdigest)
+* [thirty-two](https://github.com/chrisumbel/thirty-two)
+* [thumbhash](https://github.com/evanw/thumbhash)
+* [tiny-invariant](https://github.com/alexreardon/tiny-invariant)
+* [tiny-warning](https://github.com/alexreardon/tiny-warning)
+* [tinycolor2](https://github.com/bgrins/TinyColor)
+* [tough-cookie](https://github.com/salesforce/tough-cookie)
+* [ts-key-enum](https://gitlab.com/nfriend/ts-key-enum)
+* [ts-pattern](https://github.com/gvergnaud/ts-pattern)
+* [tslib](https://github.com/Microsoft/tslib)
+* [tunnel-agent](https://github.com/mikeal/tunnel-agent)
+* [tween-functions](https://github.com/chenglou/tween-functions)
+* [tweetnacl](https://github.com/dchest/tweetnacl-js)
+* [upng-js](https://github.com/photopea/UPNG.js)
+* [uri-js](http://github.com/garycourt/uri-js)
+* [url](https://github.com/defunctzombie/node-url)
+* [use-isomorphic-layout-effect](https://github.com/Andarist/use-isomorphic-layout-effect)
+* [use-memo-one](https://github.com/alexreardon/use-memo-one)
+* [use-memo-value](https://github.com/discord/use-memo-value)
+* [use-sync-external-store](https://github.com/facebook/react)
+* [util](https://github.com/browserify/node-util)
+* [uuid](https://github.com/uuidjs/uuid)
+* [uuid-random](https://github.com/jchook/uuid-random)
+* [value-equal](https://github.com/mjackson/value-equal)
+* [verror](https://github.com/davepacheco/node-verror)
+* [warning](https://github.com/BerkeleyTrue/warning)
+* [web-vitals](https://github.com/GoogleChrome/web-vitals)
+* [webrtc-adapter](https://github.com/webrtchacks/adapter)
+* [webrtc-internals](https://github.com/vassjozsef/webrtc-internals)
+* [which-typed-array](https://github.com/inspect-js/which-typed-array)
+* [yallist](https://github.com/isaacs/yallist)
+* [yauzl](https://github.com/thejoshwolfe/yauzl)
+* [zod](https://github.com/colinhacks/zod)
+* [zustand](https://github.com/pmndrs/zustand)
+* babel
+* webpack
+* event-stream
+* nlf
+* dsp
+* signalsmith-stretch
+* reverb-example-code
+* onnxruntime
+* Sakura (based on Cherry Bomb One)
+* Jellybean (based on Chicle)
+* Modern (based on Museo Moderno)
+* Medieval (based on Neo Castel)
+* 8Bit (based on Pixelify Sans)
+* Vampyre (based on Sinistre)
+* Tempo (based on Zilla Slab)
+* Electron
+* NAN
+* Squirrel
+* curl
+* kiss_fft
+* libsodium
+* libuv
+* uws
+* breakpad
+* sqlite3
+* pugixml
+* zlib
+* minhhook
+* openssl
+* Cisco OpenH264
+* ab_glyph_rasterizer v0.1.8
+* addr2line v0.22.0
+* adler v1.0.2
+* aho-corasick v1.1.3
+* andrew v0.2.1
+* andrew v0.3.1
+* android-tzdata v0.1.1
+* android_glue v0.2.3
+* android_system_properties v0.1.5
+* anes v0.1.6
+* ansi_term v0.12.1
+* anstream v0.6.14
+* anstyle v1.0.7
+* anstyle-parse v0.2.4
+* anstyle-query v1.1.0
+* anstyle-wincon v3.0.3
+* anyhow v1.0.86
+* approx v0.3.2
+* atomic v0.4.6
+* atty v0.2.14
+* autocfg v1.3.0
+* backtrace v0.3.73
+* bindgen v0.69.4
+* bitflags v1.3.2
+* bitflags v2.5.0
+* block v0.1.6
+* bumpalo v3.16.0
+* bytemuck v1.16.0
+* byteorder v1.5.0
+* calloop v0.6.5
+* cast v0.3.0
+* cbindgen v0.27.0
+* cc v1.0.99
+* cexpr v0.6.0
+* cfg-if v0.1.10
+* cfg-if v1.0.0
+* cgl v0.3.2
+* chrono v0.4.38
+* ciborium v0.2.2
+* ciborium-io v0.2.2
+* ciborium-ll v0.2.2
+* clang-sys v1.8.1
+* clap v2.34.0
+* clap v4.5.7
+* clap_builder v4.5.7
+* clap_derive v4.5.5
+* clap_lex v0.7.1
+* cloudabi v0.0.3
+* cocoa v0.18.5
+* cocoa v0.24.1
+* cocoa-foundation v0.1.1
+* cocoa-foundation v0.1.2
+* colorchoice v1.0.1
+* core-foundation v0.6.4
+* core-foundation v0.9.3
+* core-foundation-sys v0.6.2
+* core-foundation-sys v0.8.3
+* core-graphics v0.17.3
+* core-graphics v0.22.3
+* core-graphics-types v0.1.1
+* core-graphics-types v0.1.2
+* core-video-sys v0.1.4
+* criterion v0.5.1
+* criterion-plot v0.5.0
+* crossbeam v0.7.3
+* crossbeam-channel v0.4.4
+* crossbeam-deque v0.7.4
+* crossbeam-deque v0.8.5
+* crossbeam-epoch v0.8.2
+* crossbeam-epoch v0.9.18
+* crossbeam-queue v0.1.2
+* crossbeam-queue v0.2.3
+* crossbeam-utils v0.6.6
+* crossbeam-utils v0.7.2
+* crossbeam-utils v0.8.20
+* crunchy v0.2.2
+* cty v0.2.2
+* darling v0.10.2
+* darling_core v0.10.2
+* darling_macro v0.10.2
+* derivative v2.2.0
+* dispatch v0.2.0
+* dlib v0.4.2
+* dlib v0.5.2
+* downcast-rs v1.2.1
+* either v1.13.0
+* env_logger v0.6.2
+* env_logger v0.8.4
+* equivalent v1.0.1
+* errno v0.3.9
+* fastrand v2.1.0
+* flexi_logger v0.28.5
+* fnv v1.0.7
+* foreign-types v0.3.2
+* foreign-types-shared v0.1.1
+* fuchsia-zircon v0.3.3
+* fuchsia-zircon-sys v0.3.3
+* getrandom v0.2.15
+* gimli v0.29.0
+* glob v0.3.1
+* half v2.4.1
+* hashbrown v0.14.5
+* heck v0.3.3
+* heck v0.4.1
+* heck v0.5.0
+* hermit-abi v0.1.19
+* hermit-abi v0.4.0
+* hex v0.3.2
+* home v0.5.9
+* humantime v1.3.0
+* iana-time-zone v0.1.60
+* iana-time-zone-haiku v0.1.2
+* ident_case v1.0.1
+* indexmap v2.4.0
+* instant v0.1.13
+* io-surface v0.15.1
+* iovec v0.1.4
+* is-terminal v0.4.13
+* is_terminal_polyfill v1.70.0
+* itertools v0.10.5
+* itertools v0.12.1
+* itoa v1.0.11
+* jni-sys v0.3.0
+* js-sys v0.3.69
+* kernel32-sys v0.2.2
+* lazy_static v1.4.0
+* lazycell v1.3.0
+* leak v0.1.2
+* leaky-cow v0.1.1
+* libc v0.2.155
+* libloading v0.6.7
+* libloading v0.7.4
+* libloading v0.8.3
+* libsw v3.3.1
+* line_drawing v0.7.0
+* linux-raw-sys v0.4.14
+* lock_api v0.3.4
+* lock_api v0.4.12
+* log v0.4.21
+* malloc_buf v0.0.6
+* maybe-uninit v2.0.0
+* memchr v2.7.4
+* memmap v0.7.0
+* memmap2 v0.1.0
+* memoffset v0.5.6
+* metal v0.21.0
+* minimal-lexical v0.2.1
+* miniz_oxide v0.7.4
+* mio v0.6.23
+* mio-extras v2.0.6
+* miow v0.2.2
+* ndk v0.2.1
+* ndk-glue v0.2.1
+* ndk-macro v0.2.0
+* ndk-sys v0.2.2
+* net2 v0.2.39
+* nix v0.14.1
+* nix v0.18.0
+* nix v0.20.0
+* nom v7.1.3
+* nu-ansi-term v0.50.1
+* num-traits v0.2.19
+* num_enum v0.4.3
+* num_enum_derive v0.4.3
+* objc v0.2.7
+* objc_exception v0.1.2
+* object v0.36.1
+* once_cell v1.19.0
+* oorandom v11.1.4
+* ordered-float v1.1.1
+* owned_ttf_parser v0.15.2
+* parking_lot v0.9.0
+* parking_lot v0.11.2
+* parking_lot v0.12.3
+* parking_lot_core v0.6.3
+* parking_lot_core v0.8.6
+* parking_lot_core v0.9.10
+* paste v1.0.15
+* percent-encoding v2.3.1
+* pkg-config v0.3.30
+* plotters v0.3.7
+* plotters-backend v0.3.7
+* plotters-svg v0.3.7
+* ppv-lite86 v0.2.17
+* prettyplease v0.2.20
+* proc-macro-crate v0.1.5
+* proc-macro-error v1.0.4
+* proc-macro-error-attr v1.0.4
+* proc-macro2 v0.4.30
+* proc-macro2 v1.0.92
+* quick-error v1.2.3
+* quickcheck v1.0.3
+* quickcheck_macros v1.0.0
+* quote v0.6.13
+* quote v1.0.36
+* rand v0.8.5
+* rand_chacha v0.3.1
+* rand_core v0.6.4
+* raw-window-handle v0.3.4
+* raw-window-handle v0.4.3
+* rayon v1.10.0
+* rayon-core v1.12.1
+* redox_syscall v0.1.57
+* redox_syscall v0.2.16
+* redox_syscall v0.5.2
+* regex v1.10.5
+* regex-automata v0.4.7
+* regex-syntax v0.8.4
+* rgb v0.8.37
+* rustc-demangle v0.1.24
+* rustc-hash v1.1.0
+* rustc_version v0.2.3
+* rustix v0.38.34
+* rusttype v0.7.9
+* rusttype v0.8.3
+* rusttype v0.9.3
+* ryu v1.0.18
+* same-file v1.0.6
+* scoped-tls v1.0.1
+* scopeguard v1.2.0
+* semver v0.9.0
+* semver-parser v0.7.0
+* serde v1.0.216
+* serde_derive v1.0.216
+* serde_json v1.0.133
+* serde_spanned v0.6.7
+* shlex v1.3.0
+* slab v0.4.9
+* smallvec v0.6.14
+* smallvec v1.13.2
+* smithay-client-toolkit v0.4.6
+* smithay-client-toolkit v0.12.3
+* stb_truetype v0.3.1
+* strsim v0.8.0
+* strsim v0.9.3
+* strsim v0.11.1
+* structopt v0.3.26
+* structopt-derive v0.4.18
+* syn v1.0.109
+* syn v2.0.90
+* tempfile v3.12.0
+* termcolor v1.4.1
+* textwrap v0.11.0
+* thiserror v1.0.61
+* thiserror-impl v1.0.61
+* tinytemplate v1.2.1
+* toml v0.5.11
+* toml v0.8.19
+* toml_datetime v0.6.8
+* toml_edit v0.22.20
+* ttf-parser v0.15.2
+* unicode-ident v1.0.12
+* unicode-segmentation v1.11.0
+* unicode-width v0.1.13
+* unicode-xid v0.1.0
+* utf8parse v0.2.2
+* vec_map v0.8.2
+* version_check v0.9.4
+* video-levels v1.0.0
+* void v1.0.2
+* walkdir v2.5.0
+* wasi v0.11.0+wasi-snapshot-preview1
+* wasm-bindgen v0.2.92
+* wasm-bindgen-backend v0.2.92
+* wasm-bindgen-macro v0.2.92
+* wasm-bindgen-macro-support v0.2.92
+* wasm-bindgen-shared v0.2.92
+* wayland-client v0.21.13
+* wayland-client v0.28.6
+* wayland-commons v0.21.13
+* wayland-commons v0.28.6
+* wayland-cursor v0.28.6
+* wayland-protocols v0.21.13
+* wayland-protocols v0.28.6
+* wayland-scanner v0.21.13
+* wayland-scanner v0.28.6
+* wayland-sys v0.21.13
+* wayland-sys v0.28.6
+* web-sys v0.3.69
+* which v4.4.2
+* widestring v0.4.3
+* widestring v1.1.0
+* winapi v0.2.8
+* winapi v0.3.9
+* winapi-build v0.1.1
+* winapi-i686-pc-windows-gnu v0.4.0
+* winapi-util v0.1.8
+* winapi-x86_64-pc-windows-gnu v0.4.0
+* windows v0.60.0
+* windows-collections v0.1.1
+* windows-core v0.52.0
+* windows-core v0.60.1
+* windows-future v0.1.1
+* windows-implement v0.59.0
+* windows-interface v0.59.0
+* windows-link v0.1.0
+* windows-numerics v0.1.1
+* windows-registry v0.5.0
+* windows-result v0.3.1
+* windows-strings v0.3.1
+* windows-sys v0.52.0
+* windows-sys v0.59.0
+* windows-targets v0.52.6
+* windows_aarch64_gnullvm v0.52.6
+* windows_aarch64_msvc v0.52.6
+* windows_i686_gnu v0.52.6
+* windows_i686_gnullvm v0.52.6
+* windows_i686_msvc v0.52.6
+* windows_x86_64_gnu v0.52.6
+* windows_x86_64_gnullvm v0.52.6
+* windows_x86_64_msvc v0.52.6
+* winit v0.19.5
+* winit v0.24.0
+* winnow v0.6.18
+* ws2_32-sys v0.2.1
+* x11-dl v2.21.0
+* xcursor v0.3.5
+* xdg v2.5.2
+* xml-rs v0.8.20
+* yuv v0.1.6
+* flowkey/react-native-home-indicator
+* evanw/thumbhash
+* WebRTC
+* jsoncpp
+* mediapipe
+* VMAF
+* VMAF: stdatomic
+* VMAF: x86 cpuid
+* VMAF: x86inc
+* VMAF: ciede
+* VMAF: Xiph.Org
+* VMAF: mkdirp
+* VMAF: iqa
+* VMAF: svm
+* Steam Audio
+* Steam Audio: Intel IPP
+* Steam Audio: FFTS
+* Steam Audio: PFFFT
+* Steam Audio: MySOFA
+* Steam Audio: FlatBuffers
+* Steam Audio: Intel Embree
+* Steam Audio: AMD RadeonRays
+* Steam Audio: AMD TrueAudio Next
+* Steam Audio: CIPIC HRTF Database
+* Steam Audio: Google Spherical Harmonics Library
+* luben/zstd-jni
