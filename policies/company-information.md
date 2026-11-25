@@ -13,9 +13,8 @@ San Francisco, CA 94107
 United States of America  
   
 Phone: 888-594-0085  
-Email: [support@discord.com](mailto:support@discord.com)
+Discord Customer Support: [https://support.discord.com/hc/en-us/requests/new](https://support.discord.com/hc/en-us/requests/new)
 
-Discord Customer Support: [https://support.discord.com/hc/en-us/requests/new](https://support.discord.com/hc/en-us/requests/new)  
   
 Authorized Representative  
 Clint Smith, CLO  
@@ -33,9 +32,8 @@ Schiphol Boulevard 195
 Netherlands  
   
 Phone: +31 20 809 0400  
-Email: [support@discord.com](mailto:support@discord.com)
+Discord Customer Support: [https://support.discord.com/hc/en-us/requests/new](https://support.discord.com/hc/en-us/requests/new)
 
-Discord Customer Support: [https://support.discord.com/hc/en-us/requests/new](https://support.discord.com/hc/en-us/requests/new)  
   
 Authorized Representative  
 Tom Marcinkowski, Director  
